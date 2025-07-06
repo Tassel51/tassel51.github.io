@@ -8,7 +8,9 @@ layout: page
 
 Here is **Zichen Zhu (Chris, 朱子琛)**.<br>
 
-I am an undergraduate student majoring in **Communication Engineering** at the School of [Computer Science and Engineering](http://www.cse.neu.edu.cn/), [Northeastern University, China](https://www.neu.edu.cn/).<br>My academic journey is driven by a strong interest in bridging theoretical knowledge with practical innovation in modern communication technologies, as well as a profound curiosity for developing, applying, and integrating modern artificial intelligence (AI)-related technologies with my academic discipline.
+I am an undergraduate student majoring in **Communication Engineering** at the School of [Computer Science and Engineering](http://www.cse.neu.edu.cn/), [Northeastern University, China](https://www.neu.edu.cn/).<br>
+
+My academic journey is driven by a strong interest in bridging theoretical knowledge with practical innovation in modern communication technologies, as well as a profound curiosity for developing, applying, and integrating modern artificial intelligence (AI)-related technologies with my academic discipline.
 
 ---
 
