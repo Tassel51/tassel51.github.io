@@ -18,7 +18,7 @@ title: Awards
 
 ## Competitions
 
-- Jan 2024：Finalist of China International College Students’ Innovation Competition (Top 3%)
+- Jan 2025：**The Outstanding Winner** of COMAP'S Mathematical Contest in Modeling (Top 0.2%)
 - Aug 2023：**Best Technology Award** in National Youth Science Innovation Project Competition (Top 1%)
 - Aug 2023：Second Prize in National Collegiate Internet of Things Technology and Application Competition (Top 5%)
 - May 2023：Finalist Award in Mathematical Contest In Modeling (Top 1% of all 20508 paper)
