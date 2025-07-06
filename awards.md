@@ -8,7 +8,7 @@ title: Awards
 
 - Sep 2024：**National Scholarship** (totally ¥10000)
 
-- Sep 2024：**Northeastern University Undergraduate First-Class Scholarship** (¥2000)
+- Sep 2024：**Northeastern University Undergraduate First-Class Scholarship** (totally ¥2000)
 
 - Sep 2024：Northeastern University Outstanding Student Pacesetter
 
@@ -29,6 +29,5 @@ Following are the provincial-level awards:
 - May 2025: Second Prize in the "Datang Cup" National College Students' New Generation Information and Communication Technology Competition
 
 - May 2025: Third Prize in the China Collegiate Computer Design Competition 
-
 
 <br>

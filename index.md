@@ -4,7 +4,7 @@ layout: page
 
 # About Me
 
-<img src="https://caihanlin.com/caihanlin.jpg" class="floatpic">
+<img src="images/thegreatwall.jpg" class="floatpic">
 
 Here is **Zichen Zhu (Chris, 朱子琛)**.<br>
 
