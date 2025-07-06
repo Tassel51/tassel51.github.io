@@ -8,6 +8,7 @@ title: Hobbies
 I consider myself someone with a wide range of hobbies. Over the past year, I’ve maintained a strong passion for music, travel, film & television, and more. My life philosophy is **"Life is about experiencing"**— for this reason, I strive to savor the present moment and embrace life wholeheartedly. If you share similar interests, feel free to reach out—I’d love to connect!
 
 # Hobbies
+<br>
 
 ## Playing Guiter
 
