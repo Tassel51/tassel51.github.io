@@ -8,7 +8,7 @@ layout: page
 
 Here is **Zichen Zhu (Chris, 朱子琛)**.<br>
 
-I am an undergraduate student majoring in **Communication Engineering** at the School of [Computer Science and Engineering](http://www.cse.neu.edu.cn/), [Northeastern University, China](https://www.neu.edu.cn/).
+I am an undergraduate student majoring in **Communication Engineering** at the School of [Computer Science and Engineering](http://www.cse.neu.edu.cn/), [Northeastern University, China](https://www.neu.edu.cn/).<br>My academic journey is driven by a strong interest in bridging theoretical knowledge with practical innovation in modern communication technologies, as well as a profound curiosity for developing, applying, and integrating modern artificial intelligence (AI)-related technologies with my academic discipline.
 
 ---
 
@@ -23,11 +23,7 @@ I am an undergraduate student majoring in **Communication Engineering** at the S
 
 ## News and Updates
 
-- **May 2025**：Delighted to be selected as a winner of the 2025 Cambridge-CSC Scholarship!
-- **June 2024**：Very excited to be selected as [KDD UC Scholar](https://kdd2024.kdd.org/undergraduate-consortium/). See you in Spain!
-- **April 2024：**Our work *BLEGuard* has been accepted to [MobiSys 2024](https://www.sigmobile.org/mobisys/2024/) as a poster paper. See you in Japan!
-- **March 2024：**Happy to receive a MPhil offer from Department of Engineering at Cambridge!
-- **Dec 2023：**Very excited to be selected as [AAAI UC Scholar](https://aaai.org/aaai-conference/undergraduate-consortium-program/). See you in Canada!
+- **Aug 2023：** I am very glad to have received the admission notice for the Electronic Information program at Northeastern University! See you in Shenyang!
 
 <br>
 
