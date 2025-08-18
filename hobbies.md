@@ -13,7 +13,7 @@ I consider myself someone with a wide range of hobbies. Over the past year, I've
 ## **Playing Guiter**
 
 <div class="third">
-<img src="/images/guitar1.jpg">
+<img src="/images/guitar1.JPG">
 <img src="/images/swimming.JPG">
 <img src="/images/surfing1.JPG">
 </div>
