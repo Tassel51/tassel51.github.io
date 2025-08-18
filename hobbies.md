@@ -14,8 +14,9 @@ I consider myself someone with a wide range of hobbies. Over the past year, I've
 
 <div class="third">
 <img src="/images/guitar1.JPG">
-<img src="/images/swimming.JPG">
-<img src="/images/surfing1.JPG">
+<!-- <img src="/images/guitar1.JPG">
+<img src="/images/guitar1.JPG"> -->
+
 </div>
 <br>I have been interested in music since I was a child. During elementary school, I learned to play the saxophone and joined the school's wind ensemble. After graduating from high school, I bought my long-cherished guitar and started teaching myself to play it. My guitar skills have improved through constant practice and refinement over time. Later, I also taught myself music theory and began composing some songs. Related videos are available on my channel-everyone is welcome to show your support, and fellow music enthusiasts are invited to come and connect with me!
 
@@ -31,16 +32,17 @@ I consider myself someone with a wide range of hobbies. Over the past year, I've
 [best universities in my hometown]:https://www.fzu.edu.cn/
 
 
-## Past Hobbies
+<!-- ## Past Hobbies
 
-I previously enjoyed long-distance running, [vlog making](https://space.bilibili.com/594030035), and computer game developing/playing. However, I have no time to do any of these things recently.
+I previously enjoyed long-distance running, [vlog making](https://space.bilibili.com/594030035), and computer game developing/playing. However, I have no time to do any of these things recently. -->
 
-## My Cat
+## My Dogs
 
-She is my love. Her name is Qbao (Q宝).
+I have two dogs named "旺仔" and "叮当". They have been with our family since 2011, witnessing my entire growth process from childhood to adulthood, and have become one of the most important members of my family.
 
 <div>
-<img src="/images/cat.JPG">
+<img src="/images/dogs1.JPG">
+<img src="/images/dogs2.JPG">
 </div>
 <br>
 
