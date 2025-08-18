@@ -10,7 +10,7 @@ I consider myself someone with a wide range of hobbies. Over the past year, I've
 # Hobbies
 <br>
 
-## Playing Guiter
+## **Playing Guiter**
 
 <div class="third">
 <img src="/images/guitar1.jpg">
