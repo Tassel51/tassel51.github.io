@@ -10,7 +10,7 @@ I consider myself someone with a wide range of hobbies. Over the past year, I've
 # Hobbies
 <br>
 
-## **Playing Guiter**
+## Playing Guiter
 
 <div class="third">
 <img src="/images/guitar1.JPG">
@@ -40,7 +40,7 @@ I previously enjoyed long-distance running, [vlog making](https://space.bilibili
 
 I have two dogs named "旺仔" and "叮当". They have been with our family since 2011, witnessing my entire growth process from childhood to adulthood, and have become one of the most important members of my family.
 
-<div>
+<div class="second">
 <img src="/images/dogs1.JPG">
 <img src="/images/dogs2.JPG">
 </div>
