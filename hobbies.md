@@ -13,11 +13,11 @@ I consider myself someone with a wide range of hobbies. Over the past year, I’
 ## Playing Guiter
 
 <div class="third">
-<img src="/images/swimming2.JPG">
+<img src="/images/guitar1.JPG">
 <img src="/images/swimming.JPG">
 <img src="/images/surfing1.JPG">
 </div>
-<br>Swimming removes my worries, refreshes my body, and brings me courage to address any challenges. I extremely enjoy the feeling of being immersed in the water. Besides, I am a member of the Swimming Team at Fuzhou University, where I meet many sincere friends. I have reached **China National Second-level athlete Standard** in 50m breaststroke and won **Five Gold Medals** during my 15-year swimming career. Recently, I am also keen on surfing.
+<br>I have been interested in music since I was a child. During elementary school, I learned to play the saxophone and joined the school's wind ensemble. After graduating from high school, I bought my long-cherished guitar and started teaching myself to play it. My guitar skills have improved through constant practice and refinement over time. Later, I also taught myself music theory and began composing some songs. Related videos are available on my channel—everyone is welcome to show your support, and fellow music enthusiasts are invited to come and connect with me!
 
 ## Workshop
 
