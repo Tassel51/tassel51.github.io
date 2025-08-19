@@ -7,7 +7,7 @@ title: Awards
 
 ## Competitions
 
-- Jan 2025: [**The Outstanding Winner** of COMAP'S Mathematical Contest in Modeling](https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/results/) (Top 0.2%)<br>
+- Jan 2025: [**The Outstanding Winner** of COMAP'S Mathematical Contest in Modeling](https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/results/) (Top 0.2%)<br>[*here is our paper*](https://tassel51.github.io/mypaper/modeling/comap25.pdf)<br>
 美国（国际）大学生数学建模竞赛**特等奖**（前0.2%）
 
 - Jul 2025: **Second Prize** in the Final of the Northeast Division of the National College Students' Integrated Circuit Innovation and Entrepreneurship Competition 
