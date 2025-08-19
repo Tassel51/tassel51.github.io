@@ -8,7 +8,7 @@ title: Awards
 ## Competitions
 
 - Jan 2025: [**The Outstanding Winner** of COMAP'S Mathematical Contest in Modeling](https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/results/) (Top 0.2%)<br>
-美国（国际）大学生数学建模竞赛**特等奖**（前0.2%）
+[美国（国际）大学生数学建模竞赛**特等奖**（前0.2%）](https://mp.weixin.qq.com/s/2mlS40CY5ICqOBlYpgIxxQ)
     - [*here is our paper*](https://tassel51.github.io/mypaper/modeling/comap25.pdf)
     - [*this is our award certificate*](https://tassel51.github.io/mypaper/modeling/2515235.pdf)
 <br><br>
