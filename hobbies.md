@@ -19,16 +19,17 @@ I consider myself someone with a wide range of hobbies. Over the past year, I've
 
 <br>I have been interested in music since I was a child. During elementary school, I learned to play the saxophone and joined the school's wind ensemble. After graduating from high school, I bought my long-cherished guitar and started teaching myself to play it. My guitar skills have improved through constant practice and refinement over time. Later, I also taught myself music theory and began composing some songs. Related videos are available on my channel-everyone is welcome to show your support, and fellow music enthusiasts are invited to come and connect with me!
 
-## Workshop
+## Traveling
 
 <div class="third">
-<img src="/images/prelection1.JPG">
-<img src="/images/speech1.JPG">
-<img src="/images/speech3.JPG">
+<img src="/images/travels/1.jpg">
+<img src="/images/travels/2.jpg">
+<img src="/images/travels/3.jpg">
+<img src="/images/travels/4.jpg">
+<img src="/images/travels/5.jpg">
+<img src="/images/travels/6.jpg">
 </div>
-<br>There must be something truly magical about standing on stage to give a fantastic speech, which considerably lifts my spirits and energizes my entire body. If you desire to master a specific knowledge in depth, just give a prelection. If you can explain to others for complete understanding, you are already an expert. I really enjoy the accomplishment of imparting my knowledge to others, so what I strive for is to be **a student's favorite professor** at the [best universities in my hometown].
-
-[best universities in my hometown]:https://www.fzu.edu.cn/
+<br>I have always been deeply fascinated by exploring different places and experiencing diverse ways of life. Each journey has made me fall more in love with traveling, especially the sense of freedom and freshness it brings. From the bustling heart of Beijing to the sparkling blue coastline of Weihai, from the radiant sunrise over the shores of Tianjin Binhai to the starry night sky atop Mount Tai - every trip has taught me to embrace the world with a more open and curious mind. I enjoy capturing the scenery and stories along the way through photos and videos. These experiences have not only broadened my horizons but also taught me to appreciate the beauty of different cultures. And every time I travel, it feels like recharging myself - returning with renewed energy and optimism for life ahead. If you also love traveling, feel free to share your stories with me - maybe we can even plan an adventure together!
 
 
 <!-- ## Past Hobbies
