@@ -25,7 +25,7 @@ Following are the provincial-level awards:
 - May 2025: **Second Prize** in the Microcontroller Design and Development Track of the Lanqiao Cup National Software and Information Technology Professional Talent Competition<br>
 第十五届蓝桥杯全国软件与信息技术专业人才大赛单片机设计与开发赛道**二等奖**<br>
     - [*this is my award certificate*](https://tassel51.github.io/mypaper/competitions/lanqiaobei.jpg)
-<br>
+<br><br>
 
 - May 2025: **Second Prize** in the "Datang Cup" National College Students' New Generation Information and Communication Technology Competition<br>
 第十二届“大唐杯”全国大学生新一代信息通信技术竞赛**二等奖**<br>
