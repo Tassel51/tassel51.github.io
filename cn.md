@@ -6,7 +6,7 @@ title: 主页中文版
 
 ## 关于我
 
-<img src="https://caihanlin.com/backup/zzc(2025).JPG" class="floatpic">
+<img src="https://caihanlin.com/backup/zzc.JPG" class="floatpic">
 
 <br>首先感谢您的阅读。我是朱子琛，2005年生，河南洛阳人，政治面貌为预备党员。
 
