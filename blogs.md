@@ -17,11 +17,11 @@ title: Blogs
 
 <br>
 
-## Leave a Message 欢迎留言
+## Leave a Message 欢迎留言！
 
 <br>
 
-{% include disqus.html %} 
+<!-- {% include disqus.html %}  -->
 
 <br>
 
