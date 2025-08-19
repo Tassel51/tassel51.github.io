@@ -40,7 +40,7 @@ I previously enjoyed long-distance running, [vlog making](https://space.bilibili
 
 I have two dogs named "旺仔" and "叮当". They have been with our family since 2011, witnessing my entire growth process from childhood to adulthood, and have become one of the most important members of my family.
 
-<div class="second">
+<div class="third">
 <img src="/images/dogs1.JPG">
 <img src="/images/dogs2.JPG">
 </div>
