@@ -79,11 +79,11 @@ highlighter: rouge               # Code highlighter; Rouge is default in MM
 layout: single
 
 # # 设置页面内容宽度
-# page_width: 90%  # 或者使用像素值如：1200px
+page_width: 90%  # 或者使用像素值如：1200px
 
 # 或者使用 Minimal Mistakes 主题自带的宽度选项
 # 可选值： 'full', 'wide', 'narrow'
-masthead_width: wide
+# masthead_width: wide
 
 
 
