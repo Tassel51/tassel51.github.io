@@ -15,7 +15,7 @@ title: Awards
 
 - Jul 2025: **Second Prize** in the Final of the Northeast Division of the National College Students' Integrated Circuit Innovation and Entrepreneurship Competition 
  ( China College IC Competition )<br>
-全国大学生集成电路创新创业大赛东北分赛区决赛**二等奖**
+[全国大学生集成电路创新创业大赛](http://univ.ciciec.com/)东北分赛区决赛**二等奖**
 <br>
 <!-- br是换行的意思 -->
 
@@ -24,17 +24,17 @@ title: Awards
 Following are the provincial-level awards:
 
 - May 2025: **Second Prize** in the Microcontroller Design and Development Track of the Lanqiao Cup National Software and Information Technology Professional Talent Competition<br>
-第十五届蓝桥杯全国软件与信息技术专业人才大赛单片机设计与开发赛道**二等奖**<br>
+第十五届[蓝桥杯全国软件与信息技术专业人才大赛](https://dasai.lanqiao.cn/)单片机设计与开发赛道**二等奖**<br>
     - [*this is my award certificate*](https://tassel51.github.io/mypaper/competitions/lanqiaobei.jpg)
 <br><br>
 
 - May 2025: **Second Prize** in the "Datang Cup" National College Students' New Generation Information and Communication Technology Competition<br>
-第十二届“大唐杯”全国大学生新一代信息通信技术竞赛**二等奖**<br>
+第十二届[“大唐杯”全国大学生新一代信息通信技术竞赛](https://dtcup.dtxiaotangren.com/HomePage)**二等奖**<br>
     - [*this is my award certificate*](https://tassel51.github.io/mypaper/competitions/datangbei.jpg)
 <br><br>
 
 - May 2025: **Third Prize** in the China Collegiate Computer Design Competition<br>
-中国大学生计算机设计竞赛**三等奖**
+[中国大学生计算机设计竞赛](https://jsjds.blcu.edu.cn/)**三等奖**
   
 <br>
 
