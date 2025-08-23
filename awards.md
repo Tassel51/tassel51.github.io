@@ -31,7 +31,7 @@ Following are the provincial-level awards:
   - [*this is my award certificate*](https://tassel51.github.io/mypaper/competitions/datangbei.jpg)
     <br><br>
 - May 2025: **Third Prize** in the China Collegiate Computer Design Competition <br>
-  [中国大学生计算机设计竞赛](https://jsjds.blcu.edu.cn/)**三等奖**
+第十八届[中国大学生计算机设计竞赛](https://jsjds.blcu.edu.cn/)**三等奖**
 
 <br>
 
@@ -48,4 +48,4 @@ Following are the provincial-level awards:
 - Sep 2024：Northeastern University Outstanding Student Pacesetter <br>
   23-24学年东北大学优秀学生标兵
   <br>
-  
+
