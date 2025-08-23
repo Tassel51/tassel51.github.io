@@ -10,6 +10,7 @@ title: Blogs
 
 - [给即将上大二的同专业学弟学妹的建议](https://lx21vuim3s4.feishu.cn/mindnotes/YLL5brlngmzUPVnF8ZccLCmznEe)<br>
 - [数学建模比赛碎碎念](https://lx21vuim3s4.feishu.cn/mindnotes/OtAZb4lYXmarLwnexXjcknB8nYu)<br>
+- [美赛比赛论文的一些思路分享](/blogs/paper_thinking/comap25_thinking/index.html)<br>
 
 ### 2024
 
