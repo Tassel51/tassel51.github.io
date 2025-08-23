@@ -4,7 +4,7 @@ permalink: /blogs/paper_thinking/comap25_thinking/index.html
 title: 18yrs
 ---
 
-### 25美赛论文相关思考分享
+## 25美赛论文相关思考分享
 >以下内容谨代表我们当时比赛时的思考，如有解答不严谨处，还望指正谅解!
 
 <br>
