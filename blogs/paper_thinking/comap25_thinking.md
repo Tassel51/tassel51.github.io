@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /blogs/paper_thinking/comap25_thinking/index.html
-title: 18yrs
+title: 美赛思路分享
 ---
 
 ## 25美赛论文相关思考分享
