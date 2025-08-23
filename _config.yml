@@ -17,7 +17,7 @@ owner:
   avatar: zzc.jpg
   # bio: Dream big, stay positive, work hard, and enjoy the journey.
   email: 2775297866@qq.com
-  cv: https://caihanlin.com/file/CV-HanlinCAI.pdf
+  cv: https://tassel51.github.io/file/CV_CN.pdf
 
 
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
@@ -60,6 +60,8 @@ links:
     url: /blogs/
   - title: 中文
     url: /cn/
+  - title: 简历
+    url: https://tassel51.github.io/file/CV_CN.pdf
 
 
 # --------------------------------------------------
