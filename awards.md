@@ -40,9 +40,12 @@ Following are the provincial-level awards:
 - Sep 2024：**National Scholarship** (totally ¥10000)<br>
   23-24学年本科生国家奖学金 —— [Certificate](https://tassel51.github.io/honors/college/guojiang1.jpg)
   <br>
+
 - Sep 2024：Northeastern University Undergraduate **First-Class Scholarship** (totally ¥2000)<br>
   23-24学年东北大学一等奖学金
   <br>
+
 - Sep 2024：Northeastern University Outstanding Student Pacesetter <br>
   23-24学年东北大学优秀学生标兵
   <br>
+  
