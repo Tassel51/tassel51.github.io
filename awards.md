@@ -14,7 +14,7 @@ title: Awards
 - Jul 2025: **Second Prize** in the Final of the Northeast Division of the National College Students' Integrated Circuit Innovation and Entrepreneurship Competition
   ( China College IC Competition )<br>
   第九届[全国大学生集成电路创新创业大赛](http://univ.ciciec.com/)东北分赛区决赛**二等奖**
-  - [*award certificate*](https://tassel51.github.io/mypaper/competitions/jichaungsai.jpg)
+  - [*award certificate*](https://tassel51.github.io/mypaper/competitions/jichuangsai.jpg)
   <br><br>
 <!-- br是换行的意思 -->
 
