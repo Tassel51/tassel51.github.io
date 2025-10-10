@@ -35,7 +35,7 @@ Following are the provincial-level awards:
     <br><br>
 - Sept 2025: **Third Prize** in the CUMCM (Contemporary Undergraduate Mathematical Contest in Modeling) <br>
 2025年[“高教社杯”全国大学生数学建模竞赛](https://www.mcm.edu.cn/)**三等奖**
-  - [*our paper*](https://tassel51.github.io/mypaper/modeling/CUMCM25.pdf)
+- [*our paper*](https://tassel51.github.io/mypaper/modeling/CUMCM25.pdf)
 <br>
 
 ## Scholarships & Honors
