@@ -52,3 +52,10 @@ Following are the provincial-level awards:
   23-24学年东北大学优秀学生标兵
   <br>
 
+- Sep 2025：Northeastern University Huawei Scholarship (totally ¥8000)<br>
+  东北大学华为奖学金
+  <br>
+
+- Sep 2025：Northeastern University Undergraduate **Second-Class Scholarship** (totally ¥1000) <br>
+  24-25学年东北大学二等奖学金
+  <br>
