@@ -59,3 +59,7 @@ Following are the provincial-level awards:
 - Sep 2025：Northeastern University Undergraduate **Second-Class Scholarship** (totally ¥1000) <br>
   24-25学年东北大学二等奖学金
   <br>
+
+- Sep 2025：Northeastern University Outstanding Student<br>
+  24-25学年东北大学优秀学生
+  <br>
