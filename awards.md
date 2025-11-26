@@ -32,6 +32,7 @@ Following are the provincial-level awards:
     <br><br>
 - May 2025: **Third Prize** in the China Collegiate Computer Design Competition <br>
 第十八届[中国大学生计算机设计竞赛](https://jsjds.blcu.edu.cn/)**三等奖**
+  - [*award certificate*](https://tassel51.github.io/mypaper/competitions/jisuanjisheji.jpg)
     <br><br>
 - Sept 2025: **Third Prize** in the CUMCM (Contemporary Undergraduate Mathematical Contest in Modeling) <br>
 2025年[“高教社杯”全国大学生数学建模竞赛](https://www.mcm.edu.cn/)**三等奖**
