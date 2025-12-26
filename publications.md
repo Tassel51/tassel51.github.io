@@ -16,7 +16,7 @@ title: Publications
 ---
 
 ## Early Project
- - [From Models to Medals: The Winning Formula Behind the Data](https://tassel51.github.io/mypaper/modeling/comap25.pdf)<br>**Zichen Zhu**, Dongchen Wu, Jiaxin Liu. <br>Submitted to [COMAP'S Mathematical Contest of Modeling](https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/results/2025_MCM_Problem_C_Results.pdf).<br>
+ - [From Models to Medals: The Winning Formula Behind the Data](https://tassel51.github.io/mypaper/modeling/comap25.pdf)<br>Jiaxin Liu, Dongchen Wu,**Zichen Zhu**†. <br>Submitted to [COMAP'S Mathematical Contest of Modeling](https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/results/2025_MCM_Problem_C_Results.pdf).<br>
 
 
 ---
