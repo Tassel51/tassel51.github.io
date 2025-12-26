@@ -4,7 +4,7 @@ layout: page
 
 # About Me
 
-<img src="images/thegreatwall1.jpg" class="floatpic">
+<img src="images/129singing.jpg" class="floatpic">
 
 Here is **Zichen Zhu (Chris, 朱子琛)**.<br>
 
