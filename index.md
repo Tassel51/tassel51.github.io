@@ -17,8 +17,9 @@ My academic journey is driven by a strong interest in bridging theoretical knowl
 ## Research Interests
 
 - [Internet of Everything](https://scholar.google.com/citations?view_op=search_authors&hl=zh-CN&mauthors=label:internet_of_everything)
-- Wireless Communication
-- Embedded Technology
+- Embodied Intelligence
+- Multimodal Large Language Model
+- Vision-Language-Action Model
 - Object Detection and Recognition
 
 ---
