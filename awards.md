@@ -54,7 +54,7 @@ Following are the provincial-level awards:
   <br>
 
 - Sep 2025：Northeastern University Huawei Scholarship (totally ¥8000)<br>
-  东北大学华为奖学金
+  东北大学华为奖学金 —— —— [Certificate](https://tassel51.github.io/honors/college/huaweijiangxuejin.jpg)
   <br>
 
 - Sep 2025：Northeastern University Undergraduate **Second-Class Scholarship** (totally ¥1000) <br>
