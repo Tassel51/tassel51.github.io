@@ -4,7 +4,7 @@ layout: page
 
 # About Me
 
-<img src="images/129singing.jpg" class="floatpic">
+<img src="images/hengdao.jpg" class="floatpic">
 
 Here is **Zichen Zhu (Chris, 朱子琛)**.<br>
 
@@ -26,7 +26,7 @@ My academic journey is driven by a strong interest in bridging theoretical knowl
 
 ## News and Updates
 
-- **Aug 2023：** I am very glad to have received the admission notice for the Electronic Information program at Northeastern University! See you in Shenyang!
+- **Aug 2023：** I am very glad to have received the admission notice for the Electronic Information Engineering at Northeastern University! See you in Shenyang!
 
 <br>
 
