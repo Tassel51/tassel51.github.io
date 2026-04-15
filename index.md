@@ -23,9 +23,9 @@ My academic journey is driven by a strong interest in bridging theoretical knowl
 
 ## Projects
 
-- [基于数据结构理论开发的综合性校园（NEU）服务可视化系统（开源）](https://github.com/Tassel51/Smart-Campus-Life-Assistant.git)
-- [“灵犀”-多模态-双臂-移动机器人（闭源）](https://tassel51.github.io/blogs/robot.md)
-- [Language-Modeling-from-Scratch-based-on-Stanford-CS336 自己搭建transformer（开源）](https://github.com/Tassel51/Language-Modeling-from-Scratch-based-on-Stanford-CS336)
+- [基于数据结构理论开发的综合性校园（NEU）服务可视化系统](https://github.com/Tassel51/Smart-Campus-Life-Assistant.git)
+- [“灵犀”-多模态-双臂-移动机器人](https://tassel51.github.io/blogs/robot.md)
+- [Language-Modeling-from-Scratch-based-on-Stanford-CS336 自己搭建transformer](https://github.com/Tassel51/Language-Modeling-from-Scratch-by-Tassel51)
 
 
 
