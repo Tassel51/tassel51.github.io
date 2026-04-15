@@ -4,9 +4,9 @@ permalink: /publications/index.html
 title: Publications
 ---
 
-> (†: equal contribution, ~: corresponding author)
+<!-- > (†: equal contribution, ~: corresponding author) -->
 
-## Journal Paper
+<!-- ## Journal Paper -->
 
 <!-- - [Graph Representation-based Model Poisoning on Federated Large Language Models](https://arxiv.org/abs/2507.01694)<br>**Hanlin Cai**, Houtianfu Wang, Haofan Dong, Kai Li~, Ozgur B. Akan~<br>Submitted to IEEE Communications Magazine.<br> -->
 
@@ -21,7 +21,8 @@ title: Publications
 
 ---
 
-## Degree Thesis
+## Software Copyright
+ - [仪捷通实验室管理平台 V1.0](https://tassel51.github.io/honors/college/softwares/仪捷通实验室管理平台_证书.pdf)，登记号：2026SR0226376，第一发明人，2026年2月授权
 
 
 ---
