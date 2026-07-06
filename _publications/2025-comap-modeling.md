@@ -5,7 +5,7 @@ selected: true
 pub: "COMAP Mathematical Contest in Modeling (MCM/ICM)"
 cover: /assets/images/covers/comap-paper.png
 pub_date: "2025"
-pub_last: '<span class="badge badge-pill badge-publication badge-danger">Outstanding Winner (Top 0.2%)</span>'
+pub_last: '<span class="badge badge-pill badge-publication badge-danger">🏅 Outstanding Winner (Top 0.2%)</span>'
 abstract: >-
   An analysis of data-driven modeling approaches and the winning strategies behind them. Awarded Outstanding Winner in COMAP MCM/ICM 2025, ranking in the top 0.2% of all participating teams worldwide.
 authors:
