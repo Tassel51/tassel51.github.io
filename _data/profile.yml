@@ -68,25 +68,44 @@ experience:
   date: Sep. 2024 - Sep. 2025
 
 awards:
-- name: COMAP MCM/ICM Outstanding Winner (Top 0.2%)
-  date: 2025
-- name: National Scholarship (¥10,000)
-  date: 2024
-- name: Huawei Scholarship (¥8,000)
-  date: 2025
+- name: >-
+    🏅 COMAP MCM/ICM Outstanding Winner (Top 0.16%)
+    <a href="https://tassel51.github.io/mypaper/modeling/comap25.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
+    <a href="https://tassel51.github.io/mypaper/modeling/2515235.pdf" target="_blank"><i class="fas fa-award"></i></a>
+  date: Jan 2025
+- name: >-
+    2nd Prize, National College Students' IC Innovation & Entrepreneurship Competition (Northeast Division)
+    <a href="https://tassel51.github.io/mypaper/competitions/jichuangsai.jpg" target="_blank"><i class="fas fa-award"></i></a>
+  date: Jul 2025
+- name: >-
+    2nd Prize, Lanqiao Cup National Software & IT Talent Competition — MCU Design
+    <a href="https://tassel51.github.io/mypaper/competitions/lanqiaobei.jpg" target="_blank"><i class="fas fa-award"></i></a>
+  date: May 2025
+- name: >-
+    2nd Prize, Datang Cup National ICT Competition
+    <a href="https://tassel51.github.io/mypaper/competitions/datangbei.jpg" target="_blank"><i class="fas fa-award"></i></a>
+  date: May 2025
+- name: >-
+    3rd Prize, China Collegiate Computer Design Competition
+    <a href="https://tassel51.github.io/mypaper/competitions/jisuanjisheji.jpg" target="_blank"><i class="fas fa-award"></i></a>
+  date: May 2025
+- name: >-
+    3rd Prize, CUMCM Mathematical Contest in Modeling
+    <a href="https://tassel51.github.io/mypaper/modeling/CUMCM25.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
+  date: Sep 2025
+- name: >-
+    National Scholarship (¥10,000)
+    <a href="https://tassel51.github.io/honors/college/guojiang1.jpg" target="_blank"><i class="fas fa-award"></i></a>
+  date: Sep 2024
+- name: >-
+    Huawei Scholarship (¥8,000)
+    <a href="https://tassel51.github.io/honors/college/huaweijiangxuejin.jpg" target="_blank"><i class="fas fa-award"></i></a>
+  date: Sep 2025
 - name: NEU First-Class Scholarship (¥2,000)
-  date: 2024
+  date: Sep 2024
+- name: NEU Second-Class Scholarship (¥1,000)
+  date: Sep 2025
 - name: NEU Outstanding Student Pacesetter
-  date: 2024
-- name: National College IC Competition — 2nd Prize (Northeast Division)
-  date: 2025
-- name: Lanqiao Cup MCU Design — 2nd Prize (Provincial)
-  date: 2025
-- name: Datang Cup ICT Competition — 2nd Prize (Provincial)
-  date: 2025
+  date: Sep 2024
 - name: NEU Outstanding Student
-  date: 2025
-- name: China Collegiate Computer Design Competition — 3rd Prize
-  date: 2025
-- name: CUMCM Mathematical Contest in Modeling — 3rd Prize
-  date: 2025
+  date: Sep 2025
