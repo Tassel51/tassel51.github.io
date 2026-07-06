@@ -9,8 +9,8 @@ container_class: container-xl
 
 <div class="row">
     {% for item in cards %}
-    <div class="col-lg-4 col-md-6 p-2">
-        <div class="card border-0 shadow-sm bg-white">
+    <div class="col-lg-4 col-md-6 p-2 d-flex">
+        <div class="card border-0 shadow-sm bg-white w-100">
             <h5 class="card-header bg-white border-bottom pl-3 pt-3 pb-2">{{ item.group }}</h5>
             {{ item.content }}
         </div>
