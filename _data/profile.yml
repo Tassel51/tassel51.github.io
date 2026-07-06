@@ -32,13 +32,12 @@ short_bio: >-
   </p>
 
   <h6 class="mt-4"><i class="fas fa-lightbulb"></i> Research Interests</h6>
-  <ul>
-    <li><strong>Internet of Everything:</strong> Interconnection of devices, systems, and services beyond traditional machine-to-machine communication.</li>
-    <li><strong>Embodied Intelligence:</strong> Integrating AI with physical systems for real-world interaction and learning.</li>
-    <li><strong>Multimodal Large Language Models:</strong> Extending LLMs to process and understand multiple data modalities.</li>
-    <li><strong>Vision-Language-Action Models:</strong> Bridging visual perception, language understanding, and robotic action.</li>
-    <li><strong>Object Detection and Recognition:</strong> Computer vision techniques for identifying and localizing objects in complex scenes.</li>
-  </ul>
+  <p>
+    <span class="badge badge-light mr-1 mb-1">Internet of Everything</span>
+    <span class="badge badge-light mr-1 mb-1">Embodied Intelligence</span>
+    <span class="badge badge-light mr-1 mb-1">Multimodal Large Language Models</span>
+    <span class="badge badge-light mr-1 mb-1">Model Compression & Quantization</span>
+  </p>
 
   <h6 class="mt-3"><i class="fas fa-rocket"></i> Projects</h6>
   <ul>
