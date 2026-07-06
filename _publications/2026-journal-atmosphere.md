@@ -6,6 +6,9 @@ pub: "Atmosphere"
 cover: /assets/images/covers/atmosphere-picture.jpg
 pub_post: ', 17(6), 574'
 pub_date: "2026"
+pub_last: >-
+  <span class="badge badge-pill badge-publication badge-success">SCIE</span>
+  <span class="badge badge-pill badge-publication badge-info">JCR Q2</span>
 abstract: >-
   A comparative analysis of ionospheric effects during the geomagnetic storm on 1 January 2025, utilizing data from Learmonth and Wake Island observatories to understand storm-time ionospheric variations.
 authors:
