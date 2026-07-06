@@ -4,7 +4,7 @@
     <h6 class="p-3 mb-0 border-bottom border-gray">📰 News</h6>
     <div class="px-3 py-1 small" style="max-height: 220px; overflow-y: auto;">
         {% for item in news_items %}
-        <div class="d-flex py-1 {% unless forloop.first %}border-top border-gray{% endunless %}">
+        <div class="d-flex py-1 ">
             <span class="text-muted mr-2 no-break" style="min-width: 52px;">{{ item.date | date: "%b %d, %Y" }}</span>
             <span>{{ item.title }}</span>
         </div>
