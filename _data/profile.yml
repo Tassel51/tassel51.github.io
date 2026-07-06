@@ -1,0 +1,94 @@
+primary_name: "Zichen Zhu"
+secondary_name: "(Chris Zhu / 朱子琛)"
+navbar_name: "Zichen Zhu"
+
+positions:
+- name: Undergraduate Student
+- name: School of Computer Science and Engineering
+  logo: /assets/images/badges/NEU_logo.png
+- name: Northeastern University, China
+
+email: "2775297866@qq.com"
+cv_link: /file/CV_CN.pdf
+github: tassel51
+# gscholar: xFmQpf4AAAAJ  # Add your Google Scholar ID here when available
+zhihu: https://www.zhihu.com/people/tassel51
+bilibili: 440972934
+
+short_bio_text_justify: true
+short_bio: >-
+  <p>
+    I am an undergraduate student majoring in <strong>Communication Engineering</strong> at the
+    School of <a href="http://www.cse.neu.edu.cn/" target="_blank">Computer Science and Engineering</a>,
+    <a href="https://www.neu.edu.cn/" target="_blank">Northeastern University, China</a>.
+  </p>
+  <p>
+    My academic journey is driven by a strong interest in bridging theoretical knowledge with practical
+    innovation in modern communication technologies, as well as a profound curiosity for developing,
+    applying, and integrating modern artificial intelligence (AI)-related technologies with my academic discipline.
+  </p>
+  <p>
+    I am expected to complete my undergraduate studies by <strong>June 2027</strong> and am actively seeking
+    opportunities for master's or Ph.D. programs.
+  </p>
+
+  <h6 class="mt-4"><i class="fas fa-lightbulb"></i> Research Interests</h6>
+  <ul>
+    <li><strong>Internet of Everything:</strong> Interconnection of devices, systems, and services beyond traditional machine-to-machine communication.</li>
+    <li><strong>Embodied Intelligence:</strong> Integrating AI with physical systems for real-world interaction and learning.</li>
+    <li><strong>Multimodal Large Language Models:</strong> Extending LLMs to process and understand multiple data modalities.</li>
+    <li><strong>Vision-Language-Action Models:</strong> Bridging visual perception, language understanding, and robotic action.</li>
+    <li><strong>Object Detection and Recognition:</strong> Computer vision techniques for identifying and localizing objects in complex scenes.</li>
+  </ul>
+
+  <h6 class="mt-3"><i class="fas fa-rocket"></i> Projects</h6>
+  <ul>
+    <li><a href="https://github.com/Tassel51/Smart-Campus-Life-Assistant.git" target="_blank"><strong>Smart Campus Life Assistant</strong></a> — A comprehensive NEU campus service visualization system built on data structure theory.</li>
+    <li><a href="https://tassel51.github.io/blogs/robot.md" target="_blank"><strong>"Lingxi" — Multimodal Dual-Arm Mobile Robot</strong></a> — An embodied intelligence platform integrating vision, language, and manipulation.</li>
+    <li><a href="https://github.com/Tassel51/Language-Modeling-from-Scratch-by-Tassel51" target="_blank"><strong>Language Modeling from Scratch</strong></a> — Building a transformer architecture from the ground up, inspired by Stanford CS336.</li>
+  </ul>
+
+portrait_url: /images/zzc.jpg
+portrait_caption: Zichen Zhu
+
+education:
+- name: Northeastern University, China
+  logo: /assets/images/badges/NEU_logo.svg
+  position: >-
+    B.E. in Communication Engineering<br/>
+    School of Computer Science and Engineering
+  date: Sep. 2023 - Jun. 2027 (Expected)
+
+experience:
+- name: Northeastern University
+  logo: /assets/images/badges/NEU_logo.svg
+  position: Class Monitor, Communication Engineering 2301
+  date: Sep. 2023 - Present
+- name: Northeastern University
+  logo: /assets/images/badges/NEU_logo.svg
+  position: Growth & Development Advisor, Electronic Information 2404
+  date: Sep. 2024 - Sep. 2025
+
+awards:
+- name: COMAP MCM/ICM Outstanding Winner (Top 0.2%)
+  date: 2025
+- name: National Scholarship (¥10,000)
+  date: 2024
+- name: Huawei Scholarship (¥8,000)
+  date: 2025
+- name: NEU First-Class Scholarship (¥2,000)
+  date: 2024
+- name: NEU Outstanding Student Pacesetter
+  date: 2024
+- name: National College IC Competition — 2nd Prize (Northeast Division)
+  date: 2025
+- name: Lanqiao Cup MCU Design — 2nd Prize (Provincial)
+  date: 2025
+- name: Datang Cup ICT Competition — 2nd Prize (Provincial)
+  date: 2025
+- name: NEU Outstanding Student
+  date: 2025
+- name: China Collegiate Computer Design Competition — 3rd Prize
+  date: 2025
+- name: CUMCM Mathematical Contest in Modeling — 3rd Prize
+  date: 2025
