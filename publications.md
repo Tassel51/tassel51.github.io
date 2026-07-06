@@ -13,6 +13,13 @@ title: Publications
 
 ## Conference Paper
 
+
+## Journal Article
+
+* [Effects of the Geomagnetic Storm on the Ionosphere on 1 January 2025: A Comparative Analysis of Data from Learmonth and Wake Island](https://www.mdpi.com/2073-4433/17/6/574)  
+Lin Wang, **Zichen Zhu**, Bojian Shi, Pengxin Zuo, Weixian Wang, Weiqiang Gu, Yuxi Yang, and Yuhan Shan.  
+*Atmosphere*, 17(6), 574, 2026. DOI: [10.3390/atmos17060574](https://doi.org/10.3390/atmos17060574).
+
 ---
 
 ## Early Project
