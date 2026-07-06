@@ -10,7 +10,7 @@ abstract: >-
   An analysis of data-driven modeling approaches and the winning strategies behind them. Awarded Outstanding Winner in COMAP MCM/ICM 2025, ranking in the top 0.16% of all participating teams worldwide.
 authors:
   - Zichen Zhu*
-  - Jiaxin Liu*
+  - Jiaxin Liu
   - Dongchen Wu*
 links:
   Paper: https://tassel51.github.io/mypaper/modeling/comap25.pdf
