@@ -3,7 +3,7 @@ title: "From Models to Medals: The Winning Formula Behind the Data"
 date: 2025-01-27 00:01:00 +0800
 selected: true
 pub: '<a href="https://www.comap.com/contests/mcm-icm" target="_blank">COMAP Mathematical Contest in Modeling (MCM/ICM)</a>'
-cover: /assets/images/covers/comap-paper.png
+cover: /assets/images/covers/comap-paper.jpg
 pub_date: "2025"
 pub_last: '<span class="badge badge-pill badge-publication badge-danger"><a href="https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/results/" target="_blank" class="text-white">🏅 Outstanding Winner (Top 0.16%)</a></span>'
 abstract: >-

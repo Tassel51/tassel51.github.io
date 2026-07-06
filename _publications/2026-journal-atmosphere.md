@@ -3,7 +3,7 @@ title: "Effects of the Geomagnetic Storm on the Ionosphere on 1 January 2025: A 
 date: 2026-06-01 00:01:00 +0800
 selected: false
 pub: "Atmosphere"
-cover: /assets/images/covers/atmosphere-picture.png
+cover: /assets/images/covers/atmosphere-picture.jpg
 pub_post: ', 17(6), 574'
 pub_date: "2026"
 abstract: >-
