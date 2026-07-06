@@ -5,7 +5,6 @@ navbar_name: "Zichen Zhu"
 positions:
 - name: Undergraduate Student
 - name: School of Computer Science and Engineering
-  logo: /assets/images/badges/NEU_logo.png
 - name: Northeastern University, China
 
 email: "2775297866@qq.com"
@@ -54,9 +53,8 @@ portrait_caption: Zichen Zhu
 education:
 - name: Northeastern University, China
   logo: /assets/images/badges/NEU_logo.svg
-  position: >-
-    B.E. in Communication Engineering<br/>
-    School of Computer Science and Engineering
+  dept: School of Computer Science and Engineering
+  position: B.E. in Communication Engineering
   date: Sep. 2023 - Jun. 2027 (Expected)
 
 experience:
