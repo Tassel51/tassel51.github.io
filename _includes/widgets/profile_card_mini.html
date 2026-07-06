@@ -98,6 +98,14 @@
                         {% endif %}
                     </div>
                 </div>
+
+                {% if site.data.profile.cv_link %}
+                <div class="row pt-2 small">
+                    <div class="col text-center">
+                        <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a>
+                    </div>
+                </div>
+                {% endif %}
             </div>
         </div>
     </div>
