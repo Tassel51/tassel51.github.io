@@ -52,18 +52,18 @@ portrait_caption: Zichen Zhu
 
 education:
 - name: Northeastern University, China
-  logo: /assets/images/badges/NEU_logo.svg
+  logo: /assets/images/badges/NEU_logo.png
   dept: School of Computer Science and Engineering
   position: B.E. in Communication Engineering
   date: Sep. 2023 - Jun. 2027 (Expected)
 
 experience:
 - name: Northeastern University
-  logo: /assets/images/badges/NEU_logo.svg
+  logo: /assets/images/badges/NEU_logo.png
   position: Class Monitor, Communication Engineering 2301
   date: Sep. 2023 - Present
 - name: Northeastern University
-  logo: /assets/images/badges/NEU_logo.svg
+  logo: /assets/images/badges/NEU_logo.png
   position: Growth & Development Advisor, Electronic Information 2404
   date: Sep. 2024 - Sep. 2025
 
