@@ -91,3 +91,11 @@ div.lazy {
 .email-text {
     font-family: Source Code Pro, monospace;
 }
+
+.card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.12) !important;
+}
