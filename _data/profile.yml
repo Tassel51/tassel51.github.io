@@ -40,11 +40,11 @@ short_bio: >-
   </p>
 
   <h6 class="mt-3"><i class="fas fa-rocket"></i> Projects</h6>
-  <ul>
-    <li><a href="https://github.com/Tassel51/Smart-Campus-Life-Assistant.git" target="_blank"><strong>Smart Campus Life Assistant</strong></a> — A comprehensive NEU campus service visualization system built on data structure theory.</li>
-    <li><a href="https://tassel51.github.io/blogs/robot.md" target="_blank"><strong>"Lingxi" — Multimodal Dual-Arm Mobile Robot</strong></a> — An embodied intelligence platform integrating vision, language, and manipulation.</li>
-    <li><a href="https://github.com/Tassel51/Language-Modeling-from-Scratch-by-Tassel51" target="_blank"><strong>Language Modeling from Scratch</strong></a> — Building a transformer architecture from the ground up, inspired by Stanford CS336.</li>
-  </ul>
+  <div class="small text-muted">
+    <p class="mb-1"><a href="https://github.com/Tassel51/Smart-Campus-Life-Assistant.git" target="_blank"><strong>Smart Campus Life Assistant</strong></a> — A comprehensive NEU campus service visualization system built on data structure theory.</p>
+    <p class="mb-1"><a href="https://tassel51.github.io/blogs/robot.md" target="_blank"><strong>"Lingxi" — Multimodal Dual-Arm Mobile Robot</strong></a> — An embodied intelligence platform integrating vision, language, and manipulation.</p>
+    <p class="mb-1"><a href="https://github.com/Tassel51/Language-Modeling-from-Scratch-by-Tassel51" target="_blank"><strong>Language Modeling from Scratch</strong></a> — Building a transformer architecture from the ground up, inspired by Stanford CS336.</p>
+  </div>
 
 portrait_url: /images/zzc.jpg
 portrait_caption: Zichen Zhu
