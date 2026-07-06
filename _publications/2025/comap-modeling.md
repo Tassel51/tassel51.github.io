@@ -1,11 +1,12 @@
 ---
-title: "From Models to Medals: The Winning Formula Behind the Data"
-date: 2025-01-15 00:01:00 +0800
-selected: true
-pub: "COMAP Mathematical Contest in Modeling (MCM)"
-pub_date: "2025"
+title:          "From Models to Medals: The Winning Formula Behind the Data"
+date:           2025-01-27 00:01:00 +0800
+selected:       true
+pub:            "COMAP Mathematical Contest in Modeling (MCM/ICM)"
+pub_date:       "2025"
+pub_last:       '<span class="badge badge-pill badge-publication badge-danger">Outstanding Winner (Top 0.2%)</span>'
 abstract: >-
-  Outstanding Winner paper (Top 0.2%) in the COMAP Mathematical Contest in Modeling 2025. An analysis of data-driven modeling approaches and the winning strategies behind them.
+  An analysis of data-driven modeling approaches and the winning strategies behind them. Awarded Outstanding Winner in COMAP MCM/ICM 2025, ranking in the top 0.2% of all participating teams worldwide.
 authors:
 - Zichen Zhu*
 - Jiaxin Liu*

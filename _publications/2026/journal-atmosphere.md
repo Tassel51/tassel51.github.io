@@ -1,10 +1,10 @@
 ---
-title: "Effects of the Geomagnetic Storm on the Ionosphere on 1 January 2025: A Comparative Analysis of Data from Learmonth and Wake Island"
-date: 2026-06-01 00:01:00 +0800
-selected: true
-pub: "Atmosphere"
-pub_date: "2026"
-pub_vol: "17(6), 574"
+title:          "Effects of the Geomagnetic Storm on the Ionosphere on 1 January 2025: A Comparative Analysis of Data from Learmonth and Wake Island"
+date:           2026-06-01 00:01:00 +0800
+selected:       true
+pub:            "Atmosphere"
+pub_post:       ', 17(6), 574'
+pub_date:       "2026"
 abstract: >-
   A comparative analysis of ionospheric effects during the geomagnetic storm on 1 January 2025, utilizing data from Learmonth and Wake Island observatories to understand storm-time ionospheric variations.
 authors:
