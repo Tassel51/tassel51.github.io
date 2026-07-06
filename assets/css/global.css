@@ -92,10 +92,10 @@ div.lazy {
     font-family: Source Code Pro, monospace;
 }
 
-.card, .shadow-sm, .shadow {
+.card, .shadow-sm:not(.navbar), .shadow {
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.card:hover, .shadow-sm:hover, .shadow:hover {
+.card:hover, .shadow-sm:not(.navbar):hover, .shadow:hover {
     transform: translateX(5px);
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.12) !important;
 }
