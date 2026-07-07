@@ -5,7 +5,12 @@
 
 <div class="border-bottom border-gray p-3 {% if hide_bottom_border %}border-0{% endif %}">
     <div class="row">
-        <div class="col-12">
+        {% if item.cover %}
+        <div class="col-md-3 col-xl-2 mb-2 mb-md-0">
+            <img src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="w-100 rounded" style="max-height: 120px; object-fit: cover;">
+        </div>
+        {% endif %}
+        <div class="{% if item.cover %}col-md-9 col-xl-10{% else %}col-12{% endif %}">
             <h5 class="mb-2">
                 <a href="{{ item.url | relative_url }}" class="text-dark text-decoration-none">
                     {{ item.title }}
@@ -24,10 +29,10 @@
             </div>
             <div class="text-muted small">
                 {% if item.excerpt %}
-                    {{ item.excerpt | strip_html | truncate: 500 }}
+                    {{ item.excerpt | strip_html | truncate: 300 }}
                 {% else %}
-                    {{ item.content | strip_html | truncate: 500 }}
-                {% endif %} 
+                    {{ item.content | strip_html | truncate: 300 }}
+                {% endif %}
             </div>
             <div class="mt-2">
                 <a href="{{ item.url | relative_url }}">

@@ -2,6 +2,7 @@
 layout: blog_post
 title: "Behind Our COMAP MCM Outstanding Winner Paper"
 date: 2025-02-01 00:00:00 +0800
+cover: /assets/images/covers/comap-paper.jpg
 tags: [Mathematical Modeling, COMAP MCM]
 ---
 In January 2025, our team of three participated in the COMAP Mathematical Contest in Modeling (MCM/ICM) and was awarded the **Outstanding Winner** designation — ranking in the top 0.16% of over 30,000 participating teams worldwide. This post shares the story behind our paper *"From Models to Medals: The Winning Formula Behind the Data."*
