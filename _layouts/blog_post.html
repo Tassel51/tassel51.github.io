@@ -73,28 +73,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js" crossorigin="anonymous"></script>
     <script>
-        // Convert kramdown bracket math delimiters back to $$ for KaTeX
-        (function() {
-            function walk(n) {
-                if (n.nodeType === 3) {
-                    n.nodeValue = n.nodeValue.replace(/\\\[/g, '$$$$').replace(/\\\]/g, '$$$$');
-                    n.nodeValue = n.nodeValue.replace(/\\\(/g, '$').replace(/\\\)/g, '$');
-                } else if (n.nodeType === 1 && !/^(script|style|code|pre)$/i.test(n.tagName)) {
-                    for (var c = n.firstChild; c; c = c.nextSibling) walk(c);
-                }
-            }
-            walk(document.body);
-        })();
-
-        renderMathInElement(document.body, {
-          delimiters: [
-              {left: '$$', right: '$$', display: true},
-              {left: '$', right: '$', display: false}
-          ],
-          throwOnError : false
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+              delimiters: [
+                  {left: '$$', right: '$$', display: true},
+                  {left: '$', right: '$', display: false}
+              ],
+              throwOnError : false
+            });
+            Prism.highlightAll();
         });
-
-        Prism.highlightAll();
     </script>
     <script src="{{ '/assets/js/blog.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/common.js' | relative_url }}"></script>
