@@ -75,10 +75,16 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             // Convert kramdown brackets back to $$ delimiters for KaTeX
-            var html = document.body.innerHTML;
-            html = html.replace(/\\\[/g, '$$').replace(/\\\]/g, '$$');
-            html = html.replace(/\\\(/g, '$').replace(/\\\)/g, '$');
-            document.body.innerHTML = html;
+            (function walk(node) {
+                if (node.nodeType === 3) {
+                    node.nodeValue = node.nodeValue.replace(/\\\[/g, '$$').replace(/\\\]/g, '$$');
+                    node.nodeValue = node.nodeValue.replace(/\\\(/g, '$').replace(/\\\)/g, '$');
+                } else if (node.nodeType === 1 && !/^(script|style|code|pre)$/i.test(node.tagName)) {
+                    for (var i = 0; i < node.childNodes.length; i++) {
+                        walk(node.childNodes[i]);
+                    }
+                }
+            })(document.body);
 
             renderMathInElement(document.body, {
               delimiters: [
