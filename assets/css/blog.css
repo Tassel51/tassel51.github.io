@@ -198,6 +198,24 @@ h1, h2, h3, h4, h5, h6,
         display: block;
     }
 }
+@media (max-width: 991px) {
+    .blog-layout-wrapper {
+        flex-direction: column;
+    }
+    .blog-toc-sidebar {
+        display: block;
+        width: 100%;
+        order: -1;
+        margin-bottom: 1rem;
+    }
+    .blog-toc-nav {
+        position: static;
+        max-height: none;
+        border-left: none;
+        border-bottom: 2px solid #f0f0f0;
+        padding: 0 0 0.5rem 0;
+    }
+}
 
 /* Blog Table of Contents */
 .blog-toc-nav {
