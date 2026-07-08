@@ -73,7 +73,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js" crossorigin="anonymous"></script>
     <script>
-        // Convert kramdown bracket math delimiters to $$/$
+        // Step 1: fix kramdown's <em> from underscores inside math
+        (function unwrapEm(n) {
+            if (n.nodeType === 1 && n.tagName === 'EM') {
+                // Replace <em>text</em> with _text_
+                var replacement = document.createTextNode('_' + n.textContent + '_');
+                n.parentNode.replaceChild(replacement, n);
+            } else if (n.nodeType === 1 && !/^(script|style|code|pre)$/i.test(n.tagName)) {
+                var c = n.firstChild;
+                while (c) { var next = c.nextSibling; unwrapEm(c); c = next; }
+            }
+        })(document.body);
+
+        // Step 2: convert kramdown bracket delimiters \[ \] \( \) back to $$ and $
         (function walk(n) {
             if (n.nodeType === 3) {
                 n.nodeValue = n.nodeValue.replace(/\\\[/g, '$$$$').replace(/\\\]/g, '$$$$');
