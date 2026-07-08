@@ -74,12 +74,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js" crossorigin="anonymous"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            renderMathInElement(document.body, {
-              delimiters: [
-                  {left: '$$', right: '$$', display: true},
-                  {left: '$', right: '$', display: false}
-              ],
-              throwOnError : false
+            // Render kramdown math blocks with KaTeX
+            document.querySelectorAll('script[type="math/tex"]').forEach(function(el) {
+                var display = el.type === 'math/tex; mode=display';
+                var tex = el.textContent;
+                var span = document.createElement('span');
+                try {
+                    katex.render(tex, span, { displayMode: display, throwOnError: false });
+                    el.parentNode.replaceChild(span, el);
+                } catch(e) {
+                    span.textContent = tex;
+                    el.parentNode.replaceChild(span, el);
+                }
             });
             Prism.highlightAll();
         });
