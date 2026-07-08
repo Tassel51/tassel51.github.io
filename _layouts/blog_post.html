@@ -74,18 +74,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js" crossorigin="anonymous"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // Convert kramdown brackets back to $$ delimiters for KaTeX
-            (function walk(node) {
-                if (node.nodeType === 3) {
-                    node.nodeValue = node.nodeValue.replace(/\\\[/g, '$$$$').replace(/\\\]/g, '$$$$');
-                    node.nodeValue = node.nodeValue.replace(/\\\(/g, '$').replace(/\\\)/g, '$');
-                } else if (node.nodeType === 1 && !/^(script|style|code|pre)$/i.test(node.tagName)) {
-                    for (var i = 0; i < node.childNodes.length; i++) {
-                        walk(node.childNodes[i]);
-                    }
-                }
-            })(document.body);
-
             renderMathInElement(document.body, {
               delimiters: [
                   {left: '$$', right: '$$', display: true},
