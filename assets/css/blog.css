@@ -135,7 +135,7 @@
 
 /* Math formula styling */
 .katex-display {
-    margin: 1.5rem 0;
+    margin: 0.75rem 0;
     text-align: center;
     overflow-x: auto;
     overflow-y: hidden;
@@ -159,8 +159,8 @@
 
 /* Ensure proper spacing around math formulas */
 .blog-content .katex-display {
-    margin: 2rem 0;
-    padding: 1rem 0;
+    margin: 0.75rem 0;
+    padding: 0;
 }
 
 /* Inline math styling */
