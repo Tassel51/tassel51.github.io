@@ -77,7 +77,7 @@
             // Convert kramdown brackets back to $$ delimiters for KaTeX
             (function walk(node) {
                 if (node.nodeType === 3) {
-                    node.nodeValue = node.nodeValue.replace(/\\\[/g, '$$').replace(/\\\]/g, '$$');
+                    node.nodeValue = node.nodeValue.replace(/\\\[/g, '$$$$').replace(/\\\]/g, '$$$$');
                     node.nodeValue = node.nodeValue.replace(/\\\(/g, '$').replace(/\\\)/g, '$');
                 } else if (node.nodeType === 1 && !/^(script|style|code|pre)$/i.test(node.tagName)) {
                     for (var i = 0; i < node.childNodes.length; i++) {
