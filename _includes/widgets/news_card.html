@@ -1,9 +1,11 @@
 {% assign news_items = site.news | sort: "date" | reverse -%}
 
-<div class="my-3 bg-white shadow-sm rounded-xl overflow-hidden">
-    <div class="lazy always-load d-block rounded-xl-top" data-src="/images/travels/3.jpg" style="height: 120px; background-size: cover; background-position: center;"></div>
+<div class="my-3 bg-white shadow-sm rounded-xl">
     <h6 class="p-3 mb-0 border-bottom border-gray">🔥 News</h6>
-    <div class="px-3 py-1 small" style="max-height: 220px; overflow-y: auto;">
+    <div class="p-3">
+        <img data-src="/images/travels/3.jpg" class="lazy w-100 rounded-xl" src="{{ '/assets/images/empty_300x200.png' | relative_url }}" style="max-height: 180px; object-fit: cover;">
+    </div>
+    <div class="px-3 pb-2 small" style="max-height: 220px; overflow-y: auto;">
         {% for item in news_items %}
         <div class="d-flex py-1 ">
             <span class="text-muted mr-2 no-break" style="min-width: 100px;">{{ item.date | date: "%b %d, %Y" }}</span>
