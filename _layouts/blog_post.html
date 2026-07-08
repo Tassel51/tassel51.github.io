@@ -74,10 +74,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js" crossorigin="anonymous"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            // Convert kramdown brackets back to $$ delimiters for KaTeX
+            var html = document.body.innerHTML;
+            html = html.replace(/\\\[/g, '$$').replace(/\\\]/g, '$$');
+            html = html.replace(/\\\(/g, '$').replace(/\\\)/g, '$');
+            document.body.innerHTML = html;
+
             renderMathInElement(document.body, {
               delimiters: [
-                  {left: '\\[', right: '\\]', display: true},
-                  {left: '\\(', right: '\\)', display: false}
+                  {left: '$$', right: '$$', display: true},
+                  {left: '$', right: '$', display: false}
               ],
               throwOnError : false
             });
