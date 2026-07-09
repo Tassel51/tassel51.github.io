@@ -9,7 +9,7 @@
                     <div class="col-md-6">
                         {% if p.education %}
                         <div class="mb-4">
-                            <h5>🎓 Education</h6>
+                            <h5>🎓 {{ p.education_label }}</h5>
                             <ul class="list-unstyled mb-0">
                                 {% for item in p.education %}
                                 <li class="media mb-2">
@@ -31,7 +31,7 @@
                         {% if p.experience %}
                         <hr class="my-3">
                         <div class="mb-4">
-                            <h5>💼 Experience</h5>
+                            <h5>💼 {{ p.experience_label }}</h5>
                             <ul class="list-unstyled mb-0">
                                 {% for item in p.experience %}
                                 <li class="media mb-2">
@@ -55,7 +55,7 @@
                     <div class="col-md-6">
                         {% if p.competitions %}
                         <div class="mb-4">
-                            <h5>🏆 Competitions</h6>
+                            <h5>🏆 {{ p.competitions_label }}</h5>
                             <ul class="small mb-0 pl-3">
                                 {% for item in p.competitions %}
                                 <li class="mb-1">
@@ -72,7 +72,7 @@
                         {% if p.honors %}
                         <hr class="my-3">
                         <div>
-                            <h5>🌟 Honors</h5>
+                            <h5>🌟 {{ p.honors_label }}</h5>
                             <ul class="list-unstyled small mb-0">
                                 {% for item in p.honors %}
                                 <li class="mb-1">
