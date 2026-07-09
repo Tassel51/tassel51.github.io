@@ -1,4 +1,10 @@
-{% assign news_items = site.news | sort: "date" | reverse -%}
+{% assign lang = include.lang | default: "en" %}
+{% assign all_news = site.news | sort: "date" | reverse %}
+{% assign news_items = "" | split: "" %}
+{% for item in all_news %}
+  {% assign item_lang = item.lang | default: "en" %}
+  {% if item_lang == lang %}{% assign news_items = news_items | push: item %}{% endif %}
+{% endfor %}
 
 <div class="my-3 bg-white shadow-sm rounded-xl">
     <h6 class="p-3 mb-0 border-bottom border-gray">🔥 News</h6>
