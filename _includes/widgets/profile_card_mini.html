@@ -1,4 +1,4 @@
-{% assign p = include.profile | default: site.data.profile %}
+{% unless p %}{% assign p = site.data.profile %}{% endunless %}
 <div class="row sticky-top" style="top: 80px">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
