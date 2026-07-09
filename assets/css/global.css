@@ -101,6 +101,6 @@ div.lazy {
 }
 
 .pub-cover-img {
-    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.27), 0 6px 20px 0 rgba(0,0,0,0.24) !important;
+    box-shadow: 0 8px 17px rgba(0,0,0,0.4), 0 6px 20px rgba(0,0,0,0.35) !important;
     border-radius: 6px !important;
 }
