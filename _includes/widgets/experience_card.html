@@ -1,3 +1,4 @@
+{% assign p = include.profile | default: site.data.profile %}
 <div class="row mt-3">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
@@ -6,11 +7,11 @@
 
                     <!-- Left column: Education + Experience -->
                     <div class="col-md-6">
-                        {% if site.data.profile.education %}
+                        {% if p.education %}
                         <div class="mb-4">
                             <h5>🎓 Education</h6>
                             <ul class="list-unstyled mb-0">
-                                {% for item in site.data.profile.education %}
+                                {% for item in p.education %}
                                 <li class="media mb-2">
                                     {% if item.logo %}<img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 24px;" class="mr-2 mt-1">{% endif %}
                                     <div class="media-body">
@@ -27,12 +28,12 @@
                         </div>
                         {% endif %}
 
-                        {% if site.data.profile.experience %}
+                        {% if p.experience %}
                         <hr class="my-3">
                         <div class="mb-4">
                             <h5>💼 Experience</h5>
                             <ul class="list-unstyled mb-0">
-                                {% for item in site.data.profile.experience %}
+                                {% for item in p.experience %}
                                 <li class="media mb-2">
                                     {% if item.logo %}<img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 24px;" class="mr-2 mt-1">{% endif %}
                                     <div class="media-body">
@@ -52,11 +53,11 @@
 
                     <!-- Right column: Competitions + Honors -->
                     <div class="col-md-6">
-                        {% if site.data.profile.competitions %}
+                        {% if p.competitions %}
                         <div class="mb-4">
                             <h5>🏆 Competitions</h6>
                             <ul class="small mb-0 pl-3">
-                                {% for item in site.data.profile.competitions %}
+                                {% for item in p.competitions %}
                                 <li class="mb-1">
                                     <div class="d-flex">
                                         <div>{{ item.name }}</div>
@@ -68,12 +69,12 @@
                         </div>
                         {% endif %}
 
-                        {% if site.data.profile.honors %}
+                        {% if p.honors %}
                         <hr class="my-3">
                         <div>
                             <h5>🌟 Honors</h5>
                             <ul class="list-unstyled small mb-0">
-                                {% for item in site.data.profile.honors %}
+                                {% for item in p.honors %}
                                 <li class="mb-1">
                                     <div>{{ item.name }}</div>
                                 </li>

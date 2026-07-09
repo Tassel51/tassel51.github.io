@@ -1,0 +1,35 @@
+---
+layout: default
+title: 中文主页
+navbar_title: 中文主页
+---
+
+<div class="row">
+    <div class="col-lg-3 col-md-4">
+        {% include widgets/profile_card_mini.html profile=site.data.profile_zh %}
+    </div>
+    <div class="col-lg-9 col-md-8">
+
+        {% include widgets/profile_card_bio_only.html profile=site.data.profile_zh %}
+
+        {% if site.data.display.homepage.show_experience %}
+            {% include widgets/experience_card.html profile=site.data.profile_zh %}
+        {% endif %}
+
+        {% if site.data.display.homepage.show_news %}
+        {% assign count_news = site.news | size %}
+        {% if count_news > 0 %}
+        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+        {% endif %}
+        {% endif %}
+
+        {% if site.data.display.homepage.show_selected_publications %}
+        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+        {%
+        include widgets/publication_card.html
+        publications=pubs
+        title='⭐️ Selected Papers'
+        %}
+        {% endif %}
+    </div>
+</div>

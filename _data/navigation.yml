@@ -1,6 +1,8 @@
 pages:
 - name: Home
   url: /
+- name: 中文主页
+  url: /cn
 - name: Research
   url: /publications
 - name: Blog

@@ -1,0 +1,94 @@
+primary_name: "Zichen Zhu"
+secondary_name: "(朱子琛 / Chris Zhu)"
+navbar_name: "Zichen Zhu"
+
+positions:
+- name: 本科生
+- name: 计算机科学与工程学院
+- name: 东北大学，中国
+
+email: "zhuzichen_neu@163.com"
+phone: "+86 13333797128"
+cv_link: /file/CV_CN.pdf
+github: tassel51
+# zhihu: https://www.zhihu.com/people/tassel51
+bilibili: 440972934
+
+short_bio_text_justify: true
+short_bio: >-
+  <p>
+    我是 <strong>朱子琛（Zichen Zhu）</strong>，就读于
+    <a href="https://www.neu.edu.cn/" target="_blank">东北大学</a>
+    <a href="http://www.cse.neu.edu.cn/" target="_blank">计算机科学与工程学院</a>，
+    <strong>通信工程</strong>专业本科生。
+  </p>
+  <p>
+    我的学术兴趣在于将通信技术的理论知识与实践创新相结合，同时对人工智能（AI）相关技术
+    在通信领域的开发、应用与整合怀有强烈的好奇心。
+  </p>
+  <p>
+    预计于 <strong>2027年6月</strong> 完成本科学业，正在积极寻求硕士或博士深造机会。
+  </p>
+
+  <h6 class="mt-4">🌱 研究方向</h6>
+  <p>
+    <a href="https://en.wikipedia.org/wiki/Internet_of_things" target="_blank"><span class="badge badge-light mr-1 mb-1">万物互联</span></a>
+    <a href="https://en.wikipedia.org/wiki/Embodied_cognition" target="_blank"><span class="badge badge-light mr-1 mb-1">具身智能</span></a>
+    <a href="https://en.wikipedia.org/wiki/Multimodal_learning" target="_blank"><span class="badge badge-light mr-1 mb-1">多模态大语言模型</span></a>
+    <a href="https://en.wikipedia.org/wiki/Model_compression" target="_blank"><span class="badge badge-light mr-1 mb-1">模型压缩与量化</span></a>
+  </p>
+
+  <h6 class="mt-3">🛠️ 项目</h6>
+  <ul class="small text-muted pl-3 mb-0">
+    <li class="mb-1"><a href="https://github.com/Tassel51/Smart-Campus-Life-Assistant.git" target="_blank"><strong>Smart Campus Life Assistant</strong></a> — 基于数据结构理论的东北大学校园服务可视化系统</li>
+    <li class="mb-1"><a href="https://tassel51.github.io/blogs/robot.md" target="_blank"><strong>"灵犀" — 多模态双臂移动机器人</strong></a> — 融合视觉、语言与操作能力的具身智能平台</li>
+    <li class="mb-1"><a href="https://github.com/Tassel51/Language-Modeling-from-Scratch-by-Tassel51" target="_blank"><strong>Language Modeling from Scratch</strong></a> — 从零构建Transformer架构语言模型，受Stanford CS336启发</li>
+  </ul>
+
+portrait_url: /images/zzc.jpg
+portrait_caption: 朱子琛
+
+education:
+- name: 东北大学，中国
+  logo: /assets/images/badges/NEU_logo.png
+  dept: 计算机科学与工程学院
+  position: 通信工程 工学学士
+  date: 2023年9月 - 2027年6月（预计）
+
+experience:
+- name: 东北大学
+  logo: /assets/images/badges/NEU_logo.png
+  position: >-
+    通信工程2301班 班长
+    <a href="http://xsc.neu.edu.cn/2024/1220/c9288a276192/page.htm" target="_blank" class="text-warning" title="带领班集体获2023–2024学年校先进班集体（¥3,000奖金）"><i class="fas fa-award"></i></a>
+    <a href="https://xsc.neu.edu.cn/2025/1228/c9288a300698/page.htm" target="_blank" class="text-warning" title="带领班集体获2024–2025学年校先进班集体（¥3,000奖金）"><i class="fas fa-award"></i></a>
+  date: 2023年9月 - 至今
+- name: 东北大学
+  logo: /assets/images/badges/NEU_logo.png
+  position: >-
+    电子信息类2404班 成长发展指导员
+    <a href="http://qzzx.neu.edu.cn/SinglePage.aspx?news_id=37fce764-0ca3-4da2-a2e4-d72a86d3f8f4&news_type=35c2f425-414c-4dce-808b-52cb32a2adc0" target="_blank" class="text-warning" title="东北大学优秀成长发展指导员（¥600奖金）"><i class="fas fa-award"></i></a>
+  date: 2024年9月 - 2025年9月
+
+competitions:
+- name: >-
+    🏅 COMAP MCM/ICM <strong>特等奖（Outstanding Winner）</strong>（Top 0.16%）
+    <a href="https://tassel51.github.io/mypaper/modeling/comap25.pdf" target="_blank"><i class="fas fa-file-pdf" title="论文"></i></a>
+    <a href="https://tassel51.github.io/mypaper/modeling/2515235.pdf" target="_blank"><i class="fas fa-award" title="证书"></i></a>
+  date: 2025年1月
+- name: >-
+    <strong>二等奖</strong>，全国大学生集成电路创新创业大赛（东北赛区）
+    <a href="https://tassel51.github.io/mypaper/competitions/jichuangsai.jpg" target="_blank"><i class="fas fa-award" title="证书"></i></a>
+  date: 2025年7月
+- name: >-
+    <strong>三等奖</strong>，全国大学生数学建模竞赛（CUMCM）
+    <a href="https://tassel51.github.io/mypaper/modeling/CUMCM25.pdf" target="_blank"><i class="fas fa-file-pdf" title="论文"></i></a>
+  date: 2025年9月
+
+honors:
+- name: >-
+    🏅 国家奖学金（¥10,000） <a href="https://tassel51.github.io/honors/college/guojiang1.jpg" target="_blank"><i class="fas fa-award" title="证书"></i></a>
+    &nbsp;|&nbsp; 华为奖学金（¥8,000） <a href="https://tassel51.github.io/honors/college/huaweijiangxuejin.jpg" target="_blank"><i class="fas fa-award" title="证书"></i></a>
+    &nbsp;|&nbsp; 校一等奖学金（¥2,000）
+    &nbsp;|&nbsp; 校二等奖学金（¥1,000）
+- name: 🏅 东北大学优秀学生标兵 &nbsp;|&nbsp; 东北大学优秀学生
