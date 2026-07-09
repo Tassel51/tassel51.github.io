@@ -99,3 +99,7 @@ div.lazy {
     transform: translateX(5px);
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.12) !important;
 }
+
+.pub-cover-img {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.12);
+}
