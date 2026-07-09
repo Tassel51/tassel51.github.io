@@ -1,5 +1,5 @@
-primary_name: "Zichen Zhu"
-secondary_name: "(朱子琛 / Chris Zhu)"
+primary_name: "朱子琛"
+secondary_name: "(Zichen Zhu / Chris)"
 navbar_name: "Zichen Zhu"
 
 positions:
@@ -10,6 +10,7 @@ positions:
 email: "zhuzichen_neu@163.com"
 phone: "+86 13333797128"
 cv_link: /file/CV_CN.pdf
+cv_label: "个人简历"
 github: tassel51
 # zhihu: https://www.zhihu.com/people/tassel51
 bilibili: 440972934
@@ -42,7 +43,7 @@ short_bio: >-
   <ul class="small text-muted pl-3 mb-0">
     <li class="mb-1"><a href="https://github.com/Tassel51/Smart-Campus-Life-Assistant.git" target="_blank"><strong>Smart Campus Life Assistant</strong></a> — 基于数据结构理论的东北大学校园服务可视化系统</li>
     <li class="mb-1"><a href="https://tassel51.github.io/blogs/robot.md" target="_blank"><strong>"灵犀" — 多模态双臂移动机器人</strong></a> — 融合视觉、语言与操作能力的具身智能平台</li>
-    <li class="mb-1"><a href="https://github.com/Tassel51/Language-Modeling-from-Scratch-by-Tassel51" target="_blank"><strong>Language Modeling from Scratch</strong></a> — 从零构建Transformer架构语言模型，受Stanford CS336启发</li>
+    <li class="mb-1"><a href="https://github.com/Tassel51/Language-Modeling-from-Scratch-by-Tassel51" target="_blank"><strong>Language Modeling from Scratch</strong></a> — 从零构建Transformer架构语言模型，参考斯坦福大学的CS336课程</li>
   </ul>
 
 portrait_url: /images/zzc.jpg
