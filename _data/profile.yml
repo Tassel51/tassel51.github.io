@@ -51,7 +51,7 @@ short_bio: >-
   <h6 class="mt-3">🛠️ Projects</h6>
   <ul class="small text-muted pl-3 mb-0">
     <li class="mb-1"><a href="https://github.com/Tassel51/Smart-Campus-Life-Assistant.git" target="_blank"><strong>Smart Campus Life Assistant</strong></a> — A comprehensive NEU campus service visualization system built on data structure theory.</li>
-    <li class="mb-1"><a href="https://tassel51.github.io/blogs/robot.md" target="_blank"><strong>"Lingxi" — Multimodal Dual-Arm Mobile Robot</strong></a> — An embodied intelligence platform integrating vision, language, and manipulation.</li>
+    <li class="mb-1"><a href="https://github.com/Tassel51/LingXi-MultiModal_DualArm_MobileBot" target="_blank"><strong>"Lingxi" — Multimodal Dual-Arm Mobile Robot</strong></a> — An embodied intelligence platform integrating vision, language, and manipulation.</li>
     <li class="mb-1"><a href="https://github.com/Tassel51/Language-Modeling-from-Scratch-by-Tassel51" target="_blank"><strong>Language Modeling from Scratch</strong></a> — Building a transformer architecture from the ground up, inspired by <a href="https://web.stanford.edu/class/cs336/" target="_blank">Stanford CS336</a>.</li>
   </ul>
 
