@@ -21,31 +21,19 @@ body_attr: >-
         {% endfor %}
 
         {% if other_pubs.size > 0 %}
-        <h2 class="pt-4" id="year-other">📋 Other Research</h2>
+        <h2 class="pt-4" id="year-other">📋 Other Work</h2>
         <div class="my-2 p-0 bg-white shadow-sm rounded-xl">
-            {% for item in other_pubs %}
-            <div class="p-3 {% unless forloop.last %}border-bottom border-gray{% endunless %}">
-                <div class="row">
-                    {% if item.cover %}
-                    <div class="col-4 col-md-3 mb-2 mb-md-0">
-                        <div class="pub-cover-img"><img src="{{ item.cover | relative_url }}" class="w-100 rounded" style="max-height: 120px; object-fit: cover;"></div>
-                    </div>
-                    {% endif %}
-                    <div class="{% if item.cover %}col-8 col-md-9{% else %}col-12{% endif %}">
-                        <h5 class="mb-1">{{ item.title }}</h5>
-                        <p class="mb-1 small">{% include widgets/author_list.html authors=item.authors %}</p>
-                        <p class="mb-1 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
-                        <p class="mb-0 small text-muted">{{ item.abstract }}</p>
-                        <p class="small pt-1 mb-0">
-                            {% for link in item.links %}
-                            {% if link[1].url %}<a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
-                            {% else %}<a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>{% endif %}
-                            {% endfor %}
-                        </p>
-                    </div>
+            <a href="/other-work" class="text-dark text-decoration-none">
+            <div class="row no-gutters">
+                <div class="col-md-3 col-xl-2 p-3">
+                    <div class="pub-cover-img"><img src="{{ other_pubs.first.cover | relative_url }}" class="w-100 rounded"></div>
+                </div>
+                <div class="col-md-9 col-xl-10 p-3">
+                    <h5 class="mb-2">Other Work</h5>
+                    <p class="small text-muted mb-0">{{ other_pubs.size }} items — including software copyright and journal publications.</p>
                 </div>
             </div>
-            {% endfor %}
+            </a>
         </div>
         {% endif %}
     </div>
@@ -56,7 +44,7 @@ body_attr: >-
             <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
             {% endfor %}
             {% if other_pubs.size > 0 %}
-            <a class="nav-link d-block" href="#year-other">Other Research</a>
+            <a class="nav-link d-block" href="#year-other">Other Work</a>
             {% endif %}
         </div>
     </div>

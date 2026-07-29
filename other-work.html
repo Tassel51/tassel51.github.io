@@ -1,0 +1,18 @@
+---
+layout: default
+title: Other Work
+navbar_title: Research
+---
+
+{% assign other_pubs = site.publications | where: "group", "other" | sort: "date" | reverse %}
+
+<div class="row">
+    <div class="col-12 col-lg-10">
+        <h2 class="pt-4">📋 Other Work</h2>
+        {% for item in other_pubs %}
+        <div class="my-2 p-0 bg-white shadow-sm rounded-xl">
+            {% include widgets/publication_item.html item=item hide_bottom_border=true first=true last=true %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
