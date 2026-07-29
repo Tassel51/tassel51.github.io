@@ -2,6 +2,7 @@
 title: "仪捷通实验室管理平台 V1.0 — Yijietong Laboratory Management Platform V1.0"
 date: 2026-02-01 00:01:00 +0800
 selected: false
+group: "other"
 pub: "Software Copyright, China"
 cover: /assets/images/covers/software-copyright.jpg
 pub_date: "2026"
