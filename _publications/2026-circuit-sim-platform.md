@@ -5,6 +5,7 @@ selected: false
 group: "other"
 pub: "Software Copyright, China"
 pub_date: "2026"
+pub_last: 'No. 2026SR0534801'
 cover: /assets/images/covers/circuit-sim-platform.jpg
 abstract: >-
   A simulation and learning platform for communication electronic circuits, designed to assist students in understanding and experimenting with circuit principles through interactive simulation.
