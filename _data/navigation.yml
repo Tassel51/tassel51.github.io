@@ -18,5 +18,5 @@ home_sections:
   anchor: experience
 - name: News
   anchor: news
-- name: Publications
+- name: Papers
   anchor: publications
