@@ -10,8 +10,8 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                {% if is_home %}
+            {% if is_home %}
+            <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link scroll-link" href="#home">Home</a>
                 </li>
@@ -20,11 +20,14 @@
                     <a class="nav-link scroll-link" href="#{{ item.anchor }}">{{ item.name }}</a>
                 </li>
                 {% endfor %}
-                {% endif %}
+            </ul>
+            <span class="navbar-text d-none d-lg-inline text-muted mx-2" style="opacity: .45;">|</span>
+            {% endif %}
+            <ul class="navbar-nav ml-auto">
                 {% for item in site.data.navigation.pages %}
                 {% unless is_home and item.url == "/" %}
                 <li class="nav-item {% if item.name == page.navbar_title or include.active_page == item.name %}active{% endif %}">
-                    <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
+                    <a class="nav-link {% if is_home %}font-weight-bold{% endif %}" href="{{ item.url | relative_url }}">{{ item.name }}</a>
                 </li>
                 {% endunless %}
                 {% endfor %}

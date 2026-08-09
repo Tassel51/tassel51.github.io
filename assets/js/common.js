@@ -41,10 +41,27 @@ $(function () {
     });
 })
 
-// Homepage scrollspy: highlight the section currently in view in the navbar
+// Homepage scrollspy + smooth scrolling for section links
 (function () {
     var links = document.querySelectorAll('.navbar .nav-link.scroll-link');
     if (!links.length) return;
+
+    var NAV_OFFSET = 76; // fixed navbar height + breathing room
+
+    // Smooth-scroll on click (works regardless of CSS scroll-behavior support)
+    links.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            var id = this.getAttribute('href').slice(1);
+            var target = document.getElementById(id);
+            if (!target) return;
+            e.preventDefault();
+            var top = target.getBoundingClientRect().top + window.pageYOffset - NAV_OFFSET;
+            window.scrollTo({ top: top, behavior: 'smooth' });
+            history.replaceState(null, '', '#' + id);
+        });
+    });
+
+    // Scrollspy: highlight the section currently in view in the navbar
     var items = {};
     links.forEach(function (link) {
         var id = link.getAttribute('href').slice(1);
