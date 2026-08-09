@@ -90,8 +90,9 @@
                     <li class="mb-2">
                         <div class="d-flex">
                             <div class="flex-grow-1">
-                                {% if item.institution %}{{ item.institution }} <strong>{{ item.name }}</strong>{% else %}<strong>{{ item.name }}</strong>{% endif %}
+                                <strong>{{ item.name }}</strong>
                                 {% if item.amount %}&nbsp;with <strong>{{ item.amount }}</strong>{% endif %}
+                                {% if item.institution %}, {{ item.institution }}{% endif %}
                                 {% if item.link %}<a href="{{ item.link }}" target="_blank"><i class="fas fa-award text-warning ml-1" title="Certificate"></i></a>{% endif %}
                             </div>
                             <div class="no-break text-muted pl-2"><em>{{ item.date }}</em></div>
