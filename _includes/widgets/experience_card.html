@@ -64,7 +64,7 @@
             <div class="px-3 py-2" style="font-size: 0.9375rem;">
                 <ul class="mb-0 pl-3">
                     {% for item in p.competitions %}
-                    <li class="mb-2" style="padding-left: 0.5em;">
+                    <li class="mb-2" style="padding-left: 1em;">
                         <div class="d-flex">
                             <div class="flex-grow-1">{{ item.name }}</div>
                             <div class="no-break text-muted pl-2"><em>{{ item.date }}</em></div>
@@ -87,7 +87,7 @@
             <div class="px-3 py-2" style="font-size: 0.9375rem;">
                 <ul class="mb-0 pl-3">
                     {% for item in p.honors %}
-                    <li class="mb-2" style="padding-left: 0.5em;">
+                    <li class="mb-2" style="padding-left: 1em;">
                         <div class="d-flex">
                             <div class="flex-grow-1">
                                 {% if item.prefix %}{{ item.prefix }} <strong>{{ item.name }}</strong>{% else %}<strong>{{ item.name }}</strong>{% endif %}{% if item.period %}&nbsp;<em>({{ item.period }})</em>{% endif %}
