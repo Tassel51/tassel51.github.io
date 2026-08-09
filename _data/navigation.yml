@@ -9,3 +9,14 @@ pages:
   url: /blog
 - name: Gallery
   url: /showcase
+
+# Homepage-only scroll anchors (rendered above `pages` on the homepage)
+home_sections:
+- name: About
+  anchor: about
+- name: Experience
+  anchor: experience
+- name: News
+  anchor: news
+- name: Publications
+  anchor: publications

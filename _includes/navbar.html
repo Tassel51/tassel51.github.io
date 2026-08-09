@@ -1,3 +1,7 @@
+{% assign is_home = false %}
+{% if page.url == "/" or page.url == "/index.html" %}
+{% assign is_home = true %}
+{% endif %}
 <nav class="navbar navbar-expand-sm navbar-light fixed-top mb-5 shadow-sm">
     <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container{% endif %}" style="max-width: 1500px;">
         <a class="navbar-brand"><strong>{{site.data.profile.navbar_name}}</strong></a>
@@ -7,10 +11,22 @@
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
+                {% if is_home %}
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#home">Home</a>
+                </li>
+                {% for item in site.data.navigation.home_sections %}
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#{{ item.anchor }}">{{ item.name }}</a>
+                </li>
+                {% endfor %}
+                {% endif %}
                 {% for item in site.data.navigation.pages %}
+                {% unless is_home and item.url == "/" %}
                 <li class="nav-item {% if item.name == page.navbar_title or include.active_page == item.name %}active{% endif %}">
                     <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
                 </li>
+                {% endunless %}
                 {% endfor %}
             </ul>
         </div>

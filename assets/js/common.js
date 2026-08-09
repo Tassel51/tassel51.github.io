@@ -40,3 +40,33 @@ $(function () {
         $grid.masonry('layout');
     });
 })
+
+// Homepage scrollspy: highlight the section currently in view in the navbar
+(function () {
+    var links = document.querySelectorAll('.navbar .nav-link.scroll-link');
+    if (!links.length) return;
+    var items = {};
+    links.forEach(function (link) {
+        var id = link.getAttribute('href').slice(1);
+        var section = document.getElementById(id);
+        if (section) {
+            items[id] = link.closest('.nav-item');
+        }
+    });
+    var ids = Object.keys(items);
+    if (!ids.length) return;
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            var item = items[entry.target.id];
+            if (!item) return;
+            if (entry.isIntersecting) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    ids.forEach(function (id) {
+        observer.observe(document.getElementById(id));
+    });
+})();
