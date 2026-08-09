@@ -87,7 +87,7 @@
             <div class="px-3 py-2" style="font-size: 0.9375rem;">
                 <ul class="mb-0 pl-3">
                     {% for item in p.honors %}
-                    <li class="mb-2">
+                    <li class="mb-2" style="padding-left: 0.5em;">
                         <div class="d-flex">
                             <div class="flex-grow-1">
                                 {% if item.prefix %}{{ item.prefix }} <strong>{{ item.name }}</strong>{% else %}<strong>{{ item.name }}</strong>{% endif %}{% if item.period %}&nbsp;<em>({{ item.period }})</em>{% endif %}
