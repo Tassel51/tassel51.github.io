@@ -111,16 +111,20 @@ honors:
   institution: 东北大学
   link: https://tassel51.github.io/honors/college/huaweijiangxuejin.jpg
 - name: 校一等奖学金
+  prefix: 东北大学
   date: Sep 2024
   amount: ¥2,000
   institution: 东北大学
 - name: 校二等奖学金
+  prefix: 东北大学
   date: Sep 2025
   amount: ¥1,000
   institution: 东北大学
 - name: 优秀学生标兵
+  prefix: 东北大学
   date: Sep 2024
   institution: 东北大学
 - name: 优秀学生
+  prefix: 东北大学
   date: Sep 2025
   institution: 东北大学

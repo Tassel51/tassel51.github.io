@@ -114,16 +114,20 @@ honors:
   institution: Northeastern University
   link: https://tassel51.github.io/honors/college/huaweijiangxuejin.jpg
 - name: First-Class Scholarship
+  prefix: Northeastern University
   date: Sep 2024
   amount: 2000¥
   institution: Northeastern University
 - name: Second-Class Scholarship
+  prefix: Northeastern University
   date: Sep 2025
   amount: 1000¥
   institution: Northeastern University
 - name: Outstanding Student Pacesetter
+  prefix: Northeastern University
   date: Sep 2024
   institution: Northeastern University
 - name: Outstanding Student
+  prefix: Northeastern University
   date: Sep 2025
   institution: Northeastern University
