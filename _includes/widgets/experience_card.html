@@ -87,7 +87,16 @@
                 <h5>🌟 {{ p.honors_label }}</h5>
                 <ul class="list-unstyled mb-0">
                     {% for item in p.honors %}
-                    <li class="mb-2">{{ item.name }}</li>
+                    <li class="mb-2">
+                        <div class="d-flex align-items-baseline flex-wrap">
+                            <span class="mr-1">·</span>
+                            <span class="mr-1">({{ item.date }}):</span>
+                            <span class="mr-1"><strong>{{ item.name }}</strong></span>
+                            {% if item.amount %}<span class="mr-1">with <strong>{{ item.amount }}</strong></span>{% endif %}
+                            {% if item.institution %}<span class="mr-1">, {{ item.institution }}</span>{% endif %}
+                            {% if item.link %}<a href="{{ item.link }}" target="_blank"><i class="fas fa-award text-warning ml-1" title="Certificate"></i></a>{% endif %}
+                        </div>
+                    </li>
                     {% endfor %}
                 </ul>
             </div>

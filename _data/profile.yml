@@ -103,9 +103,27 @@ competitions:
   date: Sep 2025
 
 honors:
-- name: >-
-    🏅 National Scholarship (¥10,000) <a href="https://tassel51.github.io/honors/college/guojiang1.jpg" target="_blank"><i class="fas fa-award" title="Certificate"></i></a>
-    &nbsp;|&nbsp; Huawei Scholarship (¥8,000) <a href="https://tassel51.github.io/honors/college/huaweijiangxuejin.jpg" target="_blank"><i class="fas fa-award" title="Certificate"></i></a>
-    &nbsp;|&nbsp; NEU First-Class Scholarship (¥2,000)
-    &nbsp;|&nbsp; NEU Second-Class Scholarship (¥1,000)
-- name: 🏅 NEU Outstanding Student Pacesetter &nbsp;|&nbsp; NEU Outstanding Student
+- name: National Scholarship
+  date: 2025.09
+  amount: 10000¥
+  institution: Northeastern University
+  link: https://tassel51.github.io/honors/college/guojiang1.jpg
+- name: Huawei Scholarship
+  date: 2025.09
+  amount: 8000¥
+  institution: Northeastern University
+  link: https://tassel51.github.io/honors/college/huaweijiangxuejin.jpg
+- name: NEU First-Class Scholarship
+  date: 2025.09
+  amount: 2000¥
+  institution: Northeastern University
+- name: NEU Second-Class Scholarship
+  date: 2025.09
+  amount: 1000¥
+  institution: Northeastern University
+- name: NEU Outstanding Student Pacesetter
+  date: 2024.09
+  institution: Northeastern University
+- name: NEU Outstanding Student
+  date: 2024.09
+  institution: Northeastern University
