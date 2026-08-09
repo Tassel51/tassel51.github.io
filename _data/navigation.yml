@@ -14,8 +14,12 @@ pages:
 home_sections:
 - name: About
   anchor: about
-- name: Experience
+- name: Educations
   anchor: experience
+- name: Competitions
+  anchor: competitions
+- name: Awards
+  anchor: honors
 - name: News
   anchor: news
 - name: Papers
