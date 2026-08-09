@@ -103,32 +103,32 @@ competitions:
   date: Sep 2025
 
 honors:
+- name: Huawei Scholarship
+  date: Sep 2025
+  amount: 8000¥
+  institution: Northeastern University
+  link: https://tassel51.github.io/honors/college/huaweijiangxuejin.jpg
+- name: Second-Class Scholarship
+  prefix: Northeastern University
+  date: Sep 2025
+  amount: 1000¥
+  institution: Northeastern University
+- name: Outstanding Student
+  prefix: Northeastern University
+  date: Sep 2025
+  institution: Northeastern University
 - name: National Scholarship
   period: 2023-2024
   date: Sep 2024
   amount: 10000¥
   institution: Northeastern University
   link: https://tassel51.github.io/honors/college/guojiang1.jpg
-- name: Huawei Scholarship
-  date: Sep 2025
-  amount: 8000¥
-  institution: Northeastern University
-  link: https://tassel51.github.io/honors/college/huaweijiangxuejin.jpg
 - name: First-Class Scholarship
   prefix: Northeastern University
   date: Sep 2024
   amount: 2000¥
   institution: Northeastern University
-- name: Second-Class Scholarship
-  prefix: Northeastern University
-  date: Sep 2025
-  amount: 1000¥
-  institution: Northeastern University
 - name: Outstanding Student Pacesetter
   prefix: Northeastern University
   date: Sep 2024
-  institution: Northeastern University
-- name: Outstanding Student
-  prefix: Northeastern University
-  date: Sep 2025
   institution: Northeastern University
