@@ -3,7 +3,7 @@
     if (!tocList) return;
 
     var content = document.querySelector('.blog-content');
-    var headings = content.querySelectorAll('h1, h2, h3');
+    var headings = content.querySelectorAll('h1, h2');
     var navbarHeight = 90;
 
     if (headings.length === 0) {
