@@ -1,15 +1,10 @@
 ---
 layout: blog_post
-title: "🧠 Machine Learning Review — 机器学习保研面试复习"
+title: "Machine Learning Review — 机器学习保研面试复习"
 date: 2026-08-25 00:00:00 +0800
 tags: [Machine Learning, Course Reviews]
 ---
----
-layout: blog_post
-title: "🧠 Machine Learning Review — 机器学习保研面试复习"
-date: 2026-08-25 00:00:00 +0800
-tags: [Machine Learning, Course Reviews]
----
+
 # 《机器学习》保研面试：完整原讲解 + 超全复习讲义
 
 > **用途**：保研 / 夏令营 / 预推免机器学习基础面试复习  
@@ -37,9 +32,7 @@ tags: [Machine Learning, Course Reviews]
 - 60 句必会结论；
 - 50 道核心题回答骨架。
 
-真正面试时，最重要的是形成：
-
-$\boxed{\text{概念} \rightarrow \text{原理} \rightarrow \text{例子} \rightarrow \text{优缺点/对比}}$
+真正面试时，最重要的是形成： $\boxed{\text{概念} \rightarrow \text{原理} \rightarrow \text{例子} \rightarrow \text{优缺点/对比}}$
 而不是逐字背诵。
 
 ---
@@ -203,15 +196,9 @@ $\boxed{\text{概念} \rightarrow \text{原理} \rightarrow \text{例子} \right
 
 **机器学习就是让计算机从数据中学习规律，并利用这个规律对未知数据进行预测或决策。**
 
-比如给计算机很多邮件：
-
-$(\text{邮件内容},\text{是否垃圾邮件})$
-计算机通过这些数据找到某种规律，得到一个模型：
-
-$f(x)$
-以后来了一封没见过的新邮件 $x$，模型就可以预测：
-
-$f(x)= \begin{cases} 1 & 垃圾邮件\\ 0 & 正常邮件 \end{cases}$
+比如给计算机很多邮件： $\fbox{(\text{邮件内容},\text{是否垃圾邮件})}$
+计算机通过这些数据找到某种规律，得到一个模型： $\fbox{f(x)}$
+以后来了一封没见过的新邮件 $x$，模型就可以预测： $\fbox{f(x)= \begin{cases} 1 & 垃圾邮件\\ 0 & 正常邮件 \end{cases}}$
 因此机器学习最核心的东西其实就三个：
 
 **数据 → 学习算法 → 模型**
@@ -244,21 +231,15 @@ $f(x)= \begin{cases} 1 & 垃圾邮件\\ 0 & 正常邮件 \end{cases}$
 
 假设你现在有10000张猫狗图片。
 
-通常不会10000张全部拿去训练，而会划分成：
-
-$\text{数据集} = \text{训练集} + \text{验证集} + \text{测试集}$
+通常不会10000张全部拿去训练，而会划分成： $\fbox{\text{数据集} = \text{训练集} + \text{验证集} + \text{测试集}}$
 ##### 训练集 Train Set
 
 用于：
 
 **训练模型参数。**
 
-比如线性回归：
-
-$y=w^Tx+b$
-训练的过程实际上就是寻找合适的：
-
-$w,b$
+比如线性回归： $\fbox{y=w^Tx+b}$
+训练的过程实际上就是寻找合适的： $\fbox{w,b}$
 ---
 
 ##### 验证集 Validation Set
@@ -269,18 +250,10 @@ $w,b$
 
 比如：
 
-决策树最大深度是多少？
-
-$max\_depth=3?$
-还是：
-
-$max\_depth=10?$
-或者神经网络学习率：
-
-$0.01$
-还是：
-
-$0.001$
+决策树最大深度是多少？ $\fbox{max\_depth=3?}$
+还是： $\fbox{max\_depth=10?}$
+或者神经网络学习率： $\fbox{0.01}$
+还是： $\fbox{0.001}$
 这些东西通常不会直接由训练算法学出来，而是人工设置，因此叫：
 
 **超参数 Hyperparameter**
@@ -329,12 +302,8 @@ $0.001$
 
 这个也特别容易被问。
 
-例如线性回归：
-
-$y=w_1x_1+w_2x_2+\cdots+w_dx_d+b$
-其中：
-
-$w_1,w_2,\cdots,w_d,b$
+例如线性回归： $\fbox{y=w_1x_1+w_2x_2+\cdots+w_dx_d+b}$
+其中： $\fbox{w_1,w_2,\cdots,w_d,b}$
 是模型从数据中学习得到的。
 
 所以叫：
@@ -343,18 +312,10 @@ $w_1,w_2,\cdots,w_d,b$
 
 但是例如：
 
-KNN：
-
-$K=5$
-决策树：
-
-$max\_depth=10$
-SVM：
-
-$C=1$
-神经网络：
-
-$learning\ rate=0.001$
+KNN： $\fbox{K=5}$
+决策树： $\fbox{max\_depth=10}$
+SVM： $\fbox{C=1}$
+神经网络： $\fbox{learning\ rate=0.001}$
 这些通常由我们提前设置。
 
 所以叫：
@@ -375,9 +336,7 @@ $learning\ rate=0.001$
 
 #### 监督学习
 
-训练数据有：
-
-$(x,y)$
+训练数据有： $\fbox{(x,y)}$
 也就是说：
 
 **既有输入，也有正确答案。**
@@ -390,9 +349,7 @@ $(x,y)$
 | 100 | 200万 |
 | 120 | 250万 |
 
-我们希望学：
-
-$x\rightarrow y$
+我们希望学： $\fbox{x\rightarrow y}$
 典型算法：
 
 线性回归、逻辑回归、决策树、随机森林、SVM、KNN、神经网络等。
@@ -401,14 +358,10 @@ $x\rightarrow y$
 
 #### 无监督学习
 
-只有：
-
-$x$
+只有： $\fbox{x}$
 没有正确答案 $y$。
 
-例如你有10000名用户的信息：
-
-$年龄、收入、消费额、购买频率……$
+例如你有10000名用户的信息： $\fbox{年龄、收入、消费额、购买频率……}$
 但是没有告诉计算机：
 
 > 哪些人属于高价值客户。
@@ -459,12 +412,8 @@ $年龄、收入、消费额、购买频率……$
 
 例如：
 
-房价：
-
-$y=235.6万元$
-温度：
-
-$y=28.3℃$
+房价： $\fbox{y=235.6万元}$
+温度： $\fbox{y=28.3℃}$
 股票收益率等。
 
 典型算法：
@@ -479,12 +428,8 @@ $y=28.3℃$
 
 **类别。**
 
-例如：
-
-$y\in\{猫,狗\}$
-或者：
-
-$y\in\{0,1\}$
+例如： $\fbox{y\in\{猫,狗\}}$
+或者： $\fbox{y\in\{0,1\}}$
 例如：
 
 垃圾邮件 / 正常邮件。
@@ -517,16 +462,12 @@ $y\in\{0,1\}$
 
 这是机器学习非常核心的概念。
 
-假设模型在训练集上：
-
-$Accuracy=99.9\%$
+假设模型在训练集上： $\fbox{Accuracy=99.9\%}$
 是不是说明模型非常优秀？
 
 **不一定。**
 
-如果测试集：
-
-$Accuracy=60\%$
+如果测试集： $\fbox{Accuracy=60\%}$
 说明模型可能只是：
 
 **把训练集记住了。**
@@ -539,12 +480,8 @@ $Accuracy=60\%$
 
 **泛化能力 Generalization Ability**
 
-因此机器学习最终追求的不是：
-
-$训练误差最低$
-而是：
-
-$泛化误差尽可能低$
+因此机器学习最终追求的不是： $\fbox{训练误差最低}$
+而是： $\fbox{泛化误差尽可能低}$
 ---
 
 ### 7. 经验误差与泛化误差
@@ -559,9 +496,7 @@ $泛化误差尽可能低$
 
 上的误差。
 
-例如1000个训练样本预测错了50个：
-
-$Error_{train}=5\%$
+例如1000个训练样本预测错了50个： $\fbox{Error_{train}=5\%}$
 ---
 
 ##### 泛化误差
@@ -586,9 +521,7 @@ $Error_{train}=5\%$
 
 来近似估计它。
 
-所以：
-
-$Test\ Error \approx Generalization\ Error$
+所以： $\fbox{Test\ Error \approx Generalization\ Error}$
 注意这里只是近似。
 
 ---
@@ -603,22 +536,14 @@ $Test\ Error \approx Generalization\ Error$
 
 结果：
 
-训练集表现很好：
-
-$Train\ Accuracy=99\%$
-测试集表现不好：
-
-$Test\ Accuracy=75\%$
+训练集表现很好： $\fbox{Train\ Accuracy=99\%}$
+测试集表现不好： $\fbox{Test\ Accuracy=75\%}$
 这就是：
 
 **过拟合。**
 
-比如真实规律可能只是：
-
-$y\approx 2x+1$
-但是你非要用一个非常复杂的20次多项式：
-
-$y=w_0+w_1x+\cdots+w_{20}x^{20}$
+比如真实规律可能只是： $\fbox{y\approx 2x+1}$
+但是你非要用一个非常复杂的20次多项式： $\fbox{y=w_0+w_1x+\cdots+w_{20}x^{20}}$
 它可能完美穿过所有训练样本。
 
 但是对新数据反而预测很差。
@@ -639,18 +564,10 @@ $y=w_0+w_1x+\cdots+w_{20}x^{20}$
 
 连训练数据中的基本规律都没学到。
 
-表现通常是：
-
-$训练集表现差$
-并且：
-
-$测试集表现也差$
-比如数据真实关系明显是非线性的：
-
-$y=x^2$
-你偏偏拿：
-
-$y=ax+b$
+表现通常是： $\fbox{训练集表现差}$
+并且： $\fbox{测试集表现也差}$
+比如数据真实关系明显是非线性的： $\fbox{y=x^2}$
+你偏偏拿： $\fbox{y=ax+b}$
 去拟合。
 
 模型表达能力不够，自然学不好。
@@ -689,12 +606,8 @@ $y=ax+b$
 
 **③ 正则化**
 
-例如：
-
-$L_1$
-和：
-
-$L_2$
+例如： $\fbox{L_1}$
+和： $\fbox{L_2}$
 后面会重点讲。
 
 本质是：
@@ -757,12 +670,8 @@ Dropout、Early Stopping、数据增强等。
 
 **欠拟合通常对应高偏差。**
 
-例如真实关系：
-
-$y=x^2$
-你非要用：
-
-$y=ax+b$
+例如真实关系： $\fbox{y=x^2}$
+你非要用： $\fbox{y=ax+b}$
 不管多少数据都很难拟合好。
 
 属于：
@@ -793,9 +702,7 @@ $y=ax+b$
 
 ---
 
-记这个关系：
-
-$\boxed{ 欠拟合 \rightarrow High\ Bias }$ $\boxed{ 过拟合 \rightarrow High\ Variance }$
+记这个关系： $\boxed{ 欠拟合 \rightarrow High\ Bias }$ $\boxed{ 过拟合 \rightarrow High\ Variance }$
 这是非常非常重要的。
 
 ---
@@ -804,12 +711,8 @@ $\boxed{ 欠拟合 \rightarrow High\ Bias }$ $\boxed{ 过拟合 \rightarrow High
 
 现在出现一个问题：
 
-模型太简单：
-
-$High\ Bias$
-模型太复杂：
-
-$High\ Variance$
+模型太简单： $\fbox{High\ Bias}$
+模型太复杂： $\fbox{High\ Variance}$
 所以机器学习希望找到中间位置。
 
 也就是：
@@ -834,12 +737,8 @@ $High\ Variance$
 
 ##### 情况A
 
-训练误差：
-
-$20\%$
-测试误差：
-
-$22\%$
+训练误差： $\fbox{20\%}$
+测试误差： $\fbox{22\%}$
 通常意味着什么？
 
 答案：
@@ -852,19 +751,13 @@ $22\%$
 
 ##### 情况B
 
-训练误差：
-
-$1\%$
-测试误差：
-
-$20\%$
+训练误差： $\fbox{1\%}$
+测试误差： $\fbox{20\%}$
 通常：
 
 **过拟合。**
 
-因为：
-
-$Train Error \ll Test Error$
+因为： $\fbox{Train Error \ll Test Error}$
 ---
 
 你可以建立这样一个判断逻辑：
@@ -883,12 +776,8 @@ $Train Error \ll Test Error$
 
 ##### 判别模型
 
-直接学习：
-
-$P(y|x)$
-或者直接学习决策函数：
-
-$f(x)\rightarrow y$
+直接学习： $\fbox{P(y|x)}$
+或者直接学习决策函数： $\fbox{f(x)\rightarrow y}$
 也就是：
 
 > 给我一个 $x$，我直接判断它是哪一类。
@@ -901,12 +790,8 @@ $f(x)\rightarrow y$
 
 ##### 生成模型
 
-学习：
-
-$P(x,y)$
-或者：
-
-$P(x|y)P(y)$
+学习： $\fbox{P(x,y)}$
+或者： $\fbox{P(x|y)P(y)}$
 也就是说：
 
 > 不仅研究怎么分类，还试图描述每一类数据是如何产生的。
@@ -917,9 +802,7 @@ $P(x|y)P(y)$
 
 面试不需要讲特别深。
 
-记：
-
-$判别模型：直接学怎么分$ $生成模型：学习数据的概率分布$
+记： $\fbox{判别模型：直接学怎么分}$ $\fbox{生成模型：学习数据的概率分布}$
 就已经够用了。
 
 ---
@@ -928,30 +811,14 @@ $判别模型：直接学怎么分$ $生成模型：学习数据的概率分布$
 
 学完上面这么多，现在把知识压缩一下。
 
-你脑子里最好形成下面这张“机器学习地图”：
-
-$\boxed{数据}$
-↓
-
-$\boxed{训练算法}$
-↓
-
-$\boxed{模型}$
-↓
-
-$\boxed{预测新数据}$
-最终目标：
-
-$\boxed{泛化能力强}$
-模型太简单：
-
-$\boxed{欠拟合\rightarrow 高偏差}$
-模型太复杂：
-
-$\boxed{过拟合\rightarrow 高方差}$
-于是我们需要：
-
-$\boxed{Bias-Variance\ Tradeoff}$
+你脑子里最好形成下面这张“机器学习地图”： $\boxed{数据}$
+↓ $\boxed{训练算法}$
+↓ $\boxed{模型}$
+↓ $\boxed{预测新数据}$
+最终目标： $\boxed{泛化能力强}$
+模型太简单： $\boxed{欠拟合\rightarrow 高偏差}$
+模型太复杂： $\boxed{过拟合\rightarrow 高方差}$
+于是我们需要： $\boxed{Bias-Variance\ Tradeoff}$
 你会发现，整门机器学习课程其实有很大一部分都是围绕这一件事情展开的。
 
 ---
@@ -1018,27 +885,17 @@ $\boxed{Bias-Variance\ Tradeoff}$
 
 ##### 1. 判别模型在学什么？
 
-判别模型关心的是：
-
-$P(y|x)$
+判别模型关心的是： $\fbox{P(y|x)}$
 也就是：
 
 > **已经知道样本 $x$，它属于类别 $y$ 的概率是多少？**
 
-或者干脆直接学习一个分类函数：
-
-$f(x)\rightarrow y$
-比如逻辑回归直接计算：
-
-$P(y=1|x)$
-然后如果：
-
-$P(y=1|x)>0.5$
+或者干脆直接学习一个分类函数： $\fbox{f(x)\rightarrow y}$
+比如逻辑回归直接计算： $\fbox{P(y=1|x)}$
+然后如果： $\fbox{P(y=1|x)>0.5}$
 就判断为正类。
 
-所以判别模型主要关心的是：
-
-$\boxed{x\rightarrow y}$
+所以判别模型主要关心的是： $\boxed{x\rightarrow y}$
 即“**这个样本到底属于哪一类？**”
 
 典型的判别模型包括：
@@ -1051,48 +908,32 @@ $\boxed{x\rightarrow y}$
 
 生成模型会更加“深入”一些。
 
-它通常学习联合概率：
-
-$P(x,y)$
-或者根据概率乘法公式：
-
-$P(x,y)=P(x|y)P(y)$
-所以它会研究：
-
-$P(x|y)$
+它通常学习联合概率： $\fbox{P(x,y)}$
+或者根据概率乘法公式： $\fbox{P(x,y)=P(x|y)P(y)}$
+所以它会研究： $\fbox{P(x|y)}$
 也就是：
 
 > **如果已经知道类别是 $y$，这一类数据通常长什么样？**
 
 例如垃圾邮件分类。
 
-生成模型可能分别研究：
-
-$P(x|\text{垃圾邮件})$
-和
-
-$P(x|\text{正常邮件})$
+生成模型可能分别研究： $\fbox{P(x|\text{垃圾邮件})}$
+和 $\fbox{P(x|\text{正常邮件})}$
 也就是：
 
 > 垃圾邮件通常会出现哪些词？
 
 > 正常邮件通常会出现哪些词？
 
-然后当一封新邮件 $x$ 来了，我们利用贝叶斯公式：
-
-$P(y|x) = \frac{P(x|y)P(y)}{P(x)}$
+然后当一封新邮件 $x$ 来了，我们利用贝叶斯公式： $\fbox{P(y|x) = \frac{P(x|y)P(y)}{P(x)}}$
 去判断它属于哪个类别。
 
-典型代表就是：
-
-$\boxed{\text{朴素贝叶斯}}$
+典型代表就是： $\boxed{\text{朴素贝叶斯}}$
 ---
 
 #### 3. 用“猫狗分类”理解最直观
 
-假设任务是区分：
-
-$猫 \quad vs \quad 狗$
+假设任务是区分： $\fbox{猫 \quad vs \quad 狗}$
 ##### 判别模型
 
 它想学习：
@@ -1103,9 +944,7 @@ $猫 \quad vs \quad 狗$
 
 耳朵形状 + 脸型 + 毛发特征
 
-最后学出来一条边界：
-
-$\text{左边是猫，右边是狗}$
+最后学出来一条边界： $\fbox{\text{左边是猫，右边是狗}}$
 它并不一定需要完整理解“猫长什么样”和“狗长什么样”。
 
 只需要：
@@ -1124,23 +963,13 @@ $\text{左边是猫，右边是狗}$
 
 > “狗通常长什么样？”
 
-也就是分别学习：
-
-$P(x|\text{猫})$
-和
-
-$P(x|\text{狗})$
-有了这两个分布以后，来一个新动物，就比较：
-
-$P(x|\text{猫})P(\text{猫})$
-和
-
-$P(x|\text{狗})P(\text{狗})$
+也就是分别学习： $\fbox{P(x|\text{猫})}$
+和 $\fbox{P(x|\text{狗})}$
+有了这两个分布以后，来一个新动物，就比较： $\fbox{P(x|\text{猫})P(\text{猫})}$
+和 $\fbox{P(x|\text{狗})P(\text{狗})}$
 哪个大。
 
-所以可以这么记：
-
-$\boxed{\text{判别模型：学边界}}$ $\boxed{\text{生成模型：学分布}}$
+所以可以这么记： $\boxed{\text{判别模型：学边界}}$ $\boxed{\text{生成模型：学分布}}$
 这句话面试时特别好用。
 
 ---
@@ -1151,16 +980,12 @@ $\boxed{\text{判别模型：学边界}}$ $\boxed{\text{生成模型：学分布
 
 > “为什么叫生成模型？朴素贝叶斯不是用来分类的吗？”
 
-因为如果一个模型学到了：
-
-$P(x|y)$
+因为如果一个模型学到了： $\fbox{P(x|y)}$
 那么理论上，我们就可以：
 
 先选择一个类别 $y$，
 
-然后按照：
-
-$P(x|y)$
+然后按照： $\fbox{P(x|y)}$
 采样出一个新的 $x$。
 
 也就是说，它描述了：
@@ -1181,33 +1006,19 @@ $P(x|y)$
 
 ##### 生成模型
 
-学习：
-
-$\boxed{P(x,y)}$
-或者：
-
-$\boxed{P(x|y)P(y)}$
-然后通过贝叶斯公式得到：
-
-$P(y|x)$
+学习： $\boxed{P(x,y)}$
+或者： $\boxed{P(x|y)P(y)}$
+然后通过贝叶斯公式得到： $\fbox{P(y|x)}$
 ---
 
 ##### 判别模型
 
-直接学习：
-
-$\boxed{P(y|x)}$
-或者：
-
-$\boxed{f(x)}$
+直接学习： $\boxed{P(y|x)}$
+或者： $\boxed{f(x)}$
 即决策边界。
 
-所以你可以把整个区别压缩成：
-
-$\boxed{ 生成模型： P(x,y)\rightarrow P(y|x) }$
-而：
-
-$\boxed{ 判别模型： 直接学习P(y|x) }$
+所以你可以把整个区别压缩成： $\boxed{ 生成模型： P(x,y)\rightarrow P(y|x) }$
+而： $\boxed{ 判别模型： 直接学习P(y|x) }$
 ---
 
 ### 6. 一个经典对比例子：朴素贝叶斯 vs 逻辑回归
@@ -1216,31 +1027,17 @@ $\boxed{ 判别模型： 直接学习P(y|x) }$
 
 ##### 朴素贝叶斯
 
-学习：
-
-$P(x|y)$
-和：
-
-$P(y)$
-然后：
-
-$P(y|x) = \frac{P(x|y)P(y)}{P(x)}$
-所以属于：
-
-$\boxed{生成模型}$
+学习： $\fbox{P(x|y)}$
+和： $\fbox{P(y)}$
+然后： $\fbox{P(y|x) = \frac{P(x|y)P(y)}{P(x)}}$
+所以属于： $\boxed{生成模型}$
 ---
 
 ##### 逻辑回归
 
-直接建立：
-
-$P(y=1|x) = \sigma(w^Tx+b)$
-直接学习：
-
-$P(y|x)$
-所以属于：
-
-$\boxed{判别模型}$
+直接建立： $\fbox{P(y=1|x) = \sigma(w^Tx+b)}$
+直接学习： $\fbox{P(y|x)}$
+所以属于： $\boxed{判别模型}$
 这个对比非常经典，面试很可能就这么问。
 
 ---
@@ -1277,12 +1074,8 @@ $\boxed{判别模型}$
 
 这个版本已经完全达到保研面试回答的程度了。
 
-最后给你一个最值得背的记忆口诀：
-
-$\boxed{ \text{生成模型学分布，判别模型学边界} }$
-以及：
-
-$\boxed{ \text{生成：}P(x,y) \qquad \text{判别：}P(y|x) }$
+最后给你一个最值得背的记忆口诀： $\boxed{ \text{生成模型学分布，判别模型学边界} }$
+以及： $\boxed{ \text{生成：}P(x,y) \qquad \text{判别：}P(y|x) }$
 只要这两句不混，基本就不会答错。
 
 ---
@@ -1310,26 +1103,14 @@ $\boxed{ \text{生成：}P(x,y) \qquad \text{判别：}P(y|x) }$
 
 假设我们想根据房屋面积预测房价。
 
-输入：
-
-$x=\text{房屋面积}$
-输出：
-
-$y=\text{房价}$
-我们假设二者大致满足一个线性关系：
-
-$y=wx+b$
-比如：
-
-$y=2x+30$
+输入： $\fbox{x=\text{房屋面积}}$
+输出： $\fbox{y=\text{房价}}$
+我们假设二者大致满足一个线性关系： $\fbox{y=wx+b}$
+比如： $\fbox{y=2x+30}$
 意思就是面积每增加一个单位，房价平均增加 2 个单位。
 
-这里：
-
-$w$
-叫权重，或者斜率。
-
-$b$
+这里： $\fbox{w}$
+叫权重，或者斜率。 $\fbox{b}$
 叫偏置，也可以理解成截距。
 
 ---
@@ -1346,50 +1127,30 @@ $b$
 - 房龄
 - 距离市中心距离
 
-于是：
-
-$y=w_1x_1+w_2x_2+\cdots+w_dx_d+b$
-写成向量形式：
-
-$\boxed{y=w^Tx+b}$
+于是： $\fbox{y=w_1x_1+w_2x_2+\cdots+w_dx_d+b}$
+写成向量形式： $\boxed{y=w^Tx+b}$
 这是机器学习里非常重要的形式。
 
-你以后看到逻辑回归、SVM、神经网络，其实都会反复看到：
-
-$w^Tx+b$
+你以后看到逻辑回归、SVM、神经网络，其实都会反复看到： $\fbox{w^Tx+b}$
 所以要熟悉。
 
 ---
 
 ### 三、线性回归到底在“学习”什么？
 
-假设训练数据是：
-
-$(x_1,y_1),(x_2,y_2),\cdots,(x_n,y_n)$
-模型预测：
-
-$\hat y_i=w^Tx_i+b$
-其中：
-
-$\hat y_i$
+假设训练数据是： $\fbox{(x_1,y_1),(x_2,y_2),\cdots,(x_n,y_n)}$
+模型预测： $\fbox{\hat y_i=w^Tx_i+b}$
+其中： $\fbox{\hat y_i}$
 叫：
 
 **预测值。**
 
-而：
-
-$y_i$
+而： $\fbox{y_i}$
 是真实值。
 
-机器学习的目的，就是找一组最合适的：
-
-$w,b$
-使得：
-
-$\hat y_i$
-尽可能接近：
-
-$y_i$
+机器学习的目的，就是找一组最合适的： $\fbox{w,b}$
+使得： $\fbox{\hat y_i}$
+尽可能接近： $\fbox{y_i}$
 所以我们需要一个东西衡量：
 
 > “模型到底预测得有多差？”
@@ -1406,72 +1167,44 @@ $y_i$
 
 > 损失函数用于衡量模型预测结果和真实结果之间的差异。
 
-预测得越准：
-
-$Loss越小$
-预测得越差：
-
-$Loss越大$
-于是模型训练过程，本质上就是：
-
-$\boxed{\min Loss}$
+预测得越准： $\fbox{Loss越小}$
+预测得越差： $\fbox{Loss越大}$
+于是模型训练过程，本质上就是： $\boxed{\min Loss}$
 也就是：
 
 > 找到一组参数，让损失函数尽可能小。
 
 这是你理解机器学习训练的一个核心视角。
 
-可以把很多机器学习算法统一看成：
-
-$\boxed{ \text{建立模型} \rightarrow \text{定义损失函数} \rightarrow \text{优化损失函数} }$
+可以把很多机器学习算法统一看成： $\boxed{ \text{建立模型} \rightarrow \text{定义损失函数} \rightarrow \text{优化损失函数} }$
 ---
 
 ### 五、线性回归为什么用均方误差 MSE？
 
-线性回归非常经典的损失函数：
-
-$MSE= \frac{1}{n} \sum_{i=1}^{n} (y_i-\hat y_i)^2$
+线性回归非常经典的损失函数： $\fbox{MSE= \frac{1}{n} \sum_{i=1}^{n} (y_i-\hat y_i)^2}$
 中文叫：
 
 **均方误差 Mean Squared Error。**
 
-比如真实房价：
-
-$y=200$
-预测：
-
-$\hat y=180$
-误差：
-
-$y-\hat y=20$
-平方以后：
-
-$400$
+比如真实房价： $\fbox{y=200}$
+预测： $\fbox{\hat y=180}$
+误差： $\fbox{y-\hat y=20}$
+平方以后： $\fbox{400}$
 ---
 
 为什么要平方？
 
 一个很直观的原因是：
 
-如果直接把误差相加：
-
-$\sum(y_i-\hat y_i)$
+如果直接把误差相加： $\fbox{\sum(y_i-\hat y_i)}$
 正误差和负误差可能互相抵消。
 
-比如：
-
-$+10$
-和：
-
-$-10$
-相加等于：
-
-$0$
+比如： $\fbox{+10}$
+和： $\fbox{-10}$
+相加等于： $\fbox{0}$
 但显然模型并没有“没有误差”。
 
-平方以后：
-
-$10^2+(-10)^2=200$
+平方以后： $\fbox{10^2+(-10)^2=200}$
 就不存在抵消问题。
 
 除此以外，平方损失：
@@ -1489,24 +1222,16 @@ $10^2+(-10)^2=200$
 
 这是稍微进阶一点的面试问题。
 
-假设线性回归模型：
-
-$y=w^Tx+b+\epsilon$
-其中：
-
-$\epsilon$
+假设线性回归模型： $\fbox{y=w^Tx+b+\epsilon}$
+其中： $\fbox{\epsilon}$
 是噪声。
 
-如果假设噪声服从高斯分布：
-
-$\epsilon\sim N(0,\sigma^2)$
+如果假设噪声服从高斯分布： $\fbox{\epsilon\sim N(0,\sigma^2)}$
 那么可以推出：
 
 > 最大化训练数据的似然函数，等价于最小化均方误差。
 
-也就是：
-
-$\boxed{ Maximum\ Likelihood \Longleftrightarrow MSE }$
+也就是： $\boxed{ Maximum\ Likelihood \Longleftrightarrow MSE }$
 这里现在不用会推导。
 
 面试记住这句话就不错了：
@@ -1519,12 +1244,8 @@ $\boxed{ Maximum\ Likelihood \Longleftrightarrow MSE }$
 
 ### 七、最小二乘法是什么？
 
-线性回归通常希望：
-
-$\min_{w,b} \sum_{i=1}^{n} (y_i-\hat y_i)^2$
-这种方法叫：
-
-$\boxed{\text{最小二乘法}}$
+线性回归通常希望： $\fbox{\min_{w,b} \sum_{i=1}^{n} (y_i-\hat y_i)^2}$
+这种方法叫： $\boxed{\text{最小二乘法}}$
 “二乘”就是：
 
 **误差的平方。**
@@ -1547,9 +1268,7 @@ $\boxed{\text{最小二乘法}}$
 
 #### 方法一：解析解
 
-对于普通线性回归，可以直接通过数学公式求：
-
-$w=(X^TX)^{-1}X^Ty$
+对于普通线性回归，可以直接通过数学公式求： $\fbox{w=(X^TX)^{-1}X^Ty}$
 这个叫：
 
 **Normal Equation，正规方程。**
@@ -1558,9 +1277,7 @@ $w=(X^TX)^{-1}X^Ty$
 
 知道即可。
 
-问题是数据维度很高的时候：
-
-$(X^TX)^{-1}$
+问题是数据维度很高的时候： $\fbox{(X^TX)^{-1}}$
 计算可能非常昂贵。
 
 因此实际机器学习中经常使用：
@@ -1587,12 +1304,8 @@ $(X^TX)^{-1}$
 
 ##### 1. 只能表达比较简单的关系
 
-如果真实关系是：
-
-$y=x^2$
-简单的：
-
-$y=wx+b$
+如果真实关系是： $\fbox{y=x^2}$
+简单的： $\fbox{y=wx+b}$
 显然很难描述。
 
 ---
@@ -1601,12 +1314,8 @@ $y=wx+b$
 
 因为使用平方误差。
 
-比如普通误差：
-
-$2^2=4$
-但一个异常值误差：
-
-$100^2=10000$
+比如普通误差： $\fbox{2^2=4}$
+但一个异常值误差： $\fbox{100^2=10000}$
 会产生非常大的影响。
 
 所以 MSE 对 outlier 比较敏感。
@@ -1621,37 +1330,23 @@ $100^2=10000$
 
 > 一个学生能否保研成功。
 
-那么：
-
-$y\in\{0,1\}$
-例如：
-
-$0=\text{失败}$ $1=\text{成功}$
-我们能不能直接用：
-
-$y=w^Tx+b$
+那么： $\fbox{y\in\{0,1\}}$
+例如： $\fbox{0=\text{失败}}$ $\fbox{1=\text{成功}}$
+我们能不能直接用： $\fbox{y=w^Tx+b}$
 ？
 
 问题来了。
 
-假设模型预测：
-
-$w^Tx+b=3.7$
-但概率应该在：
-
-$[0,1]$
+假设模型预测： $\fbox{w^Tx+b=3.7}$
+但概率应该在： $\fbox{[0,1]}$
 之间。
 
 3.7 显然不是概率。
 
 所以怎么办？
 
-我们需要一个函数，把：
-
-$(-\infty,+\infty)$
-映射到：
-
-$(0,1)$
+我们需要一个函数，把： $\fbox{(-\infty,+\infty)}$
+映射到： $\fbox{(0,1)}$
 于是就出现了：
 
 ### Sigmoid 函数
@@ -1660,63 +1355,29 @@ $(0,1)$
 
 ### 十一、Sigmoid 函数
 
-公式：
-
-$\boxed{ \sigma(z)=\frac{1}{1+e^{-z}} }$
-它最大的特点：
-
-$z\rightarrow+\infty$
-则：
-
-$\sigma(z)\rightarrow1$
-而：
-
-$z\rightarrow-\infty$
-则：
-
-$\sigma(z)\rightarrow0$
-并且：
-
-$\sigma(0)=0.5$
-于是逻辑回归定义：
-
-$z=w^Tx+b$
-然后：
-
-$\boxed{ P(y=1|x) = \sigma(w^Tx+b) }$
-这样，不管：
-
-$w^Tx+b$
-是多少，经过 Sigmoid 以后：
-
-$0<P(y=1|x)<1$
+公式： $\boxed{ \sigma(z)=\frac{1}{1+e^{-z}} }$
+它最大的特点： $\fbox{z\rightarrow+\infty}$
+则： $\fbox{\sigma(z)\rightarrow1}$
+而： $\fbox{z\rightarrow-\infty}$
+则： $\fbox{\sigma(z)\rightarrow0}$
+并且： $\fbox{\sigma(0)=0.5}$
+于是逻辑回归定义： $\fbox{z=w^Tx+b}$
+然后： $\boxed{ P(y=1|x) = \sigma(w^Tx+b) }$
+这样，不管： $\fbox{w^Tx+b}$
+是多少，经过 Sigmoid 以后： $\fbox{0<P(y=1|x)<1}$
 刚好就可以解释成概率。
 
 ---
 
 ### 十二、逻辑回归是怎么分类的？
 
-例如：
-
-$P(y=1|x)=0.8$
-那么一般判断：
-
-$y=1$
-如果：
-
-$P(y=1|x)=0.2$
-判断：
-
-$y=0$
-最常用阈值：
-
-$0.5$
-也就是：
-
-$P(y=1|x)>0.5 \Rightarrow y=1$
-否则：
-
-$y=0$
+例如： $\fbox{P(y=1|x)=0.8}$
+那么一般判断： $\fbox{y=1}$
+如果： $\fbox{P(y=1|x)=0.2}$
+判断： $\fbox{y=0}$
+最常用阈值： $\fbox{0.5}$
+也就是： $\fbox{P(y=1|x)>0.5 \Rightarrow y=1}$
+否则： $\fbox{y=0}$
 注意：
 
 **0.5 并不是永远必须使用的。**
@@ -1737,34 +1398,18 @@ $y=0$
 
 真正原因跟它建模的东西有关。
 
-逻辑回归先构建：
-
-$w^Tx+b$
-然后通过 Sigmoid 得到：
-
-$P(y=1|x)$
-它实际上在拟合：
-
-$\boxed{\text{类别属于正类的概率}}$
-最终再通过概率阈值：
-
-$P(y=1|x)>0.5$
+逻辑回归先构建： $\fbox{w^Tx+b}$
+然后通过 Sigmoid 得到： $\fbox{P(y=1|x)}$
+它实际上在拟合： $\boxed{\text{类别属于正类的概率}}$
+最终再通过概率阈值： $\fbox{P(y=1|x)>0.5}$
 得到分类结果。
 
-因此最终任务是：
-
-$\boxed{\text{分类}}$
+因此最终任务是： $\boxed{\text{分类}}$
 ---
 
-更进一步地，逻辑回归实际上假设：
-
-$\log \frac{p}{1-p} = w^Tx+b$
-其中：
-
-$p=P(y=1|x)$
-左边叫：
-
-$\boxed{\text{log odds}}$
+更进一步地，逻辑回归实际上假设： $\fbox{\log \frac{p}{1-p} = w^Tx+b}$
+其中： $\fbox{p=P(y=1|x)}$
+左边叫： $\boxed{\text{log odds}}$
 也就是“对数几率”。
 
 所以逻辑回归的名字来源于：
@@ -1779,39 +1424,25 @@ $\boxed{\text{log odds}}$
 
 这是非常经典的问题。
 
-逻辑回归一般使用：
-
-$\boxed{\text{交叉熵损失}}$
-二分类情况下：
-
-$L= -[y\log p+(1-y)\log(1-p)]$
-其中：
-
-$p=P(y=1|x)$
+逻辑回归一般使用： $\boxed{\text{交叉熵损失}}$
+二分类情况下： $\fbox{L= -[y\log p+(1-y)\log(1-p)]}$
+其中： $\fbox{p=P(y=1|x)}$
 先别怕这个公式。
 
 我们分别看两种情况。
 
 ---
 
-假设：
-
-$y=1$
-那么：
-
-$L=-\log p$
-如果模型预测：
-
-$p=0.99$
+假设： $\fbox{y=1}$
+那么： $\fbox{L=-\log p}$
+如果模型预测： $\fbox{p=0.99}$
 那么 Loss 很小。
 
 说明：
 
 **预测正确而且非常自信。**
 
-但如果：
-
-$p=0.01$
+但如果： $\fbox{p=0.01}$
 Loss 会非常大。
 
 意思是：
@@ -1822,12 +1453,8 @@ Loss 会非常大。
 
 ---
 
-如果：
-
-$y=0$
-那么：
-
-$L=-\log(1-p)$
+如果： $\fbox{y=0}$
+那么： $\fbox{L=-\log(1-p)}$
 同样合理。
 
 ---
@@ -1836,36 +1463,24 @@ $L=-\log(1-p)$
 
 最根本的解释是：
 
-逻辑回归本质上假设：
-
-$y$
+逻辑回归本质上假设： $\fbox{y}$
 服从：
 
 **Bernoulli Distribution，伯努利分布。**
 
 然后使用最大似然估计参数。
 
-最终最大化似然：
-
-$\max P(y|x)$
-等价于：
-
-$\boxed{ \min CrossEntropy }$
+最终最大化似然： $\fbox{\max P(y|x)}$
+等价于： $\boxed{ \min CrossEntropy }$
 所以：
 
 ##### 线性回归
 
-高斯噪声假设：
-
-$\Rightarrow MSE$
+高斯噪声假设： $\fbox{\Rightarrow MSE}$
 ##### 逻辑回归
 
-伯努利分布：
-
-$\Rightarrow CrossEntropy$
-这个关系非常漂亮，你可以记住：
-
-$\boxed{ 线性回归 \rightarrow MSE }$ $\boxed{ 逻辑回归 \rightarrow CrossEntropy }$
+伯努利分布： $\fbox{\Rightarrow CrossEntropy}$
+这个关系非常漂亮，你可以记住： $\boxed{ 线性回归 \rightarrow MSE }$ $\boxed{ 逻辑回归 \rightarrow CrossEntropy }$
 ---
 
 ### 十六、面试：MSE 和交叉熵有什么区别？
@@ -1882,14 +1497,10 @@ $\boxed{ 线性回归 \rightarrow MSE }$ $\boxed{ 逻辑回归 \rightarrow Cross
 
 现在出现另一个问题。
 
-假设模型：
-
-$y=w_1x_1+\cdots+w_{1000}x_{1000}+b$
+假设模型： $\fbox{y=w_1x_1+\cdots+w_{1000}x_{1000}+b}$
 模型参数非常多。
 
-模型为了把训练集拟合得特别好，可能得到：
-
-$w_1=0.2$ $w_2=100$ $w_3=-250$
+模型为了把训练集拟合得特别好，可能得到： $\fbox{w_1=0.2}$ $\fbox{w_2=100}$ $\fbox{w_3=-250}$
 ……
 
 权重特别大。
@@ -1898,86 +1509,50 @@ $w_1=0.2$ $w_2=100$ $w_3=-250$
 
 **过拟合。**
 
-于是我们不只是要求：
-
-$Loss小$
-还要求：
-
-$模型不要太复杂$
-于是：
-
-$\boxed{ 新目标 = 原损失 + 模型复杂度惩罚 }$
-这就叫：
-
-$\boxed{\text{正则化 Regularization}}$
+于是我们不只是要求： $\fbox{Loss小}$
+还要求： $\fbox{模型不要太复杂}$
+于是： $\boxed{ 新目标 = 原损失 + 模型复杂度惩罚 }$
+这就叫： $\boxed{\text{正则化 Regularization}}$
 ---
 
 ### 十八、L2 正则化
 
-L2 正则化加入：
-
-$\lambda\sum_i w_i^2$
-因此：
-
-$Loss = 原始Loss + \lambda\|w\|_2^2$
+L2 正则化加入： $\fbox{\lambda\sum_i w_i^2}$
+因此： $\fbox{Loss = 原始Loss + \lambda\|w\|_2^2}$
 什么意思？
 
-如果权重很大：
-
-$w_i^2$
+如果权重很大： $\fbox{w_i^2}$
 就会很大。
 
 所以优化过程中会倾向于：
 
 > 不要让权重变得太大。
 
-因此 L2 会让模型参数：
-
-$\boxed{\text{整体变小}}$
+因此 L2 会让模型参数： $\boxed{\text{整体变小}}$
 但通常：
 
 **不会精确变成 0。**
 
-L2 在线性回归中还叫：
-
-$\boxed{\text{Ridge Regression 岭回归}}$
+L2 在线性回归中还叫： $\boxed{\text{Ridge Regression 岭回归}}$
 ---
 
 ### 十九、L1 正则化
 
-L1 正则化：
-
-$\lambda\sum_i|w_i|$
-因此：
-
-$Loss = 原始Loss + \lambda\|w\|_1$
-L1 有一个非常重要的特点：
-
-$\boxed{ 容易让部分参数直接变成0 }$
-假设：
-
-$w_3=0$
-那么：
-
-$w_3x_3$
+L1 正则化： $\fbox{\lambda\sum_i|w_i|}$
+因此： $\fbox{Loss = 原始Loss + \lambda\|w\|_1}$
+L1 有一个非常重要的特点： $\boxed{ 容易让部分参数直接变成0 }$
+假设： $\fbox{w_3=0}$
+那么： $\fbox{w_3x_3}$
 就完全不起作用。
 
-相当于：
-
-$x_3$
+相当于： $\fbox{x_3}$
 这个特征被删除了。
 
-所以 L1 可以产生：
-
-$\boxed{\text{稀疏解}}$
-因此还具有：
-
-$\boxed{\text{特征选择}}$
+所以 L1 可以产生： $\boxed{\text{稀疏解}}$
+因此还具有： $\boxed{\text{特征选择}}$
 效果。
 
-在线性回归中叫：
-
-$\boxed{\text{Lasso Regression}}$
+在线性回归中叫： $\boxed{\text{Lasso Regression}}$
 ---
 
 ### 二十、L1 和 L2 必会对比
@@ -1992,23 +1567,17 @@ $\boxed{\text{Lasso Regression}}$
 | 特征选择 | 可以 | 一般不直接做 |
 | 在线性回归中 | Lasso | Ridge |
 
-最简单记忆：
-
-$\boxed{ L1：让参数变少 }$ $\boxed{ L2：让参数变小 }$
+最简单记忆： $\boxed{ L1：让参数变少 }$ $\boxed{ L2：让参数变小 }$
 这句话特别适合快速记忆。
 
 ---
 
 ### 二十一、为什么正则化能防止过拟合？
 
-因为如果没有正则化，模型只在乎：
-
-$训练集Loss$
+因为如果没有正则化，模型只在乎： $\fbox{训练集Loss}$
 所以可能通过很复杂的参数组合把训练数据拟合得非常好。
 
-加正则化以后：
-
-$Loss = 训练误差 + \lambda\times模型复杂度$
+加正则化以后： $\fbox{Loss = 训练误差 + \lambda\times模型复杂度}$
 模型不仅要：
 
 > “拟合数据”
@@ -2019,15 +1588,9 @@ $Loss = 训练误差 + \lambda\times模型复杂度$
 
 从 Bias-Variance 的角度理解：
 
-加正则化通常：
-
-$Variance\downarrow$
-但：
-
-$Bias\uparrow$
-因此它本质上又回到了上一章：
-
-$\boxed{Bias-Variance\ Tradeoff}$
+加正则化通常： $\fbox{Variance\downarrow}$
+但： $\fbox{Bias\uparrow}$
+因此它本质上又回到了上一章： $\boxed{Bias-Variance\ Tradeoff}$
 这就是为什么我上一章强调 Bias 和 Variance。
 
 机器学习的知识其实都是连起来的。
@@ -2036,26 +1599,18 @@ $\boxed{Bias-Variance\ Tradeoff}$
 
 ### 二十二、$\lambda$ 有什么作用？
 
-正则化通常写：
-
-$Loss = Loss_{data} + \lambda R(w)$
-其中：
-
-$\lambda$
+正则化通常写： $\fbox{Loss = Loss_{data} + \lambda R(w)}$
+其中： $\fbox{\lambda}$
 叫：
 
 **正则化系数。**
 
-如果：
-
-$\lambda=0$
+如果： $\fbox{\lambda=0}$
 相当于：
 
 **没有正则化。**
 
-如果：
-
-$\lambda$
+如果： $\fbox{\lambda}$
 非常大：
 
 模型会特别强调参数要小。
@@ -2064,21 +1619,11 @@ $\lambda$
 
 **欠拟合。**
 
-所以：
-
-$\lambda太小$
-可能：
-
-$\rightarrow 过拟合$
-而：
-
-$\lambda太大$
-可能：
-
-$\rightarrow 欠拟合$
-因此：
-
-$\boxed{\lambda是一个超参数}$
+所以： $\fbox{\lambda太小}$
+可能： $\fbox{\rightarrow 过拟合}$
+而： $\fbox{\lambda太大}$
+可能： $\fbox{\rightarrow 欠拟合}$
+因此： $\boxed{\lambda是一个超参数}$
 通常通过验证集或者交叉验证选择。
 
 ---
@@ -2116,12 +1661,8 @@ $\boxed{\lambda是一个超参数}$
 
 ##### 缺点
 
-最大问题是：
-
-$w^Tx+b=0$
-形成的决策边界是：
-
-$\boxed{\text{线性的}}$
+最大问题是： $\fbox{w^Tx+b=0}$
+形成的决策边界是： $\boxed{\text{线性的}}$
 所以对高度复杂的非线性数据：
 
 逻辑回归本身表达能力有限。
@@ -2132,23 +1673,13 @@ $\boxed{\text{线性的}}$
 
 ### 二十五、非常容易考：逻辑回归的决策边界是什么？
 
-因为：
-
-$P(y=1|x)=0.5$
-的时候：
-
-$\sigma(w^Tx+b)=0.5$
-Sigmoid 满足：
-
-$\sigma(0)=0.5$
-所以：
-
-$w^Tx+b=0$
+因为： $\fbox{P(y=1|x)=0.5}$
+的时候： $\fbox{\sigma(w^Tx+b)=0.5}$
+Sigmoid 满足： $\fbox{\sigma(0)=0.5}$
+所以： $\fbox{w^Tx+b=0}$
 就是分类边界。
 
-因此：
-
-$\boxed{\text{逻辑回归本质上是线性分类器}}$
+因此： $\boxed{\text{逻辑回归本质上是线性分类器}}$
 注意这里说的是：
 
 **原始特征空间中。**
@@ -2159,58 +1690,38 @@ $\boxed{\text{逻辑回归本质上是线性分类器}}$
 
 ### 二十六、这一部分最重要的知识链
 
-你现在脑海里应该形成：
-
-$\boxed{线性回归}$
-预测连续值：
-
-$\hat y=w^Tx+b$
+你现在脑海里应该形成： $\boxed{线性回归}$
+预测连续值： $\fbox{\hat y=w^Tx+b}$
 ↓
 
-损失：
-
-$MSE$
+损失： $\fbox{MSE}$
 ↓
 
 通过最小二乘 / 梯度下降优化。
 
 ---
 
-分类怎么办？
-
-$w^Tx+b$
+分类怎么办？ $\fbox{w^Tx+b}$
 不能直接当概率。
 
 ↓
 
-加：
-
-$Sigmoid$
+加： $\fbox{Sigmoid}$
 ↓
 
-得到：
-
-$P(y=1|x)$
+得到： $\fbox{P(y=1|x)}$
 ↓
 
-这就是：
-
-$\boxed{逻辑回归}$
+这就是： $\boxed{逻辑回归}$
 ↓
 
-使用：
-
-$CrossEntropy$
+使用： $\fbox{CrossEntropy}$
 ↓
 
-如果怕过拟合：
-
-$Loss+\lambda R(w)$
+如果怕过拟合： $\fbox{Loss+\lambda R(w)}$
 ↓
 
-加入：
-
-$L1/L2$
+加入： $\fbox{L1/L2}$
 这条链非常重要。
 
 ---
@@ -2239,9 +1750,7 @@ $L1/L2$
 18. 逻辑回归的决策边界是什么？
 19. 线性回归和逻辑回归有什么区别？
 
-其中最应该做到“脱口而出”的是：
-
-$\boxed{\text{逻辑回归为什么能分类}}$ $\boxed{\text{MSE vs 交叉熵}}$ $\boxed{\text{L1 vs L2}}$ $\boxed{\text{正则化为什么能防过拟合}}$
+其中最应该做到“脱口而出”的是： $\boxed{\text{逻辑回归为什么能分类}}$ $\boxed{\text{MSE vs 交叉熵}}$ $\boxed{\text{L1 vs L2}}$ $\boxed{\text{正则化为什么能防过拟合}}$
 下一部分我们可以继续讲 **梯度下降与模型优化**。这一部分不会搞特别复杂的求导，我会重点让你理解 SGD、Batch GD、Mini-batch GD、学习率以及“梯度到底是什么意思”，这些也都是面试高频题。
 
 ---
@@ -2272,21 +1781,11 @@ $\boxed{\text{逻辑回归为什么能分类}}$ $\boxed{\text{MSE vs 交叉熵}}
 
 ### 一、先回忆：机器学习到底在优化什么？
 
-假设逻辑回归：
-
-$P(y=1|x)=\sigma(w^Tx+b)$
-我们定义了损失函数：
-
-$L(w,b)$
-训练模型，其实就是想找到：
-
-$w,b$
-使：
-
-$\boxed{L(w,b)\text{ 尽可能小}}$
-也就是说：
-
-$\boxed{ \min_{w,b}L(w,b) }$
+假设逻辑回归： $\fbox{P(y=1|x)=\sigma(w^Tx+b)}$
+我们定义了损失函数： $\fbox{L(w,b)}$
+训练模型，其实就是想找到： $\fbox{w,b}$
+使： $\boxed{L(w,b)\text{ 尽可能小}}$
+也就是说： $\boxed{ \min_{w,b}L(w,b) }$
 所以你可以把机器学习训练理解成：
 
 > **在一个损失函数构成的“地形”上，寻找最低点。**
@@ -2299,22 +1798,14 @@ $\boxed{ \min_{w,b}L(w,b) }$
 
 先从一维讲。
 
-假设损失函数只有一个参数：
-
-$L(w)$
-比如：
-
-$L(w)=w^2$
+假设损失函数只有一个参数： $\fbox{L(w)}$
+比如： $\fbox{L(w)=w^2}$
 它的图像是一个开口向上的抛物线。
 
-我们的目标显然是找到最低点：
-
-$w=0$
+我们的目标显然是找到最低点： $\fbox{w=0}$
 那么怎么知道应该往哪边走？
 
-看：
-
-$\frac{dL}{dw}$
+看： $\fbox{\frac{dL}{dw}}$
 也就是：
 
 **导数。**
@@ -2323,29 +1814,19 @@ $\frac{dL}{dw}$
 
 #### 导数告诉我们什么？
 
-简单理解：
-
-$\frac{dL}{dw}>0$
+简单理解： $\fbox{\frac{dL}{dw}>0}$
 说明随着 $w$ 增大，Loss 在增大。
 
-所以为了减小 Loss：
-
-$w$
+所以为了减小 Loss： $\fbox{w}$
 应该减小。
 
-反过来：
-
-$\frac{dL}{dw}<0$
+反过来： $\fbox{\frac{dL}{dw}<0}$
 说明随着 $w$ 增大，Loss 在减小。
 
-所以应该让：
-
-$w$
+所以应该让： $\fbox{w}$
 增大。
 
-因此更新方向就是：
-
-$\boxed{ -\frac{dL}{dw} }$
+因此更新方向就是： $\boxed{ -\frac{dL}{dw} }$
 也就是：
 
 **导数的反方向。**
@@ -2356,21 +1837,11 @@ $\boxed{ -\frac{dL}{dw} }$
 
 现实模型当然不只有一个参数。
 
-比如：
-
-$w=(w_1,w_2,\cdots,w_d)$
-于是损失函数：
-
-$L(w_1,w_2,\cdots,w_d)$
-我们分别求：
-
-$\frac{\partial L}{\partial w_1}, \frac{\partial L}{\partial w_2}, \cdots, \frac{\partial L}{\partial w_d}$
-组合起来：
-
-$\boxed{ \nabla L = \left( \frac{\partial L}{\partial w_1}, \frac{\partial L}{\partial w_2}, \cdots \right) }$
-这个向量就叫：
-
-$\boxed{\text{梯度 Gradient}}$
+比如： $\fbox{w=(w_1,w_2,\cdots,w_d)}$
+于是损失函数： $\fbox{L(w_1,w_2,\cdots,w_d)}$
+我们分别求： $\fbox{\frac{\partial L}{\partial w_1}, \frac{\partial L}{\partial w_2}, \cdots, \frac{\partial L}{\partial w_d}}$
+组合起来： $\boxed{ \nabla L = \left( \frac{\partial L}{\partial w_1}, \frac{\partial L}{\partial w_2}, \cdots \right) }$
+这个向量就叫： $\boxed{\text{梯度 Gradient}}$
 ---
 
 ### 四、梯度的直观含义
@@ -2383,18 +1854,10 @@ $\boxed{\text{梯度 Gradient}}$
 
 > 梯度表示函数在当前位置变化最快的方向，并且梯度方向是函数增长最快的方向。
 
-注意：
-
-$\boxed{ 梯度方向 = 上升最快 }$
-所以如果我们想：
-
-$Loss下降$
-就应该走：
-
-$\boxed{ 负梯度方向 }$
-因此：
-
-$\boxed{ -\nabla L }$
+注意： $\boxed{ 梯度方向 = 上升最快 }$
+所以如果我们想： $\fbox{Loss下降}$
+就应该走： $\boxed{ 负梯度方向 }$
+因此： $\boxed{ -\nabla L }$
 就是函数下降最快的方向。
 
 至少从局部来看是这样。
@@ -2403,39 +1866,25 @@ $\boxed{ -\nabla L }$
 
 ### 五、梯度下降 Gradient Descent
 
-现在核心公式来了：
-
-$\boxed{ w \leftarrow w-\eta\nabla L(w) }$
-其中：
-
-$\eta$
-就是：
-
-$\boxed{\text{学习率 Learning Rate}}$
+现在核心公式来了： $\boxed{ w \leftarrow w-\eta\nabla L(w) }$
+其中： $\fbox{\eta}$
+就是： $\boxed{\text{学习率 Learning Rate}}$
 这个公式保研面试最好会解释。
 
 它实际上就两件事：
 
 ##### 第一件事
 
-计算：
-
-$\nabla L(w)$
+计算： $\fbox{\nabla L(w)}$
 看看当前位置 Loss 往哪个方向增加最快。
 
 ##### 第二件事
 
-往相反方向走：
-
-$-\nabla L$
+往相反方向走： $\fbox{-\nabla L}$
 让 Loss 下降。
 
-不断重复：
-
-$w_0 \rightarrow w_1 \rightarrow w_2 \rightarrow \cdots$
-直到：
-
-$Loss$
+不断重复： $\fbox{w_0 \rightarrow w_1 \rightarrow w_2 \rightarrow \cdots}$
+直到： $\fbox{Loss}$
 比较小。
 
 ---
@@ -2462,19 +1911,13 @@ $Loss$
 
 最后希望到达谷底。
 
-这就是：
-
-$\boxed{\text{梯度下降}}$
+这就是： $\boxed{\text{梯度下降}}$
 ---
 
 ### 七、学习率是什么？
 
-梯度下降：
-
-$w\leftarrow w-\eta\nabla L$
-其中：
-
-$\eta$
+梯度下降： $\fbox{w\leftarrow w-\eta\nabla L}$
+其中： $\fbox{\eta}$
 控制：
 
 > **每一次参数更新走多大一步。**
@@ -2483,41 +1926,27 @@ $\eta$
 
 #### 学习率太小
 
-例如：
-
-$\eta=0.0000001$
+例如： $\fbox{\eta=0.0000001}$
 每次只走一点点。
 
-结果：
-
-$\boxed{\text{收敛非常慢}}$
+结果： $\boxed{\text{收敛非常慢}}$
 可能训练半天还没到最低点。
 
 ---
 
 #### 学习率太大
 
-例如：
-
-$\eta=10$
+例如： $\fbox{\eta=10}$
 一次走太远。
 
-本来最低点在：
-
-$w=0$
+本来最低点在： $\fbox{w=0}$
 结果你从左边一步跳到了右边。
 
 下一步又跳回左边。
 
-于是：
-
-$\boxed{\text{不断震荡}}$
-甚至：
-
-$\boxed{\text{Loss越来越大，最终发散}}$
-所以：
-
-$\boxed{ 学习率太小：训练慢 }$ $\boxed{ 学习率太大：震荡甚至发散 }$
+于是： $\boxed{\text{不断震荡}}$
+甚至： $\boxed{\text{Loss越来越大，最终发散}}$
+所以： $\boxed{ 学习率太小：训练慢 }$ $\boxed{ 学习率太大：震荡甚至发散 }$
 这个属于必会题。
 
 ---
@@ -2526,15 +1955,9 @@ $\boxed{ 学习率太小：训练慢 }$ $\boxed{ 学习率太大：震荡甚至�
 
 因为学习率通常不是模型从训练数据中直接学习出来的。
 
-而是训练之前人为指定，例如：
-
-$\eta=0.01$
-或者：
-
-$0.001$
-所以它属于：
-
-$\boxed{\text{超参数}}$
+而是训练之前人为指定，例如： $\fbox{\eta=0.01}$
+或者： $\fbox{0.001}$
+所以它属于： $\boxed{\text{超参数}}$
 前面第一部分讲过：
 
 > 参数是模型训练得到的，超参数通常用于控制模型或训练过程。
@@ -2553,9 +1976,7 @@ $\boxed{\text{超参数}}$
 
 > 后期逐渐减小学习率，进行精细调整。
 
-这叫：
-
-$\boxed{\text{Learning Rate Decay}}$
+这叫： $\boxed{\text{Learning Rate Decay}}$
 也就是：
 
 **学习率衰减。**
@@ -2568,17 +1989,11 @@ $\boxed{\text{Learning Rate Decay}}$
 
 ### 十、Batch Gradient Descent
 
-现在假设有：
-
-$n=100000$
+现在假设有： $\fbox{n=100000}$
 个训练样本。
 
-整个数据集损失：
-
-$L(w) = \frac{1}{n} \sum_{i=1}^n L_i(w)$
-所谓：
-
-$\boxed{\text{Batch Gradient Descent}}$
+整个数据集损失： $\fbox{L(w) = \frac{1}{n} \sum_{i=1}^n L_i(w)}$
+所谓： $\boxed{\text{Batch Gradient Descent}}$
 就是：
 
 > **每更新一次参数，都用全部训练数据计算梯度。**
@@ -2587,47 +2002,33 @@ $\boxed{\text{Batch Gradient Descent}}$
 
 100000 个样本全部算一遍。
 
-然后：
-
-$w\leftarrow w-\eta\nabla L$
+然后： $\fbox{w\leftarrow w-\eta\nabla L}$
 ---
 
 #### Batch GD 的优点
 
-因为用了全部数据，所以梯度：
-
-$\boxed{\text{比较准确、比较稳定}}$
+因为用了全部数据，所以梯度： $\boxed{\text{比较准确、比较稳定}}$
 Loss 通常比较平稳地下降。
 
 ---
 
 #### 缺点
 
-如果：
-
-$n=1亿$
+如果： $\fbox{n=1亿}$
 每更新一次参数都把1亿个样本算一遍：
 
 成本太高。
 
-所以：
-
-$\boxed{\text{计算开销大}}$
+所以： $\boxed{\text{计算开销大}}$
 ---
 
 ### 十一、SGD：随机梯度下降
 
-SGD：
-
-$\boxed{\text{Stochastic Gradient Descent}}$
+SGD： $\boxed{\text{Stochastic Gradient Descent}}$
 它比较极端。
 
-每次只随机拿：
-
-$\boxed{1个样本}$
-计算梯度：
-
-$w \leftarrow w-\eta\nabla L_i(w)$
+每次只随机拿： $\boxed{1个样本}$
+计算梯度： $\fbox{w \leftarrow w-\eta\nabla L_i(w)}$
 算完一个样本：
 
 马上更新参数。
@@ -2636,9 +2037,7 @@ $w \leftarrow w-\eta\nabla L_i(w)$
 
 #### SGD 优点
 
-每次只算一个样本，因此：
-
-$\boxed{\text{更新非常快}}$
+每次只算一个样本，因此： $\boxed{\text{更新非常快}}$
 尤其适合大数据。
 
 ---
@@ -2653,37 +2052,27 @@ $\boxed{\text{更新非常快}}$
 
 告诉你往右。
 
-于是参数路径就可能：
-
-$左\rightarrow右\rightarrow左\rightarrow右$
+于是参数路径就可能： $\fbox{左\rightarrow右\rightarrow左\rightarrow右}$
 非常抖。
 
-所以：
-
-$\boxed{ SGD梯度噪声比较大 }$
+所以： $\boxed{ SGD梯度噪声比较大 }$
 Loss 不一定平稳下降。
 
 ---
 
 ### 十二、Mini-batch Gradient Descent
 
-现实中最常用的是：
-
-$\boxed{\text{Mini-batch GD}}$
+现实中最常用的是： $\boxed{\text{Mini-batch GD}}$
 不使用全部数据。
 
 也不只使用1个。
 
 而是每次取一小批：
 
-比如：
-
-$32$ $64$ $128$ $256$
+比如： $\fbox{32}$ $\fbox{64}$ $\fbox{128}$ $\fbox{256}$
 个样本。
 
-例如：
-
-$Batch\ Size=64$
+例如： $\fbox{Batch\ Size=64}$
 每次拿64个样本：
 
 计算平均梯度。
@@ -2696,28 +2085,16 @@ $Batch\ Size=64$
 
 因为它正好折中。
 
-Batch GD：
-
-$梯度稳定$
-但是：
-
-$计算慢$
-SGD：
-
-$计算快$
-但是：
-
-$梯度很抖$
-Mini-batch：
-
-$\boxed{ 既有一定稳定性，又有较高计算效率 }$
+Batch GD： $\fbox{梯度稳定}$
+但是： $\fbox{计算慢}$
+SGD： $\fbox{计算快}$
+但是： $\fbox{梯度很抖}$
+Mini-batch： $\boxed{ 既有一定稳定性，又有较高计算效率 }$
 而且现代 GPU 特别适合：
 
 **并行计算一批数据。**
 
-所以神经网络训练基本都是：
-
-$\boxed{\text{Mini-batch}}$
+所以神经网络训练基本都是： $\boxed{\text{Mini-batch}}$
 ---
 
 ### 十四、三种方法面试必会对比
@@ -2728,21 +2105,15 @@ $\boxed{\text{Mini-batch}}$
 | SGD | 1个样本 | 更新快 | 梯度噪声大 |
 | Mini-batch | 一小批样本 | 效率与稳定性折中 | 需要选择 Batch Size |
 
-最简单记：
-
-$\boxed{ Batch：全体 }$ $\boxed{ SGD：一个 }$ $\boxed{ Mini\text{-}batch：一小批 }$
+最简单记： $\boxed{ Batch：全体 }$ $\boxed{ SGD：一个 }$ $\boxed{ Mini\text{-}batch：一小批 }$
 ---
 
 ### 十五、什么是 Epoch、Batch、Iteration？
 
 如果面试涉及深度学习，这三个概念很容易混。
 
-假设：
-
-$训练集=10000个样本$
-Batch Size：
-
-$100$
+假设： $\fbox{训练集=10000个样本}$
+Batch Size： $\fbox{100}$
 那么：
 
 ---
@@ -2751,39 +2122,25 @@ $100$
 
 一次训练使用的样本数量。
 
-这里：
-
-$Batch\ Size=100$
+这里： $\fbox{Batch\ Size=100}$
 ---
 
 #### Iteration
 
-进行一次：
-
-$参数更新$
-叫一个：
-
-$\boxed{Iteration}$
+进行一次： $\fbox{参数更新}$
+叫一个： $\boxed{Iteration}$
 10000个样本，每次100个。
 
-所以：
-
-$\frac{10000}{100}=100$
+所以： $\fbox{\frac{10000}{100}=100}$
 次更新。
 
 ---
 
 #### Epoch
 
-所有训练数据：
-
-$\boxed{\text{完整学习一遍}}$
-叫：
-
-$1\ Epoch$
-因此：
-
-$1\ Epoch = 100\ Iterations$
+所有训练数据： $\boxed{\text{完整学习一遍}}$
+叫： $\fbox{1\ Epoch}$
+因此： $\fbox{1\ Epoch = 100\ Iterations}$
 在这个例子里。
 
 所以记住：
@@ -2796,12 +2153,8 @@ $1\ Epoch = 100\ Iterations$
 
 不一定。
 
-这就涉及：
-
-$\boxed{\text{局部最优}}$
-和：
-
-$\boxed{\text{全局最优}}$
+这就涉及： $\boxed{\text{局部最优}}$
+和： $\boxed{\text{全局最优}}$
 ---
 
 ### 十七、全局最优 Global Minimum
@@ -2810,9 +2163,7 @@ $\boxed{\text{全局最优}}$
 
 最低的位置只有一个。
 
-这个最低点就是：
-
-$\boxed{\text{全局最优}}$
+这个最低点就是： $\boxed{\text{全局最优}}$
 也就是：
 
 > 在所有可能的参数中，没有任何地方比它的 Loss 更低。
@@ -2833,12 +2184,8 @@ $\boxed{\text{全局最优}}$
 
 更低的谷底。
 
-那么这个位置只是：
-
-$\boxed{\text{局部最优}}$
-不是：
-
-$全局最优$
+那么这个位置只是： $\boxed{\text{局部最优}}$
+不是： $\fbox{全局最优}$
 ---
 
 ### 十九、什么是凸函数？
@@ -2849,19 +2196,13 @@ $全局最优$
 
 > **像一个碗一样，没有很多乱七八糟的局部最低点。**
 
-比如：
-
-$f(x)=x^2$
+比如： $\fbox{f(x)=x^2}$
 就是经典凸函数。
 
-对一个凸优化问题来说：
-
-$\boxed{ 局部最优 = 全局最优 }$
+对一个凸优化问题来说： $\boxed{ 局部最优 = 全局最优 }$
 这非常重要。
 
-所以凸问题通常：
-
-$\boxed{\text{更容易优化}}$
+所以凸问题通常： $\boxed{\text{更容易优化}}$
 ---
 
 ### 二十、哪些模型优化是凸的？
@@ -2888,9 +2229,7 @@ $\boxed{\text{更容易优化}}$
 
 ##### 深度神经网络
 
-通常：
-
-$\boxed{\text{非凸优化}}$
+通常： $\boxed{\text{非凸优化}}$
 因为参数极其复杂。
 
 Loss Surface 也非常复杂。
@@ -2911,20 +2250,12 @@ Loss Surface 也非常复杂。
 
 这是一个小坑。
 
-如果：
-
-$\nabla L=0$
-只说明：
-
-$\boxed{\text{当前位置是驻点}}$
+如果： $\fbox{\nabla L=0}$
+只说明： $\boxed{\text{当前位置是驻点}}$
 可能是：
 
-##### 最小值
-
-$\cup$
-##### 最大值
-
-$\cap$
+##### 最小值 $\fbox{\cup}$
+##### 最大值 $\fbox{\cap}$
 也可能是：
 
 ##### 鞍点 Saddle Point
@@ -2939,9 +2270,7 @@ $\cap$
 
 ### 二十二、SGD 为什么有时候反而是好事？
 
-前面说 SGD 的缺点：
-
-$梯度有噪声$
+前面说 SGD 的缺点： $\fbox{梯度有噪声}$
 但这个噪声有时候反而有帮助。
 
 比如模型进入了一个不太好的局部区域。
@@ -2956,9 +2285,7 @@ SGD：
 
 因为存在随机波动，
 
-可能：
-
-$\boxed{\text{从一些局部区域跳出去}}$
+可能： $\boxed{\text{从一些局部区域跳出去}}$
 所以随机性未必完全是坏事。
 
 面试如果说到这里，就是一个不错的加分点。
@@ -2967,63 +2294,37 @@ $\boxed{\text{从一些局部区域跳出去}}$
 
 ### 二十三、什么是梯度消失？
 
-这个主要出现在：
-
-$\boxed{\text{深层神经网络}}$
+这个主要出现在： $\boxed{\text{深层神经网络}}$
 假设一个非常深的网络。
 
 梯度在从输出层往前传播时：
 
 不断乘很多很小的数。
 
-例如：
-
-$0.1\times0.1\times0.1\times0.1$
-最后：
-
-$0.0001$
-再深一点可能：
-
-$\approx0$
-于是前面的网络层：
-
-$梯度几乎为0$
-导致：
-
-$\boxed{\text{参数几乎无法更新}}$
-这就是：
-
-$\boxed{\text{梯度消失 Vanishing Gradient}}$
+例如： $\fbox{0.1\times0.1\times0.1\times0.1}$
+最后： $\fbox{0.0001}$
+再深一点可能： $\fbox{\approx0}$
+于是前面的网络层： $\fbox{梯度几乎为0}$
+导致： $\boxed{\text{参数几乎无法更新}}$
+这就是： $\boxed{\text{梯度消失 Vanishing Gradient}}$
 ---
 
 ### 二十四、为什么 Sigmoid 容易导致梯度消失？
 
-Sigmoid：
-
-$\sigma(x) = \frac1{1+e^{-x}}$
-它的导数：
-
-$\sigma'(x) = \sigma(x)(1-\sigma(x))$
-最大值只有：
-
-$\boxed{0.25}$
-深层网络反向传播的时候，如果不停乘：
-
-$<1$
+Sigmoid： $\fbox{\sigma(x) = \frac1{1+e^{-x}}}$
+它的导数： $\fbox{\sigma'(x) = \sigma(x)(1-\sigma(x))}$
+最大值只有： $\boxed{0.25}$
+深层网络反向传播的时候，如果不停乘： $\fbox{<1}$
 的数字，
 
 梯度就可能越来越小。
 
 而且当 Sigmoid 输入特别大或者特别小时，它进入饱和区：
 
-导数接近：
-
-$0$
+导数接近： $\fbox{0}$
 梯度消失更明显。
 
-这也是为什么现代深度网络中：
-
-$\boxed{\text{ReLU}}$
+这也是为什么现代深度网络中： $\boxed{\text{ReLU}}$
 非常常见。
 
 ---
@@ -3032,25 +2333,15 @@ $\boxed{\text{ReLU}}$
 
 与梯度消失相反。
 
-如果反向传播过程中不断乘：
-
-$>1$
+如果反向传播过程中不断乘： $\fbox{>1}$
 的较大数。
 
-例如：
-
-$3\times3\times3\times3\times\cdots$
+例如： $\fbox{3\times3\times3\times3\times\cdots}$
 梯度可能变得特别巨大。
 
-导致：
-
-$\boxed{\text{参数更新非常不稳定}}$
-甚至：
-
-$Loss\rightarrow NaN$
-这就叫：
-
-$\boxed{\text{梯度爆炸 Gradient Explosion}}$
+导致： $\boxed{\text{参数更新非常不稳定}}$
+甚至： $\fbox{Loss\rightarrow NaN}$
+这就叫： $\boxed{\text{梯度爆炸 Gradient Explosion}}$
 ---
 
 ### 二十六、梯度消失/爆炸怎么解决？
@@ -3078,9 +2369,7 @@ $\boxed{\text{梯度爆炸 Gradient Explosion}}$
 
 梯度裁剪很好理解。
 
-如果：
-
-$\|\nabla L\|$
+如果： $\fbox{\|\nabla L\|}$
 太大，
 
 就把它限制在一定范围以内。
@@ -3099,58 +2388,38 @@ $\|\nabla L\|$
 
 ##### 反向传播 Backpropagation
 
-负责：
-
-$\boxed{\text{计算梯度}}$
-也就是说，利用链式法则计算：
-
-$\frac{\partial L}{\partial w}$
+负责： $\boxed{\text{计算梯度}}$
+也就是说，利用链式法则计算： $\fbox{\frac{\partial L}{\partial w}}$
 ---
 
 ##### 梯度下降 Gradient Descent
 
-负责：
-
-$\boxed{\text{根据梯度更新参数}}$
-例如：
-
-$w \leftarrow w-\eta\frac{\partial L}{\partial w}$
-所以：
-
-$\boxed{ Backpropagation：算梯度 }$ $\boxed{ Gradient Descent：用梯度更新参数 }$
+负责： $\boxed{\text{根据梯度更新参数}}$
+例如： $\fbox{w \leftarrow w-\eta\frac{\partial L}{\partial w}}$
+所以： $\boxed{ Backpropagation：算梯度 }$ $\boxed{ Gradient Descent：用梯度更新参数 }$
 这句话非常适合面试。
 
 ---
 
 ### 二十八、损失函数下降是不是训练得就一定越来越好？
 
-对：
-
-$\boxed{\text{训练集}}$
+对： $\boxed{\text{训练集}}$
 通常会更好。
 
 但是：
 
 测试集不一定。
 
-例如随着训练：
-
-$Train Loss$
+例如随着训练： $\fbox{Train Loss}$
 一直下降。
 
-但是：
-
-$Validation Loss$
+但是： $\fbox{Validation Loss}$
 先下降，后来上升。
 
-这往往说明：
-
-$\boxed{\text{过拟合}}$
+这往往说明： $\boxed{\text{过拟合}}$
 于是我们可以在验证集性能开始恶化的时候停止训练。
 
-这就是前面提过的：
-
-$\boxed{\text{Early Stopping}}$
+这就是前面提过的： $\boxed{\text{Early Stopping}}$
 所以你会发现：
 
 梯度下降、验证集、过拟合其实又串起来了。
@@ -3161,9 +2430,7 @@ $\boxed{\text{Early Stopping}}$
 
 这一部分属于加分项，不是必须特别深入。
 
-普通梯度下降：
-
-$w_t=w_{t-1}-\eta g_t$
+普通梯度下降： $\fbox{w_t=w_{t-1}-\eta g_t}$
 Momentum 会考虑：
 
 > **之前更新的方向。**
@@ -3177,9 +2444,7 @@ Momentum 会考虑：
 - 减少震荡
 - 加速收敛
 
-所以 Momentum 的核心思想：
-
-$\boxed{\text{给梯度下降加入“惯性”}}$
+所以 Momentum 的核心思想： $\boxed{\text{给梯度下降加入“惯性”}}$
 知道这句话基本够了。
 
 ---
@@ -3188,9 +2453,7 @@ $\boxed{\text{给梯度下降加入“惯性”}}$
 
 如果老师涉及深度学习，可能会问。
 
-Adam 是目前非常经典的一类：
-
-$\boxed{\text{自适应优化算法}}$
+Adam 是目前非常经典的一类： $\boxed{\text{自适应优化算法}}$
 它大致结合了：
 
 - Momentum 的思想
@@ -3198,9 +2461,7 @@ $\boxed{\text{自适应优化算法}}$
 
 所以相比最普通的 SGD：
 
-Adam 通常：
-
-$\boxed{\text{更容易训练，收敛较快}}$
+Adam 通常： $\boxed{\text{更容易训练，收敛较快}}$
 但不要回答：
 
 > Adam 一定比 SGD 好。
@@ -3217,47 +2478,25 @@ $\boxed{\text{更容易训练，收敛较快}}$
 
 现在把整个第三部分压缩起来。
 
-训练模型：
-
-$\boxed{\min L(w)}$
+训练模型： $\boxed{\min L(w)}$
 为了减小 Loss：
 
-计算：
-
-$\boxed{\nabla L}$
-梯度指向：
-
-$\boxed{\text{上升最快方向}}$
-所以：
-
-$\boxed{-\nabla L}$
+计算： $\boxed{\nabla L}$
+梯度指向： $\boxed{\text{上升最快方向}}$
+所以： $\boxed{-\nabla L}$
 是下降方向。
 
-参数更新：
-
-$\boxed{ w\leftarrow w-\eta\nabla L }$
-其中：
-
-$\eta=\text{学习率}$
+参数更新： $\boxed{ w\leftarrow w-\eta\nabla L }$
+其中： $\fbox{\eta=\text{学习率}}$
 ---
 
-数据怎么用于算梯度？
-
-$\boxed{ Batch\ GD：全部样本 }$ $\boxed{ SGD：1个样本 }$ $\boxed{ Mini\text{-}batch：一小批样本 }$
-实际最常见：
-
-$\boxed{Mini\text{-}batch}$
+数据怎么用于算梯度？ $\boxed{ Batch\ GD：全部样本 }$ $\boxed{ SGD：1个样本 }$ $\boxed{ Mini\text{-}batch：一小批样本 }$
+实际最常见： $\boxed{Mini\text{-}batch}$
 ---
 
-优化难度方面：
-
-$\boxed{ 凸问题：局部最优就是全局最优 }$
-而深度网络：
-
-$\boxed{\text{通常非凸}}$
-深层网络还可能出现：
-
-$\boxed{ 梯度消失 / 梯度爆炸 }$
+优化难度方面： $\boxed{ 凸问题：局部最优就是全局最优 }$
+而深度网络： $\boxed{\text{通常非凸}}$
+深层网络还可能出现： $\boxed{ 梯度消失 / 梯度爆炸 }$
 ---
 
 ### 三十二、保研面试推荐回答
@@ -3331,45 +2570,27 @@ $\boxed{ 梯度消失 / 梯度爆炸 }$
 19. 梯度消失和梯度爆炸怎么缓解？
 20. 梯度下降和反向传播有什么区别？
 
-其中最重要的是这 **6 道**：
-
-$\boxed{\text{什么是梯度下降}}$ $\boxed{\text{为什么沿负梯度}}$ $\boxed{\text{学习率太大/太小}}$ $\boxed{\text{Batch GD vs SGD vs Mini-batch}}$ $\boxed{\text{凸优化和局部/全局最优}}$ $\boxed{\text{反向传播 vs 梯度下降}}$
+其中最重要的是这 **6 道**： $\boxed{\text{什么是梯度下降}}$ $\boxed{\text{为什么沿负梯度}}$ $\boxed{\text{学习率太大/太小}}$ $\boxed{\text{Batch GD vs SGD vs Mini-batch}}$ $\boxed{\text{凸优化和局部/全局最优}}$ $\boxed{\text{反向传播 vs 梯度下降}}$
 ---
 
 #### 最后用一句话把前三章串起来
 
-你现在其实已经能够完整描述一个机器学习模型是怎么训练的了：
-
-$\boxed{\text{选择模型}}$
-例如：
-
-$\hat y=w^Tx+b$
+你现在其实已经能够完整描述一个机器学习模型是怎么训练的了： $\boxed{\text{选择模型}}$
+例如： $\fbox{\hat y=w^Tx+b}$
+↓ $\boxed{\text{定义损失函数}}$
+例如： $\fbox{MSE / CrossEntropy}$
 ↓
 
-$\boxed{\text{定义损失函数}}$
-例如：
-
-$MSE / CrossEntropy$
+如果怕过拟合： $\boxed{ Loss+\lambda R(w) }$
 ↓
 
-如果怕过拟合：
-
-$\boxed{ Loss+\lambda R(w) }$
+计算： $\boxed{\nabla L}$
 ↓
 
-计算：
-
-$\boxed{\nabla L}$
+利用： $\boxed{ w\leftarrow w-\eta\nabla L }$
 ↓
 
-利用：
-
-$\boxed{ w\leftarrow w-\eta\nabla L }$
-↓
-
-不断训练，最终获得具有较好：
-
-$\boxed{\text{泛化能力}}$
+不断训练，最终获得具有较好： $\boxed{\text{泛化能力}}$
 的模型。
 
 这条链如果你真正理解了，后面再学决策树、SVM、神经网络，就不会觉得每个算法都是完全独立的知识。
@@ -3396,9 +2617,7 @@ $\boxed{\text{泛化能力}}$
 8. 什么是剪枝？
 9. 决策树的优缺点是什么？
 
-其中最重要的是：
-
-$\boxed{\text{熵、信息增益、Gini、剪枝}}$
+其中最重要的是： $\boxed{\text{熵、信息增益、Gini、剪枝}}$
 ---
 
 ### 一、决策树到底是什么？
@@ -3431,9 +2650,7 @@ $\boxed{\text{熵、信息增益、Gini、剪枝}}$
 
 > 先问一个问题，根据答案再问下一个问题，最终得到结论。
 
-所以决策树本质上就是：
-
-$\boxed{ 通过一系列特征判断，把样本不断划分，最终得到预测结果 }$
+所以决策树本质上就是： $\boxed{ 通过一系列特征判断，把样本不断划分，最终得到预测结果 }$
 ---
 
 ### 二、决策树有哪些组成部分？
@@ -3444,30 +2661,22 @@ $\boxed{ 通过一系列特征判断，把样本不断划分，最终得到预�
 
 最开始进行判断的节点。
 
-比如：
-
-$\text{专业排名是否前10\%？}$
+比如： $\fbox{\text{专业排名是否前10\%？}}$
 ---
 
 ##### 2. 内部节点 Internal Node
 
 继续进行特征判断。
 
-比如：
-
-$\text{是否有科研经历？}$
+比如： $\fbox{\text{是否有科研经历？}}$
 ---
 
 ##### 3. 叶节点 Leaf Node
 
 最后给出预测结果。
 
-例如：
-
-$\boxed{\text{通过}}$
-或者：
-
-$\boxed{\text{不通过}}$
+例如： $\boxed{\text{通过}}$
+或者： $\boxed{\text{不通过}}$
 ---
 
 所以预测一个新样本时非常简单：
@@ -3478,9 +2687,7 @@ $\boxed{\text{不通过}}$
 
 ### 三、真正关键的问题来了：先按哪个特征划分？
 
-假设我们有三个特征：
-
-$x_1=\text{成绩}$ $x_2=\text{科研}$ $x_3=\text{英语}$
+假设我们有三个特征： $\fbox{x_1=\text{成绩}}$ $\fbox{x_2=\text{科研}}$ $\fbox{x_3=\text{英语}}$
 决策树第一层应该问：
 
 > 成绩怎么样？
@@ -3493,16 +2700,12 @@ $x_1=\text{成绩}$ $x_2=\text{科研}$ $x_3=\text{英语}$
 
 > 英语怎么样？
 
-这就是决策树训练最核心的问题：
-
-$\boxed{\text{如何选择最好的划分特征？}}$
+这就是决策树训练最核心的问题： $\boxed{\text{如何选择最好的划分特征？}}$
 一个好的特征应该让划分以后：
 
 > **不同类别的数据尽可能被分开。**
 
-换句话说：
-
-$\boxed{\text{划分以后，数据应该更加“纯”}}$
+换句话说： $\boxed{\text{划分以后，数据应该更加“纯”}}$
 比如原来一个集合里：
 
 ```text
@@ -3532,15 +2735,9 @@ $\boxed{\text{划分以后，数据应该更加“纯”}}$
 
 ### 四、什么是信息熵？
 
-信息熵可以理解为：
-
-$\boxed{\text{数据的不确定性 / 混乱程度}}$
-公式是：
-
-$\boxed{ H(D) = -\sum_{k=1}^{K} p_k\log_2 p_k }$
-其中：
-
-$p_k$
+信息熵可以理解为： $\boxed{\text{数据的不确定性 / 混乱程度}}$
+公式是： $\boxed{ H(D) = -\sum_{k=1}^{K} p_k\log_2 p_k }$
+其中： $\fbox{p_k}$
 表示第 $k$ 类样本所占的比例。
 
 面试不要求你一定把公式推出来，但最好认识。
@@ -3553,29 +2750,19 @@ $p_k$
 
 ##### 情况 A
 
-100 个人全部属于：
-
-$\text{通过}$
-也就是说：
-
-$p(\text{通过})=1$
+100 个人全部属于： $\fbox{\text{通过}}$
+也就是说： $\fbox{p(\text{通过})=1}$
 这个数据集一点悬念都没有。
 
 随便拿一个样本出来，你都知道它属于“通过”。
 
-所以：
-
-$\boxed{熵=0}$
-也就是：
-
-$\boxed{\text{完全纯净}}$
+所以： $\boxed{熵=0}$
+也就是： $\boxed{\text{完全纯净}}$
 ---
 
 ##### 情况 B
 
-50 个通过，50 个不通过。
-
-$p(\text{通过})=0.5$ $p(\text{不通过})=0.5$
+50 个通过，50 个不通过。 $\fbox{p(\text{通过})=0.5}$ $\fbox{p(\text{不通过})=0.5}$
 现在你随机拿一个学生：
 
 > 到底通过还是不通过？
@@ -3584,126 +2771,74 @@ $p(\text{通过})=0.5$ $p(\text{不通过})=0.5$
 
 因此不确定性最高。
 
-二分类时：
-
-$\boxed{50:50时熵最大}$
-所以你可以把熵记成：
-
-$\boxed{ 越纯 → 熵越小 }$ $\boxed{ 越混乱 → 熵越大 }$
+二分类时： $\boxed{50:50时熵最大}$
+所以你可以把熵记成： $\boxed{ 越纯 → 熵越小 }$ $\boxed{ 越混乱 → 熵越大 }$
 这是理解后面所有内容的基础。
 
 ---
 
 ### 六、举一个简单的熵计算
 
-假设数据集里：
-
-$8个正类$ $2个负类$
-那么：
-
-$p_+=0.8$ $p_-=0.2$
-熵：
-
-$H(D) = -\left( 0.8\log_2 0.8+ 0.2\log_2 0.2 \right)$
-大约：
-
-$H(D)\approx0.72$
-如果是：
-
-$5:5$
-则：
-
-$H(D)=1$
-如果是：
-
-$10:0$
-则：
-
-$H(D)=0$
-所以二分类问题里可以简单记：
-
-$\boxed{ 0\leq H(D)\leq1 }$
-并且：
-
-$\boxed{ 越接近0越纯 }$
+假设数据集里： $\fbox{8个正类}$ $\fbox{2个负类}$
+那么： $\fbox{p_+=0.8}$ $\fbox{p_-=0.2}$
+熵： $\fbox{H(D) = -\left( 0.8\log_2 0.8+ 0.2\log_2 0.2 \right)}$
+大约： $\fbox{H(D)\approx0.72}$
+如果是： $\fbox{5:5}$
+则： $\fbox{H(D)=1}$
+如果是： $\fbox{10:0}$
+则： $\fbox{H(D)=0}$
+所以二分类问题里可以简单记： $\boxed{ 0\leq H(D)\leq1 }$
+并且： $\boxed{ 越接近0越纯 }$
 ---
 
 ### 七、信息增益 Information Gain
 
 现在假设原来的数据集很混乱。
 
-熵：
-
-$H(D)=0.9$
+熵： $\fbox{H(D)=0.9}$
 我们使用某个特征进行划分以后，数据明显纯净了一些。
 
-划分后的平均熵：
-
-$H_{after}=0.3$
-那么：
-
-$0.9-0.3=0.6$
+划分后的平均熵： $\fbox{H_{after}=0.3}$
+那么： $\fbox{0.9-0.3=0.6}$
 这说明：
 
 > 这个特征让数据的不确定性降低了很多。
 
-减少的这部分，就叫：
-
-$\boxed{\text{信息增益 Information Gain}}$
-公式：
-
-$\boxed{ Gain(D,a) = H(D) - \sum_v \frac{|D_v|}{|D|} H(D_v) }$
-不用死背细节，你重点理解：
-
-$\boxed{ 信息增益 = 划分前的熵 - 划分后的加权平均熵 }$
+减少的这部分，就叫： $\boxed{\text{信息增益 Information Gain}}$
+公式： $\boxed{ Gain(D,a) = H(D) - \sum_v \frac{|D_v|}{|D|} H(D_v) }$
+不用死背细节，你重点理解： $\boxed{ 信息增益 = 划分前的熵 - 划分后的加权平均熵 }$
 ---
 
 ### 八、信息增益越大越好吗？
 
 对。
 
-因为：
-
-$Gain越大$
-意味着：
-
-$划分后熵下降得越多$
-也就是说：
-
-$\boxed{\text{数据变得更纯}}$
-所以使用信息增益选择特征时：
-
-$\boxed{ 选择信息增益最大的特征 }$
+因为： $\fbox{Gain越大}$
+意味着： $\fbox{划分后熵下降得越多}$
+也就是说： $\boxed{\text{数据变得更纯}}$
+所以使用信息增益选择特征时： $\boxed{ 选择信息增益最大的特征 }$
 ---
 
 ### 九、ID3 算法
 
-现在第一个经典决策树算法出现了：
-
-$\boxed{\text{ID3}}$
+现在第一个经典决策树算法出现了： $\boxed{\text{ID3}}$
 ID3 的核心原则非常简单：
 
 > **每次选择信息增益最大的特征进行划分。**
 
-也就是：
-
-$\boxed{ a^* = \arg\max_a Gain(D,a) }$
+也就是： $\boxed{ a^* = \arg\max_a Gain(D,a) }$
 面试问：
 
 > ID3 使用什么指标选择特征？
 
-直接回答：
-
-$\boxed{\text{信息增益}}$
+直接回答： $\boxed{\text{信息增益}}$
 ---
 
 ### 十、信息增益有什么问题？
 
 这里是非常经典的追问。
 
-假设我们的数据里有一个特征：
-
-$\boxed{\text{学号}}$
+假设我们的数据里有一个特征： $\boxed{\text{学号}}$
 每个人的学号都不同。
 
 例如：
@@ -3719,47 +2854,29 @@ $\boxed{\text{学号}}$
 
 如果你按照学号划分：
 
-每一个分支里只有：
-
-$1个学生$
+每一个分支里只有： $\fbox{1个学生}$
 于是每一个叶节点都非常纯。
 
-熵：
-
-$0$
-所以：
-
-$信息增益非常大$
+熵： $\fbox{0}$
+所以： $\fbox{信息增益非常大}$
 但是：
 
 **学号显然对预测新学生能不能通过面试没有意义。**
 
-你来了一个新学号：
-
-$101$
+你来了一个新学号： $\fbox{101}$
 树根本没学到真正规律。
 
-所以 ID3 有一个重要问题：
-
-$\boxed{ 信息增益偏好取值很多的特征 }$
-尤其是：
-
-$\boxed{\text{唯一标识符}}$
+所以 ID3 有一个重要问题： $\boxed{ 信息增益偏好取值很多的特征 }$
+尤其是： $\boxed{\text{唯一标识符}}$
 这种特征。
 
 ---
 
 ### 十一、C4.5 怎么解决这个问题？
 
-于是出现了：
-
-$\boxed{\text{C4.5}}$
-它不直接使用信息增益，而使用：
-
-$\boxed{\text{信息增益率 Gain Ratio}}$
-大致可以理解为：
-
-$\boxed{ Gain\ Ratio = \frac{Information\ Gain} {Intrinsic\ Value} }$
+于是出现了： $\boxed{\text{C4.5}}$
+它不直接使用信息增益，而使用： $\boxed{\text{信息增益率 Gain Ratio}}$
+大致可以理解为： $\boxed{ Gain\ Ratio = \frac{Information\ Gain} {Intrinsic\ Value} }$
 分母会对：
 
 > 取值特别多的特征
@@ -3772,9 +2889,7 @@ $\boxed{ Gain\ Ratio = \frac{Information\ Gain} {Intrinsic\ Value} }$
 
 ### 十二、面试一定记住 ID3 vs C4.5
 
-非常简单：
-
-$\boxed{ ID3：信息增益 }$ $\boxed{ C4.5：信息增益率 }$
+非常简单： $\boxed{ ID3：信息增益 }$ $\boxed{ C4.5：信息增益率 }$
 为什么从信息增益改成信息增益率？
 
 因为：
@@ -3787,65 +2902,39 @@ $\boxed{ ID3：信息增益 }$ $\boxed{ C4.5：信息增益率 }$
 
 ### 十三、CART 又是什么？
 
-第三个最重要的算法：
-
-$\boxed{\text{CART}}$
+第三个最重要的算法： $\boxed{\text{CART}}$
 全称：
 
 **Classification and Regression Tree**
 
-注意它既可以做：
-
-$\boxed{\text{分类}}$
-也可以做：
-
-$\boxed{\text{回归}}$
+注意它既可以做： $\boxed{\text{分类}}$
+也可以做： $\boxed{\text{回归}}$
 而 ID3、C4.5 主要用于分类树。
 
 ---
 
 ### 十四、CART 分类树使用什么指标？
 
-CART 做分类时通常使用：
-
-$\boxed{\text{Gini Index}}$
-也就是：
-
-$\boxed{\text{基尼指数}}$
-公式：
-
-$\boxed{ Gini(D) = 1-\sum_{k=1}^K p_k^2 }$
-和熵一样：
-
-$\boxed{ Gini越小 \Rightarrow 数据越纯 }$
+CART 做分类时通常使用： $\boxed{\text{Gini Index}}$
+也就是： $\boxed{\text{基尼指数}}$
+公式： $\boxed{ Gini(D) = 1-\sum_{k=1}^K p_k^2 }$
+和熵一样： $\boxed{ Gini越小 \Rightarrow 数据越纯 }$
 ---
 
 ### 十五、Gini 怎么理解？
 
 比如一个节点：
 
-100% 都是正类。
-
-$p_+=1$
-那么：
-
-$Gini = 1-1^2 = 0$
-也就是说：
-
-$\boxed{\text{完全纯净}}$
+100% 都是正类。 $\fbox{p_+=1}$
+那么： $\fbox{Gini = 1-1^2 = 0}$
+也就是说： $\boxed{\text{完全纯净}}$
 ---
 
-如果：
-
-$50\%正类$ $50\%负类$
-那么：
-
-$Gini = 1-(0.5^2+0.5^2)$ $=0.5$
+如果： $\fbox{50\%正类}$ $\fbox{50\%负类}$
+那么： $\fbox{Gini = 1-(0.5^2+0.5^2)}$ $\fbox{=0.5}$
 二分类中这时不纯度最大。
 
-所以：
-
-$\boxed{ Gini和Entropy都是衡量节点“不纯度”的指标 }$
+所以： $\boxed{ Gini和Entropy都是衡量节点“不纯度”的指标 }$
 ---
 
 ### 十六、Entropy 和 Gini 有什么区别？
@@ -3866,39 +2955,25 @@ $\boxed{ Gini和Entropy都是衡量节点“不纯度”的指标 }$
 
 ### 十七、CART 回归树又怎么划分？
 
-如果输出不是类别：
-
-$y\in\{0,1\}$
-而是连续值：
-
-$y=房价$
+如果输出不是类别： $\fbox{y\in\{0,1\}}$
+而是连续值： $\fbox{y=房价}$
 怎么办？
 
 回归树就不能用“类别纯不纯”来衡量了。
 
-一般希望一个叶节点里的：
-
-$y$
+一般希望一个叶节点里的： $\fbox{y}$
 尽可能接近。
 
-比如一个叶节点：
-
-$[200,202,198,201]$
+比如一个叶节点： $\fbox{[200,202,198,201]}$
 很好。
 
-但是：
-
-$[100,500,50,900]$
+但是： $\fbox{[100,500,50,900]}$
 就很差。
 
-所以 CART 回归树通常通过：
-
-$\boxed{\text{平方误差}}$
+所以 CART 回归树通常通过： $\boxed{\text{平方误差}}$
 等标准选择划分。
 
-叶节点的预测结果通常取该节点训练样本：
-
-$\boxed{\text{平均值}}$
+叶节点的预测结果通常取该节点训练样本： $\boxed{\text{平均值}}$
 ---
 
 ### 十八、一个超级重要的表
@@ -3918,12 +2993,8 @@ $\boxed{\text{平均值}}$
 
 ### 十九、为什么 CART 通常是二叉树？
 
-CART 的每一次划分一般把数据分为：
-
-$\boxed{\text{两部分}}$
-例如连续特征“年龄”：
-
-$年龄\leq25?$
+CART 的每一次划分一般把数据分为： $\boxed{\text{两部分}}$
+例如连续特征“年龄”： $\fbox{年龄\leq25?}$
 于是：
 
 ```text
@@ -3932,9 +3003,7 @@ $年龄\leq25?$
         是         否
 ```
 
-即：
-
-$\boxed{\text{Binary Split}}$
+即： $\boxed{\text{Binary Split}}$
 所以 CART 构造的是二叉树。
 
 ---
@@ -3943,32 +3012,16 @@ $\boxed{\text{Binary Split}}$
 
 这个也可能被追问。
 
-例如：
-
-$年龄= 18,20,21,24,30,35...$
-显然不能像颜色：
-
-$红、黄、蓝$
+例如： $\fbox{年龄= 18,20,21,24,30,35...}$
+显然不能像颜色： $\fbox{红、黄、蓝}$
 那样直接枚举。
 
-通常会寻找一个阈值：
-
-$t$
-然后划分成：
-
-$x\leq t$
-和：
-
-$x>t$
-比如找到：
-
-$t=25$
-那么：
-
-$年龄\leq25$
-一边，
-
-$年龄>25$
+通常会寻找一个阈值： $\fbox{t}$
+然后划分成： $\fbox{x\leq t}$
+和： $\fbox{x>t}$
+比如找到： $\fbox{t=25}$
+那么： $\fbox{年龄\leq25}$
+一边， $\fbox{年龄>25}$
 另一边。
 
 然后比较不同阈值带来的纯度变化，选最优的。
@@ -3981,55 +3034,33 @@ $年龄>25$
 
 因为如果不限制决策树生长：
 
-它可以一直划分：
-
-$再分 \rightarrow 再分 \rightarrow 再分$
-最后甚至做到：
-
-$\boxed{ 一个叶节点只有一个训练样本 }$
-那么训练集准确率可能达到：
-
-$100\%$
-但是它实际上可能只是把训练数据：
-
-$\boxed{\text{记住了}}$
+它可以一直划分： $\fbox{再分 \rightarrow 再分 \rightarrow 再分}$
+最后甚至做到： $\boxed{ 一个叶节点只有一个训练样本 }$
+那么训练集准确率可能达到： $\fbox{100\%}$
+但是它实际上可能只是把训练数据： $\boxed{\text{记住了}}$
 包括噪声。
 
-于是：
-
-$Train\ Accuracy非常高$
-但：
-
-$Test\ Accuracy下降$
-这就是：
-
-$\boxed{\text{过拟合}}$
+于是： $\fbox{Train\ Accuracy非常高}$
+但： $\fbox{Test\ Accuracy下降}$
+这就是： $\boxed{\text{过拟合}}$
 所以：
 
 > **决策树模型复杂度如果不加限制，往往非常高，因此容易产生高方差。**
 
-这又和第一部分的：
-
-$\boxed{Bias-Variance}$
+这又和第一部分的： $\boxed{Bias-Variance}$
 联系起来了。
 
 ---
 
 ### 二十二、怎么防止决策树过拟合？
 
-最核心的方法：
-
-$\boxed{\text{剪枝 Pruning}}$
+最核心的方法： $\boxed{\text{剪枝 Pruning}}$
 顾名思义：
 
 > 就像修剪树枝一样，不让决策树长得过于复杂。
 
-剪枝主要分为：
-
-$\boxed{\text{预剪枝}}$
-和：
-
-$\boxed{\text{后剪枝}}$
+剪枝主要分为： $\boxed{\text{预剪枝}}$
+和： $\boxed{\text{后剪枝}}$
 ---
 
 ### 二十三、预剪枝 Pre-pruning
@@ -4040,9 +3071,7 @@ $\boxed{\text{后剪枝}}$
 
 比如设置：
 
-##### 最大深度
-
-$max\_depth=5$
+##### 最大深度 $\fbox{max\_depth=5}$
 达到 5 层：
 
 不再继续分。
@@ -4051,44 +3080,32 @@ $max\_depth=5$
 
 ##### 叶节点最少样本数
 
-例如：
-
-$min\_samples\_leaf=10$
+例如： $\fbox{min\_samples\_leaf=10}$
 如果继续划分会让叶节点样本太少，就不分了。
 
 ---
 
 ##### 节点划分最少样本数
 
-例如：
-
-$min\_samples\_split$
+例如： $\fbox{min\_samples\_split}$
 等等。
 
-所以：
-
-$\boxed{ 预剪枝 = 提前阻止树长得过深 }$
+所以： $\boxed{ 预剪枝 = 提前阻止树长得过深 }$
 ---
 
 ### 二十四、后剪枝 Post-pruning
 
 后剪枝反过来。
 
-首先：
-
-$\boxed{\text{让树充分生长}}$
+首先： $\boxed{\text{让树充分生长}}$
 然后从下面往上看：
 
 > 某些分支删掉以后，验证集性能是不是反而更好？
 
 如果删掉影响不大，甚至泛化性能更好：
 
-就：
-
-$\boxed{\text{把这个分支剪掉}}$
-所以：
-
-$\boxed{ 后剪枝 = 先长完整，再往回剪 }$
+就： $\boxed{\text{把这个分支剪掉}}$
+所以： $\boxed{ 后剪枝 = 先长完整，再往回剪 }$
 ---
 
 ### 二十五、预剪枝 vs 后剪枝
@@ -4105,34 +3122,18 @@ $\boxed{ 后剪枝 = 先长完整，再往回剪 }$
 
 这个理解特别重要。
 
-剪枝其实就是：
-
-$\boxed{\text{降低模型复杂度}}$
+剪枝其实就是： $\boxed{\text{降低模型复杂度}}$
 从 Bias-Variance 看：
 
-原来树很深：
-
-$Low\ Bias,\ High\ Variance$
-剪枝以后：
-
-$Variance\downarrow$
-但可能：
-
-$Bias\uparrow$
-所以又是：
-
-$\boxed{\text{Bias-Variance Tradeoff}}$
+原来树很深： $\fbox{Low\ Bias,\ High\ Variance}$
+剪枝以后： $\fbox{Variance\downarrow}$
+但可能： $\fbox{Bias\uparrow}$
+所以又是： $\boxed{\text{Bias-Variance Tradeoff}}$
 你会发现机器学习不同算法背后的思想其实高度统一。
 
-前面逻辑回归使用：
-
-$\boxed{正则化}$
-决策树使用：
-
-$\boxed{剪枝}$
-表面方法不同，本质上都在：
-
-$\boxed{\text{控制模型复杂度，提升泛化能力}}$
+前面逻辑回归使用： $\boxed{正则化}$
+决策树使用： $\boxed{剪枝}$
+表面方法不同，本质上都在： $\boxed{\text{控制模型复杂度，提升泛化能力}}$
 这一点面试说出来很加分。
 
 ---
@@ -4141,20 +3142,12 @@ $\boxed{\text{控制模型复杂度，提升泛化能力}}$
 
 这是一个非常实用的面试问题。
 
-通常：
-
-$\boxed{\text{不需要}}$
+通常： $\boxed{\text{不需要}}$
 为什么？
 
-比如原来：
-
-$年龄\leq30$
-标准化以后可能变成：
-
-$x\leq0.5$
-虽然数值发生了改变，但：
-
-$\boxed{\text{样本之间的大小顺序没有改变}}$
+比如原来： $\fbox{年龄\leq30}$
+标准化以后可能变成： $\fbox{x\leq0.5}$
+虽然数值发生了改变，但： $\boxed{\text{样本之间的大小顺序没有改变}}$
 决策树关心的是：
 
 > 按某个阈值能不能把样本分开。
@@ -4168,9 +3161,7 @@ $\boxed{\text{样本之间的大小顺序没有改变}}$
 - GBDT
 - XGBoost
 
-一般对特征缩放：
-
-$\boxed{\text{不敏感}}$
+一般对特征缩放： $\boxed{\text{不敏感}}$
 这和：
 
 - KNN
@@ -4233,21 +3224,15 @@ $\boxed{\text{不敏感}}$
 
 ### 二十九、决策树有什么缺点？
 
-最重要：
-
-$\boxed{\text{容易过拟合}}$
+最重要： $\boxed{\text{容易过拟合}}$
 其次：
 
 ##### ① 高方差
 
 训练数据稍微变化：
 
-可能学出来一棵：
-
-$\boxed{\text{完全不同的树}}$
-所以决策树：
-
-$\boxed{\text{不够稳定}}$
+可能学出来一棵： $\boxed{\text{完全不同的树}}$
+所以决策树： $\boxed{\text{不够稳定}}$
 ---
 
 ##### ② 贪心算法未必得到全局最优
@@ -4256,12 +3241,8 @@ $\boxed{\text{不够稳定}}$
 
 > 选择当前最好的划分。
 
-但：
-
-$\boxed{ 每一步当前最好 \not\Rightarrow 整棵树最终最好 }$
-这属于：
-
-$\boxed{\text{贪心算法 Greedy}}$
+但： $\boxed{ 每一步当前最好 \not\Rightarrow 整棵树最终最好 }$
+这属于： $\boxed{\text{贪心算法 Greedy}}$
 ---
 
 ### 三十、决策树为什么叫“贪心”？
@@ -4276,17 +3257,11 @@ $\boxed{\text{贪心算法 Greedy}}$
 
 当前信息增益稍低。
 
-决策树通常直接选：
-
-$A$
+决策树通常直接选： $\fbox{A}$
 不会提前把未来所有可能的树都尝试一遍。
 
-也就是说，它关注：
-
-$\boxed{\text{当前最优}}$
-所以属于：
-
-$\boxed{\text{贪心策略}}$
+也就是说，它关注： $\boxed{\text{当前最优}}$
+所以属于： $\boxed{\text{贪心策略}}$
 优点：
 
 计算可接受。
@@ -4329,30 +3304,18 @@ $\boxed{\text{贪心策略}}$
 
 决策树和我们前面讲的逻辑回归训练方式很不一样。
 
-逻辑回归是：
-
-$\min L(w)$
-然后：
-
-$梯度下降$
-而决策树更多是：
-
-$\boxed{ 选择最佳特征 \rightarrow 划分数据 \rightarrow 递归 }$
-因此传统决策树本身通常：
-
-$\boxed{\text{不需要梯度下降}}$
+逻辑回归是： $\fbox{\min L(w)}$
+然后： $\fbox{梯度下降}$
+而决策树更多是： $\boxed{ 选择最佳特征 \rightarrow 划分数据 \rightarrow 递归 }$
+因此传统决策树本身通常： $\boxed{\text{不需要梯度下降}}$
 这个也可能被问。
 
 ---
 
 ### 三十三、把三个决策树算法彻底记住
 
-你可以用一句口诀：
-
-$\boxed{ ID3看增益 }$ $\boxed{ C4.5看增益率 }$ $\boxed{ CART分类看Gini }$
-然后补一句：
-
-$\boxed{ CART还可以做回归 }$
+你可以用一句口诀： $\boxed{ ID3看增益 }$ $\boxed{ C4.5看增益率 }$ $\boxed{ CART分类看Gini }$
+然后补一句： $\boxed{ CART还可以做回归 }$
 基本就不会混。
 
 ---
@@ -4437,50 +3400,26 @@ $\boxed{ CART还可以做回归 }$
 22. 决策树为什么属于贪心算法？
 23. ID3、C4.5、CART 的主要区别是什么？
 
-最重要的 6 个：
-
-$\boxed{\text{熵是什么}}$ $\boxed{\text{信息增益是什么}}$ $\boxed{\text{ID3 vs C4.5 vs CART}}$ $\boxed{\text{Gini是什么}}$ $\boxed{\text{为什么容易过拟合}}$ $\boxed{\text{剪枝}}$
+最重要的 6 个： $\boxed{\text{熵是什么}}$ $\boxed{\text{信息增益是什么}}$ $\boxed{\text{ID3 vs C4.5 vs CART}}$ $\boxed{\text{Gini是什么}}$ $\boxed{\text{为什么容易过拟合}}$ $\boxed{\text{剪枝}}$
 ---
 
 ### 最后把这一章压缩成一条知识链
 
-决策树要不断：
-
-$\boxed{\text{划分数据}}$
+决策树要不断： $\boxed{\text{划分数据}}$
 怎么判断划分好不好？
 
-看：
-
-$\boxed{\text{纯度}}$
-衡量纯度可以用：
-
-$\boxed{Entropy}$
-或者：
-
-$\boxed{Gini}$
-于是：
-
-$ID3 \rightarrow \boxed{Information\ Gain}$ $C4.5 \rightarrow \boxed{Gain\ Ratio}$ $CART \rightarrow \boxed{Gini}$
-但是树如果一直生长：
-
-$\boxed{\text{容易过拟合}}$
-怎么办？
-
-$\boxed{\text{剪枝}}$
-本质：
-
-$\boxed{ 降低模型复杂度 \rightarrow 降低方差 \rightarrow 提高泛化能力 }$
-而且这一章会非常自然地引出下一部分——**集成学习**。因为单棵决策树最大的缺点之一就是：
-
-$\boxed{\text{高方差、不稳定}}$
+看： $\boxed{\text{纯度}}$
+衡量纯度可以用： $\boxed{Entropy}$
+或者： $\boxed{Gini}$
+于是： $ID3 \rightarrow \boxed{Information\ Gain}$ $C4.5 \rightarrow \boxed{Gain\ Ratio}$ $CART \rightarrow \boxed{Gini}$
+但是树如果一直生长： $\boxed{\text{容易过拟合}}$
+怎么办？ $\boxed{\text{剪枝}}$
+本质： $\boxed{ 降低模型复杂度 \rightarrow 降低方差 \rightarrow 提高泛化能力 }$
+而且这一章会非常自然地引出下一部分——**集成学习**。因为单棵决策树最大的缺点之一就是： $\boxed{\text{高方差、不稳定}}$
 那如果我们训练很多棵树，再把它们组合起来，会不会更稳定？
 
-答案就是：
-
-$\boxed{\text{随机森林 Random Forest}}$
-以及另一条完全不同的思路：
-
-$\boxed{\text{Boosting}}$
+答案就是： $\boxed{\text{随机森林 Random Forest}}$
+以及另一条完全不同的思路： $\boxed{\text{Boosting}}$
 所以下一部分建议直接讲 **Bagging、随机森林、Boosting、AdaBoost、GBDT 和 XGBoost**。这一章也是保研面试的重点，而且老师特别爱问：
 
 > **“Bagging 和 Boosting 有什么区别？”**
@@ -4506,15 +3445,9 @@ $\boxed{\text{Boosting}}$
 
 ### 一、为什么 ID3 偏好“取值很多”的特征？
 
-先回忆一下 ID3 的规则：
-
-$\boxed{\text{选择信息增益最大的特征}}$
-而信息增益：
-
-$\boxed{ Gain(D,a)=H(D)-H(D|a) }$
-直观上就是：
-
-$\boxed{ \text{划分前有多乱} - \text{划分后有多乱} }$
+先回忆一下 ID3 的规则： $\boxed{\text{选择信息增益最大的特征}}$
+而信息增益： $\boxed{ Gain(D,a)=H(D)-H(D|a) }$
+直观上就是： $\boxed{ \text{划分前有多乱} - \text{划分后有多乱} }$
 所以：
 
 > **划分之后越纯，信息增益越大。**
@@ -4525,9 +3458,7 @@ $\boxed{ \text{划分前有多乱} - \text{划分后有多乱} }$
 
 #### 1. 先看一个非常极端的例子
 
-假设有 8 个学生，我们想预测：
-
-$y=\text{是否通过面试}$
+假设有 8 个学生，我们想预测： $\fbox{y=\text{是否通过面试}}$
 数据如下：
 
 | 学号 | 排名 | 是否通过 |
@@ -4541,24 +3472,16 @@ $y=\text{是否通过面试}$
 | 007 | 非前10% | 否 |
 | 008 | 非前10% | 否 |
 
-一共有：
-
-$4个“是”$ $4个“否”$
+一共有： $\fbox{4个“是”}$ $\fbox{4个“否”}$
 所以原始数据非常混乱。
 
-熵：
-
-$H(D) = -\frac48\log_2\frac48 -\frac48\log_2\frac48 =1$
-也就是说：
-
-$\boxed{H(D)=1}$
+熵： $\fbox{H(D) = -\frac48\log_2\frac48 -\frac48\log_2\frac48 =1}$
+也就是说： $\boxed{H(D)=1}$
 ---
 
 ### 二、如果按照“学号”划分，会发生什么？
 
-学号有 8 个不同的值：
-
-$001,002,\dots,008$
+学号有 8 个不同的值： $\fbox{001,002,\dots,008}$
 如果 ID3 按照学号划分，会变成：
 
 ```text
@@ -4571,9 +3494,7 @@ $001,002,\dots,008$
 
 注意：
 
-每个分支里面只有：
-
-$\boxed{1个样本}$
+每个分支里面只有： $\boxed{1个样本}$
 那么每一个子节点都是 100% 纯的。
 
 比如节点 001：
@@ -4583,39 +3504,25 @@ $\boxed{1个样本}$
 类别：是
 ```
 
-所以：
-
-$H(D_{001})=0$
-002 同样：
-
-$H(D_{002})=0$
-所有节点都是：
-
-$0$
-于是划分后的总熵：
-
-$H(D|\text{学号})=0$
-信息增益：
-
-$Gain(D,\text{学号}) = 1-0 = \boxed{1}$
+所以： $\fbox{H(D_{001})=0}$
+002 同样： $\fbox{H(D_{002})=0}$
+所有节点都是： $\fbox{0}$
+于是划分后的总熵： $\fbox{H(D|\text{学号})=0}$
+信息增益： $Gain(D,\text{学号}) = 1-0 = \boxed{1}$
 这是最大的可能值。
 
 于是 ID3 会觉得：
 
 > “哇！学号这个特征太牛了，一划分之后所有节点都完全纯净！”
 
-但我们人一眼就知道：
-
-$\boxed{\text{学号根本没有预测意义}}$
+但我们人一眼就知道： $\boxed{\text{学号根本没有预测意义}}$
 ---
 
 ### 三、真正的问题在哪里？
 
 因为模型其实没有“学习规律”。
 
-它只是：
-
-$\boxed{\text{把训练集记住了}}$
+它只是： $\boxed{\text{把训练集记住了}}$
 比如训练的时候：
 
 ```text
@@ -4626,14 +3533,10 @@ $\boxed{\text{把训练集记住了}}$
 008 → 不通过
 ```
 
-结果第二天来了一个新学生：
-
-$学号=009$
+结果第二天来了一个新学生： $\fbox{学号=009}$
 树傻了。
 
-因为：
-
-$009$
+因为： $\fbox{009}$
 训练的时候根本没见过。
 
 它没有学到：
@@ -4644,21 +3547,15 @@ $009$
 
 > 001通过、002通过、003通过……
 
-这就是典型的：
-
-$\boxed{\text{过拟合}}$
+这就是典型的： $\boxed{\text{过拟合}}$
 ---
 
 ### 四、“取值很多”为什么天然容易让节点变纯？
 
 这就是最核心的一步。
 
-假设一个特征只有两个取值：
-
-$A\in\{是,否\}$
-100个样本最多只能分成：
-
-$2组$
+假设一个特征只有两个取值： $\fbox{A\in\{是,否\}}$
+100个样本最多只能分成： $\fbox{2组}$
 每一组里面可能还有很多：
 
 ```text
@@ -4673,29 +3570,15 @@ $2组$
 
 ---
 
-但是如果一个特征有：
-
-$100个不同取值$
-那么100个样本可能直接被分成：
-
-$100组$
+但是如果一个特征有： $\fbox{100个不同取值}$
+那么100个样本可能直接被分成： $\fbox{100组}$
 一组一个人。
 
-每组里面只有一个样本，自然就是：
-
-$\boxed{\text{100%纯}}$
-所以出现一个很危险的现象：
-
-$\boxed{ 特征取值越多 \Rightarrow 越容易把数据切得特别碎 }$
-然后：
-
-$\boxed{ 子节点越小 \Rightarrow 越容易显得“很纯” }$
-于是：
-
-$\boxed{ 划分后熵越低 }$
-最终：
-
-$\boxed{ 信息增益越高 }$
+每组里面只有一个样本，自然就是： $\boxed{\text{100%纯}}$
+所以出现一个很危险的现象： $\boxed{ 特征取值越多 \Rightarrow 越容易把数据切得特别碎 }$
+然后： $\boxed{ 子节点越小 \Rightarrow 越容易显得“很纯” }$
+于是： $\boxed{ 划分后熵越低 }$
+最终： $\boxed{ 信息增益越高 }$
 这就是 ID3 的偏好来源。
 
 ---
@@ -4724,16 +3607,12 @@ $\boxed{ 信息增益越高 }$
 
 相当于可以切成1000份。
 
-显然后者拥有更强的：
-
-$\boxed{\text{拟合训练数据能力}}$
+显然后者拥有更强的： $\boxed{\text{拟合训练数据能力}}$
 但是：
 
 > **拟合训练数据强，不代表泛化能力强。**
 
-这其实就是我们前面讲过的：
-
-$\boxed{\text{过拟合}}$
+这其实就是我们前面讲过的： $\boxed{\text{过拟合}}$
 因此 ID3 的这个问题，本质上可以理解成：
 
 > **信息增益只奖励“划分后变纯了多少”，却没有充分考虑“你为了达到这种纯度，把数据切得有多碎”。**
@@ -4771,19 +3650,13 @@ $\boxed{\text{过拟合}}$
 ……
 ```
 
-训练集准确率：
-
-$100\%$
+训练集准确率： $\fbox{100\%}$
 但你学到了规律吗？
 
 没有。
 
-你只是：
-
-$\boxed{\text{背答案}}$
-而“学号”“姓名”“身份证号”“订单编号”“用户ID”这些字段，就特别容易让决策树：
-
-$\boxed{\text{背答案}}$
+你只是： $\boxed{\text{背答案}}$
+而“学号”“姓名”“身份证号”“订单编号”“用户ID”这些字段，就特别容易让决策树： $\boxed{\text{背答案}}$
 ---
 
 ### 七、所以哪些特征特别危险？
@@ -4798,24 +3671,16 @@ $\boxed{\text{背答案}}$
 - 手机号码
 - 唯一流水号
 
-它们的共同特点：
-
-$\boxed{\text{几乎一个样本一个值}}$
-这种东西叫：
-
-$\boxed{\text{高基数特征 High-cardinality Feature}}$
-其中最极端的就是：
-
-$\boxed{\text{唯一标识符 Unique Identifier}}$
+它们的共同特点： $\boxed{\text{几乎一个样本一个值}}$
+这种东西叫： $\boxed{\text{高基数特征 High-cardinality Feature}}$
+其中最极端的就是： $\boxed{\text{唯一标识符 Unique Identifier}}$
 ---
 
 ### 八、注意一个细节：不是“取值多的特征一定没用”
 
 这个不要答绝对。
 
-比如：
-
-$城市$
+比如： $\fbox{城市}$
 可能有几十个取值：
 
 北京、上海、广州、深圳……
@@ -4838,37 +3703,23 @@ $城市$
 
 C4.5 就是为了解决这个问题。
 
-它使用：
-
-$\boxed{ GainRatio(D,a) = \frac{Gain(D,a)} {IV(a)} }$
-其中下面这个：
-
-$IV(a)$
+它使用： $\boxed{ GainRatio(D,a) = \frac{Gain(D,a)} {IV(a)} }$
+其中下面这个： $\fbox{IV(a)}$
 叫 Intrinsic Value，或者 Split Information。
 
-你不用特别记公式，但需要理解它在干什么：
-
-$\boxed{\text{惩罚把数据切得太碎的特征}}$
+你不用特别记公式，但需要理解它在干什么： $\boxed{\text{惩罚把数据切得太碎的特征}}$
 ---
 
 #### 例如学号
 
-8个人：
-
-$8个不同学号$
-切成：
-
-$8份$
+8个人： $\fbox{8个不同学号}$
+切成： $\fbox{8份}$
 那么分母会比较大。
 
-所以虽然：
-
-$Information\ Gain$
+所以虽然： $\fbox{Information\ Gain}$
 很大，
 
-但除以一个较大的分母以后：
-
-$GainRatio$
+但除以一个较大的分母以后： $\fbox{GainRatio}$
 就会被压下来。
 
 所以你可以简单理解：
@@ -4911,30 +3762,22 @@ $GainRatio$
 
 所谓“决策树种类”，可以从两个角度分。
 
-一个角度是**任务类型**：
-
-$\boxed{\text{分类树}}$ $\boxed{\text{回归树}}$
-另一个角度是**具体构造算法**：
-
-$\boxed{\text{ID3}}$ $\boxed{\text{C4.5}}$ $\boxed{\text{CART}}$
+一个角度是**任务类型**： $\boxed{\text{分类树}}$ $\boxed{\text{回归树}}$
+另一个角度是**具体构造算法**： $\boxed{\text{ID3}}$ $\boxed{\text{C4.5}}$ $\boxed{\text{CART}}$
 其中：
 
 - ID3：主要分类
 - C4.5：主要分类
 - CART：既能分类，也能回归
 
-所以你真正需要搞懂的是这四种情况：
-
-$\boxed{ ID3分类树 }$ $\boxed{ C4.5分类树 }$ $\boxed{ CART分类树 }$ $\boxed{ CART回归树 }$
+所以你真正需要搞懂的是这四种情况： $\boxed{ ID3分类树 }$ $\boxed{ C4.5分类树 }$ $\boxed{ CART分类树 }$ $\boxed{ CART回归树 }$
 下面一个一个来。
 
 ---
 
 ### 例子一：ID3 是怎么工作的？
 
-假设我们预测：
-
-$\boxed{\text{今天要不要打篮球}}$
+假设我们预测： $\boxed{\text{今天要不要打篮球}}$
 有两个特征：
 
 - 天气：晴天 / 阴天 / 雨天
@@ -4955,15 +3798,9 @@ $\boxed{\text{今天要不要打篮球}}$
 
 > 根节点先看“天气”，还是先看“是否有空”？
 
-于是分别算：
-
-$Gain(D,\text{天气})$
-和：
-
-$Gain(D,\text{有空})$
-假设最后：
-
-$Gain(D,\text{有空})> Gain(D,\text{天气})$
+于是分别算： $\fbox{Gain(D,\text{天气})}$
+和： $\fbox{Gain(D,\text{有空})}$
+假设最后： $\fbox{Gain(D,\text{有空})> Gain(D,\text{天气})}$
 那就先选：
 
 ```text
@@ -5008,9 +3845,7 @@ $Gain(D,\text{有空})> Gain(D,\text{天气})$
 1. 根节点：有空吗？ → 有空
 2. 去左边
 3. 天气？ → 阴
-4. 得到：
-
-$\boxed{\text{打篮球}}$
+4. 得到： $\boxed{\text{打篮球}}$
 这就是决策树预测全过程。
 
 ---
@@ -5019,19 +3854,13 @@ $\boxed{\text{打篮球}}$
 
 不是树长相特殊。
 
-而是：
-
-$\boxed{\text{它用信息增益决定每一步选哪个特征}}$
-所以 ID3 最核心记：
-
-$\boxed{ 每个节点 \rightarrow 计算所有候选特征的信息增益 \rightarrow 选择最大的 }$
+而是： $\boxed{\text{它用信息增益决定每一步选哪个特征}}$
+所以 ID3 最核心记： $\boxed{ 每个节点 \rightarrow 计算所有候选特征的信息增益 \rightarrow 选择最大的 }$
 ---
 
 ### 例子二：C4.5 是怎么工作的？
 
-我们还是预测：
-
-$\text{能不能保研}$
+我们还是预测： $\fbox{\text{能不能保研}}$
 现在有：
 
 | 学号 | 排名前10% | 科研 | 保研 |
@@ -5043,9 +3872,7 @@ $\text{能不能保研}$
 | 005 | 是 | 有 | 是 |
 | 006 | 否 | 无 | 否 |
 
-候选特征：
-
-$\text{学号}$ $\text{排名}$ $\text{科研}$
+候选特征： $\fbox{\text{学号}}$ $\fbox{\text{排名}}$ $\fbox{\text{科研}}$
 ---
 
 ID3 可能发现：
@@ -5058,14 +3885,10 @@ ID3 可能发现：
 
 > 你这个学号虽然划分以后很纯，但一下子分了 6 个分支，太碎了。
 
-所以通过：
-
-$GainRatio$
+所以通过： $\fbox{GainRatio}$
 对它进行惩罚。
 
-最后可能选择：
-
-$\boxed{\text{排名}}$
+最后可能选择： $\boxed{\text{排名}}$
 于是：
 
 ```text
@@ -5092,15 +3915,9 @@ ID3 和 C4.5 不是说：
 
 不是。
 
-它们最主要的不同在于：
-
-$\boxed{\text{每一步选择划分特征的指标不同}}$
-ID3：
-
-$\boxed{Information\ Gain}$
-C4.5：
-
-$\boxed{Gain\ Ratio}$
+它们最主要的不同在于： $\boxed{\text{每一步选择划分特征的指标不同}}$
+ID3： $\boxed{Information\ Gain}$
+C4.5： $\boxed{Gain\ Ratio}$
 最终产生的树结构有时候甚至完全一样。
 
 ---
@@ -5109,18 +3926,14 @@ $\boxed{Gain\ Ratio}$
 
 现在换一个例子：
 
-预测：
-
-$\boxed{\text{银行是否批准贷款}}$
+预测： $\boxed{\text{银行是否批准贷款}}$
 特征：
 
 - 月收入
 - 是否有房
 - 信用评分
 
-类别：
-
-$批准 / 不批准$
+类别： $\fbox{批准 / 不批准}$
 数据大概是：
 
 | 月收入 | 有房 | 信用分 | 批准 |
@@ -5134,21 +3947,11 @@ $批准 / 不批准$
 
 CART 会尝试很多切法：
 
-例如：
-
-$收入\leq8000?$
-或者：
-
-$信用分\leq650?$
-或者：
-
-$是否有房=是?$
-然后计算哪种切法能够让：
-
-$\boxed{Gini下降最多}$
-假设发现：
-
-$信用分\leq650$
+例如： $\fbox{收入\leq8000?}$
+或者： $\fbox{信用分\leq650?}$
+或者： $\fbox{是否有房=是?}$
+然后计算哪种切法能够让： $\boxed{Gini下降最多}$
+假设发现： $\fbox{信用分\leq650}$
 最好。
 
 那么：
@@ -5195,9 +3998,7 @@ $信用分\leq650$
 
 ### CART 和 ID3/C4.5 一个很明显的区别
 
-CART 特别喜欢：
-
-$\boxed{\text{二叉划分}}$
+CART 特别喜欢： $\boxed{\text{二叉划分}}$
 也就是每次只分成两边：
 
 ```text
@@ -5247,9 +4048,7 @@ ID3 可能直接：
 猫 / 狗
 ```
 
-而是一个：
-
-$\boxed{\text{数值}}$
+而是一个： $\boxed{\text{数值}}$
 例如预测房价。
 
 ---
@@ -5265,9 +4064,7 @@ $\boxed{\text{数值}}$
 | 110 | 4 | 280 |
 | 120 | 3 | 300 |
 
-现在 CART 回归树可能先发现：
-
-$\boxed{面积\leq85}$
+现在 CART 回归树可能先发现： $\boxed{面积\leq85}$
 是一个很好的划分。
 
 于是：
@@ -5278,29 +4075,19 @@ $\boxed{面积\leq85}$
                 是          否
 ```
 
-左边房价：
-
-$100,120,140$
-右边：
-
-$250,280,300$
+左边房价： $\fbox{100,120,140}$
+右边： $\fbox{250,280,300}$
 已经非常明显分开了。
 
 ---
 
 #### 为什么这是一个好划分？
 
-因为希望一个叶节点内部的房价：
-
-$\boxed{\text{尽量接近}}$
-左边：
-
-$100,120,140$
+因为希望一个叶节点内部的房价： $\boxed{\text{尽量接近}}$
+左边： $\fbox{100,120,140}$
 比较接近。
 
-右边：
-
-$250,280,300$
+右边： $\fbox{250,280,300}$
 也比较接近。
 
 所以平方误差比较小。
@@ -5320,30 +4107,18 @@ $250,280,300$
            100       130            290      250
 ```
 
-注意叶节点这里是：
-
-$100$ $130$ $290$
-而不是：
-
-$是/否$
+注意叶节点这里是： $\fbox{100}$ $\fbox{130}$ $\fbox{290}$
+而不是： $\fbox{是/否}$
 ---
 
 ### 回归树叶节点的数字哪来的？
 
-例如一个叶节点里面有三个房子：
-
-$120,130,140$
-那么预测值通常取：
-
-$\frac{120+130+140}{3} = 130$
-所以：
-
-$\boxed{\text{回归树叶节点通常预测训练样本目标值的均值}}$
+例如一个叶节点里面有三个房子： $\fbox{120,130,140}$
+那么预测值通常取： $\fbox{\frac{120+130+140}{3} = 130}$
+所以： $\boxed{\text{回归树叶节点通常预测训练样本目标值的均值}}$
 于是以后一个新房子掉进这个叶节点：
 
-直接预测：
-
-$\boxed{130万}$
+直接预测： $\boxed{130万}$
 ---
 
 ### 分类树和回归树的本质差别
@@ -5352,15 +4127,9 @@ $\boxed{130万}$
 
 #### 分类树
 
-目标 $y$ 是：
-
-$猫 / 狗$
-或者：
-
-$0/1$
-希望：
-
-$\boxed{\text{同一个叶节点里的类别尽可能一致}}$
+目标 $y$ 是： $\fbox{猫 / 狗}$
+或者： $\fbox{0/1}$
+希望： $\boxed{\text{同一个叶节点里的类别尽可能一致}}$
 所以看：
 
 - 熵
@@ -5370,12 +4139,8 @@ $\boxed{\text{同一个叶节点里的类别尽可能一致}}$
 
 #### 回归树
 
-目标 $y$ 是：
-
-$100万,\ 200万,\ 300万$
-希望：
-
-$\boxed{\text{同一个叶节点里的数值尽可能接近}}$
+目标 $y$ 是： $\fbox{100万,\ 200万,\ 300万}$
+希望： $\boxed{\text{同一个叶节点里的数值尽可能接近}}$
 所以看：
 
 - MSE
@@ -5417,9 +4182,7 @@ $\boxed{\text{同一个叶节点里的数值尽可能接近}}$
 
 继续分。
 
-目标就是：
-
-$\boxed{\text{越分越纯}}$
+目标就是： $\boxed{\text{越分越纯}}$
 直到最后：
 
 ```text
@@ -5433,18 +4196,10 @@ $\boxed{\text{越分越纯}}$
 
 答案不一样。
 
-##### ID3 说：
-
-$\boxed{\text{看信息增益}}$
-##### C4.5 说：
-
-$\boxed{\text{看信息增益率}}$
-##### CART 分类说：
-
-$\boxed{\text{看 Gini}}$
-##### CART 回归说：
-
-$\boxed{\text{看平方误差}}$
+##### ID3 说： $\boxed{\text{看信息增益}}$
+##### C4.5 说： $\boxed{\text{看信息增益率}}$
+##### CART 分类说： $\boxed{\text{看 Gini}}$
+##### CART 回归说： $\boxed{\text{看平方误差}}$
 而已。
 
 ---
@@ -5455,29 +4210,19 @@ $\boxed{\text{看平方误差}}$
 
 **第一：现在预测的是类别还是连续数值？**
 
-类别：
-
-$\rightarrow 分类树$
-连续值：
-
-$\rightarrow 回归树$
+类别： $\fbox{\rightarrow 分类树}$
+连续值： $\fbox{\rightarrow 回归树}$
 **第二：当前节点里，哪个特征最适合拿来切？**
 
 不同算法用不同指标。
 
 **第三：切完以后，每个子节点是不是比以前更纯？**
 
-分类：
-
-$Entropy/Gini下降$
-回归：
-
-$平方误差下降$
+分类： $\fbox{Entropy/Gini下降}$
+回归： $\fbox{平方误差下降}$
 **第四：对子节点继续重复这个过程。**
 
-所以整个算法就是：
-
-$\boxed{ 选择最好划分 \rightarrow 分成子节点 \rightarrow 对子节点继续划分 \rightarrow 最终形成叶节点 }$
+所以整个算法就是： $\boxed{ 选择最好划分 \rightarrow 分成子节点 \rightarrow 对子节点继续划分 \rightarrow 最终形成叶节点 }$
 ---
 
 如果老师突然问你：
@@ -5504,9 +4249,7 @@ $\boxed{ 选择最好划分 \rightarrow 分成子节点 \rightarrow 对子节点
 
 ### 第五部分：集成学习 Ensemble Learning
 
-这一章是保研面试里的重点，尤其高频的是：
-
-$\boxed{\text{Bagging vs Boosting}}$ $\boxed{\text{随机森林为什么有效}}$ $\boxed{\text{GBDT 和 XGBoost 的基本思想}}$
+这一章是保研面试里的重点，尤其高频的是： $\boxed{\text{Bagging vs Boosting}}$ $\boxed{\text{随机森林为什么有效}}$ $\boxed{\text{GBDT 和 XGBoost 的基本思想}}$
 你先不要急着记算法名字，先理解整个集成学习的核心思想。
 
 ---
@@ -5515,20 +4258,12 @@ $\boxed{\text{Bagging vs Boosting}}$ $\boxed{\text{随机森林为什么有效}}
 
 假设我们有一个分类任务。
 
-单独训练一个模型：
-
-$f_1(x)$
+单独训练一个模型： $\fbox{f_1(x)}$
 它可能预测错。
 
-但如果训练很多模型：
-
-$f_1(x),f_2(x),\cdots,f_M(x)$
-最后让它们一起决定结果：
-
-$\boxed{ F(x)=\text{Combine}(f_1,f_2,\cdots,f_M) }$
-这就是：
-
-$\boxed{\text{集成学习 Ensemble Learning}}$
+但如果训练很多模型： $\fbox{f_1(x),f_2(x),\cdots,f_M(x)}$
+最后让它们一起决定结果： $\boxed{ F(x)=\text{Combine}(f_1,f_2,\cdots,f_M) }$
+这就是： $\boxed{\text{集成学习 Ensemble Learning}}$
 直观来说就是：
 
 > **三个臭皮匠，顶个诸葛亮。**
@@ -5537,38 +4272,26 @@ $\boxed{\text{集成学习 Ensemble Learning}}$
 
 > 这些模型不能所有人都犯完全一样的错误。
 
-如果 100 棵树长得一模一样，那么：
-
-$100棵树\approx1棵树$
+如果 100 棵树长得一模一样，那么： $\fbox{100棵树\approx1棵树}$
 集成就没什么意义。
 
-所以集成学习通常希望：
-
-$\boxed{ 单个模型具有一定能力 + 模型之间有一定差异 }$
+所以集成学习通常希望： $\boxed{ 单个模型具有一定能力 + 模型之间有一定差异 }$
 ---
 
 ### 二、集成学习主要有哪两大类？
 
-传统机器学习里最核心的是：
-
-$\boxed{\text{Bagging}}$
-和：
-
-$\boxed{\text{Boosting}}$
+传统机器学习里最核心的是： $\boxed{\text{Bagging}}$
+和： $\boxed{\text{Boosting}}$
 这两个一定要分清楚。
 
-先给你一句最粗略但很好记的话：
-
-$\boxed{ Bagging：大家并行做题，最后投票 }$ $\boxed{ Boosting：一个接一个做题，后面重点改前面的错误 }$
+先给你一句最粗略但很好记的话： $\boxed{ Bagging：大家并行做题，最后投票 }$ $\boxed{ Boosting：一个接一个做题，后面重点改前面的错误 }$
 后面详细展开。
 
 ---
 
 ### 三、先理解 Bagging
 
-Bagging 全称：
-
-$\boxed{\text{Bootstrap Aggregating}}$
+Bagging 全称： $\boxed{\text{Bootstrap Aggregating}}$
 它分为两步：
 
 1. Bootstrap：产生不同训练集
@@ -5578,9 +4301,7 @@ $\boxed{\text{Bootstrap Aggregating}}$
 
 ### 四、Bootstrap 到底是什么？
 
-假设原训练集：
-
-$D=\{1,2,3,4,5\}$
+假设原训练集： $\fbox{D=\{1,2,3,4,5\}}$
 现在我们想训练很多棵决策树。
 
 如果每棵树都用完全一样的数据：
@@ -5599,25 +4320,15 @@ Tree 3: 1 2 3 4 5
 
 怎么办？
 
-使用：
-
-$\boxed{\text{有放回随机采样}}$
-例如第一次抽：
-
-$D_1=\{1,1,3,4,5\}$
-第二次：
-
-$D_2=\{2,2,3,3,5\}$
-第三次：
-
-$D_3=\{1,2,4,4,5\}$
+使用： $\boxed{\text{有放回随机采样}}$
+例如第一次抽： $\fbox{D_1=\{1,1,3,4,5\}}$
+第二次： $\fbox{D_2=\{2,2,3,3,5\}}$
+第三次： $\fbox{D_3=\{1,2,4,4,5\}}$
 注意：
 
 有些样本会重复出现，有些样本可能一次都没抽到。
 
-这种方法叫：
-
-$\boxed{\text{Bootstrap Sampling}}$
+这种方法叫： $\boxed{\text{Bootstrap Sampling}}$
 也就是：
 
 **自助采样。**
@@ -5630,33 +4341,23 @@ $\boxed{\text{Bootstrap Sampling}}$
 
 同一个样本有可能被多次抽到。
 
-这样即使每次抽：
-
-$n$
+这样即使每次抽： $\fbox{n}$
 个样本，
 
 不同 Bootstrap 数据集仍然会存在明显差异。
 
-于是：
-
-$D_1,D_2,D_3,\cdots$
+于是： $\fbox{D_1,D_2,D_3,\cdots}$
 不同，
 
-对应训练出来的：
-
-$f_1,f_2,f_3,\cdots$
+对应训练出来的： $\fbox{f_1,f_2,f_3,\cdots}$
 也会不同。
 
-这就制造了：
-
-$\boxed{\text{模型多样性}}$
+这就制造了： $\boxed{\text{模型多样性}}$
 ---
 
 ### 六、Bagging 怎么做预测？
 
-假设训练了：
-
-$100$
+假设训练了： $\fbox{100}$
 个分类器。
 
 一个新样本来了。
@@ -5671,72 +4372,48 @@ Tree 4 → 猫
 ...
 ```
 
-如果：
-
-$70棵树预测猫$ $30棵树预测狗$
-最后：
-
-$\boxed{\text{猫}}$
-也就是：
-
-$\boxed{\text{多数投票 Majority Voting}}$
+如果： $\fbox{70棵树预测猫}$ $\fbox{30棵树预测狗}$
+最后： $\boxed{\text{猫}}$
+也就是： $\boxed{\text{多数投票 Majority Voting}}$
 ---
 
 如果做的是回归：
 
-例如各棵树预测房价：
-
-$100,110,105,120,\cdots$
-通常直接取：
-
-$\boxed{\text{平均值}}$
-所以记住：
-
-$\boxed{ 分类：投票 }$ $\boxed{ 回归：平均 }$
+例如各棵树预测房价： $\fbox{100,110,105,120,\cdots}$
+通常直接取： $\boxed{\text{平均值}}$
+所以记住： $\boxed{ 分类：投票 }$ $\boxed{ 回归：平均 }$
 ---
 
 ### 七、Bagging 为什么有效？
 
 这就回到上一章。
 
-单棵决策树最大的毛病之一：
-
-$\boxed{\text{高方差}}$
+单棵决策树最大的毛病之一： $\boxed{\text{高方差}}$
 训练数据稍微变化一点：
 
 树可能就完全不一样。
 
 比如：
 
-原始训练集：
-
-$D$
+原始训练集： $\fbox{D}$
 得到 Tree A。
 
-换几个样本：
-
-$D'$
+换几个样本： $\fbox{D'}$
 可能得到 Tree B。
 
 所以单棵树不够稳定。
 
-但是如果我们训练：
-
-$100$
+但是如果我们训练： $\fbox{100}$
 棵有差异的树，再平均：
 
 一些树预测偏高，
 
 一些树预测偏低，
 
-这些随机误差能够：
-
-$\boxed{\text{相互抵消}}$
+这些随机误差能够： $\boxed{\text{相互抵消}}$
 最终结果更加稳定。
 
-所以：
-
-$\boxed{ Bagging主要降低Variance }$
+所以： $\boxed{ Bagging主要降低Variance }$
 这句话特别重要。
 
 ---
@@ -5745,82 +4422,54 @@ $\boxed{ Bagging主要降低Variance }$
 
 还记得吗：
 
-决策树通常：
-
-$Low\ Bias$
-但是：
-
-$High\ Variance$
-Bagging 把很多高方差模型平均以后：
-
-$\boxed{Variance\downarrow}$
+决策树通常： $\fbox{Low\ Bias}$
+但是： $\fbox{High\ Variance}$
+Bagging 把很多高方差模型平均以后： $\boxed{Variance\downarrow}$
 而 Bias 通常不会发生特别大的变化。
 
 所以你面试可以回答：
 
 > Bagging 特别适合高方差、低偏差的基学习器，比如充分生长的决策树。
 
-这就是为什么：
-
-$\boxed{\text{Bagging + Decision Tree}}$
+这就是为什么： $\boxed{\text{Bagging + Decision Tree}}$
 特别经典。
 
 ---
 
 ### 九、随机森林 Random Forest
 
-终于到：
-
-$\boxed{\text{Random Forest}}$
+终于到： $\boxed{\text{Random Forest}}$
 先给结论：
 
 > **随机森林本质上就是对 Bagging 再增加一层“特征随机性”。**
 
-Bagging 已经做了：
-
-$\boxed{\text{样本随机}}$
-随机森林进一步做：
-
-$\boxed{\text{特征也随机}}$
-所以：
-
-$\boxed{ Random Forest = Bootstrap Sampling + Random Feature Selection + Decision Trees }$
+Bagging 已经做了： $\boxed{\text{样本随机}}$
+随机森林进一步做： $\boxed{\text{特征也随机}}$
+所以： $\boxed{ Random Forest = Bootstrap Sampling + Random Feature Selection + Decision Trees }$
 这句话特别值得记。
 
 ---
 
 ### 十、随机森林怎么训练？
 
-假设数据有：
-
-$100$
+假设数据有： $\fbox{100}$
 个特征。
 
-比如：
-
-$x_1,x_2,\cdots,x_{100}$
-传统决策树每到一个节点，可能会从全部：
-
-$100$
+比如： $\fbox{x_1,x_2,\cdots,x_{100}}$
+传统决策树每到一个节点，可能会从全部： $\fbox{100}$
 个特征中选择最优划分。
 
 而随机森林不是。
 
-它可能每个节点只随机拿：
-
-$10$
+它可能每个节点只随机拿： $\fbox{10}$
 个特征。
 
 然后：
 
 > 只在这 10 个特征中选择最好的。
 
-例如第一棵树某个节点随机得到：
-
-$x_1,x_7,x_{13},x_{20},...$
-第二棵树可能得到：
-
-$x_3,x_5,x_{27},x_{44},...$
+例如第一棵树某个节点随机得到： $\fbox{x_1,x_7,x_{13},x_{20},...}$
+第二棵树可能得到： $\fbox{x_3,x_5,x_{27},x_{44},...}$
 于是不同树更容易产生不同结构。
 
 ---
@@ -5829,18 +4478,14 @@ $x_3,x_5,x_{27},x_{44},...$
 
 这是随机森林最重要的理解点之一。
 
-假设数据里面有一个特征：
-
-$x_1$
+假设数据里面有一个特征： $\fbox{x_1}$
 特别强。
 
 比如“是否发烧”对某疾病预测特别有用。
 
 如果每棵树都看全部特征，那么：
 
-每棵树的根节点可能都是：
-
-$x_1$
+每棵树的根节点可能都是： $\fbox{x_1}$
 结果：
 
 ```text
@@ -5863,17 +4508,11 @@ Tree 4 → x1
 
 于是某棵树可能根本看不到 $x_1$。
 
-它被迫选择：
-
-$x_5$
-另一棵选：
-
-$x_{12}$
+它被迫选择： $\fbox{x_5}$
+另一棵选： $\fbox{x_{12}}$
 模型差异变大。
 
-因此：
-
-$\boxed{\text{树之间的相关性降低}}$
+因此： $\boxed{\text{树之间的相关性降低}}$
 这特别重要。
 
 ---
@@ -5882,18 +4521,10 @@ $\boxed{\text{树之间的相关性降低}}$
 
 你可以概括为：
 
-普通 Bagging：
-
-$\boxed{\text{通过样本随机性制造差异}}$
-随机森林：
-
-$\boxed{ 样本随机性 + 特征随机性 }$
-所以树之间：
-
-$\boxed{\text{相关性更低}}$
-很多低相关的树集成以后：
-
-$\boxed{\text{方差更小、泛化通常更好}}$
+普通 Bagging： $\boxed{\text{通过样本随机性制造差异}}$
+随机森林： $\boxed{ 样本随机性 + 特征随机性 }$
+所以树之间： $\boxed{\text{相关性更低}}$
+很多低相关的树集成以后： $\boxed{\text{方差更小、泛化通常更好}}$
 ---
 
 ### 十三、面试高频：随机森林为什么有效？
@@ -5916,27 +4547,17 @@ Bootstrap 有一个特点：
 
 并不是每个样本都会被抽到。
 
-实际上，当 $n$ 很大时，一次 Bootstrap 之后大约：
-
-$63.2\%$
+实际上，当 $n$ 很大时，一次 Bootstrap 之后大约： $\fbox{63.2\%}$
 的不同样本会至少出现一次。
 
-所以大约：
-
-$36.8\%$
+所以大约： $\fbox{36.8\%}$
 的样本没有被这棵树看到。
 
-这些样本叫：
-
-$\boxed{\text{Out-of-Bag Samples}}$
-简称：
-
-$\boxed{\text{OOB}}$
+这些样本叫： $\boxed{\text{Out-of-Bag Samples}}$
+简称： $\boxed{\text{OOB}}$
 可以利用这些没参与某棵树训练的样本，对它进行验证。
 
-所以随机森林可以利用：
-
-$\boxed{\text{OOB Error}}$
+所以随机森林可以利用： $\boxed{\text{OOB Error}}$
 估计泛化性能。
 
 这个不是必须推导，记住：
@@ -5961,19 +4582,13 @@ $\boxed{\text{OOB Error}}$
 - 能估计特征重要性
 - 训练多棵树可以并行
 
-其中：
-
-$\boxed{\text{容易并行}}$
+其中： $\boxed{\text{容易并行}}$
 是 Bagging 的一个非常重要特点。
 
 为什么？
 
-因为：
-
-$Tree_1$
-和：
-
-$Tree_2$
+因为： $\fbox{Tree_1}$
+和： $\fbox{Tree_2}$
 并不依赖对方。
 
 ---
@@ -6022,21 +4637,15 @@ Boosting 完全不同。
 
 > **第一个模型哪里做错了？第二个模型就重点解决这些错误；第二个还有错误，第三个继续补。**
 
-所以它是：
-
-$\boxed{\text{串行}}$
-而不是：
-
-$\boxed{\text{并行}}$
+所以它是： $\boxed{\text{串行}}$
+而不是： $\boxed{\text{并行}}$
 ---
 
 ### 十八、用考试来理解 Boosting
 
 假设你做一套数学卷子。
 
-第一次：
-
-$60分$
+第一次： $\fbox{60分}$
 发现主要错在：
 
 **概率题。**
@@ -6045,9 +4654,7 @@ $60分$
 
 重点复习概率。
 
-然后做到：
-
-$75分$
+然后做到： $\fbox{75分}$
 发现又有一些：
 
 **线性代数题**
@@ -6058,56 +4665,40 @@ $75分$
 
 重点补线代。
 
-最终：
-
-$90分$
-Boosting 就是这种感觉：
-
-$\boxed{ 不断关注之前模型没学好的地方 }$
+最终： $\fbox{90分}$
+Boosting 就是这种感觉： $\boxed{ 不断关注之前模型没学好的地方 }$
 ---
 
 ### 十九、什么是“弱学习器”？
 
-Boosting 中经常使用：
-
-$\boxed{\text{Weak Learner}}$
+Boosting 中经常使用： $\boxed{\text{Weak Learner}}$
 弱学习器不是说完全不会。
 
 而是说：
 
 > 单独性能可能只比随机猜测稍微好一些。
 
-比如一个非常浅的决策树：
-
-$Depth=1$
+比如一个非常浅的决策树： $\fbox{Depth=1}$
 只有一次划分。
 
-这种树叫：
-
-$\boxed{\text{Decision Stump}}$
+这种树叫： $\boxed{\text{Decision Stump}}$
 决策树桩。
 
 它单独可能不厉害。
 
-但是：
-
-$\boxed{ 很多弱学习器逐步组合 \rightarrow 得到强学习器 }$
+但是： $\boxed{ 很多弱学习器逐步组合 \rightarrow 得到强学习器 }$
 这就是 Boosting 的核心精神。
 
 ---
 
 ### 二十、AdaBoost
 
-第一个经典 Boosting 算法：
-
-$\boxed{\text{AdaBoost}}$
+第一个经典 Boosting 算法： $\boxed{\text{AdaBoost}}$
 全称：
 
 **Adaptive Boosting**
 
-“Adaptive”就是：
-
-$\boxed{\text{自适应}}$
+“Adaptive”就是： $\boxed{\text{自适应}}$
 它会自适应地调整不同训练样本的重要程度。
 
 ---
@@ -6116,30 +4707,22 @@ $\boxed{\text{自适应}}$
 
 我们暂时不推公式，只理解流程。
 
-假设有：
-
-$5$
+假设有： $\fbox{5}$
 个训练样本：
 
 ```text
 A B C D E
 ```
 
-开始时它们权重一样：
-
-$0.2,0.2,0.2,0.2,0.2$
+开始时它们权重一样： $\fbox{0.2,0.2,0.2,0.2,0.2}$
 ---
 
 #### 第一轮
 
-训练一个弱分类器：
-
-$h_1(x)$
+训练一个弱分类器： $\fbox{h_1(x)}$
 假设它把 D 和 E 分类错了。
 
-AdaBoost 就会：
-
-$\boxed{\text{提高 D、E 的权重}}$
+AdaBoost 就会： $\boxed{\text{提高 D、E 的权重}}$
 例如变成：
 
 ```text
@@ -6152,45 +4735,31 @@ E 0.35
 
 现在第二个分类器训练时：
 
-会更加重视：
-
-$D,E$
+会更加重视： $\fbox{D,E}$
 ---
 
 #### 第二轮
 
-训练：
-
-$h_2(x)$
+训练： $\fbox{h_2(x)}$
 希望能够重点处理前面错的样本。
 
 如果还有样本错：
 
 再提高它们的权重。
 
-继续：
-
-$h_3,h_4,\cdots$
+继续： $\fbox{h_3,h_4,\cdots}$
 最后把所有弱分类器组合起来。
 
 ---
 
 ### 二十二、最后怎么组合？
 
-并不是简单的：
-
-$1人1票$
+并不是简单的： $\fbox{1人1票}$
 AdaBoost 通常会根据每个弱分类器的表现赋予不同权重。
 
-表现好的模型：
-
-$\boxed{\text{票更重}}$
-表现差的：
-
-$\boxed{\text{票更轻}}$
-最终：
-
-$\boxed{ F(x) = \sum_m \alpha_m h_m(x) }$
+表现好的模型： $\boxed{\text{票更重}}$
+表现差的： $\boxed{\text{票更轻}}$
+最终： $\boxed{ F(x) = \sum_m \alpha_m h_m(x) }$
 你不用推 $\alpha_m$ 的公式，但理解：
 
 > **分类器本身也有权重。**
@@ -6199,21 +4768,15 @@ $\boxed{ F(x) = \sum_m \alpha_m h_m(x) }$
 
 ### 二十三、AdaBoost 最重要的一句话
 
-你可以记：
-
-$\boxed{ 错分样本权重增加 }$
+你可以记： $\boxed{ 错分样本权重增加 }$
 下一轮模型更加关注这些难样本。
 
-所以：
-
-$\boxed{ AdaBoost通过调整样本权重来逐步纠正前面模型的错误 }$
+所以： $\boxed{ AdaBoost通过调整样本权重来逐步纠正前面模型的错误 }$
 ---
 
 ### 二十四、AdaBoost 有什么问题？
 
-假设有一个样本本身就是：
-
-$\boxed{\text{错误标签 / 异常点}}$
+假设有一个样本本身就是： $\boxed{\text{错误标签 / 异常点}}$
 比如实际上是猫，但标签错写成了狗。
 
 模型每次都分类错。
@@ -6224,28 +4787,20 @@ AdaBoost 会想：
 
 然后不断提高它权重。
 
-结果：
-
-$\boxed{\text{越来越关注一个噪声样本}}$
-所以 AdaBoost 对：
-
-$\boxed{\text{噪声和异常点可能比较敏感}}$
+结果： $\boxed{\text{越来越关注一个噪声样本}}$
+所以 AdaBoost 对： $\boxed{\text{噪声和异常点可能比较敏感}}$
 这个面试可以说。
 
 ---
 
 ### 二十五、GBDT
 
-接下来是：
-
-$\boxed{\text{GBDT}}$
+接下来是： $\boxed{\text{GBDT}}$
 全称：
 
 **Gradient Boosting Decision Tree**
 
-中文：
-
-$\boxed{\text{梯度提升决策树}}$
+中文： $\boxed{\text{梯度提升决策树}}$
 这三个词分别是：
 
 - Gradient：梯度
@@ -6256,46 +4811,22 @@ $\boxed{\text{梯度提升决策树}}$
 
 ### 二十六、先用最直观的方法理解 GBDT
 
-假设真实房价：
-
-$y=100$
-第一个模型预测：
-
-$\hat y_1=70$
-还差：
-
-$100-70=30$
-于是第二棵树不是再从头预测：
-
-$100$
-而是学习：
-
-$\boxed{残差30}$
-假设第二棵树预测残差：
-
-$20$
-那么目前总预测：
-
-$70+20=90$
-还差：
-
-$10$
-第三棵树继续学习：
-
-$10$
-最后：
-
-$70+20+8+2\approx100$
-所以 GBDT 最直观的理解就是：
-
-$\boxed{ 后一棵树不断拟合前面模型留下的错误 }$
+假设真实房价： $\fbox{y=100}$
+第一个模型预测： $\fbox{\hat y_1=70}$
+还差： $\fbox{100-70=30}$
+于是第二棵树不是再从头预测： $\fbox{100}$
+而是学习： $\boxed{残差30}$
+假设第二棵树预测残差： $\fbox{20}$
+那么目前总预测： $\fbox{70+20=90}$
+还差： $\fbox{10}$
+第三棵树继续学习： $\fbox{10}$
+最后： $\fbox{70+20+8+2\approx100}$
+所以 GBDT 最直观的理解就是： $\boxed{ 后一棵树不断拟合前面模型留下的错误 }$
 ---
 
 ### 二十七、为什么叫“Gradient Boosting”？
 
-如果只是平方误差：
-
-$L=(y-\hat y)^2$
+如果只是平方误差： $\fbox{L=(y-\hat y)^2}$
 负梯度和残差之间有非常直接的关系。
 
 所以可以直观理解成：
@@ -6304,14 +4835,10 @@ $L=(y-\hat y)^2$
 
 也就是说：
 
-前面我们讲梯度下降时，是在：
-
-$\boxed{\text{参数空间}}$
+前面我们讲梯度下降时，是在： $\boxed{\text{参数空间}}$
 沿负梯度优化参数。
 
-Gradient Boosting 可以理解为：
-
-$\boxed{\text{在函数空间中}}$
+Gradient Boosting 可以理解为： $\boxed{\text{在函数空间中}}$
 不断加入新的弱学习器，使损失下降。
 
 这个属于加分理解。
@@ -6320,36 +4847,24 @@ $\boxed{\text{在函数空间中}}$
 
 ### 二十八、GBDT 和 AdaBoost 有什么区别？
 
-都属于 Boosting：
-
-$\boxed{\text{串行训练}}$
+都属于 Boosting： $\boxed{\text{串行训练}}$
 但是思路不同。
 
-AdaBoost 核心：
-
-$\boxed{\text{调整样本权重}}$
+AdaBoost 核心： $\boxed{\text{调整样本权重}}$
 错分样本权重变高。
 
-GBDT 核心：
-
-$\boxed{\text{拟合损失函数的负梯度}}$
+GBDT 核心： $\boxed{\text{拟合损失函数的负梯度}}$
 在平方误差下可以理解为不断拟合残差。
 
-所以简单记：
-
-$\boxed{ AdaBoost：关注错的样本 }$ $\boxed{ GBDT：关注剩下的误差 }$
+所以简单记： $\boxed{ AdaBoost：关注错的样本 }$ $\boxed{ GBDT：关注剩下的误差 }$
 ---
 
 ### 二十九、一个细节：GBDT 只能做回归吗？
 
 当然不是。
 
-虽然“拟合残差”最容易用回归问题解释，但是 GBDT：
-
-$\boxed{\text{既可以做回归，也可以做分类}}$
-不同任务使用不同：
-
-$\boxed{\text{损失函数}}$
+虽然“拟合残差”最容易用回归问题解释，但是 GBDT： $\boxed{\text{既可以做回归，也可以做分类}}$
+不同任务使用不同： $\boxed{\text{损失函数}}$
 即可。
 
 所以不要因为例子里预测房价，就认为 GBDT 只能回归。
@@ -6358,16 +4873,12 @@ $\boxed{\text{损失函数}}$
 
 ### 三十、XGBoost 是什么？
 
-现在来到面试里很爱问的：
-
-$\boxed{\text{XGBoost}}$
+现在来到面试里很爱问的： $\boxed{\text{XGBoost}}$
 全称：
 
 **Extreme Gradient Boosting**
 
-你可以把它先理解为：
-
-$\boxed{\text{对 Gradient Boosting 的高度工程化和算法优化版本}}$
+你可以把它先理解为： $\boxed{\text{对 Gradient Boosting 的高度工程化和算法优化版本}}$
 但面试如果只答这句还不够。
 
 你最好知道几个关键改进。
@@ -6380,12 +4891,8 @@ $\boxed{\text{对 Gradient Boosting 的高度工程化和算法优化版本}}$
 
 ##### ① XGBoost 的目标函数里显式加入正则项
 
-形式类似：
-
-$\boxed{ Objective = Loss + Regularization }$
-不仅希望：
-
-$Loss小$
+形式类似： $\boxed{ Objective = Loss + Regularization }$
+不仅希望： $\fbox{Loss小}$
 也控制树的复杂度。
 
 例如惩罚：
@@ -6393,21 +4900,15 @@ $Loss小$
 - 叶节点数量
 - 叶节点权重
 
-所以可以：
-
-$\boxed{\text{抑制过拟合}}$
+所以可以： $\boxed{\text{抑制过拟合}}$
 这和前面讲 L1/L2 的思想其实很像。
 
 ---
 
 ##### ② XGBoost 使用二阶梯度信息
 
-传统 Gradient Boosting 主要利用：
-
-$\boxed{\text{一阶梯度}}$
-XGBoost 在目标函数近似中通常还利用：
-
-$\boxed{\text{二阶梯度 Hessian}}$
+传统 Gradient Boosting 主要利用： $\boxed{\text{一阶梯度}}$
+XGBoost 在目标函数近似中通常还利用： $\boxed{\text{二阶梯度 Hessian}}$
 所以能够更精细地优化。
 
 面试可以说：
@@ -6428,32 +4929,20 @@ $\boxed{\text{二阶梯度 Hessian}}$
 - 缺失值处理
 - 列采样等
 
-所以：
-
-$\boxed{\text{速度和可扩展性很好}}$
+所以： $\boxed{\text{速度和可扩展性很好}}$
 ---
 
 ### 三十二、一个特别容易误解的地方：Boosting 能并行吗？
 
-Bagging：
-
-$Tree_1,Tree_2,Tree_3$
+Bagging： $\fbox{Tree_1,Tree_2,Tree_3}$
 相互没有依赖。
 
-所以：
-
-$\boxed{\text{树之间可以并行训练}}$
-Boosting：
-
-$Tree_2$
-依赖：
-
-$Tree_1$
+所以： $\boxed{\text{树之间可以并行训练}}$
+Boosting： $\fbox{Tree_2}$
+依赖： $\fbox{Tree_1}$
 留下来的错误。
 
-所以从整体序列来看：
-
-$\boxed{\text{基学习器通常需要串行生成}}$
+所以从整体序列来看： $\boxed{\text{基学习器通常需要串行生成}}$
 当然 XGBoost 可以在：
 
 > **一棵树内部寻找候选划分**
@@ -6484,9 +4973,7 @@ $\boxed{\text{基学习器通常需要串行生成}}$
 | 代表算法 | Random Forest | AdaBoost、GBDT、XGBoost |
 | 基学习器 | 可较复杂 | 常用弱学习器 |
 
-最核心记：
-
-$\boxed{ Bagging主要降方差 }$ $\boxed{ Boosting主要通过逐步纠错提升模型能力 }$
+最核心记： $\boxed{ Bagging主要降方差 }$ $\boxed{ Boosting主要通过逐步纠错提升模型能力 }$
 对于面试，不建议机械地说“Boosting只降低Bias”，因为实际情况更复杂。更稳妥的是：
 
 > Boosting 通过顺序训练弱学习器不断拟合前一轮的错误，通常能够显著降低模型偏差和训练误差，但如果控制不好也可能增加过拟合风险。
@@ -6497,12 +4984,8 @@ $\boxed{ Bagging主要降方差 }$ $\boxed{ Boosting主要通过逐步纠错提�
 
 ##### Bagging
 
-100 个同学：
-
-$\boxed{\text{同时独立做同一道题}}$
-最后：
-
-$\boxed{\text{投票}}$
+100 个同学： $\boxed{\text{同时独立做同一道题}}$
+最后： $\boxed{\text{投票}}$
 谁也不看谁答案。
 
 ---
@@ -6513,12 +4996,8 @@ $\boxed{\text{投票}}$
 
 发现错了一部分。
 
-第二个学生专门研究：
-
-$\boxed{\text{第一个人不会的}}$
-第三个人继续处理：
-
-$\boxed{\text{前面还没解决的问题}}$
+第二个学生专门研究： $\boxed{\text{第一个人不会的}}$
+第三个人继续处理： $\boxed{\text{前面还没解决的问题}}$
 最后所有人的答案组合起来。
 
 这个区别一定要形成画面感。
@@ -6531,33 +5010,19 @@ $\boxed{\text{前面还没解决的问题}}$
 
 ##### Random Forest
 
-核心：
-
-$\boxed{\text{很多相对独立的树}}$
-然后：
-
-$\boxed{\text{投票/平均}}$
-主要通过：
-
-$\boxed{\text{降低方差}}$
+核心： $\boxed{\text{很多相对独立的树}}$
+然后： $\boxed{\text{投票/平均}}$
+主要通过： $\boxed{\text{降低方差}}$
 提升效果。
 
 ---
 
 ##### GBDT
 
-核心：
-
-$\boxed{\text{树一棵接一棵训练}}$
-后一棵：
-
-$\boxed{\text{纠正前面的误差}}$
-最终：
-
-$\boxed{\text{加法模型}}$
-所以：
-
-$F(x)=f_1(x)+f_2(x)+\cdots+f_M(x)$
+核心： $\boxed{\text{树一棵接一棵训练}}$
+后一棵： $\boxed{\text{纠正前面的误差}}$
+最终： $\boxed{\text{加法模型}}$
+所以： $\fbox{F(x)=f_1(x)+f_2(x)+\cdots+f_M(x)}$
 ---
 
 ### 三十六、为什么随机森林里的树通常长得比较深，而 Boosting 的树往往比较浅？
@@ -6568,9 +5033,7 @@ $F(x)=f_1(x)+f_2(x)+\cdots+f_M(x)$
 
 > 单棵树能力可以比较强，但高方差没关系，因为最后通过平均降低方差。
 
-所以单棵树可以：
-
-$\boxed{\text{长得比较深}}$
+所以单棵树可以： $\boxed{\text{长得比较深}}$
 ---
 
 Boosting 希望：
@@ -6581,9 +5044,7 @@ Boosting 希望：
 
 可能很容易一次把训练数据拟合得过头。
 
-所以经常使用：
-
-$\boxed{\text{浅层决策树}}$
+所以经常使用： $\boxed{\text{浅层决策树}}$
 作为弱学习器。
 
 这个不是绝对规则，但属于非常好的直观理解。
@@ -6600,23 +5061,17 @@ $\boxed{\text{浅层决策树}}$
 
 不同模型犯错不完全一样。
 
-组合以后：
-
-$\boxed{\text{错误相互抵消}}$
+组合以后： $\boxed{\text{错误相互抵消}}$
 尤其是 Bagging。
 
 ---
 
 ##### 第二：逐步提升表达能力
 
-多个弱模型组合起来可以形成：
-
-$\boxed{\text{非常复杂的函数}}$
+多个弱模型组合起来可以形成： $\boxed{\text{非常复杂的函数}}$
 比如 Boosting。
 
-所以：
-
-$\boxed{ 多个简单模型 \rightarrow 强模型 }$
+所以： $\boxed{ 多个简单模型 \rightarrow 强模型 }$
 ---
 
 ### 三十八、是不是模型越多越好？
@@ -6627,48 +5082,32 @@ Random Forest 一般树增多后：
 
 性能会逐渐趋于稳定。
 
-更多树主要带来：
-
-$\boxed{\text{更多计算成本}}$
+更多树主要带来： $\boxed{\text{更多计算成本}}$
 而 Boosting 如果轮数过多：
 
-有时候会：
-
-$\boxed{\text{增加过拟合风险}}$
+有时候会： $\boxed{\text{增加过拟合风险}}$
 特别是在噪声较强的情况下。
 
-所以：
-
-$\boxed{\text{集成数量也是超参数}}$
-例如：
-
-$n\_estimators$
+所以： $\boxed{\text{集成数量也是超参数}}$
+例如： $\fbox{n\_estimators}$
 ---
 
 ### 三十九、Random Forest 需要标准化吗？
 
-通常：
-
-$\boxed{\text{不需要}}$
+通常： $\boxed{\text{不需要}}$
 因为本质还是决策树。
 
-它依赖：
-
-$x_j\leq t$
+它依赖： $\fbox{x_j\leq t}$
 这种阈值划分。
 
-不依赖：
-
-$\boxed{\text{欧氏距离}}$
+不依赖： $\boxed{\text{欧氏距离}}$
 所以特征单位一般不会像 KNN、SVM 那样产生明显影响。
 
 ---
 
 ### 四十、XGBoost 需要标准化吗？
 
-通常：
-
-$\boxed{\text{树模型版本的 XGBoost 也不需要}}$
+通常： $\boxed{\text{树模型版本的 XGBoost 也不需要}}$
 因为它同样基于树的划分。
 
 这以后讲“哪些算法需要标准化”时很重要。
@@ -6677,64 +5116,36 @@ $\boxed{\text{树模型版本的 XGBoost 也不需要}}$
 
 ### 四十一、本章必须掌握的知识链
 
-先从决策树开始：
-
-$\boxed{ 单棵决策树 \rightarrow 高方差、不稳定 }$
+先从决策树开始： $\boxed{ 单棵决策树 \rightarrow 高方差、不稳定 }$
 怎么办？
 
-训练很多棵：
-
-$\boxed{\text{Bagging}}$
+训练很多棵： $\boxed{\text{Bagging}}$
 ↓
 
-Bootstrap 样本：
-
-$D_1,D_2,\cdots,D_M$
+Bootstrap 样本： $\fbox{D_1,D_2,\cdots,D_M}$
 ↓
 
-训练：
-
-$Tree_1,Tree_2,\cdots,Tree_M$
+训练： $\fbox{Tree_1,Tree_2,\cdots,Tree_M}$
 ↓
 
-投票 / 平均：
-
-$\boxed{\text{降低方差}}$
-如果再增加：
-
-$\boxed{\text{随机特征选择}}$
+投票 / 平均： $\boxed{\text{降低方差}}$
+如果再增加： $\boxed{\text{随机特征选择}}$
 ↓
 
-得到：
-
-$\boxed{\text{Random Forest}}$
+得到： $\boxed{\text{Random Forest}}$
 ---
 
 另一条路线：
 
-不让模型独立训练，而：
-
-$\boxed{\text{一个接一个纠错}}$
+不让模型独立训练，而： $\boxed{\text{一个接一个纠错}}$
 ↓
 
-得到：
-
-$\boxed{\text{Boosting}}$
-其中：
-
-$AdaBoost$
-通过：
-
-$\boxed{\text{提高错分样本权重}}$
-而：
-
-$GBDT$
-通过：
-
-$\boxed{\text{拟合负梯度/残差}}$
-XGBoost：
-
-$\boxed{ Gradient Boosting + 正则化 + 二阶信息 + 大量工程优化 }$
+得到： $\boxed{\text{Boosting}}$
+其中： $\fbox{AdaBoost}$
+通过： $\boxed{\text{提高错分样本权重}}$
+而： $\fbox{GBDT}$
+通过： $\boxed{\text{拟合负梯度/残差}}$
+XGBoost： $\boxed{ Gradient Boosting + 正则化 + 二阶信息 + 大量工程优化 }$
 ---
 
 ### 四十二、面试标准答案
@@ -6820,9 +5231,7 @@ $\boxed{ Gradient Boosting + 正则化 + 二阶信息 + 大量工程优化 }$
 21. 为什么 Bagging 更容易并行，而 Boosting 不容易？
 22. Random Forest 和 GBDT 有什么区别？
 
-其中真正要做到**脱口而出**的是这 6 个：
-
-$\boxed{\text{Bagging是什么}}$ $\boxed{\text{Boosting是什么}}$ $\boxed{\text{Bagging vs Boosting}}$ $\boxed{\text{随机森林为什么有效}}$ $\boxed{\text{GBDT基本思想}}$ $\boxed{\text{XGBoost相比GBDT的改进}}$
+其中真正要做到**脱口而出**的是这 6 个： $\boxed{\text{Bagging是什么}}$ $\boxed{\text{Boosting是什么}}$ $\boxed{\text{Bagging vs Boosting}}$ $\boxed{\text{随机森林为什么有效}}$ $\boxed{\text{GBDT基本思想}}$ $\boxed{\text{XGBoost相比GBDT的改进}}$
 ---
 
 #### 最后送你一个特别好记的版本
@@ -6847,12 +5256,8 @@ $\boxed{\text{Bagging是什么}}$ $\boxed{\text{Boosting是什么}}$ $\boxed{\te
 
 > **当时追问：** 请你举一些例子分别给我说明刚才这一章节的树都是怎么工作的
 
-可以，而且这一章最适合用“**同一批树，为什么组合方式不同**”来理解。你真正容易混的其实不是“树怎么分裂”，而是：
-
-$\boxed{\text{这些树之间到底是什么关系？}}$
-前一章的 ID3、C4.5、CART，重点是**一棵树内部怎么长**；这一章的 Random Forest、AdaBoost、GBDT、XGBoost，重点变成了：
-
-$\boxed{\text{很多棵树怎么配合}}$
+可以，而且这一章最适合用“**同一批树，为什么组合方式不同**”来理解。你真正容易混的其实不是“树怎么分裂”，而是： $\boxed{\text{这些树之间到底是什么关系？}}$
+前一章的 ID3、C4.5、CART，重点是**一棵树内部怎么长**；这一章的 Random Forest、AdaBoost、GBDT、XGBoost，重点变成了： $\boxed{\text{很多棵树怎么配合}}$
 我分别用具体例子给你跑一遍。
 
 ---
@@ -6866,16 +5271,12 @@ $\boxed{\text{很多棵树怎么配合}}$
 - 科研
 - 项目经历
 
-标签：
-
-$y\in\{\text{通过},\text{不通过}\}$
+标签： $\fbox{y\in\{\text{通过},\text{不通过}\}}$
 假设一共有 100 个学生。
 
 Bagging 不会只训练一棵树，而是先利用 Bootstrap 抽很多份训练集。
 
-例如：
-
-$D_1,D_2,D_3$
+例如： $\fbox{D_1,D_2,D_3}$
 其中每份都是从原来的 100 个学生里**有放回地抽 100 次**。
 
 所以可能：
@@ -6917,21 +5318,15 @@ Tree 4 → 通过
 ...
 ```
 
-最后：
-
-$72\text{ 棵树说通过}$ $28\text{ 棵树说不通过}$
-于是最终：
-
-$\boxed{\text{通过}}$
+最后： $\fbox{72\text{ 棵树说通过}}$ $\fbox{28\text{ 棵树说不通过}}$
+于是最终： $\boxed{\text{通过}}$
 这就是 Bagging。
 
 注意最关键的一点：
 
 > **Tree 2 不知道 Tree 1 做了什么。**
 
-每棵树基本是：
-
-$\boxed{\text{独立训练}}$
+每棵树基本是： $\boxed{\text{独立训练}}$
 最后才统一投票。
 
 ---
@@ -6942,9 +5337,7 @@ $\boxed{\text{独立训练}}$
 
 还是预测“能不能通过面试”。
 
-特征一共有：
-
-$排名、英语、科研、项目、竞赛、院校、数学成绩、编程能力$
+特征一共有： $\fbox{排名、英语、科研、项目、竞赛、院校、数学成绩、编程能力}$
 假设共 8 个特征。
 
 普通决策树在某个节点会看全部 8 个特征：
@@ -7018,17 +5411,11 @@ Tree 2：先看排名
 Tree 3：先看英语
 ```
 
-最后还是：
-
-$\boxed{\text{投票}}$
-所以随机森林的核心就是：
-
-$\boxed{ 样本随机 + 特征随机 + 很多决策树投票 }$
+最后还是： $\boxed{\text{投票}}$
+所以随机森林的核心就是： $\boxed{ 样本随机 + 特征随机 + 很多决策树投票 }$
 #### 为什么这样反而更好？
 
-因为假如 100 棵树都一模一样，那么：
-
-$100\text{ 棵树}\approx1\text{ 棵树}$
+因为假如 100 棵树都一模一样，那么： $\fbox{100\text{ 棵树}\approx1\text{ 棵树}}$
 但如果它们犯错的位置不完全一样：
 
 ```text
@@ -7039,9 +5426,7 @@ Tree 3：另一题错
 
 最后投票可以抵消不少随机错误。
 
-所以 Random Forest 最想要的是：
-
-$\boxed{\text{树之间不要太相关}}$
+所以 Random Forest 最想要的是： $\boxed{\text{树之间不要太相关}}$
 这就是为什么既随机抽样本，又随机抽特征。
 
 ---
@@ -7061,12 +5446,8 @@ $\boxed{\text{树之间不要太相关}}$
 | E | 低 | 有 | 否 |
 | F | 低 | 无 | 否 |
 
-一开始所有学生权重相同：
-
-$\frac16,\frac16,\frac16,\frac16,\frac16,\frac16$
-AdaBoost 通常使用很简单的小树，比如深度为 1 的：
-
-$\boxed{\text{决策树桩}}$
+一开始所有学生权重相同： $\fbox{\frac16,\frac16,\frac16,\frac16,\frac16,\frac16}$
+AdaBoost 通常使用很简单的小树，比如深度为 1 的： $\boxed{\text{决策树桩}}$
 也就是只问一个问题。
 
 ---
@@ -7136,29 +5517,19 @@ F：0.10
 
 但可能又把 E 分错了。
 
-于是：
-
-$E\text{ 的权重又变大}$
+于是： $\fbox{E\text{ 的权重又变大}}$
 第三棵树继续重点处理 E。
 
 ---
 
 #### 最终不是简单投票
 
-假设三棵树：
-
-$h_1,h_2,h_3$
+假设三棵树： $\fbox{h_1,h_2,h_3}$
 其中第一棵准确率最高，那么它的话语权也更大。
 
-最终类似：
-
-$F(x) = \alpha_1h_1(x)+ \alpha_2h_2(x)+ \alpha_3h_3(x)$
-所以 AdaBoost 有两种“权重”：
-
-$\boxed{\text{样本有权重}}$
-以及：
-
-$\boxed{\text{树也有权重}}$
+最终类似： $\fbox{F(x) = \alpha_1h_1(x)+ \alpha_2h_2(x)+ \alpha_3h_3(x)}$
+所以 AdaBoost 有两种“权重”： $\boxed{\text{样本有权重}}$
+以及： $\boxed{\text{树也有权重}}$
 这点非常重要。
 
 ---
@@ -7175,9 +5546,7 @@ Tree 1   Tree 2   Tree 3   Tree 4
         最后一起投票
 ```
 
-树之间：
-
-$\boxed{\text{基本独立}}$
+树之间： $\boxed{\text{基本独立}}$
 而 AdaBoost 是：
 
 ```text
@@ -7192,9 +5561,7 @@ Tree 2 重点学这些样本
 Tree 3 再处理
 ```
 
-所以：
-
-$\boxed{\text{前后存在依赖}}$
+所以： $\boxed{\text{前后存在依赖}}$
 一句话：
 
 > **随机森林是大家独立做题，AdaBoost 是后一个人专门复习前一个人做错的题。**
@@ -7207,64 +5574,36 @@ $\boxed{\text{前后存在依赖}}$
 
 我们来预测房价。
 
-假设某套房真实价格：
-
-$y=100\text{ 万}$
+假设某套房真实价格： $\fbox{y=100\text{ 万}}$
 ---
 
 #### 第一棵树
 
-第一棵树预测：
-
-$\hat y_1=60$
-真实：
-
-$100$
-所以还差：
-
-$100-60=40$
+第一棵树预测： $\fbox{\hat y_1=60}$
+真实： $\fbox{100}$
+所以还差： $\fbox{100-60=40}$
 GBDT 不会让第二棵树重新预测房价 100。
 
-它会让第二棵树学习：
-
-$\boxed{\text{第一棵树还差的40}}$
+它会让第二棵树学习： $\boxed{\text{第一棵树还差的40}}$
 ---
 
 #### 第二棵树
 
-第二棵树预测这个“误差”：
-
-$30$
-那么当前总预测：
-
-$60+30=90$
-还差：
-
-$100-90=10$
+第二棵树预测这个“误差”： $\fbox{30}$
+那么当前总预测： $\fbox{60+30=90}$
+还差： $\fbox{100-90=10}$
 ---
 
 #### 第三棵树
 
-第三棵树继续学习：
-
-$10$
-比如预测出来：
-
-$8$
-于是：
-
-$60+30+8=98$
-已经非常接近：
-
-$100$
+第三棵树继续学习： $\fbox{10}$
+比如预测出来： $\fbox{8}$
+于是： $\fbox{60+30+8=98}$
+已经非常接近： $\fbox{100}$
 了。
 
-所以最终模型：
-
-$\boxed{ F(x)=Tree_1(x)+Tree_2(x)+Tree_3(x)+\cdots }$
-这就是非常核心的：
-
-$\boxed{\text{加法模型}}$
+所以最终模型： $\boxed{ F(x)=Tree_1(x)+Tree_2(x)+Tree_3(x)+\cdots }$
+这就是非常核心的： $\boxed{\text{加法模型}}$
 ---
 
 ### 六、再给你一个多样本的 GBDT 例子
@@ -7277,9 +5616,7 @@ $\boxed{\text{加法模型}}$
 | B | 200 |
 | C | 300 |
 
-初始模型可能先给所有房子预测平均值：
-
-$200$
+初始模型可能先给所有房子预测平均值： $\fbox{200}$
 那么：
 
 | 房子 | 真实值 | 当前预测 | 残差 |
@@ -7288,12 +5625,8 @@ $200$
 | B | 200 | 200 | 0 |
 | C | 300 | 200 | +100 |
 
-现在第一棵树真正要学习的不是：
-
-$100,200,300$
-而是：
-
-$-100,0,+100$
+现在第一棵树真正要学习的不是： $\fbox{100,200,300}$
+而是： $\fbox{-100,0,+100}$
 比如它发现：
 
 ```text
@@ -7305,12 +5638,8 @@ $-100,0,+100$
 
 于是：
 
-大房子：
-
-$预测往上修$
-小房子：
-
-$预测往下修$
+大房子： $\fbox{预测往上修}$
+小房子： $\fbox{预测往下修}$
 这就是 GBDT 非常关键的感觉：
 
 > **前面的模型已经会一部分了，新树不需要从头学，只需要负责“修正”。**
@@ -7319,17 +5648,11 @@ $预测往下修$
 
 ### 七、GBDT 为什么说是“拟合残差”？
 
-在平方误差：
-
-$L=(y-\hat y)^2$
-这种情况下，损失函数的负梯度和：
-
-$y-\hat y$
+在平方误差： $\fbox{L=(y-\hat y)^2}$
+这种情况下，损失函数的负梯度和： $\fbox{y-\hat y}$
 也就是残差直接相关。
 
-所以入门阶段你完全可以这样记：
-
-$\boxed{ GBDT： 后一棵树不断拟合前面模型留下的残差 }$
+所以入门阶段你完全可以这样记： $\boxed{ GBDT： 后一棵树不断拟合前面模型留下的残差 }$
 不过面试更严谨一点可以补一句：
 
 > 更一般地说，它拟合的是当前损失函数关于模型输出的负梯度，平方误差下恰好可以理解为残差。
@@ -7348,19 +5671,13 @@ AdaBoost 的想法是：
 
 > **这些错的样本更重要！下一轮给它们更高权重。**
 
-所以：
-
-$\boxed{\text{调整样本权重}}$
+所以： $\boxed{\text{调整样本权重}}$
 GBDT 的想法是：
 
 > **现在的预测离真实答案还差多少？下一棵树直接学习这个误差。**
 
-所以：
-
-$\boxed{\text{拟合负梯度 / 残差}}$
-一个非常好记的版本：
-
-$\boxed{ AdaBoost：谁错了，就更关注谁 }$ $\boxed{ GBDT：差多少，就补多少 }$
+所以： $\boxed{\text{拟合负梯度 / 残差}}$
+一个非常好记的版本： $\boxed{ AdaBoost：谁错了，就更关注谁 }$ $\boxed{ GBDT：差多少，就补多少 }$
 ---
 
 ### 九、XGBoost：还是一棵一棵补，但“怎么算下一棵树”更精细
@@ -7407,12 +5724,8 @@ Tree 3
 
 > “这棵树是不是太复杂了？”
 
-所以它的目标类似：
-
-$\boxed{ Loss + 模型复杂度 }$
-也就是：
-
-$\boxed{\text{既想预测准，又不希望树过度复杂}}$
+所以它的目标类似： $\boxed{ Loss + 模型复杂度 }$
+也就是： $\boxed{\text{既想预测准，又不希望树过度复杂}}$
 例如有两个候选树：
 
 ##### Tree A
@@ -7434,9 +5747,7 @@ $\boxed{\text{既想预测准，又不希望树过度复杂}}$
 
 XGBoost 的正则化机制可能更偏向 Tree B。
 
-所以它把我们前面反复讲过的：
-
-$\boxed{\text{泛化能力}}$
+所以它把我们前面反复讲过的： $\boxed{\text{泛化能力}}$
 重新带回来了。
 
 ---
@@ -7460,9 +5771,7 @@ Student 3
 
 大家互不交流。
 
-最后：
-
-$\boxed{\text{投票}}$
+最后： $\boxed{\text{投票}}$
 ---
 
 ##### Random Forest
@@ -7493,9 +5802,7 @@ $\boxed{\text{投票}}$
 
 第一个同学先做。
 
-错了第：
-
-$3,17,28$
+错了第： $\fbox{3,17,28}$
 题。
 
 第二个人训练时：
@@ -7516,24 +5823,16 @@ $3,17,28$
 
 比如某题标准答案 100，他答了 60。
 
-第二个人不重新回答 100，而专门说：
-
-$+30$
-第三个人再说：
-
-$+8$
-于是：
-
-$60+30+8=98$
+第二个人不重新回答 100，而专门说： $\fbox{+30}$
+第三个人再说： $\fbox{+8}$
+于是： $\fbox{60+30+8=98}$
 不断修正。
 
 ---
 
 ##### XGBoost
 
-仍然是这种：
-
-$60+30+8+\cdots$
+仍然是这种： $\fbox{60+30+8+\cdots}$
 但是每次修正的时候更加精细：
 
 - 使用更多损失函数信息
@@ -7557,9 +5856,7 @@ $60+30+8+\cdots$
         Voting
 ```
 
-关键词：
-
-$\boxed{\text{并行、独立、投票}}$
+关键词： $\boxed{\text{并行、独立、投票}}$
 ---
 
 ##### AdaBoost
@@ -7576,9 +5873,7 @@ Tree 2
 Tree 3
 ```
 
-关键词：
-
-$\boxed{\text{错分样本权重}}$
+关键词： $\boxed{\text{错分样本权重}}$
 ---
 
 ##### GBDT
@@ -7595,9 +5890,7 @@ Tree 2 学误差
 Tree 3 再学
 ```
 
-关键词：
-
-$\boxed{\text{残差 / 负梯度}}$
+关键词： $\boxed{\text{残差 / 负梯度}}$
 ---
 
 ##### XGBoost
@@ -7610,34 +5903,22 @@ $\boxed{\text{残差 / 负梯度}}$
 使 Objective 尽可能下降
 ```
 
-其中：
-
-$Objective = Loss + Regularization$
-关键词：
-
-$\boxed{ Boosting + 二阶梯度 + 正则化 }$
+其中： $\fbox{Objective = Loss + Regularization}$
+关键词： $\boxed{ Boosting + 二阶梯度 + 正则化 }$
 ---
 
 ### 十三、一个特别值得你现在弄明白的问题
 
-为什么 Random Forest 的最终结果通常是：
-
-$\boxed{\text{平均 / 投票}}$
-而 GBDT/XGBoost 是：
-
-$\boxed{\text{相加}}$
-因为 Random Forest 的每棵树都在独立尝试解决：
-
-$\boxed{\text{完整任务}}$
+为什么 Random Forest 的最终结果通常是： $\boxed{\text{平均 / 投票}}$
+而 GBDT/XGBoost 是： $\boxed{\text{相加}}$
+因为 Random Forest 的每棵树都在独立尝试解决： $\boxed{\text{完整任务}}$
 每棵树都在说：
 
 > “我觉得答案是猫。”
 
 所以最后投票。
 
-而 GBDT 中每一棵后续树往往只负责：
-
-$\boxed{\text{前面模型没有解决好的那一部分}}$
+而 GBDT 中每一棵后续树往往只负责： $\boxed{\text{前面模型没有解决好的那一部分}}$
 例如：
 
 ```text
@@ -7646,9 +5927,7 @@ $\boxed{\text{前面模型没有解决好的那一部分}}$
 第三棵：再 +7
 ```
 
-所以最后是：
-
-$70+20+7$
+所以最后是： $\fbox{70+20+7}$
 这个区别一旦理解，Bagging 和 Boosting 基本就不会再混了。
 
 ---
@@ -7659,44 +5938,32 @@ $70+20+7$
 
 > “我训练了100棵决策树，每棵树使用Bootstrap抽出的数据，最后通过多数投票预测，这是什么算法？”
 
-你首先想到：
-
-$\boxed{\text{Bagging}}$
+你首先想到： $\boxed{\text{Bagging}}$
 如果再说：
 
 > “每个节点只随机选择部分特征。”
 
-马上：
-
-$\boxed{\text{Random Forest}}$
+马上： $\boxed{\text{Random Forest}}$
 如果说：
 
 > “后一轮增加前面错分样本的权重。”
 
-马上：
-
-$\boxed{\text{AdaBoost}}$
+马上： $\boxed{\text{AdaBoost}}$
 如果说：
 
 > “后一棵树拟合前面模型的残差或负梯度。”
 
-马上：
-
-$\boxed{\text{GBDT}}$
+马上： $\boxed{\text{GBDT}}$
 如果再加：
 
 > “考虑一阶、二阶梯度并加入复杂度正则项。”
 
-马上：
-
-$\boxed{\text{XGBoost}}$
+马上： $\boxed{\text{XGBoost}}$
 这组“关键词识别题”你一定要练到几乎不用思考就能答出来。
 
 ---
 
-最后把这一章浓缩成一句最容易记的：
-
-$\boxed{ RF：大家分别预测，再投票 }$ $\boxed{ AdaBoost：错的人，下轮多关注 }$ $\boxed{ GBDT：差多少，下一棵树补多少 }$ $\boxed{ XGBoost：更精细、更正则化地补 }$
+最后把这一章浓缩成一句最容易记的： $\boxed{ RF：大家分别预测，再投票 }$ $\boxed{ AdaBoost：错的人，下轮多关注 }$ $\boxed{ GBDT：差多少，下一棵树补多少 }$ $\boxed{ XGBoost：更精细、更正则化地补 }$
 下一部分进入 **SVM** 时，思维会完全换一套：它不再靠很多棵树，而是要寻找一条**“离两边样本都尽可能远”的分类边界**。这也是机器学习面试里非常经典的一章。
 
 ---
@@ -7720,9 +5987,7 @@ SVM 在保研面试里非常经典。你不需要把对偶问题、KKT 条件完
 9. 常见核函数有哪些？
 10. SVM 有什么优缺点？
 
-其中最重要的是这条链：
-
-$\boxed{ 最大间隔 \rightarrow 支持向量 \rightarrow 软间隔 \rightarrow 核函数 }$
+其中最重要的是这条链： $\boxed{ 最大间隔 \rightarrow 支持向量 \rightarrow 软间隔 \rightarrow 核函数 }$
 ---
 
 ### 一、SVM 到底想干什么？
@@ -7740,25 +6005,15 @@ $\boxed{ 最大间隔 \rightarrow 支持向量 \rightarrow 软间隔 \rightarrow
             × × ×
 ```
 
-我们的任务就是找一条直线，把：
-
-$\circ$
-和：
-
-$\times$
+我们的任务就是找一条直线，把： $\fbox{\circ}$
+和： $\fbox{\times}$
 分开。
 
-数学上可以写成：
-
-$\boxed{w^Tx+b=0}$
+数学上可以写成： $\boxed{w^Tx+b=0}$
 看到这个式子是不是很眼熟？
 
-逻辑回归的分类边界也是：
-
-$w^Tx+b=0$
-所以逻辑回归和 SVM 都可以是：
-
-$\boxed{\text{线性分类器}}$
+逻辑回归的分类边界也是： $\fbox{w^Tx+b=0}$
+所以逻辑回归和 SVM 都可以是： $\boxed{\text{线性分类器}}$
 但区别在于：
 
 > **它们寻找这条分类边界的方法不一样。**
@@ -7789,9 +6044,7 @@ SVM 的回答非常漂亮：
 
 > **选离两类样本都尽可能远的那条线。**
 
-也就是：
-
-$\boxed{\text{最大间隔 Maximum Margin}}$
+也就是： $\boxed{\text{最大间隔 Maximum Margin}}$
 ---
 
 ### 三、为什么要最大化间隔？
@@ -7817,9 +6070,7 @@ $\boxed{\text{最大间隔 Maximum Margin}}$
 
 就可能跨过分类线。
 
-说明模型：
-
-$\boxed{\text{比较不稳定}}$
+说明模型： $\boxed{\text{比较不稳定}}$
 ---
 
 而另一个边界：
@@ -7836,24 +6087,16 @@ $\boxed{\text{比较不稳定}}$
 
 即使数据受到一点噪声影响，也不容易跑到另一边。
 
-因此直观上：
-
-$\boxed{ 间隔越大 \Rightarrow 分类边界越稳健 \Rightarrow 泛化能力往往越好 }$
+因此直观上： $\boxed{ 间隔越大 \Rightarrow 分类边界越稳健 \Rightarrow 泛化能力往往越好 }$
 这就是 SVM 最核心的直觉。
 
 ---
 
 ### 四、什么叫 Margin？
 
-假设分类超平面：
-
-$w^Tx+b=0$
-两边距离分类边界最近的样本，形成两条平行线：
-
-$w^Tx+b=1$
-和：
-
-$w^Tx+b=-1$
+假设分类超平面： $\fbox{w^Tx+b=0}$
+两边距离分类边界最近的样本，形成两条平行线： $\fbox{w^Tx+b=1}$
+和： $\fbox{w^Tx+b=-1}$
 大致可以画成：
 
 ```text
@@ -7868,18 +6111,10 @@ $w^Tx+b=-1$
      ×     ×
 ```
 
-上下两条线之间的距离就是我们关心的：
-
-$\boxed{\text{Margin}}$
-可以推出来间隔宽度：
-
-$\boxed{\frac{2}{\|w\|}}$
-所以最大化间隔：
-
-$\max \frac{2}{\|w\|}$
-等价于：
-
-$\boxed{\min \frac12\|w\|^2}$
+上下两条线之间的距离就是我们关心的： $\boxed{\text{Margin}}$
+可以推出来间隔宽度： $\boxed{\frac{2}{\|w\|}}$
+所以最大化间隔： $\fbox{\max \frac{2}{\|w\|}}$
+等价于： $\boxed{\min \frac12\|w\|^2}$
 面试不一定需要推导，但这个结论最好认识。
 
 ---
@@ -7894,12 +6129,8 @@ $\boxed{\min \frac12\|w\|^2}$
 
 那么真正决定分类边界位置的是谁？
 
-就是：
-
-$\boxed{\text{离分类边界最近的那些样本}}$
-它们叫：
-
-$\boxed{\text{支持向量 Support Vectors}}$
+就是： $\boxed{\text{离分类边界最近的那些样本}}$
+它们叫： $\boxed{\text{支持向量 Support Vectors}}$
 例如：
 
 ```text
@@ -7944,9 +6175,7 @@ $\boxed{\text{支持向量 Support Vectors}}$
 
 现在把最左边几个特别远的 ○ 删除。
 
-分类边界通常：
-
-$\boxed{\text{基本不会变化}}$
+分类边界通常： $\boxed{\text{基本不会变化}}$
 因为它们本来就距离边界非常远。
 
 但如果移动：
@@ -7957,18 +6186,14 @@ $\boxed{\text{基本不会变化}}$
 
 分类边界就可能跟着移动。
 
-所以 SVM 一个非常经典的特点是：
-
-$\boxed{ 最终决策主要取决于支持向量 }$
+所以 SVM 一个非常经典的特点是： $\boxed{ 最终决策主要取决于支持向量 }$
 这也是面试很喜欢问的一句话。
 
 ---
 
 ### 七、什么是硬间隔 SVM？
 
-我们刚才默认：
-
-$\boxed{\text{所有训练样本都可以完美分开}}$
+我们刚才默认： $\boxed{\text{所有训练样本都可以完美分开}}$
 比如：
 
 ```text
@@ -7981,22 +6206,14 @@ $\boxed{\text{所有训练样本都可以完美分开}}$
 
 要求每一个样本都必须在正确的一边。
 
-这种方法叫：
-
-$\boxed{\text{Hard Margin SVM}}$
+这种方法叫： $\boxed{\text{Hard Margin SVM}}$
 硬间隔的意思就是：
 
 > **不允许任何样本违反分类间隔，更不允许分类错误。**
 
-数学条件可以写成：
-
-$y_i(w^Tx_i+b)\geq1$
-其中：
-
-$y_i\in\{-1,+1\}$
-你只需要知道这个式子的意义：
-
-$\boxed{\text{每个样本都必须被正确分类，并且处在间隔之外}}$
+数学条件可以写成： $\fbox{y_i(w^Tx_i+b)\geq1}$
+其中： $\fbox{y_i\in\{-1,+1\}}$
+你只需要知道这个式子的意义： $\boxed{\text{每个样本都必须被正确分类，并且处在间隔之外}}$
 ---
 
 ### 八、硬间隔有什么问题？
@@ -8021,9 +6238,7 @@ $\boxed{\text{每个样本都必须被正确分类，并且处在间隔之外}}$
 
 分类线可能为了照顾这个异常点，变得非常奇怪。
 
-甚至可能：
-
-$\boxed{\text{根本找不到能够完美分开的直线}}$
+甚至可能： $\boxed{\text{根本找不到能够完美分开的直线}}$
 所以现实中更加常用的是：
 
 ### 软间隔 Soft Margin
@@ -8032,9 +6247,7 @@ $\boxed{\text{根本找不到能够完美分开的直线}}$
 
 ### 九、什么是软间隔？
 
-软间隔允许：
-
-$\boxed{\text{少量样本违反间隔，甚至被分错}}$
+软间隔允许： $\boxed{\text{少量样本违反间隔，甚至被分错}}$
 什么意思？
 
 不是说：
@@ -8045,9 +6258,7 @@ $\boxed{\text{少量样本违反间隔，甚至被分错}}$
 
 > **我宁愿容忍少量训练误差，也不要为了几个异常点把整个分类边界扭曲得特别严重。**
 
-这跟我们前面讲的：
-
-$\boxed{\text{泛化能力}}$
+这跟我们前面讲的： $\boxed{\text{泛化能力}}$
 完全连起来了。
 
 训练集 100% 正确，不一定是最优模型。
@@ -8056,99 +6267,61 @@ $\boxed{\text{泛化能力}}$
 
 ### 十、松弛变量 $\xi$
 
-为了允许部分样本“犯一点错误”，SVM 引入：
-
-$\boxed{\xi_i}$
-叫：
-
-$\boxed{\text{松弛变量 Slack Variable}}$
-于是约束变为：
-
-$y_i(w^Tx_i+b)\geq1-\xi_i$
-其中：
-
-$\xi_i\geq0$
+为了允许部分样本“犯一点错误”，SVM 引入： $\boxed{\xi_i}$
+叫： $\boxed{\text{松弛变量 Slack Variable}}$
+于是约束变为： $\fbox{y_i(w^Tx_i+b)\geq1-\xi_i}$
+其中： $\fbox{\xi_i\geq0}$
 你不用死背公式。
 
-直观理解：
-
-$\boxed{\xi_i=\text{允许第 }i\text{ 个样本违反规则的程度}}$
+直观理解： $\boxed{\xi_i=\text{允许第 }i\text{ 个样本违反规则的程度}}$
 ---
 
 ### 十一、参数 $C$ 是干什么的？
 
 这是 SVM 面试中非常非常高频的问题。
 
-软间隔 SVM 的目标大致可以理解成：
-
-$\boxed{ \frac12\|w\|^2 + C\sum_i \xi_i }$
-前半部分：
-
-$\frac12\|w\|^2$
-希望：
-
-$\boxed{\text{间隔尽可能大}}$
-后半部分：
-
-$C\sum_i\xi_i$
-希望：
-
-$\boxed{\text{违反间隔的样本尽可能少}}$
-所以 SVM 实际上在进行一个权衡：
-
-$\boxed{ 大间隔 \quad vs \quad 训练错误 }$
+软间隔 SVM 的目标大致可以理解成： $\boxed{ \frac12\|w\|^2 + C\sum_i \xi_i }$
+前半部分： $\fbox{\frac12\|w\|^2}$
+希望： $\boxed{\text{间隔尽可能大}}$
+后半部分： $\fbox{C\sum_i\xi_i}$
+希望： $\boxed{\text{违反间隔的样本尽可能少}}$
+所以 SVM 实际上在进行一个权衡： $\boxed{ 大间隔 \quad vs \quad 训练错误 }$
 又来了！
 
 是不是很熟悉？
 
-本质上还是：
-
-$\boxed{\text{Bias-Variance Tradeoff}}$
+本质上还是： $\boxed{\text{Bias-Variance Tradeoff}}$
 ---
 
 #### $C$ 很大
 
-如果：
-
-$C\uparrow$
+如果： $\fbox{C\uparrow}$
 说明：
 
 > **我特别讨厌训练样本被分错。**
 
 因此模型会尽量把训练数据分类正确。
 
-结果通常：
-
-$\boxed{ 训练误差下降 }$
+结果通常： $\boxed{ 训练误差下降 }$
 但是边界可能更加复杂、对异常点更加敏感。
 
-因此：
-
-$\boxed{\text{过拟合风险增加}}$
+因此： $\boxed{\text{过拟合风险增加}}$
 ---
 
 #### $C$ 很小
 
-如果：
-
-$C\downarrow$
+如果： $\fbox{C\downarrow}$
 模型会觉得：
 
 > “少量样本错一点可以接受，我更重视一个宽一些、稳定一些的间隔。”
 
 因此正则化效果更强。
 
-可能：
-
-$\boxed{\text{泛化更好}}$
-但太小也会：
-
-$\boxed{\text{欠拟合}}$
+可能： $\boxed{\text{泛化更好}}$
+但太小也会： $\boxed{\text{欠拟合}}$
 ---
 
-##### 一个很好记的口诀
-
-$\boxed{ C大：错误代价大 }$ $\boxed{ C小：容错更多 }$
+##### 一个很好记的口诀 $\boxed{ C大：错误代价大 }$ $\boxed{ C小：容错更多 }$
 注意不要记反。
 
 ---
@@ -8179,12 +6352,8 @@ $\boxed{ C大：错误代价大 }$ $\boxed{ C小：容错更多 }$
 
 里面是 ○，外面是 ×。
 
-你找一条直线：
-
-$w^Tx+b=0$
-无论怎么画：
-
-$\boxed{\text{都分不开}}$
+你找一条直线： $\fbox{w^Tx+b=0}$
+无论怎么画： $\boxed{\text{都分不开}}$
 怎么办？
 
 这就引出 SVM 另一大核心：
@@ -8195,32 +6364,20 @@ $\boxed{\text{都分不开}}$
 
 ### 十三、处理非线性问题的核心思想
 
-假设原来的数据只有一个特征：
-
-$x$
+假设原来的数据只有一个特征： $\fbox{x}$
 在一维上：
 
 ```text
 × ×   ○ ○ ○   × ×
 ```
 
-你找一个点作为分类边界，没办法一次把：
-
-$○$
-和两边的：
-
-$×$
+你找一个点作为分类边界，没办法一次把： $\fbox{○}$
+和两边的： $\fbox{×}$
 分开。
 
-但我们增加一个新特征：
-
-$x^2$
-把数据从：
-
-$x$
-映射到：
-
-$(x,x^2)$
+但我们增加一个新特征： $\fbox{x^2}$
+把数据从： $\fbox{x}$
+映射到： $\fbox{(x,x^2)}$
 可能就变成二维空间中的：
 
 ```text
@@ -8231,36 +6388,24 @@ $(x,x^2)$
         ○
 ```
 
-这时候：
-
-$\boxed{\text{一条直线就可能分开}}$
+这时候： $\boxed{\text{一条直线就可能分开}}$
 这就是非常核心的思想：
 
 > **原始空间线性不可分，可以把数据映射到更高维的特征空间，使它在新的空间中线性可分。**
 
-写成：
-
-$\boxed{x\rightarrow \phi(x)}$
-其中：
-
-$\phi(x)$
+写成： $\boxed{x\rightarrow \phi(x)}$
+其中： $\fbox{\phi(x)}$
 就是特征映射。
 
 ---
 
 ### 十四、但高维映射会出现一个问题
 
-假设原来：
-
-$x\in \mathbb R^{100}$
-映射以后可能：
-
-$\phi(x)\in\mathbb R^{100000}$
+假设原来： $\fbox{x\in \mathbb R^{100}}$
+映射以后可能： $\fbox{\phi(x)\in\mathbb R^{100000}}$
 甚至是无限维。
 
-那如果我们真的把所有高维特征都算出来：
-
-$\boxed{\text{计算量可能非常大}}$
+那如果我们真的把所有高维特征都算出来： $\boxed{\text{计算量可能非常大}}$
 于是出现了 SVM 最漂亮的技巧之一：
 
 ### Kernel Trick 核技巧
@@ -8269,35 +6414,21 @@ $\boxed{\text{计算量可能非常大}}$
 
 ### 十五、Kernel Trick 到底是什么？
 
-在 SVM 的推导过程中，我们最终经常只需要计算两个样本在高维空间中的：
-
-$\phi(x_i)^T\phi(x_j)$
-也就是：
-
-$\boxed{\text{内积}}$
+在 SVM 的推导过程中，我们最终经常只需要计算两个样本在高维空间中的： $\fbox{\phi(x_i)^T\phi(x_j)}$
+也就是： $\boxed{\text{内积}}$
 问题是：
 
-我们不想真的先计算：
-
-$\phi(x_i)$
-和：
-
-$\phi(x_j)$
+我们不想真的先计算： $\fbox{\phi(x_i)}$
+和： $\fbox{\phi(x_j)}$
 再做内积。
 
-于是定义一个核函数：
-
-$\boxed{ K(x_i,x_j) = \phi(x_i)^T\phi(x_j) }$
+于是定义一个核函数： $\boxed{ K(x_i,x_j) = \phi(x_i)^T\phi(x_j) }$
 也就是说：
 
 > **直接在原始空间计算 $K(x_i,x_j)$，就可以得到它们映射到高维空间后的内积。**
 
-而不需要显式计算：
-
-$\phi(x)$
-这就是：
-
-$\boxed{\text{Kernel Trick}}$
+而不需要显式计算： $\fbox{\phi(x)}$
+这就是： $\boxed{\text{Kernel Trick}}$
 ---
 
 ### 十六、一个面试中特别好的说法
@@ -8318,37 +6449,23 @@ $\boxed{\text{Kernel Trick}}$
 
 至少记三个。
 
-#### 1. 线性核 Linear Kernel
-
-$K(x,z)=x^Tz$
-相当于：
-
-$\boxed{\text{不进行复杂的非线性映射}}$
+#### 1. 线性核 Linear Kernel $\fbox{K(x,z)=x^Tz}$
+相当于： $\boxed{\text{不进行复杂的非线性映射}}$
 适合本身近似线性可分的数据。
 
 ---
 
 #### 2. 多项式核 Polynomial Kernel
 
-例如：
-
-$K(x,z)=(x^Tz+c)^d$
-可以表达：
-
-$\boxed{\text{多项式形式的非线性关系}}$
+例如： $\fbox{K(x,z)=(x^Tz+c)^d}$
+可以表达： $\boxed{\text{多项式形式的非线性关系}}$
 ---
 
 #### 3. RBF 核 / 高斯核
 
-这个最重要。
-
-$\boxed{ K(x,z) = \exp(-\gamma\|x-z\|^2) }$
-又叫：
-
-$\boxed{\text{Gaussian Kernel}}$
-或者：
-
-$\boxed{\text{RBF Kernel}}$
+这个最重要。 $\boxed{ K(x,z) = \exp(-\gamma\|x-z\|^2) }$
+又叫： $\boxed{\text{Gaussian Kernel}}$
+或者： $\boxed{\text{RBF Kernel}}$
 它可以形成非常灵活的非线性分类边界。
 
 面试中问：
@@ -8367,38 +6484,22 @@ $\boxed{\text{RBF Kernel}}$
 
 如果老师追问，就说这个。
 
-RBF：
-
-$K(x,z)=e^{-\gamma\|x-z\|^2}$
-$\gamma$ 控制：
-
-$\boxed{\text{单个训练样本影响范围的大小}}$
+RBF： $\fbox{K(x,z)=e^{-\gamma\|x-z\|^2}}$
+$\gamma$ 控制： $\boxed{\text{单个训练样本影响范围的大小}}$
 ##### $\gamma$ 大
 
-影响范围：
-
-$\boxed{\text{比较小}}$
+影响范围： $\boxed{\text{比较小}}$
 模型会非常关注局部细节，决策边界可能非常曲折。
 
-所以：
-
-$\boxed{\text{更容易过拟合}}$
+所以： $\boxed{\text{更容易过拟合}}$
 ##### $\gamma$ 小
 
-影响范围：
-
-$\boxed{\text{比较大}}$
+影响范围： $\boxed{\text{比较大}}$
 边界更加平滑。
 
-但太小：
-
-$\boxed{\text{可能欠拟合}}$
-所以对于 RBF SVM，两个很重要的超参数：
-
-$\boxed{C,\gamma}$
-通常需要通过：
-
-$\boxed{\text{交叉验证}}$
+但太小： $\boxed{\text{可能欠拟合}}$
+所以对于 RBF SVM，两个很重要的超参数： $\boxed{C,\gamma}$
+通常需要通过： $\boxed{\text{交叉验证}}$
 选择。
 
 ---
@@ -8407,59 +6508,37 @@ $\boxed{\text{交叉验证}}$
 
 这个也非常适合面试。
 
-两者都可以得到：
-
-$w^Tx+b=0$
+两者都可以得到： $\fbox{w^Tx+b=0}$
 这样的线性边界。
 
 但是优化目标不同。
 
 ##### 逻辑回归
 
-通常最小化：
-
-$\boxed{\text{Cross Entropy}}$
-它关注的是：
-
-$P(y|x)$
-可以自然输出：
-
-$\boxed{\text{类别概率}}$
+通常最小化： $\boxed{\text{Cross Entropy}}$
+它关注的是： $\fbox{P(y|x)}$
+可以自然输出： $\boxed{\text{类别概率}}$
 ---
 
 ##### SVM
 
-核心是：
-
-$\boxed{\text{最大化分类间隔}}$
-通常使用：
-
-$\boxed{\text{Hinge Loss}}$
-并且最终模型主要由：
-
-$\boxed{\text{支持向量}}$
+核心是： $\boxed{\text{最大化分类间隔}}$
+通常使用： $\boxed{\text{Hinge Loss}}$
+并且最终模型主要由： $\boxed{\text{支持向量}}$
 决定。
 
-所以可以简单记：
-
-$\boxed{ LR：概率分类 }$ $\boxed{ SVM：最大间隔分类 }$
+所以可以简单记： $\boxed{ LR：概率分类 }$ $\boxed{ SVM：最大间隔分类 }$
 ---
 
 ### 二十、顺便认识一下 Hinge Loss
 
-SVM 常见损失：
-
-$\boxed{ L=\max(0,1-yf(x)) }$
+SVM 常见损失： $\boxed{ L=\max(0,1-yf(x)) }$
 现在不用推导。
 
 你只需要理解：
 
-如果一个样本已经：
-
-$\boxed{\text{正确分类，而且距离边界足够远}}$
-那么：
-
-$Loss=0$
+如果一个样本已经： $\boxed{\text{正确分类，而且距离边界足够远}}$
+那么： $\fbox{Loss=0}$
 SVM 就不太关心它了。
 
 这也再次解释了为什么：
@@ -8474,28 +6553,16 @@ SVM 就不太关心它了。
 
 这个很容易被顺带问。
 
-假设两个特征：
-
-$x_1=\text{年龄}\in[0,100]$
-而：
-
-$x_2=\text{收入}\in[0,1000000]$
-SVM 的间隔、距离和核函数计算都和：
-
-$\boxed{\text{特征尺度}}$
+假设两个特征： $\fbox{x_1=\text{年龄}\in[0,100]}$
+而： $\fbox{x_2=\text{收入}\in[0,1000000]}$
+SVM 的间隔、距离和核函数计算都和： $\boxed{\text{特征尺度}}$
 密切相关。
 
-如果不做标准化：
-
-$x_2$
+如果不做标准化： $\fbox{x_2}$
 可能因为数值特别大而占据主导地位。
 
-所以 SVM 通常：
-
-$\boxed{\text{比较需要特征标准化}}$
-比如：
-
-$z=\frac{x-\mu}{\sigma}$
+所以 SVM 通常： $\boxed{\text{比较需要特征标准化}}$
+比如： $\fbox{z=\frac{x-\mu}{\sigma}}$
 变成均值约 0、标准差约 1。
 
 这和树模型形成一个很好的对比：
@@ -8516,9 +6583,7 @@ $z=\frac{x-\mu}{\sigma}$
 
 ##### 2. 对高维数据效果不错
 
-例如：
-
-$\boxed{\text{文本分类}}$
+例如： $\boxed{\text{文本分类}}$
 可能有几千、几万个特征。
 
 SVM 仍然可以表现很好。
@@ -8537,18 +6602,14 @@ SVM 仍然可以表现很好。
 
 ##### 1. 大规模数据训练比较慢
 
-尤其是：
-
-$\boxed{\text{样本数量特别大}}$
+尤其是： $\boxed{\text{样本数量特别大}}$
 的时候。
 
 核 SVM 的计算和存储开销可能非常高。
 
 ##### 2. 对参数比较敏感
 
-例如：
-
-$C,\gamma$
+例如： $\fbox{C,\gamma}$
 选择不好会影响性能。
 
 ##### 3. 核函数选择需要经验
@@ -8565,9 +6626,7 @@ $C,\gamma$
 
 ### 二十四、你现在一定要区分这三个词
 
-#### 超平面 Hyperplane
-
-$\boxed{w^Tx+b=0}$
+#### 超平面 Hyperplane $\boxed{w^Tx+b=0}$
 真正负责分类的边界。
 
 ---
@@ -8576,14 +6635,10 @@ $\boxed{w^Tx+b=0}$
 
 分类超平面与两类最近样本之间的安全区域。
 
-SVM 希望：
-
-$\boxed{\text{最大化 Margin}}$
+SVM 希望： $\boxed{\text{最大化 Margin}}$
 ---
 
-#### 支持向量 Support Vector
-
-$\boxed{\text{距离分类边界最近、决定间隔和分类边界的样本}}$
+#### 支持向量 Support Vector $\boxed{\text{距离分类边界最近、决定间隔和分类边界的样本}}$
 所以三者关系：
 
 ```text
@@ -8606,12 +6661,8 @@ $\boxed{\text{距离分类边界最近、决定间隔和分类边界的样本}}$
 
 > **通常不会发生明显变化。**
 
-因为：
-
-$\boxed{\text{SVM 的最优超平面主要由支持向量决定}}$
-但如果删除的是支持向量：
-
-$\boxed{\text{分类边界就可能改变}}$
+因为： $\boxed{\text{SVM 的最优超平面主要由支持向量决定}}$
+但如果删除的是支持向量： $\boxed{\text{分类边界就可能改变}}$
 这是一个特别典型的理解题。
 
 ---
@@ -8638,27 +6689,17 @@ $\boxed{\text{分类边界就可能改变}}$
 
 ##### 线性 SVM
 
-直接在原始特征空间寻找：
-
-$w^Tx+b=0$
-适合：
-
-$\boxed{\text{近似线性可分}}$
+直接在原始特征空间寻找： $\fbox{w^Tx+b=0}$
+适合： $\boxed{\text{近似线性可分}}$
 的数据。
 
 ---
 
 ##### 核 SVM
 
-利用：
-
-$K(x_i,x_j)$
-隐式对应高维映射：
-
-$x\rightarrow\phi(x)$
-从而建立：
-
-$\boxed{\text{非线性分类边界}}$
+利用： $\fbox{K(x_i,x_j)}$
+隐式对应高维映射： $\fbox{x\rightarrow\phi(x)}$
+从而建立： $\boxed{\text{非线性分类边界}}$
 ---
 
 ### 二十八、整章最重要的知识链
@@ -8711,21 +6752,11 @@ Kernel Trick
 
 ### 三十、这一章最应该脱口而出的 5 句话
 
-##### 第一
-
-$\boxed{ SVM的核心思想是寻找最大间隔分类超平面 }$
-##### 第二
-
-$\boxed{ 离分类边界最近、决定边界的样本叫支持向量 }$
-##### 第三
-
-$\boxed{ 软间隔允许部分样本违反间隔，提高对噪声的容忍度 }$
-##### 第四
-
-$\boxed{ C越大，对训练错误惩罚越强 }$
-##### 第五
-
-$\boxed{ 核技巧可以在不显式计算高维映射的情况下，计算高维空间中的内积 }$
+##### 第一 $\boxed{ SVM的核心思想是寻找最大间隔分类超平面 }$
+##### 第二 $\boxed{ 离分类边界最近、决定边界的样本叫支持向量 }$
+##### 第三 $\boxed{ 软间隔允许部分样本违反间隔，提高对噪声的容忍度 }$
+##### 第四 $\boxed{ C越大，对训练错误惩罚越强 }$
+##### 第五 $\boxed{ 核技巧可以在不显式计算高维映射的情况下，计算高维空间中的内积 }$
 这五句话非常重要。
 
 ---
@@ -8753,9 +6784,7 @@ $\boxed{ 核技巧可以在不显式计算高维映射的情况下，计算高�
 17. SVM 有哪些优缺点？
 18. 删除一个非支持向量，分类面通常会不会变化？
 
-这里面最值得优先掌握的是：
-
-$\boxed{ 最大间隔 + 支持向量 + C + Kernel\ Trick }$
+这里面最值得优先掌握的是： $\boxed{ 最大间隔 + 支持向量 + C + Kernel\ Trick }$
 只要这四块讲明白，老师一般的 SVM 追问就已经能接住了。
 
 下一部分我们就可以进入 **KNN + 朴素贝叶斯**。这两个模型都不算难，但很适合面试老师连续追问：尤其是 **“KNN 的 K 太大/太小会怎样？”、“朴素贝叶斯为什么叫朴素？”、“条件独立假设是什么意思？”**。
@@ -8774,9 +6803,7 @@ $\boxed{ 最大间隔 + 支持向量 + C + Kernel\ Trick }$
 
 ### 第七部分：KNN + 朴素贝叶斯
 
-这两个算法放在一起讲特别合适，因为它们代表了两种完全不同的思路：
-
-$\boxed{\text{KNN：看邻居}}$ $\boxed{\text{朴素贝叶斯：算概率}}$
+这两个算法放在一起讲特别合适，因为它们代表了两种完全不同的思路： $\boxed{\text{KNN：看邻居}}$ $\boxed{\text{朴素贝叶斯：算概率}}$
 保研面试里这一章重点掌握：
 
 1. KNN 是怎么分类的？
@@ -8794,9 +6821,7 @@ $\boxed{\text{KNN：看邻居}}$ $\boxed{\text{朴素贝叶斯：算概率}}$
 
 ### 一、KNN 是什么？
 
-KNN 全称：
-
-$\boxed{K\text{-Nearest Neighbors}}$
+KNN 全称： $\boxed{K\text{-Nearest Neighbors}}$
 中文叫：
 
 **K 近邻算法。**
@@ -8816,9 +6841,7 @@ $\boxed{K\text{-Nearest Neighbors}}$
 
 我们不知道它是什么。
 
-如果取：
-
-$K=5$
+如果取： $\fbox{K=5}$
 然后找到距离它最近的 5 个训练样本：
 
 ```text
@@ -8830,9 +6853,7 @@ $K=5$
 - 苹果 3 个
 - 橘子 2 个
 
-那么 KNN 就判断：
-
-$\boxed{\text{新样本 = 苹果}}$
+那么 KNN 就判断： $\boxed{\text{新样本 = 苹果}}$
 就这么简单。
 
 ---
@@ -8843,14 +6864,10 @@ $\boxed{\text{新样本 = 苹果}}$
 
 ##### 第一步：计算距离
 
-计算它和训练集中每一个样本：
-
-$x_1,x_2,\dots,x_n$
+计算它和训练集中每一个样本： $\fbox{x_1,x_2,\dots,x_n}$
 之间的距离。
 
-最常见是：
-
-$\boxed{ d(x_i,x)= \sqrt{ \sum_j(x_{ij}-x_j)^2 } }$
+最常见是： $\boxed{ d(x_i,x)= \sqrt{ \sum_j(x_{ij}-x_j)^2 } }$
 这就是：
 
 **欧氏距离 Euclidean Distance。**
@@ -8859,9 +6876,7 @@ $\boxed{ d(x_i,x)= \sqrt{ \sum_j(x_{ij}-x_j)^2 } }$
 
 ##### 第二步：找到最近的 K 个样本
 
-例如：
-
-$K=5$
+例如： $\fbox{K=5}$
 就找到距离最小的 5 个训练样本。
 
 ---
@@ -8876,12 +6891,8 @@ $K=5$
 
 猫 3 个，狗 2 个。
 
-那么：
-
-$\boxed{预测为猫}$
-所以 KNN 可以粗暴理解成：
-
-$\boxed{ 计算距离 \rightarrow 找邻居 \rightarrow 多数投票 }$
+那么： $\boxed{预测为猫}$
+所以 KNN 可以粗暴理解成： $\boxed{ 计算距离 \rightarrow 找邻居 \rightarrow 多数投票 }$
 这三步一定要记住。
 
 ---
@@ -8894,9 +6905,7 @@ $\boxed{ 计算距离 \rightarrow 找邻居 \rightarrow 多数投票 }$
 
 ##### KNN 分类
 
-邻居进行：
-
-$\boxed{\text{投票}}$
+邻居进行： $\boxed{\text{投票}}$
 比如：
 
 ```text
@@ -8909,15 +6918,9 @@ $\boxed{\text{投票}}$
 
 ##### KNN 回归
 
-如果邻居的房价分别是：
-
-$100,\ 110,\ 120,\ 130,\ 140$
-那么可以直接取平均：
-
-$\hat y = \frac{100+110+120+130+140}{5} =120$
-所以：
-
-$\boxed{ KNN分类：多数投票 }$ $\boxed{ KNN回归：邻居平均 }$
+如果邻居的房价分别是： $\fbox{100,\ 110,\ 120,\ 130,\ 140}$
+那么可以直接取平均： $\fbox{\hat y = \frac{100+110+120+130+140}{5} =120}$
+所以： $\boxed{ KNN分类：多数投票 }$ $\boxed{ KNN回归：邻居平均 }$
 ---
 
 ### 四、K 到底应该怎么选？
@@ -8934,9 +6937,7 @@ $\boxed{ KNN分类：多数投票 }$ $\boxed{ KNN回归：邻居平均 }$
 
 #### 情况一：K 很小
 
-最极端：
-
-$K=1$
+最极端： $\fbox{K=1}$
 那么只看：
 
 **最近的一个样本。**
@@ -8959,26 +6960,18 @@ $K=1$
 
 虽然周围整体都是红色，但离 ⚫ 最近的恰好是那个异常的蓝点。
 
-如果：
-
-$K=1$
+如果： $\fbox{K=1}$
 就会预测成蓝色。
 
-所以：
-
-$\boxed{ K太小 \rightarrow 容易受噪声影响 \rightarrow 容易过拟合 }$
-从 Bias-Variance 的角度：
-
-$\boxed{ K小 \rightarrow Bias低,\ Variance高 }$
+所以： $\boxed{ K太小 \rightarrow 容易受噪声影响 \rightarrow 容易过拟合 }$
+从 Bias-Variance 的角度： $\boxed{ K小 \rightarrow Bias低,\ Variance高 }$
 是不是和我们第一章连起来了？
 
 ---
 
 ### 五、K 很大会怎么样？
 
-假设：
-
-$K=1000$
+假设： $\fbox{K=1000}$
 那你几乎把整个训练集都拿来投票。
 
 这时候局部的信息就被冲淡了。
@@ -8993,12 +6986,8 @@ $K=1000$
 
 K 太大以后，模型可能不管局部结构，直接到处预测红色。
 
-于是：
-
-$\boxed{ K太大 \rightarrow 模型过于平滑 \rightarrow 容易欠拟合 }$
-也就是：
-
-$\boxed{ K大 \rightarrow Bias高,\ Variance低 }$
+于是： $\boxed{ K太大 \rightarrow 模型过于平滑 \rightarrow 容易欠拟合 }$
+也就是： $\boxed{ K大 \rightarrow Bias高,\ Variance低 }$
 所以出现一个特别漂亮的关系：
 
 | K | 模型表现 | Bias | Variance |
@@ -9006,28 +6995,20 @@ $\boxed{ K大 \rightarrow Bias高,\ Variance低 }$
 | 很小 | 复杂、敏感 | 低 | 高 |
 | 很大 | 简单、平滑 | 高 | 低 |
 
-这其实又是：
-
-$\boxed{\text{Bias-Variance Tradeoff}}$
+这其实又是： $\boxed{\text{Bias-Variance Tradeoff}}$
 ---
 
 ### 六、那 K 应该取多少？
 
 没有一个永远正确的 K。
 
-一般通过：
-
-$\boxed{\text{交叉验证}}$
+一般通过： $\boxed{\text{交叉验证}}$
 选择。
 
-比如测试：
-
-$K=1,3,5,7,9,\dots$
+比如测试： $\fbox{K=1,3,5,7,9,\dots}$
 看看哪个在验证集上效果最好。
 
-对于二分类问题，有时喜欢用奇数 K，例如：
-
-$3,5,7$
+对于二分类问题，有时喜欢用奇数 K，例如： $\fbox{3,5,7}$
 主要是减少投票平局的可能性。
 
 但千万不要回答：
@@ -9042,38 +7023,22 @@ $3,5,7$
 
 这也是必会题。
 
-假设预测一个人是否会购买某商品，有两个特征：
-
-$x_1=\text{年龄}$
-范围：
-
-$18\sim60$
-另一个特征：
-
-$x_2=\text{年收入}$
-范围：
-
-$30000\sim1000000$
-KNN 要计算：
-
-$d= \sqrt{ (x_1-x_1')^2+(x_2-x_2')^2 }$
+假设预测一个人是否会购买某商品，有两个特征： $\fbox{x_1=\text{年龄}}$
+范围： $\fbox{18\sim60}$
+另一个特征： $\fbox{x_2=\text{年收入}}$
+范围： $\fbox{30000\sim1000000}$
+KNN 要计算： $\fbox{d= \sqrt{ (x_1-x_1')^2+(x_2-x_2')^2 }}$
 问题来了。
 
-年龄之间可能差：
-
-$20$
-收入之间可能差：
-
-$300000$
+年龄之间可能差： $\fbox{20}$
+收入之间可能差： $\fbox{300000}$
 那么距离几乎完全被收入控制了。
 
 年龄这个特征：
 
 **基本相当于没用。**
 
-因此我们一般要进行标准化：
-
-$x'=\frac{x-\mu}{\sigma}$
+因此我们一般要进行标准化： $\fbox{x'=\frac{x-\mu}{\sigma}}$
 让各维特征具有相近尺度。
 
 所以面试推荐回答：
@@ -9090,12 +7055,8 @@ $x'=\frac{x-\mu}{\sigma}$
 
 ##### 比较需要标准化
 
-KNN：
-
-$\boxed{\text{因为计算距离}}$
-SVM：
-
-$\boxed{\text{因为涉及距离和间隔}}$
+KNN： $\boxed{\text{因为计算距离}}$
+SVM： $\boxed{\text{因为涉及距离和间隔}}$
 逻辑回归 / 线性模型使用梯度下降时：
 
 标准化通常也有助于优化。
@@ -9108,25 +7069,15 @@ $\boxed{\text{因为涉及距离和间隔}}$
 
 ##### 决策树呢？
 
-决策树通常：
-
-$\boxed{\text{不太需要标准化}}$
+决策树通常： $\boxed{\text{不太需要标准化}}$
 为什么？
 
-因为决策树干的是：
-
-$x_j<5?$
-或者：
-
-$x_j<5000?$
+因为决策树干的是： $\fbox{x_j<5?}$
+或者： $\fbox{x_j<5000?}$
 它主要关心某一维特征上的排序和切分。
 
-你把：
-
-$x$
-变成：
-
-$\frac{x-\mu}{\sigma}$
+你把： $\fbox{x}$
+变成： $\fbox{\frac{x-\mu}{\sigma}}$
 通常不会改变样本的相对顺序。
 
 因此树模型对尺度不敏感。
@@ -9141,15 +7092,9 @@ KNN 有一个很特别的地方。
 
 想想我们之前学的逻辑回归。
 
-训练的时候，要找到：
-
-$w,b$
-SVM 要找到：
-
-$w,b$
-决策树要建立：
-
-$\text{一整棵树}$
+训练的时候，要找到： $\fbox{w,b}$
+SVM 要找到： $\fbox{w,b}$
+决策树要建立： $\fbox{\text{一整棵树}}$
 但是 KNN 呢？
 
 训练的时候：
@@ -9168,22 +7113,14 @@ $\text{一整棵树}$
 2. 找最近邻；
 3. 投票。
 
-所以：
-
-$\boxed{ KNN训练快 }$
-但是：
-
-$\boxed{ KNN预测慢 }$
-这种算法叫：
-
-$\boxed{\text{Lazy Learning，懒惰学习}}$
+所以： $\boxed{ KNN训练快 }$
+但是： $\boxed{ KNN预测慢 }$
+这种算法叫： $\boxed{\text{Lazy Learning，懒惰学习}}$
 ---
 
 ### 十、KNN 是参数模型还是非参数模型？
 
-KNN 属于：
-
-$\boxed{\text{非参数模型}}$
+KNN 属于： $\boxed{\text{非参数模型}}$
 注意：
 
 “非参数”不是说：
@@ -9196,18 +7133,14 @@ $\boxed{\text{非参数模型}}$
 
 > **模型并没有预先假定一个固定形式，并用固定数量的模型参数去描述数据。**
 
-比如逻辑回归：
-
-$P(y=1|x)=\sigma(w^Tx+b)$
+比如逻辑回归： $\fbox{P(y=1|x)=\sigma(w^Tx+b)}$
 模型形式很明确。
 
 但 KNN：
 
 直接依赖训练数据本身进行预测。
 
-所以属于：
-
-$\boxed{\text{Non-parametric Model}}$
+所以属于： $\boxed{\text{Non-parametric Model}}$
 ---
 
 ### 十一、KNN 的优缺点
@@ -9256,16 +7189,12 @@ $\boxed{\text{Non-parametric Model}}$
 
 ### 十二、为什么 KNN 在高维空间容易出问题？
 
-这涉及：
-
-$\boxed{\text{维度灾难 Curse of Dimensionality}}$
+这涉及： $\boxed{\text{维度灾难 Curse of Dimensionality}}$
 不用学得特别数学化。
 
 你只需要理解：
 
-随着维度不断增加，数据在空间中会越来越：
-
-$\boxed{\text{稀疏}}$
+随着维度不断增加，数据在空间中会越来越： $\boxed{\text{稀疏}}$
 原来低维空间中：
 
 > “这个点离我非常近。”
@@ -9274,19 +7203,13 @@ $\boxed{\text{稀疏}}$
 
 不同样本之间的距离可能都变得差不多。
 
-这时候：
-
-$\text{谁是最近邻？}$
+这时候： $\fbox{\text{谁是最近邻？}}$
 这件事情就不那么有意义了。
 
-而 KNN 偏偏完全依赖：
-
-$\boxed{\text{距离}}$
+而 KNN 偏偏完全依赖： $\boxed{\text{距离}}$
 所以高维情况下容易性能下降。
 
-这也是为什么：
-
-$\boxed{\text{KNN + PCA}}$
+这也是为什么： $\boxed{\text{KNN + PCA}}$
 有时候是一个自然组合。
 
 先降维，再做近邻。
@@ -9319,16 +7242,12 @@ KNN 问的是：
 
 > **根据目前观察到的这些特征，它属于每一个类别的概率是多少？**
 
-所以要先理解一个公式：
-
-$\boxed{\text{Bayes Theorem}}$
+所以要先理解一个公式： $\boxed{\text{Bayes Theorem}}$
 ---
 
 ### 十五、贝叶斯公式
 
-贝叶斯公式：
-
-$\boxed{ P(y|x) = \frac{P(x|y)P(y)} {P(x)} }$
+贝叶斯公式： $\boxed{ P(y|x) = \frac{P(x|y)P(y)} {P(x)} }$
 第一次看可能有点抽象。
 
 我们把几个东西拆开。
@@ -9348,24 +7267,16 @@ $\boxed{ P(y|x) = \frac{P(x|y)P(y)} {P(x)} }$
 - 200 封垃圾邮件
 - 800 封正常邮件
 
-那么：
-
-$P(\text{垃圾})=0.2$
-这就是：
-
-$\boxed{\text{先验概率}}$
+那么： $\fbox{P(\text{垃圾})=0.2}$
+这就是： $\boxed{\text{先验概率}}$
 ---
 
 ##### $P(x|y)$：似然 Likelihood
 
-假设已经知道：
-
-$y=\text{垃圾邮件}$
+假设已经知道： $\fbox{y=\text{垃圾邮件}}$
 那么出现特征 $x$ 的概率是多少？
 
-比如：
-
-$P(\text{出现“中奖”}|\text{垃圾邮件})$
+比如： $\fbox{P(\text{出现“中奖”}|\text{垃圾邮件})}$
 可能很高。
 
 ---
@@ -9374,39 +7285,25 @@ $P(\text{出现“中奖”}|\text{垃圾邮件})$
 
 现在我们真的看到了一封包含“中奖”的邮件。
 
-我们想知道：
-
-$P(\text{垃圾邮件}|\text{出现“中奖”})$
-这就是我们真正想求的：
-
-$\boxed{\text{后验概率}}$
-所以贝叶斯公式本质上是在做：
-
-$\boxed{ 先验知识 + 观测到的新证据 \rightarrow 后验判断 }$
+我们想知道： $\fbox{P(\text{垃圾邮件}|\text{出现“中奖”})}$
+这就是我们真正想求的： $\boxed{\text{后验概率}}$
+所以贝叶斯公式本质上是在做： $\boxed{ 先验知识 + 观测到的新证据 \rightarrow 后验判断 }$
 这句话非常值得理解。
 
 ---
 
 ### 十六、用一个简单例子理解贝叶斯
 
-假设：
-
-$P(\text{垃圾邮件})=0.2$
+假设： $\fbox{P(\text{垃圾邮件})=0.2}$
 也就是说垃圾邮件本身占 20%。
 
-并且：
-
-$P(\text{出现“中奖”}|\text{垃圾邮件})=0.8$
-正常邮件中：
-
-$P(\text{出现“中奖”}|\text{正常})=0.05$
+并且： $\fbox{P(\text{出现“中奖”}|\text{垃圾邮件})=0.8}$
+正常邮件中： $\fbox{P(\text{出现“中奖”}|\text{正常})=0.05}$
 现在来了一封：
 
 > “恭喜您中奖！”
 
-即观察到：
-
-$x=\text{中奖}$
+即观察到： $\fbox{x=\text{中奖}}$
 你自然会觉得：
 
 > 它很可能是垃圾邮件。
@@ -9423,20 +7320,12 @@ $x=\text{中奖}$
 
 ### 十七、那“朴素”两个字是什么意思？
 
-现在真正进入：
-
-$\boxed{\text{Naive Bayes}}$
-假设一封邮件有三个特征：
-
-$x_1=\text{是否出现“中奖”}$ $x_2=\text{是否出现“免费”}$ $x_3=\text{是否出现“点击”}$
-我们需要计算：
-
-$P(x_1,x_2,x_3|y)$
+现在真正进入： $\boxed{\text{Naive Bayes}}$
+假设一封邮件有三个特征： $\fbox{x_1=\text{是否出现“中奖”}}$ $\fbox{x_2=\text{是否出现“免费”}}$ $\fbox{x_3=\text{是否出现“点击”}}$
+我们需要计算： $\fbox{P(x_1,x_2,x_3|y)}$
 但这个联合概率很难估计。
 
-尤其特征一多：
-
-$x_1,x_2,\dots,x_{10000}$
+尤其特征一多： $\fbox{x_1,x_2,\dots,x_{10000}}$
 几乎没法直接统计。
 
 怎么办？
@@ -9445,24 +7334,16 @@ $x_1,x_2,\dots,x_{10000}$
 
 > **在给定类别 $y$ 的条件下，各个特征之间相互独立。**
 
-也就是：
-
-$\boxed{ P(x_1,x_2,\dots,x_d|y) = \prod_{j=1}^{d}P(x_j|y) }$
-例如：
-
-$P(x_1,x_2,x_3|y) = P(x_1|y) P(x_2|y) P(x_3|y)$
+也就是： $\boxed{ P(x_1,x_2,\dots,x_d|y) = \prod_{j=1}^{d}P(x_j|y) }$
+例如： $\fbox{P(x_1,x_2,x_3|y) = P(x_1|y) P(x_2|y) P(x_3|y)}$
 一下子就简单了。
 
-这个假设就叫：
-
-$\boxed{\text{条件独立假设}}$
+这个假设就叫： $\boxed{\text{条件独立假设}}$
 ---
 
 ### 十八、为什么叫“朴素”贝叶斯？
 
-因为这个假设实际上：
-
-$\boxed{\text{很强，而且往往并不完全成立}}$
+因为这个假设实际上： $\boxed{\text{很强，而且往往并不完全成立}}$
 例如：
 
 邮件中出现：
@@ -9481,9 +7362,7 @@ $\boxed{\text{很强，而且往往并不完全成立}}$
 
 > 给定邮件类别以后，各个词彼此条件独立。
 
-所以它非常：
-
-$\boxed{\text{Naive}}$
+所以它非常： $\boxed{\text{Naive}}$
 也就是“朴素”。
 
 因此老师问：
@@ -9500,37 +7379,23 @@ $\boxed{\text{Naive}}$
 
 ### 十九、朴素贝叶斯怎么分类？
 
-根据贝叶斯公式：
-
-$P(y|x) = \frac{P(x|y)P(y)}{P(x)}$
-利用条件独立：
-
-$P(x|y) = \prod_jP(x_j|y)$
-所以：
-
-$P(y|x) = \frac{ P(y)\prod_jP(x_j|y) }{ P(x) }$
+根据贝叶斯公式： $\fbox{P(y|x) = \frac{P(x|y)P(y)}{P(x)}}$
+利用条件独立： $\fbox{P(x|y) = \prod_jP(x_j|y)}$
+所以： $\fbox{P(y|x) = \frac{ P(y)\prod_jP(x_j|y) }{ P(x) }}$
 分类的时候，我们只想知道：
 
 > 哪一个类别概率最大？
 
-例如比较：
-
-$P(\text{垃圾}|x)$
-和：
-
-$P(\text{正常}|x)$
-注意：
-
-$P(x)$
+例如比较： $\fbox{P(\text{垃圾}|x)}$
+和： $\fbox{P(\text{正常}|x)}$
+注意： $\fbox{P(x)}$
 对于两个类别来说：
 
 **完全一样。**
 
 因此根本不用计算。
 
-最终：
-
-$\boxed{ \hat y = \arg\max_y P(y) \prod_jP(x_j|y) }$
+最终： $\boxed{ \hat y = \arg\max_y P(y) \prod_jP(x_j|y) }$
 面试不用死背这个公式。
 
 理解成：
@@ -9545,30 +7410,18 @@ $\boxed{ \hat y = \arg\max_y P(y) \prod_jP(x_j|y) }$
 
 这个我们第一章专门讲过。
 
-答案：
-
-$\boxed{\text{生成模型}}$
+答案： $\boxed{\text{生成模型}}$
 为什么？
 
-因为它先学习：
-
-$P(y)$
-以及：
-
-$P(x|y)$
+因为它先学习： $\fbox{P(y)}$
+以及： $\fbox{P(x|y)}$
 也就是：
 
 > 每个类别的数据通常是怎么产生的。
 
-然后通过贝叶斯公式计算：
-
-$P(y|x)$
-所以：
-
-$\boxed{ P(x|y)P(y) \rightarrow P(y|x) }$
-而逻辑回归是：
-
-$\boxed{ 直接建模P(y|x) }$
+然后通过贝叶斯公式计算： $\fbox{P(y|x)}$
+所以： $\boxed{ P(x|y)P(y) \rightarrow P(y|x) }$
+而逻辑回归是： $\boxed{ 直接建模P(y|x) }$
 所以这是一个经典对比：
 
 | | 朴素贝叶斯 | 逻辑回归 |
@@ -9589,18 +7442,10 @@ $\boxed{ 直接建模P(y|x) }$
 
 > 正常邮件里从来没有出现过“中奖”这个词。
 
-于是我们统计得到：
-
-$P(\text{中奖}|\text{正常})=0$
-可是朴素贝叶斯要计算：
-
-$P(y) P(x_1|y) P(x_2|y) \cdots$
-只要其中：
-
-$P(x_j|y)=0$
-整个乘积：
-
-$\boxed{=0}$
+于是我们统计得到： $\fbox{P(\text{中奖}|\text{正常})=0}$
+可是朴素贝叶斯要计算： $\fbox{P(y) P(x_1|y) P(x_2|y) \cdots}$
+只要其中： $\fbox{P(x_j|y)=0}$
+整个乘积： $\boxed{=0}$
 哪怕其他 9999 个特征全部支持这个类别，也没用了。
 
 显然太极端。
@@ -9611,47 +7456,33 @@ $\boxed{=0}$
 
 ### 二十二、拉普拉斯平滑
 
-解决方案叫：
-
-$\boxed{\text{Laplace Smoothing}}$
+解决方案叫： $\boxed{\text{Laplace Smoothing}}$
 直观思想特别简单：
 
 > **不要因为训练集中一次都没有出现，就武断地认为真实概率绝对等于 0。**
 
 因此统计次数的时候：
 
-原来可能是：
-
-$P(x_i|y) = \frac{N_i}{N}$
+原来可能是： $\fbox{P(x_i|y) = \frac{N_i}{N}}$
 加平滑后，相当于给每种可能的情况预先加一点计数。
 
-最经典的：
-
-$\boxed{ P(x_i|y) = \frac{N_i+1}{N+K} }$
+最经典的： $\boxed{ P(x_i|y) = \frac{N_i+1}{N+K} }$
 具体分母根据问题不同会变化，你面试不需要纠结公式。
 
-真正应该记：
-
-$\boxed{ 拉普拉斯平滑主要解决某个特征没有在训练集中出现，从而导致条件概率为0的问题 }$
+真正应该记： $\boxed{ 拉普拉斯平滑主要解决某个特征没有在训练集中出现，从而导致条件概率为0的问题 }$
 ---
 
 ### 二十三、朴素贝叶斯为什么在文本分类里很好用？
 
 这是一个很有价值的追问。
 
-文本的特点是：
-
-$\boxed{\text{维度非常高}}$
-比如一个词表可能有：
-
-$50000$
+文本的特点是： $\boxed{\text{维度非常高}}$
+比如一个词表可能有： $\fbox{50000}$
 个词。
 
 但每篇文章实际只出现其中很少一部分。
 
-所以数据是：
-
-$\boxed{\text{高维、稀疏}}$
+所以数据是： $\boxed{\text{高维、稀疏}}$
 朴素贝叶斯：
 
 - 参数估计简单；
@@ -9673,9 +7504,7 @@ $\boxed{\text{高维、稀疏}}$
 
 ##### 1. Gaussian Naive Bayes
 
-适合：
-
-$\boxed{\text{连续型特征}}$
+适合： $\boxed{\text{连续型特征}}$
 假设每个类别条件下，特征大致服从高斯分布。
 
 ---
@@ -9684,9 +7513,7 @@ $\boxed{\text{连续型特征}}$
 
 多项式朴素贝叶斯。
 
-很常用于：
-
-$\boxed{\text{文本词频}}$
+很常用于： $\boxed{\text{文本词频}}$
 例如：
 
 > 某个词出现了几次。
@@ -9697,9 +7524,7 @@ $\boxed{\text{文本词频}}$
 
 伯努利朴素贝叶斯。
 
-关心的是：
-
-$\boxed{\text{出现 / 没出现}}$
+关心的是： $\boxed{\text{出现 / 没出现}}$
 比如：
 
 > “免费”这个词是否出现？
@@ -9721,9 +7546,7 @@ $\boxed{\text{出现 / 没出现}}$
 
 ##### 缺点
 
-最核心的一条：
-
-$\boxed{\text{条件独立假设往往过强}}$
+最核心的一条： $\boxed{\text{条件独立假设往往过强}}$
 现实中特征经常互相关联。
 
 因此模型可能损失一部分信息。
@@ -9787,30 +7610,14 @@ P(x|y)=ΠP(xj|y)
 
 ### 二十八、这一部分最应该脱口而出的 8 句话
 
-**①**
-
-$\boxed{\text{KNN根据最近K个邻居进行预测}}$
-**②**
-
-$\boxed{\text{K小容易过拟合，K大容易欠拟合}}$
-**③**
-
-$\boxed{\text{KNN依赖距离，因此通常需要标准化}}$
-**④**
-
-$\boxed{\text{KNN训练快、预测慢，是典型的懒惰学习}}$
-**⑤**
-
-$\boxed{ P(y|x)=\frac{P(x|y)P(y)}{P(x)} }$
-**⑥**
-
-$\boxed{\text{朴素贝叶斯的“朴素”来自条件独立假设}}$
-**⑦**
-
-$\boxed{\text{朴素贝叶斯属于生成模型}}$
-**⑧**
-
-$\boxed{\text{拉普拉斯平滑用于避免概率为0}}$
+**①** $\boxed{\text{KNN根据最近K个邻居进行预测}}$
+**②** $\boxed{\text{K小容易过拟合，K大容易欠拟合}}$
+**③** $\boxed{\text{KNN依赖距离，因此通常需要标准化}}$
+**④** $\boxed{\text{KNN训练快、预测慢，是典型的懒惰学习}}$
+**⑤** $\boxed{ P(y|x)=\frac{P(x|y)P(y)}{P(x)} }$
+**⑥** $\boxed{\text{朴素贝叶斯的“朴素”来自条件独立假设}}$
+**⑦** $\boxed{\text{朴素贝叶斯属于生成模型}}$
+**⑧** $\boxed{\text{拉普拉斯平滑用于避免概率为0}}$
 ---
 
 ### 保研面试自测
@@ -9840,12 +7647,8 @@ $\boxed{\text{拉普拉斯平滑用于避免概率为0}}$
 21. 为什么朴素贝叶斯很适合文本分类？
 22. 朴素贝叶斯有什么缺点？
 
-其中最值得你现在就牢牢记住的是：
-
-$\boxed{ K小\rightarrow过拟合,\qquad K大\rightarrow欠拟合 }$
-以及：
-
-$\boxed{ \text{朴素贝叶斯} = \text{贝叶斯公式} + \text{条件独立假设} }$
+其中最值得你现在就牢牢记住的是： $\boxed{ K小\rightarrow过拟合,\qquad K大\rightarrow欠拟合 }$
+以及： $\boxed{ \text{朴素贝叶斯} = \text{贝叶斯公式} + \text{条件独立假设} }$
 下一部分就是 **第八部分：无监督学习——聚类与 K-Means**。从那里开始，我们会第一次系统地处理**“数据没有标签 $y$”时到底怎么学习**。
 
 ---
@@ -9870,16 +7673,12 @@ $\boxed{ \text{朴素贝叶斯} = \text{贝叶斯公式} + \text{条件独立假
 10. K-Means 容易受到异常值影响吗？
 11. 层次聚类、DBSCAN 和 K-Means 有什么基本区别？
 
-其中最重要的是：
-
-$\boxed{\text{K-Means流程 + K值 + 初始化 + 优缺点}}$
+其中最重要的是： $\boxed{\text{K-Means流程 + K值 + 初始化 + 优缺点}}$
 ---
 
 ### 一、先回忆：什么是无监督学习？
 
-我们之前说过，监督学习的数据一般是：
-
-$(x,y)$
+我们之前说过，监督学习的数据一般是： $\fbox{(x,y)}$
 比如：
 
 | 学习时长 | 是否通过考试 |
@@ -9889,9 +7688,7 @@ $(x,y)$
 
 这里有正确答案 $y$。
 
-但无监督学习只有：
-
-$\boxed{x}$
+但无监督学习只有： $\boxed{x}$
 没有标签 $y$。
 
 比如现在给你 10000 个用户，每个人只有：
@@ -9908,12 +7705,8 @@ $\boxed{x}$
 
 那我们怎么办？
 
-可以让算法自己寻找：
-
-$\boxed{\text{数据内部的结构}}$
-其中最经典的任务之一就是：
-
-$\boxed{\text{聚类 Clustering}}$
+可以让算法自己寻找： $\boxed{\text{数据内部的结构}}$
+其中最经典的任务之一就是： $\boxed{\text{聚类 Clustering}}$
 ---
 
 ### 二、什么是聚类？
@@ -9938,9 +7731,7 @@ $\boxed{\text{聚类 Clustering}}$
 - 中间一群比较接近
 - 右边一群比较接近
 
-于是我们可以把它们分成：
-
-$Cluster_1,\ Cluster_2,\ Cluster_3$
+于是我们可以把它们分成： $\fbox{Cluster_1,\ Cluster_2,\ Cluster_3}$
 这就是聚类。
 
 ---
@@ -9951,9 +7742,7 @@ $Cluster_1,\ Cluster_2,\ Cluster_3$
 
 ##### 分类 Classification
 
-属于：
-
-$\boxed{\text{监督学习}}$
+属于： $\boxed{\text{监督学习}}$
 训练数据有标签。
 
 例如：
@@ -9968,16 +7757,12 @@ $\boxed{\text{监督学习}}$
 
 > 这些类别分别叫“猫”和“狗”。
 
-它的任务是学会：
-
-$x\rightarrow y$
+它的任务是学会： $\fbox{x\rightarrow y}$
 ---
 
 ##### 聚类 Clustering
 
-通常属于：
-
-$\boxed{\text{无监督学习}}$
+通常属于： $\boxed{\text{无监督学习}}$
 训练数据没有标签。
 
 算法只能自己发现：
@@ -9991,14 +7776,10 @@ $\boxed{\text{无监督学习}}$
 
 > 第一堆到底叫“猫”还是“狗”。
 
-它只知道：
-
-$\boxed{\text{这些样本彼此相似}}$
+它只知道： $\boxed{\text{这些样本彼此相似}}$
 ---
 
-所以最核心的区别：
-
-$\boxed{ 分类：有标签 \qquad 聚类：没有标签 }$
+所以最核心的区别： $\boxed{ 分类：有标签 \qquad 聚类：没有标签 }$
 ##### 面试标准回答
 
 老师问：
@@ -10021,44 +7802,28 @@ K-Means 是最经典的聚类算法之一。
 
 > **先指定要分成 $K$ 类，然后不断更新每一类的中心，使得每个样本尽可能靠近自己所属类别的中心。**
 
-这里：
-
-$K$
-表示：
-
-$\boxed{\text{我们希望最终分成多少个簇}}$
-例如：
-
-$K=3$
+这里： $\fbox{K}$
+表示： $\boxed{\text{我们希望最终分成多少个簇}}$
+例如： $\fbox{K=3}$
 意思就是：
 
 > 我希望把数据分成 3 类。
 
-而 Means 就是：
-
-$\boxed{\text{均值}}$
-因为每一个簇的中心通常取这个簇所有样本的：
-
-$\boxed{\text{平均值}}$
-所以叫：
-
-$\boxed{K\text{-Means}}$
+而 Means 就是： $\boxed{\text{均值}}$
+因为每一个簇的中心通常取这个簇所有样本的： $\boxed{\text{平均值}}$
+所以叫： $\boxed{K\text{-Means}}$
 ---
 
 ### 五、K-Means 到底怎么做？
 
 这个流程一定要能够自己讲出来。
 
-假设：
-
-$K=3$
+假设： $\fbox{K=3}$
 ---
 
 #### 第一步：随机选择 K 个聚类中心
 
-从数据中先初始化三个中心：
-
-$\mu_1,\mu_2,\mu_3$
+从数据中先初始化三个中心： $\fbox{\mu_1,\mu_2,\mu_3}$
 比如：
 
 ```text
@@ -10084,36 +7849,20 @@ $\mu_1,\mu_2,\mu_3$
 
 ### 六、第二步：把每个样本分给最近的中心
 
-对于每一个样本 $x_i$，计算它到三个中心：
-
-$\mu_1,\mu_2,\mu_3$
+对于每一个样本 $x_i$，计算它到三个中心： $\fbox{\mu_1,\mu_2,\mu_3}$
 的距离。
 
-最常见就是欧氏距离：
-
-$d(x_i,\mu_k) = \sqrt{ \sum_j(x_{ij}-\mu_{kj})^2 }$
-然后：
-
-$\boxed{\text{离哪个中心最近，就分到哪个簇}}$
-例如一个点到三个中心距离分别为：
-
-$2,\quad 8,\quad 15$
-那么显然：
-
-$\boxed{x_i\rightarrow Cluster_1}$
+最常见就是欧氏距离： $\fbox{d(x_i,\mu_k) = \sqrt{ \sum_j(x_{ij}-\mu_{kj})^2 }}$
+然后： $\boxed{\text{离哪个中心最近，就分到哪个簇}}$
+例如一个点到三个中心距离分别为： $\fbox{2,\quad 8,\quad 15}$
+那么显然： $\boxed{x_i\rightarrow Cluster_1}$
 ---
 
 ### 七、第三步：重新计算聚类中心
 
-所有点都分完以后，比如第一类有：
-
-$x_1,x_2,x_3,x_4$
-那么新的中心就是：
-
-$\boxed{ \mu_1 = \frac{x_1+x_2+x_3+x_4}{4} }$
-也就是：
-
-$\boxed{\text{这一簇所有样本的均值}}$
+所有点都分完以后，比如第一类有： $\fbox{x_1,x_2,x_3,x_4}$
+那么新的中心就是： $\boxed{ \mu_1 = \frac{x_1+x_2+x_3+x_4}{4} }$
+也就是： $\boxed{\text{这一簇所有样本的均值}}$
 第二类、第三类也是一样。
 
 所以原来的中心会移动。
@@ -10136,19 +7885,13 @@ $\boxed{\text{这一簇所有样本的均值}}$
 ……
 ```
 
-一直到：
-
-$\boxed{\text{聚类结果基本不再变化}}$
-或者：
-
-$\boxed{\text{聚类中心基本不再变化}}$
+一直到： $\boxed{\text{聚类结果基本不再变化}}$
+或者： $\boxed{\text{聚类中心基本不再变化}}$
 算法就停止。
 
 ---
 
-所以 K-Means 最重要的流程可以浓缩成：
-
-$\boxed{ 初始化中心 \rightarrow 分配样本 \rightarrow 更新中心 \rightarrow 不断迭代 }$
+所以 K-Means 最重要的流程可以浓缩成： $\boxed{ 初始化中心 \rightarrow 分配样本 \rightarrow 更新中心 \rightarrow 不断迭代 }$
 这四步建议背到脱口而出。
 
 ---
@@ -10185,56 +7928,36 @@ K-Means 希望：
 
 > **同一个簇里的样本尽量靠近自己的聚类中心。**
 
-所以它通常最小化：
-
-$\boxed{ J = \sum_{k=1}^{K} \sum_{x_i\in C_k} \|x_i-\mu_k\|^2 }$
+所以它通常最小化： $\boxed{ J = \sum_{k=1}^{K} \sum_{x_i\in C_k} \|x_i-\mu_k\|^2 }$
 别怕这个式子。
 
 含义非常简单。
 
-对于每一个点：
-
-$x_i$
-看看它距离自己类别中心：
-
-$\mu_k$
+对于每一个点： $\fbox{x_i}$
+看看它距离自己类别中心： $\fbox{\mu_k}$
 有多远。
 
-然后把：
-
-$\boxed{\text{距离的平方}}$
+然后把： $\boxed{\text{距离的平方}}$
 全部加起来。
 
-K-Means 希望：
-
-$\boxed{J\text{ 尽可能小}}$
+K-Means 希望： $\boxed{J\text{ 尽可能小}}$
 这个东西经常被叫做：
 
 **簇内平方和**，也常写作 SSE / WCSS。
 
-面试最重要的是理解：
-
-$\boxed{ K\text{-Means希望最小化样本到所属簇中心的平方距离之和} }$
+面试最重要的是理解： $\boxed{ K\text{-Means希望最小化样本到所属簇中心的平方距离之和} }$
 ---
 
 ### 十一、为什么聚类中心取“均值”？
 
 这个问题稍微加分。
 
-假设一个簇已经确定，其中有：
-
-$x_1,x_2,\dots,x_n$
-我们希望找到一个中心：
-
-$\mu$
-让：
-
-$\sum_i\|x_i-\mu\|^2$
+假设一个簇已经确定，其中有： $\fbox{x_1,x_2,\dots,x_n}$
+我们希望找到一个中心： $\fbox{\mu}$
+让： $\fbox{\sum_i\|x_i-\mu\|^2}$
 最小。
 
-可以证明：
-
-$\boxed{ \mu=\frac1n\sum_i x_i }$
+可以证明： $\boxed{ \mu=\frac1n\sum_i x_i }$
 也就是说：
 
 > **对于平方欧氏距离来说，最优中心恰好就是这一簇所有样本的均值。**
@@ -10247,55 +7970,33 @@ $\boxed{ \mu=\frac1n\sum_i x_i }$
 
 又是一个**超级高频面试题**。
 
-K-Means 有一个明显的问题：
-
-$\boxed{K\text{必须提前指定}}$
+K-Means 有一个明显的问题： $\boxed{K\text{必须提前指定}}$
 比如用户分群。
 
-到底：
-
-$K=2?$
-还是：
-
-$K=3?$
-还是：
-
-$K=10?$
+到底： $\fbox{K=2?}$
+还是： $\fbox{K=3?}$
+还是： $\fbox{K=10?}$
 通常不能凭感觉乱选。
 
-一种非常经典的方法叫：
-
-$\boxed{\text{Elbow Method，肘部法}}$
+一种非常经典的方法叫： $\boxed{\text{Elbow Method，肘部法}}$
 ---
 
 ### 十三、什么是肘部法？
 
-我们分别尝试：
-
-$K=1,2,3,4,5,\dots$
-每个 K 都计算簇内平方误差：
-
-$SSE$
-通常随着 K 增大：
-
-$\boxed{SSE会不断下降}$
+我们分别尝试： $\fbox{K=1,2,3,4,5,\dots}$
+每个 K 都计算簇内平方误差： $\fbox{SSE}$
+通常随着 K 增大： $\boxed{SSE会不断下降}$
 这很好理解。
 
-假设极端情况下：
-
-$K=n$
+假设极端情况下： $\fbox{K=n}$
 每个样本自己一类。
 
-那每个样本就是自己的中心：
-
-$SSE=0$
+那每个样本就是自己的中心： $\fbox{SSE=0}$
 所以不能简单说：
 
 > SSE 越小，K 越好。
 
-否则直接：
-
-$K=n$
+否则直接： $\fbox{K=n}$
 就完事了。
 
 显然没有意义。
@@ -10317,22 +8018,14 @@ SSE
        肘部
 ```
 
-前面增加 K：
-
-$SSE$
+前面增加 K： $\fbox{SSE}$
 下降特别快。
 
-到了某一点以后，再增加 K：
-
-$SSE$
+到了某一点以后，再增加 K： $\fbox{SSE}$
 改善已经非常有限。
 
-这个拐点就像人的：
-
-$\boxed{\text{手肘}}$
-因此叫：
-
-$\boxed{\text{肘部法}}$
+这个拐点就像人的： $\boxed{\text{手肘}}$
+因此叫： $\boxed{\text{肘部法}}$
 ---
 
 ##### 面试回答
@@ -10347,22 +8040,14 @@ $\boxed{\text{肘部法}}$
 
 不是。
 
-虽然：
-
-$K\uparrow$
-通常：
-
-$SSE\downarrow$
+虽然： $\fbox{K\uparrow}$
+通常： $\fbox{SSE\downarrow}$
 但 K 太大会把原本自然的一类：
 
 > 强行切成很多小类。
 
-所以我们真正关注的不是单纯：
-
-$\boxed{\text{训练目标最小}}$
-而是：
-
-$\boxed{\text{得到有意义的聚类结构}}$
+所以我们真正关注的不是单纯： $\boxed{\text{训练目标最小}}$
+而是： $\boxed{\text{得到有意义的聚类结构}}$
 这和之前机器学习里很多思想其实是相通的：
 
 > 不能只盯着一个训练指标。
@@ -10373,9 +8058,7 @@ $\boxed{\text{得到有意义的聚类结构}}$
 
 这是另一个**必会题**。
 
-我们第一步不是：
-
-$\boxed{\text{随机选择 K 个中心}}$
+我们第一步不是： $\boxed{\text{随机选择 K 个中心}}$
 吗？
 
 问题就在这里。
@@ -10406,9 +8089,7 @@ $\boxed{\text{随机选择 K 个中心}}$
 
 三个中心全初始化到了左边。
 
-算法最后可能得到：
-
-$\boxed{\text{不太理想的聚类结果}}$
+算法最后可能得到： $\boxed{\text{不太理想的聚类结果}}$
 所以：
 
 > **不同初始化可能得到不同结果。**
@@ -10417,20 +8098,12 @@ $\boxed{\text{不太理想的聚类结果}}$
 
 ### 十六、K-Means 一定能找到全局最优吗？
 
-答案：
-
-$\boxed{\text{不能保证}}$
-K-Means 迭代过程中，目标函数通常会不断下降：
-
-$J^{(t+1)} \leq J^{(t)}$
+答案： $\boxed{\text{不能保证}}$
+K-Means 迭代过程中，目标函数通常会不断下降： $\fbox{J^{(t+1)} \leq J^{(t)}}$
 最终会收敛。
 
-但是：
-
-$\boxed{\text{收敛}\neq\text{一定得到全局最优}}$
-它可能落到：
-
-$\boxed{\text{局部最优}}$
+但是： $\boxed{\text{收敛}\neq\text{一定得到全局最优}}$
+它可能落到： $\boxed{\text{局部最优}}$
 这和初始化有关。
 
 因此实际中经常：
@@ -10443,9 +8116,7 @@ $\boxed{\text{局部最优}}$
 
 这个属于加分点，知道就很好。
 
-普通 K-Means：
-
-$\boxed{\text{随机初始化中心}}$
+普通 K-Means： $\boxed{\text{随机初始化中心}}$
 可能几个初始中心全挤在一起。
 
 K-Means++ 的核心思想是：
@@ -10476,42 +8147,26 @@ K-Means++ 的核心思想是：
 
 这跟 KNN 很像。
 
-K-Means 核心操作之一就是：
-
-$\boxed{\text{计算距离}}$
-假设用户两个特征：
-
-$x_1=\text{年龄}\in[18,60]$ $x_2=\text{年收入}\in[30000,1000000]$
-计算欧氏距离时：
-
-$d^2 = (x_1-x'_1)^2 + (x_2-x'_2)^2$
+K-Means 核心操作之一就是： $\boxed{\text{计算距离}}$
+假设用户两个特征： $\fbox{x_1=\text{年龄}\in[18,60]}$ $\fbox{x_2=\text{年收入}\in[30000,1000000]}$
+计算欧氏距离时： $\fbox{d^2 = (x_1-x'_1)^2 + (x_2-x'_2)^2}$
 收入的尺度远远大于年龄。
 
-那么最后聚类可能几乎完全由：
-
-$\boxed{\text{收入}}$
+那么最后聚类可能几乎完全由： $\boxed{\text{收入}}$
 决定。
 
-所以一般需要：
-
-$\boxed{\text{标准化 / 归一化}}$
-例如：
-
-$z=\frac{x-\mu}{\sigma}$
+所以一般需要： $\boxed{\text{标准化 / 归一化}}$
+例如： $\fbox{z=\frac{x-\mu}{\sigma}}$
 ---
 
 这里你可以把前面的知识串起来：
 
-##### 比较依赖尺度
-
-$\boxed{ KNN,\ SVM,\ K\text{-Means} }$
+##### 比较依赖尺度 $\boxed{ KNN,\ SVM,\ K\text{-Means} }$
 共同点：
 
 > **都明显涉及距离、间隔或几何关系。**
 
-而：
-
-$\boxed{\text{Decision Tree}}$
+而： $\boxed{\text{Decision Tree}}$
 通常就没这么敏感。
 
 ---
@@ -10520,43 +8175,25 @@ $\boxed{\text{Decision Tree}}$
 
 也是一个很好理解的问题。
 
-因为 K-Means 的中心使用：
-
-$\boxed{\text{均值}}$
-比如一组数据：
-
-$1,\ 2,\ 2,\ 3,\ 2$
-均值大概：
-
-$2$
-但如果突然出现异常值：
-
-$1,\ 2,\ 2,\ 3,\ 100$
-均值就被：
-
-$100$
+因为 K-Means 的中心使用： $\boxed{\text{均值}}$
+比如一组数据： $\fbox{1,\ 2,\ 2,\ 3,\ 2}$
+均值大概： $\fbox{2}$
+但如果突然出现异常值： $\fbox{1,\ 2,\ 2,\ 3,\ 100}$
+均值就被： $\fbox{100}$
 明显拉过去了。
 
-所以：
-
-$\boxed{\text{均值本身对异常值比较敏感}}$
-再加上 K-Means 使用平方距离：
-
-$\|x-\mu\|^2$
+所以： $\boxed{\text{均值本身对异常值比较敏感}}$
+再加上 K-Means 使用平方距离： $\fbox{\|x-\mu\|^2}$
 距离特别远的异常点会受到非常大的权重。
 
-因此：
-
-$\boxed{\text{K-Means对异常值比较敏感}}$
+因此： $\boxed{\text{K-Means对异常值比较敏感}}$
 ---
 
 ### 二十、K-Means 适合什么形状的数据？
 
 这一点很重要。
 
-K-Means 本质上使用：
-
-$\boxed{\text{到中心的距离}}$
+K-Means 本质上使用： $\boxed{\text{到中心的距离}}$
 把一个点分给最近的中心。
 
 因此它比较适合：
@@ -10585,9 +8222,7 @@ $\boxed{\text{到中心的距离}}$
 
 K-Means 就可能分不好。
 
-因为它总是在考虑：
-
-$\boxed{\text{离哪个中心最近}}$
+因为它总是在考虑： $\boxed{\text{离哪个中心最近}}$
 而不是学习任意复杂形状的簇。
 
 ---
@@ -10600,25 +8235,19 @@ $\boxed{\text{离哪个中心最近}}$
 
 建议你至少说出下面四条：
 
-##### ① 要提前指定 K
-
-$\boxed{K\text{需要人为选择}}$
+##### ① 要提前指定 K $\boxed{K\text{需要人为选择}}$
 ---
 
 ##### ② 对初始中心敏感
 
-不同初始化：
-
-$\rightarrow$
+不同初始化： $\fbox{\rightarrow}$
 可能得到不同结果。
 
 ---
 
 ##### ③ 对异常值敏感
 
-因为：
-
-$\boxed{\text{均值 + 平方距离}}$
+因为： $\boxed{\text{均值 + 平方距离}}$
 ---
 
 ##### ④ 不适合复杂形状、密度差异很大的簇
@@ -10647,9 +8276,7 @@ $\boxed{\text{均值 + 平方距离}}$
 - 大规模数据上也比较实用；
 - 聚类结果容易解释。
 
-所以它依然是：
-
-$\boxed{\text{最经典、最常用的聚类方法之一}}$
+所以它依然是： $\boxed{\text{最经典、最常用的聚类方法之一}}$
 ---
 
 ### 二十三、面试标准题：介绍一下 K-Means
@@ -10674,24 +8301,16 @@ $\boxed{\text{最经典、最常用的聚类方法之一}}$
 
 ##### KNN 的 K
 
-表示：
-
-$\boxed{\text{预测时考虑多少个最近邻}}$
-比如：
-
-$K=5$
+表示： $\boxed{\text{预测时考虑多少个最近邻}}$
+比如： $\fbox{K=5}$
 就是看最近的 5 个邻居。
 
 ---
 
 ##### K-Means 的 K
 
-表示：
-
-$\boxed{\text{最终要把数据分成几个簇}}$
-比如：
-
-$K=5$
+表示： $\boxed{\text{最终要把数据分成几个簇}}$
+比如： $\fbox{K=5}$
 就是分成 5 类。
 
 所以：
@@ -10711,21 +8330,15 @@ $K=5$
 
 ### 二十五、再认识两个聚类算法
 
-原来的学习路线里，除了 K-Means，我们还需要对：
-
-$\boxed{\text{层次聚类}}$
-和：
-
-$\boxed{\text{DBSCAN}}$
+原来的学习路线里，除了 K-Means，我们还需要对： $\boxed{\text{层次聚类}}$
+和： $\boxed{\text{DBSCAN}}$
 有一个基本认识即可，不需要学得和 K-Means 一样深。
 
 ---
 
 ### 二十六、层次聚类 Hierarchical Clustering
 
-顾名思义，它会建立一种：
-
-$\boxed{\text{层次结构}}$
+顾名思义，它会建立一种： $\boxed{\text{层次结构}}$
 最容易理解的是凝聚式聚类。
 
 一开始：
@@ -10762,16 +8375,12 @@ A   B   C   D   E
 (ABCDE)
 ```
 
-于是可以形成一棵：
-
-$\boxed{\text{树状图 Dendrogram}}$
+于是可以形成一棵： $\boxed{\text{树状图 Dendrogram}}$
 你可以根据在哪一层切开，决定最终有多少个簇。
 
 ##### 和 K-Means 的一个区别
 
-K-Means 一开始通常就要给：
-
-$K$
+K-Means 一开始通常就要给： $\fbox{K}$
 而层次聚类可以先建立完整层次结构：
 
 > **再根据树状图选择切分层次。**
@@ -10784,22 +8393,14 @@ $K$
 
 DBSCAN 的思想和 K-Means 差别非常大。
 
-K-Means 是：
-
-$\boxed{\text{基于中心}}$
-DBSCAN 是：
-
-$\boxed{\text{基于密度}}$
+K-Means 是： $\boxed{\text{基于中心}}$
+DBSCAN 是： $\boxed{\text{基于密度}}$
 它大致认为：
 
 > **如果某个区域里的样本非常密集，那么这些点应该形成一个簇。**
 
-于是它特别擅长发现：
-
-$\boxed{\text{任意形状的簇}}$
-而且还能把一些孤零零的点识别成：
-
-$\boxed{\text{噪声点}}$
+于是它特别擅长发现： $\boxed{\text{任意形状的簇}}$
+而且还能把一些孤零零的点识别成： $\boxed{\text{噪声点}}$
 例如这种数据：
 
 ```text
@@ -10817,9 +8418,7 @@ $\boxed{\text{噪声点}}$
 
 K-Means 可能很难处理这些奇怪形状。
 
-DBSCAN 因为看的是：
-
-$\boxed{\text{局部密度}}$
+DBSCAN 因为看的是： $\boxed{\text{局部密度}}$
 就可能表现得更好。
 
 ---
@@ -10836,9 +8435,7 @@ $\boxed{\text{局部密度}}$
 
 保研面试一般不会让你把 DBSCAN 算法推得特别细。
 
-记住：
-
-$\boxed{ DBSCAN = 密度聚类 + 任意形状 + 可以识别噪声 }$
+记住： $\boxed{ DBSCAN = 密度聚类 + 任意形状 + 可以识别噪声 }$
 基本够了。
 
 ---
@@ -10887,30 +8484,14 @@ K需要提前选择
 
 ### 三十、这一部分最应该脱口而出的 8 句话
 
-##### ①
-
-$\boxed{\text{聚类通常是无监督学习，没有类别标签}}$
-##### ②
-
-$\boxed{\text{分类有标签，聚类没有预先给定标签}}$
-##### ③
-
-$\boxed{ K\text{-Means：初始化中心→分配样本→更新中心→重复迭代} }$
-##### ④
-
-$\boxed{ K\text{-Means最小化簇内样本到中心的平方距离之和} }$
-##### ⑤
-
-$\boxed{\text{K表示希望得到的聚类数量}}$
-##### ⑥
-
-$\boxed{\text{K-Means对初始中心敏感，不能保证全局最优}}$
-##### ⑦
-
-$\boxed{\text{K-Means依赖距离，因此通常需要特征标准化}}$
-##### ⑧
-
-$\boxed{\text{K-Means对异常值以及复杂形状的簇处理得不够好}}$
+##### ① $\boxed{\text{聚类通常是无监督学习，没有类别标签}}$
+##### ② $\boxed{\text{分类有标签，聚类没有预先给定标签}}$
+##### ③ $\boxed{ K\text{-Means：初始化中心→分配样本→更新中心→重复迭代} }$
+##### ④ $\boxed{ K\text{-Means最小化簇内样本到中心的平方距离之和} }$
+##### ⑤ $\boxed{\text{K表示希望得到的聚类数量}}$
+##### ⑥ $\boxed{\text{K-Means对初始中心敏感，不能保证全局最优}}$
+##### ⑦ $\boxed{\text{K-Means依赖距离，因此通常需要特征标准化}}$
+##### ⑧ $\boxed{\text{K-Means对异常值以及复杂形状的簇处理得不够好}}$
 ---
 
 ### 保研面试自测
@@ -10938,9 +8519,7 @@ $\boxed{\text{K-Means对异常值以及复杂形状的簇处理得不够好}}$
 19. DBSCAN 的基本思想是什么？
 20. K-Means 和 DBSCAN 的主要区别是什么？
 
-其中面试优先级最高的是：
-
-$\boxed{ \text{算法流程} + \text{优化目标} + K\text{的选择} + \text{初始化} + \text{优缺点} }$
+其中面试优先级最高的是： $\boxed{ \text{算法流程} + \text{优化目标} + K\text{的选择} + \text{初始化} + \text{优缺点} }$
 下一部分就是 **第九部分：降维与 PCA**。这一部分非常值得认真学，因为老师特别喜欢问：**“PCA 为什么选择方差最大的方向？”、“特征值和特征向量在 PCA 里是什么意思？”、“PCA 和特征选择有什么区别？”**。
 
 ---
@@ -10953,18 +8532,14 @@ $\boxed{ \text{算法流程} + \text{优化目标} + K\text{的选择} + \text{�
 
 这一部分不需要你把特征值分解的推导背下来，但一定要真正理解 PCA 在干什么。
 
-先把最核心的一句话记住：
-
-$\boxed{\text{PCA：寻找数据方差最大的方向，把数据投影到这些方向上实现降维}}$
+先把最核心的一句话记住： $\boxed{\text{PCA：寻找数据方差最大的方向，把数据投影到这些方向上实现降维}}$
 如果这句话你理解透了，PCA 已经掌握一半。
 
 ---
 
 ### 一、为什么需要降维？
 
-假设一个样本有：
-
-$x=(x_1,x_2,\cdots,x_{1000})$
+假设一个样本有： $\fbox{x=(x_1,x_2,\cdots,x_{1000})}$
 也就是有 1000 个特征。
 
 特征多是不是一定好？
@@ -10973,69 +8548,43 @@ $x=(x_1,x_2,\cdots,x_{1000})$
 
 因为很多特征之间可能存在很强的相关性。
 
-比如描述一个人的身材时，我们有：
-
-$\text{身高、腿长、臂长}$
+比如描述一个人的身材时，我们有： $\fbox{\text{身高、腿长、臂长}}$
 这些特征显然不是完全独立的。
 
 身高较高的人，通常腿长和臂长也会偏大。
 
 所以这几个特征包含的信息有一定重复。
 
-如果我们能把：
-
-$1000\text{维}$
-压缩成：
-
-$100\text{维}$
+如果我们能把： $\fbox{1000\text{维}}$
+压缩成： $\fbox{100\text{维}}$
 同时保留绝大部分重要信息，就可以减少计算量、降低存储成本，有时还能减少噪声和缓解高维问题。
 
-这就是：
-
-$\boxed{\text{降维 Dimensionality Reduction}}$
+这就是： $\boxed{\text{降维 Dimensionality Reduction}}$
 ---
 
 ### 二、什么叫“维度”？
 
 其实很简单。
 
-如果每个样本只有两个特征：
-
-$x=(x_1,x_2)$
+如果每个样本只有两个特征： $\fbox{x=(x_1,x_2)}$
 那就是二维数据。
 
-三个特征：
-
-$x=(x_1,x_2,x_3)$
+三个特征： $\fbox{x=(x_1,x_2,x_3)}$
 就是三维数据。
 
-100 个特征：
-
-$x\in\mathbb R^{100}$
+100 个特征： $\fbox{x\in\mathbb R^{100}}$
 就是 100 维数据。
 
-因此所谓：
-
-$\boxed{\text{降维}}$
-本质就是：
-
-$\mathbb R^{d} \rightarrow \mathbb R^{k}, \qquad k<d$
-比如：
-
-$100维\rightarrow10维$
+因此所谓： $\boxed{\text{降维}}$
+本质就是： $\fbox{\mathbb R^{d} \rightarrow \mathbb R^{k}, \qquad k<d}$
+比如： $\fbox{100维\rightarrow10维}$
 ---
 
 ### 三、PCA 是什么？
 
-PCA 全称：
-
-$\boxed{\text{Principal Component Analysis}}$
-中文叫：
-
-$\boxed{\text{主成分分析}}$
-它是一种非常经典的：
-
-$\boxed{\text{线性降维方法}}$
+PCA 全称： $\boxed{\text{Principal Component Analysis}}$
+中文叫： $\boxed{\text{主成分分析}}$
+它是一种非常经典的： $\boxed{\text{线性降维方法}}$
 注意“线性”这两个字。
 
 PCA 并不是随便删掉几个特征，而是：
@@ -11048,9 +8597,7 @@ PCA 并不是随便删掉几个特征，而是：
 
 ### 四、一个二维例子就能理解 PCA
 
-假设现在有二维数据：
-
-$(x_1,x_2)$
+假设现在有二维数据： $\fbox{(x_1,x_2)}$
 画出来以后大概长这样：
 
 ```text
@@ -11067,12 +8614,8 @@ x2
 
 你会发现这些点虽然处于二维空间，但实际上大部分都沿着一个斜方向分布。
 
-也就是说：
-
-$x_1$
-和：
-
-$x_2$
+也就是说： $\fbox{x_1}$
+和： $\fbox{x_2}$
 之间存在很强相关性。
 
 所以从信息角度看，这些数据可能根本不需要两个维度。
@@ -11089,17 +8632,11 @@ $x_2$
 
 然后把所有点投影到这条线上。
 
-原来：
-
-$(x_1,x_2)$
+原来： $\fbox{(x_1,x_2)}$
 是二维。
 
-投影之后，每个点只需要一个坐标：
-
-$z$
-于是：
-
-$\boxed{二维\rightarrow一维}$
+投影之后，每个点只需要一个坐标： $\fbox{z}$
+于是： $\boxed{二维\rightarrow一维}$
 这就是 PCA 最直观的思想。
 
 ---
@@ -11127,32 +8664,20 @@ $\boxed{二维\rightarrow一维}$
 
 如果这个方向和数据主要变化方向接近垂直，那么很多本来不同的点投影以后可能挤在一起。
 
-例如原来两个点差别很明显：
-
-$A\neq B$
-投影以后却：
-
-$A'\approx B'$
+例如原来两个点差别很明显： $\fbox{A\neq B}$
+投影以后却： $\fbox{A'\approx B'}$
 那么大量信息就丢失了。
 
-所以我们希望投影以后：
-
-$\boxed{\text{数据尽可能分散}}$
-也就是：
-
-$\boxed{\text{投影后的方差尽可能大}}$
+所以我们希望投影以后： $\boxed{\text{数据尽可能分散}}$
+也就是： $\boxed{\text{投影后的方差尽可能大}}$
 为什么？
 
 因为方差大意味着：
 
 > 数据在这个方向上的差异比较明显，这个方向携带的信息比较丰富。
 
-因此 PCA 寻找：
-
-$\boxed{\text{投影方差最大的方向}}$
-作为：
-
-$\boxed{\text{第一主成分}}$
+因此 PCA 寻找： $\boxed{\text{投影方差最大的方向}}$
+作为： $\boxed{\text{第一主成分}}$
 ---
 
 ### 六、面试怎么回答“为什么 PCA 最大化方差？”
@@ -11163,52 +8688,36 @@ $\boxed{\text{第一主成分}}$
 
 这段就已经非常够用了。
 
-你还可以压缩成一句：
-
-$\boxed{\text{方差越大，保留的样本差异通常越多}}$
+你还可以压缩成一句： $\boxed{\text{方差越大，保留的样本差异通常越多}}$
 ---
 
 ### 七、什么叫第一主成分、第二主成分？
 
-第一主成分：
-
-$PC_1$
-就是：
-
-$\boxed{\text{方差最大的方向}}$
+第一主成分： $\fbox{PC_1}$
+就是： $\boxed{\text{方差最大的方向}}$
 那么第二主成分呢？
 
 不能继续选同一个方向。
 
-所以要求第二主成分：
-
-$\boxed{\text{与第一主成分正交}}$
-并且在剩下的方向里：
-
-$\boxed{\text{方差最大}}$
+所以要求第二主成分： $\boxed{\text{与第一主成分正交}}$
+并且在剩下的方向里： $\boxed{\text{方差最大}}$
 第三主成分也是一样：
 
 与前两个方向正交，并且使剩余方差最大。
 
-所以你可以理解为：
-
-$PC_1>PC_2>PC_3>\cdots$
+所以你可以理解为： $\fbox{PC_1>PC_2>PC_3>\cdots}$
 这里不是数值大小，而是它们能够解释的数据变化程度依次下降。
 
 ---
 
 ### 八、为什么主成分之间要正交？
 
-因为我们希望不同主成分提供：
-
-$\boxed{\text{尽可能不重复的信息}}$
+因为我们希望不同主成分提供： $\boxed{\text{尽可能不重复的信息}}$
 如果第二个方向和第一个方向几乎一样，那第二个方向提供的信息基本就是重复的。
 
 所以 PCA 会寻找彼此正交的主成分。
 
-从统计角度来说，经过 PCA 后，不同主成分之间：
-
-$\boxed{\text{互不相关}}$
+从统计角度来说，经过 PCA 后，不同主成分之间： $\boxed{\text{互不相关}}$
 注意：
 
 **不相关不等于统计独立。**
@@ -11221,33 +8730,19 @@ $\boxed{\text{互不相关}}$
 
 现在稍微往数学上走一点，但不需要怕。
 
-假设数据有两个特征：
-
-$x_1,x_2$
-我们不仅关心：
-
-$Var(x_1)$
-和：
-
-$Var(x_2)$
-还关心：
-
-$x_1,x_2$
+假设数据有两个特征： $\fbox{x_1,x_2}$
+我们不仅关心： $\fbox{Var(x_1)}$
+和： $\fbox{Var(x_2)}$
+还关心： $\fbox{x_1,x_2}$
 之间是不是一起变化。
 
-这就叫：
-
-$\boxed{\text{协方差 Covariance}}$
+这就叫： $\boxed{\text{协方差 Covariance}}$
 比如：
 
 身高增加时，体重通常也增加，那么协方差通常为正。
 
-因此我们可以把所有特征之间的方差和协方差整理成一个矩阵：
-
-$\Sigma= \begin{bmatrix} Var(x_1) & Cov(x_1,x_2)\\ Cov(x_2,x_1) & Var(x_2) \end{bmatrix}$
-这就是：
-
-$\boxed{\text{协方差矩阵}}$
+因此我们可以把所有特征之间的方差和协方差整理成一个矩阵： $\fbox{\Sigma= \begin{bmatrix} Var(x_1) & Cov(x_1,x_2)\\ Cov(x_2,x_1) & Var(x_2) \end{bmatrix}}$
+这就是： $\boxed{\text{协方差矩阵}}$
 高维情况下也是一样。
 
 ---
@@ -11256,51 +8751,29 @@ $\boxed{\text{协方差矩阵}}$
 
 这是另一个 **面试重点**。
 
-PCA 会对协方差矩阵做特征值分解：
-
-$\Sigma v=\lambda v$
-这里：
-
-$v$
-是：
-
-$\boxed{\text{特征向量}}$
-而：
-
-$\lambda$
-是：
-
-$\boxed{\text{特征值}}$
-在 PCA 里可以非常直观地理解：
-
-$\boxed{\text{特征向量 = 主成分方向}}$
-而：
-
-$\boxed{\text{特征值 = 这个方向上的方差大小}}$
+PCA 会对协方差矩阵做特征值分解： $\fbox{\Sigma v=\lambda v}$
+这里： $\fbox{v}$
+是： $\boxed{\text{特征向量}}$
+而： $\fbox{\lambda}$
+是： $\boxed{\text{特征值}}$
+在 PCA 里可以非常直观地理解： $\boxed{\text{特征向量 = 主成分方向}}$
+而： $\boxed{\text{特征值 = 这个方向上的方差大小}}$
 这两句话一定要记住。
 
-例如：
-
-$\lambda_1=100$ $\lambda_2=20$
+例如： $\fbox{\lambda_1=100}$ $\fbox{\lambda_2=20}$
 说明第一主成分所包含的数据变化远大于第二主成分。
 
-所以 PCA 会按照：
-
-$\lambda_1\geq\lambda_2\geq\cdots\geq\lambda_d$
+所以 PCA 会按照： $\fbox{\lambda_1\geq\lambda_2\geq\cdots\geq\lambda_d}$
 排序。
 
-然后选择最大的前：
-
-$k$
+然后选择最大的前： $\fbox{k}$
 个特征值对应的特征向量。
 
 ---
 
 ### 十一、PCA 的完整流程
 
-假设：
-
-$X\in\mathbb R^{n\times d}$
+假设： $\fbox{X\in\mathbb R^{n\times d}}$
 原来有 $d$ 个特征，我们希望降到 $k$ 维。
 
 整体思想是：
@@ -11323,12 +8796,8 @@ $X\in\mathbb R^{n\times d}$
 得到 k 维数据
 ```
 
-最终：
-
-$d维\rightarrow k维$
-其中：
-
-$k<d$
+最终： $\fbox{d维\rightarrow k维}$
+其中： $\fbox{k<d}$
 面试一般不需要你手算一个大矩阵。
 
 但整个流程最好能说出来。
@@ -11337,14 +8806,10 @@ $k<d$
 
 ### 十二、为什么 PCA 前一般要中心化？
 
-PCA 中通常首先：
-
-$x_i\leftarrow x_i-\mu$
+PCA 中通常首先： $\fbox{x_i\leftarrow x_i-\mu}$
 也就是每一个特征减去自己的均值。
 
-这样处理以后：
-
-$\boxed{\text{每个特征均值变成0}}$
+这样处理以后： $\boxed{\text{每个特征均值变成0}}$
 原因是 PCA 主要分析：
 
 > **数据围绕均值如何变化。**
@@ -11353,9 +8818,7 @@ $\boxed{\text{每个特征均值变成0}}$
 
 因此先把数据中心移到原点附近。
 
-这一步叫：
-
-$\boxed{\text{中心化 Centering}}$
+这一步叫： $\boxed{\text{中心化 Centering}}$
 ---
 
 ### 十三、PCA 要不要标准化？
@@ -11366,58 +8829,34 @@ $\boxed{\text{中心化 Centering}}$
 
 但是标准化是否需要，要看特征尺度。
 
-比如：
-
-$x_1=\text{年龄}\in[18,60]$
-而：
-
-$x_2=\text{年收入}\in[30000,1000000]$
+比如： $\fbox{x_1=\text{年龄}\in[18,60]}$
+而： $\fbox{x_2=\text{年收入}\in[30000,1000000]}$
 那么收入本身数值尺度很大，因此它的方差也可能非常大。
 
-PCA 又恰恰优先寻找：
-
-$\boxed{\text{方差大的方向}}$
+PCA 又恰恰优先寻找： $\boxed{\text{方差大的方向}}$
 最后可能导致 PCA 几乎完全被收入支配。
 
-所以当不同特征：
-
-$\boxed{\text{量纲或尺度差别明显}}$
-时，通常应该先标准化，例如：
-
-$z=\frac{x-\mu}{\sigma}$
+所以当不同特征： $\boxed{\text{量纲或尺度差别明显}}$
+时，通常应该先标准化，例如： $\fbox{z=\frac{x-\mu}{\sigma}}$
 再做 PCA。
 
 ---
 
 ### 十四、降到几维合适？
 
-也就是：
-
-$k$
+也就是： $\fbox{k}$
 怎么选？
 
-PCA 可以看：
-
-$\boxed{\text{累计解释方差比例}}$
-假设几个主成分的特征值：
-
-$\lambda_1,\lambda_2,\cdots,\lambda_d$
-第 $i$ 个主成分解释的方差比例大致是：
-
-$\frac{\lambda_i} {\sum_{j=1}^{d}\lambda_j}$
-假设：
-
-$PC_1=60\%$ $PC_2=25\%$ $PC_3=8\%$
-那么前三个主成分一共：
-
-$60\%+25\%+8\%=93\%$
+PCA 可以看： $\boxed{\text{累计解释方差比例}}$
+假设几个主成分的特征值： $\fbox{\lambda_1,\lambda_2,\cdots,\lambda_d}$
+第 $i$ 个主成分解释的方差比例大致是： $\fbox{\frac{\lambda_i} {\sum_{j=1}^{d}\lambda_j}}$
+假设： $\fbox{PC_1=60\%}$ $\fbox{PC_2=25\%}$ $\fbox{PC_3=8\%}$
+那么前三个主成分一共： $\fbox{60\%+25\%+8\%=93\%}$
 也就是说：
 
 > 用前三个维度就保留了大约 93% 的方差信息。
 
-因此实际中常选择一个 $k$，使：
-
-$\boxed{\text{累计解释方差达到90\%、95\%等}}$
+因此实际中常选择一个 $k$，使： $\boxed{\text{累计解释方差达到90\%、95\%等}}$
 具体阈值取决于任务。
 
 ---
@@ -11426,63 +8865,41 @@ $\boxed{\text{累计解释方差达到90\%、95\%等}}$
 
 这又是一道 **超级高频题**。
 
-假设原来有：
-
-$x_1,x_2,x_3$
+假设原来有： $\fbox{x_1,x_2,x_3}$
 ##### 特征选择
 
-可能直接选择：
-
-$x_1,x_3$
-把：
-
-$x_2$
+可能直接选择： $\fbox{x_1,x_3}$
+把： $\fbox{x_2}$
 删除。
 
-所以得到的仍然是：
-
-$\boxed{\text{原来的特征}}$
+所以得到的仍然是： $\boxed{\text{原来的特征}}$
 只是少了一些。
 
 ---
 
 ##### PCA
 
-PCA 得到的新特征可能是：
-
-$z_1 = 0.5x_1 + 0.7x_2 - 0.2x_3$ $z_2 = 0.1x_1 - 0.3x_2 + 0.9x_3$
-也就是说：
-
-$\boxed{\text{PCA生成的是原始特征的线性组合}}$
-所以 PCA 属于：
-
-$\boxed{\text{特征提取 / 特征变换}}$
+PCA 得到的新特征可能是： $\fbox{z_1 = 0.5x_1 + 0.7x_2 - 0.2x_3}$ $\fbox{z_2 = 0.1x_1 - 0.3x_2 + 0.9x_3}$
+也就是说： $\boxed{\text{PCA生成的是原始特征的线性组合}}$
+所以 PCA 属于： $\boxed{\text{特征提取 / 特征变换}}$
 而不是简单的特征选择。
 
-可以直接记：
-
-$\boxed{\text{特征选择：挑原来的}}$ $\boxed{\text{PCA：造新的}}$
+可以直接记： $\boxed{\text{特征选择：挑原来的}}$ $\boxed{\text{PCA：造新的}}$
 这个口诀非常适合面试。
 
 ---
 
 ### 十六、PCA 最大的一个缺点：可解释性下降
 
-假设原来的特征是：
-
-$\text{年龄、收入、消费金额}$
+假设原来的特征是： $\fbox{\text{年龄、收入、消费金额}}$
 这些都有清晰含义。
 
-但是 PCA 之后：
-
-$PC_1 = 0.43\times年龄 + 0.61\times收入 + 0.67\times消费金额$
+但是 PCA 之后： $\fbox{PC_1 = 0.43\times年龄 + 0.61\times收入 + 0.67\times消费金额}$
 那你很难直接说：
 
 > “PC1 到底表示什么？”
 
-因此：
-
-$\boxed{\text{PCA通常会牺牲一定的可解释性}}$
+因此： $\boxed{\text{PCA通常会牺牲一定的可解释性}}$
 这也是 PCA 和特征选择的重要区别之一。
 
 特征选择保留的是原始特征，所以通常更容易解释。
@@ -11491,25 +8908,15 @@ $\boxed{\text{PCA通常会牺牲一定的可解释性}}$
 
 ### 十七、PCA 是监督学习还是无监督学习？
 
-答案：
-
-$\boxed{\text{无监督学习}}$
+答案： $\boxed{\text{无监督学习}}$
 为什么？
 
-因为 PCA 做降维的时候只使用：
-
-$X$
-没有利用：
-
-$y$
-它只是根据数据本身的：
-
-$\boxed{\text{方差和协方差结构}}$
+因为 PCA 做降维的时候只使用： $\fbox{X}$
+没有利用： $\fbox{y}$
+它只是根据数据本身的： $\boxed{\text{方差和协方差结构}}$
 寻找重要方向。
 
-所以 PCA 是典型的：
-
-$\boxed{\text{无监督降维}}$
+所以 PCA 是典型的： $\boxed{\text{无监督降维}}$
 这个特别容易考。
 
 ---
@@ -11520,26 +8927,18 @@ $\boxed{\text{无监督降维}}$
 
 这句话一定不要说绝对。
 
-PCA 的目标是：
-
-$\boxed{\text{保留方差最大的方向}}$
-但：
-
-$\boxed{\text{方差大}\neq\text{一定最有利于分类}}$
+PCA 的目标是： $\boxed{\text{保留方差最大的方向}}$
+但： $\boxed{\text{方差大}\neq\text{一定最有利于分类}}$
 举个很重要的例子。
 
-假设区分类别真正关键的信息恰好位于一个：
-
-$\boxed{\text{方差比较小的方向}}$
+假设区分类别真正关键的信息恰好位于一个： $\boxed{\text{方差比较小的方向}}$
 PCA 可能认为这个方向“不重要”，于是降维的时候直接把它扔掉了。
 
 分类性能反而可能下降。
 
 为什么会这样？
 
-因为 PCA 根本没有看：
-
-$y$
+因为 PCA 根本没有看： $\fbox{y}$
 它不知道你最后要分什么类别。
 
 所以：
@@ -11554,20 +8953,12 @@ $y$
 
 有时候可以。
 
-比如：
-
-$10000\text{个特征}$
-但训练样本只有：
-
-$1000\text{个}$
+比如： $\fbox{10000\text{个特征}}$
+但训练样本只有： $\fbox{1000\text{个}}$
 模型很容易因为维度太高而过拟合。
 
-如果 PCA：
-
-$10000维\rightarrow100维$
-减少一些冗余信息和噪声，就可能：
-
-$\boxed{\text{降低模型复杂度，缓解过拟合}}$
+如果 PCA： $\fbox{10000维\rightarrow100维}$
+减少一些冗余信息和噪声，就可能： $\boxed{\text{降低模型复杂度，缓解过拟合}}$
 但仍然不能说：
 
 > “PCA 一定防止过拟合。”
@@ -11594,47 +8985,29 @@ $\boxed{\text{降低模型复杂度，缓解过拟合}}$
 
 ### 二十一、这一章真正需要建立的知识链
 
-你脑海里可以压缩成：
-
-$\boxed{\text{高维数据}}$
+你脑海里可以压缩成： $\boxed{\text{高维数据}}$
 ↓
 
-存在：
-
-$\boxed{\text{冗余、相关性、计算成本高}}$
+存在： $\boxed{\text{冗余、相关性、计算成本高}}$
 ↓
 
-使用：
-
-$\boxed{\text{PCA}}$
+使用： $\boxed{\text{PCA}}$
 ↓
 
-寻找：
-
-$\boxed{\text{方差最大的方向}}$
+寻找： $\boxed{\text{方差最大的方向}}$
 ↓
 
-协方差矩阵：
-
-$\Sigma$
+协方差矩阵： $\fbox{\Sigma}$
 ↓
 
-特征值分解：
-
-$\Sigma v=\lambda v$
-其中：
-
-$\boxed{v=\text{主成分方向}}$ $\boxed{\lambda=\text{该方向的方差}}$
+特征值分解： $\fbox{\Sigma v=\lambda v}$
+其中： $\boxed{v=\text{主成分方向}}$ $\boxed{\lambda=\text{该方向的方差}}$
 ↓
 
-选前 $k$ 个：
-
-$\boxed{\lambda最大的特征向量}$
+选前 $k$ 个： $\boxed{\lambda最大的特征向量}$
 ↓
 
-投影：
-
-$\boxed{d维\rightarrow k维}$
+投影： $\boxed{d维\rightarrow k维}$
 这就是 PCA 的完整逻辑。
 
 ---
@@ -11659,9 +9032,7 @@ $\boxed{d维\rightarrow k维}$
 14. PCA 一定能提高分类准确率吗？
 15. PCA 有什么优缺点？
 
-其中最重要的四道，我建议做到**脱口而出**：
-
-$\boxed{\text{为什么最大化方差？}}$ $\boxed{\text{特征值、特征向量分别是什么？}}$ $\boxed{\text{PCA和特征选择的区别？}}$ $\boxed{\text{为什么PCA不一定提高分类准确率？}}$
+其中最重要的四道，我建议做到**脱口而出**： $\boxed{\text{为什么最大化方差？}}$ $\boxed{\text{特征值、特征向量分别是什么？}}$ $\boxed{\text{PCA和特征选择的区别？}}$ $\boxed{\text{为什么PCA不一定提高分类准确率？}}$
 下一部分按照我们原来的路线，就是 **第十部分：模型评估**，会讲 **混淆矩阵、Accuracy、Precision、Recall、F1、ROC、AUC，以及“为什么类别不平衡时不能只看准确率”**。这一章是保研面试里非常非常容易连续追问的一章。
 
 ---
@@ -11685,9 +9056,7 @@ $\boxed{\text{为什么最大化方差？}}$ $\boxed{\text{特征值、特征向
 7. AUC 是什么？AUC 越大说明什么？
 8. 回归任务里 MSE、RMSE、MAE 有什么区别？
 
-先抓最核心的一条：
-
-$\boxed{\text{模型评估不能只问“预测对了多少”，还要问“错的是哪一种”。}}$
+先抓最核心的一条： $\boxed{\text{模型评估不能只问“预测对了多少”，还要问“错的是哪一种”。}}$
 ---
 
 #### 一、为什么 Accuracy 不够？
@@ -11703,29 +9072,19 @@ $\boxed{\text{模型评估不能只问“预测对了多少”，还要问“错
 
 > 不管来的是谁，我全部预测为健康。
 
-那么它预测正确：
-
-$990$
-预测错误：
-
-$10$
-所以：
-
-$Accuracy=\frac{990}{1000}=99\%$
+那么它预测正确： $\fbox{990}$
+预测错误： $\fbox{10}$
+所以： $\fbox{Accuracy=\frac{990}{1000}=99\%}$
 看起来是不是非常厉害？
 
-但实际上这个模型：
-
-$\boxed{\text{一个病人都没找出来}}$
+但实际上这个模型： $\boxed{\text{一个病人都没找出来}}$
 所以它几乎毫无价值。
 
 这就说明：
 
 > **准确率高，不代表模型一定好。**
 
-尤其是：
-
-$\boxed{\text{类别不平衡}}$
+尤其是： $\boxed{\text{类别不平衡}}$
 的时候。
 
 于是我们必须进一步研究：
@@ -11736,12 +9095,8 @@ $\boxed{\text{类别不平衡}}$
 
 ### 二、混淆矩阵 Confusion Matrix
 
-假设是一个二分类问题：
-
-$y\in\{0,1\}$
-一般把我们特别关心的类别叫：
-
-$\boxed{\text{正类 Positive}}$
+假设是一个二分类问题： $\fbox{y\in\{0,1\}}$
+一般把我们特别关心的类别叫： $\boxed{\text{正类 Positive}}$
 例如癌症检测：
 
 - 患癌症：正类
@@ -11758,54 +9113,38 @@ $\boxed{\text{正类 Positive}}$
 
 ##### 1. TP：True Positive
 
-实际：
-
-$Positive$
-预测：
-
-$Positive$
+实际： $\fbox{Positive}$
+预测： $\fbox{Positive}$
 也就是：
 
 > **本来有病，而且模型也检测出来了。**
 
-叫：
-
-$\boxed{TP}$
+叫： $\boxed{TP}$
 ---
 
 ##### 2. TN：True Negative
 
-实际健康，模型也判断健康。
-
-$\boxed{TN}$
+实际健康，模型也判断健康。 $\boxed{TN}$
 ---
 
 ##### 3. FP：False Positive
 
-实际健康，但模型说有病。
-
-$\boxed{FP}$
+实际健康，但模型说有病。 $\boxed{FP}$
 也叫：
 
 > **假阳性**
 
-相当于：
-
-$\text{误报}$
+相当于： $\fbox{\text{误报}}$
 ---
 
 ##### 4. FN：False Negative
 
-实际有病，但模型说健康。
-
-$\boxed{FN}$
+实际有病，但模型说健康。 $\boxed{FN}$
 也叫：
 
 > **假阴性**
 
-相当于：
-
-$\text{漏报}$
+相当于： $\fbox{\text{漏报}}$
 癌症筛查里面 FN 往往特别危险：
 
 > 病人真的有癌症，但模型没有检测出来。
@@ -11816,48 +9155,32 @@ $\text{漏报}$
 
 现在就很好理解了。
 
-所有预测正确的样本：
-
-$TP+TN$
-所有样本：
-
-$TP+TN+FP+FN$
-所以：
-
-$\boxed{ Accuracy= \frac{TP+TN} {TP+TN+FP+FN} }$
+所有预测正确的样本： $\fbox{TP+TN}$
+所有样本： $\fbox{TP+TN+FP+FN}$
+所以： $\boxed{ Accuracy= \frac{TP+TN} {TP+TN+FP+FN} }$
 它回答的问题是：
 
 > **所有样本里面，我有多少预测对了？**
 
 如果类别比较平衡，Accuracy 往往比较直观。
 
-但类别严重不平衡时：
-
-$\boxed{\text{Accuracy 可能具有欺骗性}}$
+但类别严重不平衡时： $\boxed{\text{Accuracy 可能具有欺骗性}}$
 ---
 
 ### 四、Precision：查准率
 
 这是特别容易和 Recall 混的。
 
-Precision：
-
-$\boxed{ Precision= \frac{TP}{TP+FP} }$
-注意它的分母：
-
-$TP+FP$
+Precision： $\boxed{ Precision= \frac{TP}{TP+FP} }$
+注意它的分母： $\fbox{TP+FP}$
 是什么？
 
-是：
-
-$\boxed{\text{模型预测为正类的所有样本}}$
+是： $\boxed{\text{模型预测为正类的所有样本}}$
 所以 Precision 问的是：
 
 > **模型说“这是正类”的这些样本里面，到底有多少真的是正类？**
 
-一句话：
-
-$\boxed{\text{Precision：预测出来的正类有多准}}$
+一句话： $\boxed{\text{Precision：预测出来的正类有多准}}$
 ---
 
 ##### 举例
@@ -11868,12 +9191,8 @@ $\boxed{\text{Precision：预测出来的正类有多准}}$
 
 结果真正的垃圾邮件只有 90 封。
 
-那么：
-
-$TP=90$ $FP=10$
-于是：
-
-$Precision=\frac{90}{100}=90\%$
+那么： $\fbox{TP=90}$ $\fbox{FP=10}$
+于是： $\fbox{Precision=\frac{90}{100}=90\%}$
 也就是说：
 
 > 模型判成垃圾邮件的邮件里面，90% 真的是垃圾邮件。
@@ -11882,55 +9201,37 @@ $Precision=\frac{90}{100}=90\%$
 
 ### 五、Recall：召回率
 
-Recall：
-
-$\boxed{ Recall= \frac{TP}{TP+FN} }$
-它的分母：
-
-$TP+FN$
+Recall： $\boxed{ Recall= \frac{TP}{TP+FN} }$
+它的分母： $\fbox{TP+FN}$
 是什么？
 
-实际上是：
-
-$\boxed{\text{所有真正的正类}}$
+实际上是： $\boxed{\text{所有真正的正类}}$
 所以 Recall 问：
 
 > **真正的正类里面，我成功找出来多少？**
 
-一句话：
-
-$\boxed{\text{Recall：真正的正类找全了多少}}$
+一句话： $\boxed{\text{Recall：真正的正类找全了多少}}$
 ---
 
 ##### 癌症例子
 
-一共有：
-
-$100$
+一共有： $\fbox{100}$
 个癌症患者。
 
-模型成功检测出：
-
-$90$
+模型成功检测出： $\fbox{90}$
 个。
 
-漏掉：
-
-$10$
+漏掉： $\fbox{10}$
 个。
 
-那么：
-
-$Recall= \frac{90}{90+10} = 90\%$
+那么： $\fbox{Recall= \frac{90}{90+10} = 90\%}$
 ---
 
 ### 六、Precision 和 Recall 到底怎么区分？
 
 这是这一章**最重要的地方之一**。
 
-直接记：
-
-$\boxed{\text{Precision：我找出来的人里，有多少是真的？}}$ $\boxed{\text{Recall：真正的人里，我找出来多少？}}$
+直接记： $\boxed{\text{Precision：我找出来的人里，有多少是真的？}}$ $\boxed{\text{Recall：真正的人里，我找出来多少？}}$
 比如警察抓小偷。
 
 ##### Precision 高
@@ -11939,9 +9240,7 @@ $\boxed{\text{Precision：我找出来的人里，有多少是真的？}}$ $\box
 
 > 9 个真的是小偷。
 
-说明：
-
-$\boxed{\text{抓得准}}$
+说明： $\boxed{\text{抓得准}}$
 ---
 
 ##### Recall 高
@@ -11950,9 +9249,7 @@ $\boxed{\text{抓得准}}$
 
 > 抓到了 95 个。
 
-说明：
-
-$\boxed{\text{抓得全}}$
+说明： $\boxed{\text{抓得全}}$
 所以：
 
 > **Precision 关注“准不准”，Recall 关注“全不全”。**
@@ -11971,22 +9268,14 @@ $\boxed{\text{抓得全}}$
 
 > 患者真的有癌症，但是模型说没有。
 
-也就是：
-
-$FN$
+也就是： $\fbox{FN}$
 后果可能很严重。
 
-因此希望：
-
-$FN\downarrow$
-那么：
-
-$Recall= \frac{TP}{TP+FN}$
+因此希望： $\fbox{FN\downarrow}$
+那么： $\fbox{Recall= \frac{TP}{TP+FN}}$
 就会提高。
 
-因此癌症**初筛**通常更重视：
-
-$\boxed{Recall}$
+因此癌症**初筛**通常更重视： $\boxed{Recall}$
 也就是：
 
 > 宁可多检查几个健康人，也尽量不要漏掉真正的患者。
@@ -11995,19 +9284,13 @@ $\boxed{Recall}$
 
 #### 情况 2：垃圾邮件过滤
 
-如果系统把正常的重要邮件误判成垃圾邮件：
-
-$FP$
+如果系统把正常的重要邮件误判成垃圾邮件： $\fbox{FP}$
 可能产生明显损失。
 
-那么希望：
-
-$FP\downarrow$
+那么希望： $\fbox{FP\downarrow}$
 于是 Precision 会提高。
 
-所以某些垃圾邮件过滤场景会更加重视：
-
-$\boxed{Precision}$
+所以某些垃圾邮件过滤场景会更加重视： $\boxed{Precision}$
 注意面试时最好别说：
 
 > “医学永远只看 Recall。”
@@ -12020,51 +9303,29 @@ $\boxed{Precision}$
 
 还记得逻辑回归吗？
 
-模型输出：
-
-$P(y=1|x)$
-以前我们可能设置：
-
-$P>0.5$
+模型输出： $\fbox{P(y=1|x)}$
+以前我们可能设置： $\fbox{P>0.5}$
 就预测为正类。
 
-假设把阈值从：
-
-$0.5$
-降低到：
-
-$0.2$
+假设把阈值从： $\fbox{0.5}$
+降低到： $\fbox{0.2}$
 会发生什么？
 
-越来越多样本被判断为：
-
-$Positive$
+越来越多样本被判断为： $\fbox{Positive}$
 于是：
 
 ##### 好处
 
-原来漏掉的一些正类现在被找出来了：
-
-$FN\downarrow$
-因此：
-
-$Recall\uparrow$
+原来漏掉的一些正类现在被找出来了： $\fbox{FN\downarrow}$
+因此： $\fbox{Recall\uparrow}$
 但与此同时：
 
-很多负类也可能被误判成正类：
-
-$FP\uparrow$
-所以：
-
-$Precision$
+很多负类也可能被误判成正类： $\fbox{FP\uparrow}$
+所以： $\fbox{Precision}$
 可能下降。
 
-因此经常存在：
-
-$\boxed{\text{Precision-Recall Tradeoff}}$
-这也是为什么：
-
-$\boxed{0.5\text{ 并不是一个永远正确的分类阈值}}$
+因此经常存在： $\boxed{\text{Precision-Recall Tradeoff}}$
+这也是为什么： $\boxed{0.5\text{ 并不是一个永远正确的分类阈值}}$
 阈值应该根据实际任务调整。
 
 ---
@@ -12073,30 +9334,18 @@ $\boxed{0.5\text{ 并不是一个永远正确的分类阈值}}$
 
 既然 Precision 和 Recall 都重要，有没有办法综合一下？
 
-有。
-
-$\boxed{ F1= 2\frac{Precision\times Recall} {Precision+Recall} }$
-它是 Precision 和 Recall 的：
-
-$\boxed{\text{调和平均}}$
+有。 $\boxed{ F1= 2\frac{Precision\times Recall} {Precision+Recall} }$
+它是 Precision 和 Recall 的： $\boxed{\text{调和平均}}$
 为什么不直接普通平均？
 
 因为 F1 希望：
 
 > **Precision 和 Recall 有一个特别差时，整体得分也不能太高。**
 
-例如：
-
-$Precision=1$
-但：
-
-$Recall=0$
-那么：
-
-$F1=0$
-所以 F1 比较强调：
-
-$\boxed{\text{二者之间的平衡}}$
+例如： $\fbox{Precision=1}$
+但： $\fbox{Recall=0}$
+那么： $\fbox{F1=0}$
+所以 F1 比较强调： $\boxed{\text{二者之间的平衡}}$
 ---
 
 #### 面试怎么回答？
@@ -12121,17 +9370,11 @@ $\boxed{\text{二者之间的平衡}}$
 
 ##### TPR：True Positive Rate
 
-实际上就是：
-
-$\boxed{ TPR= \frac{TP}{TP+FN} = Recall }$
-所以：
-
-$TPR=Recall$
+实际上就是： $\boxed{ TPR= \frac{TP}{TP+FN} = Recall }$
+所以： $\fbox{TPR=Recall}$
 ---
 
-##### FPR：False Positive Rate
-
-$\boxed{ FPR= \frac{FP}{FP+TN} }$
+##### FPR：False Positive Rate $\boxed{ FPR= \frac{FP}{FP+TN} }$
 表示：
 
 > **所有真实负类里面，有多少被错误预测成了正类。**
@@ -12140,55 +9383,37 @@ $\boxed{ FPR= \frac{FP}{FP+TN} }$
 
 然后我们不断改变分类阈值。
 
-例如：
-
-$0.9,\ 0.8,\ 0.7,\cdots,0.1$
-每个阈值都会得到不同的：
-
-$TPR,\ FPR$
-把：
-
-$FPR$
+例如： $\fbox{0.9,\ 0.8,\ 0.7,\cdots,0.1}$
+每个阈值都会得到不同的： $\fbox{TPR,\ FPR}$
+把： $\fbox{FPR}$
 作为横轴，
 
-把：
-
-$TPR$
+把： $\fbox{TPR}$
 作为纵轴，
 
 画出一条曲线。
 
-这就是：
-
-$\boxed{ROC\ Curve}$
+这就是： $\boxed{ROC\ Curve}$
 ---
 
 ### 十一、ROC 曲线应该越靠哪里越好？
 
-理想情况下：
-
-$TPR$
+理想情况下： $\fbox{TPR}$
 应该高。
 
 因为希望：
 
 > 真正的正类尽量找出来。
 
-同时：
-
-$FPR$
+同时： $\fbox{FPR}$
 应该低。
 
 因为希望：
 
 > 不要把负类误认为正类。
 
-所以理想点是：
-
-$\boxed{(FPR,TPR)=(0,1)}$
-也就是 ROC 图：
-
-$\boxed{\text{左上角}}$
+所以理想点是： $\boxed{(FPR,TPR)=(0,1)}$
+也就是 ROC 图： $\boxed{\text{左上角}}$
 因此：
 
 > **ROC 曲线通常越靠近左上角越好。**
@@ -12197,25 +9422,15 @@ $\boxed{\text{左上角}}$
 
 ### 十二、AUC 是什么？
 
-AUC：
-
-$\boxed{\text{Area Under the ROC Curve}}$
+AUC： $\boxed{\text{Area Under the ROC Curve}}$
 也就是：
 
 > **ROC 曲线下面的面积。**
 
-通常：
-
-$0\le AUC\le1$
-理想模型：
-
-$AUC\rightarrow1$
-随机分类器通常：
-
-$AUC\approx0.5$
-所以：
-
-$\boxed{\text{AUC 越大，模型整体区分正负样本的能力通常越强}}$
+通常： $\fbox{0\le AUC\le1}$
+理想模型： $\fbox{AUC\rightarrow1}$
+随机分类器通常： $\fbox{AUC\approx0.5}$
+所以： $\boxed{\text{AUC 越大，模型整体区分正负样本的能力通常越强}}$
 一个很好的理解是：
 
 > 随机拿一个正样本和一个负样本，AUC 可以理解为模型给正样本的预测得分高于负样本的概率。
@@ -12226,15 +9441,9 @@ $\boxed{\text{AUC 越大，模型整体区分正负样本的能力通常越强}}
 
 ### 十三、为什么要 ROC/AUC，而不直接看 Accuracy？
 
-因为 Accuracy 是：
-
-$\boxed{\text{某一个分类阈值下的结果}}$
-例如固定阈值：
-
-$0.5$
-但 ROC/AUC 会：
-
-$\boxed{\text{综合考察不同阈值下模型的表现}}$
+因为 Accuracy 是： $\boxed{\text{某一个分类阈值下的结果}}$
+例如固定阈值： $\fbox{0.5}$
+但 ROC/AUC 会： $\boxed{\text{综合考察不同阈值下模型的表现}}$
 因此可以更全面地衡量模型的排序/区分能力。
 
 老师问：
@@ -12253,19 +9462,13 @@ $\boxed{\text{综合考察不同阈值下模型的表现}}$
 
 这也是面试超级高频题。
 
-比如：
-
-$正类:负类=1:1000$
+比如： $\fbox{正类:负类=1:1000}$
 可以从几个方向回答。
 
 ##### ① 不要只使用 Accuracy
 
-可以考虑：
-
-$Precision,\ Recall,\ F1,\ ROC\text{-}AUC$
-如果正类特别稀少，面试加分可以再提：
-
-$\boxed{PR\text{-}AUC}$
+可以考虑： $\fbox{Precision,\ Recall,\ F1,\ ROC\text{-}AUC}$
+如果正类特别稀少，面试加分可以再提： $\boxed{PR\text{-}AUC}$
 有时会比 ROC-AUC 更有参考意义。
 
 ##### ② 重采样
@@ -12279,17 +9482,11 @@ $\boxed{PR\text{-}AUC}$
 
 让模型对少数类预测错误受到更大的惩罚。
 
-例如：
-
-$class\ weight$
+例如： $\fbox{class\ weight}$
 ##### ④ 调整分类阈值
 
-比如从：
-
-$0.5$
-降低到：
-
-$0.3$
+比如从： $\fbox{0.5}$
+降低到： $\fbox{0.3}$
 提高 Recall。
 
 ##### ⑤ 收集更多少数类数据
@@ -12300,102 +9497,62 @@ $0.3$
 
 ### 十五、回归任务怎么评估？
 
-前面讲的 Precision、Recall、F1 都主要用于：
-
-$\boxed{\text{分类}}$
+前面讲的 Precision、Recall、F1 都主要用于： $\boxed{\text{分类}}$
 回归任务预测的是连续值。
 
 最常见三个指标：
 
-#### 1. MSE
-
-$\boxed{ MSE= \frac1n\sum_{i=1}^n(y_i-\hat y_i)^2 }$
+#### 1. MSE $\boxed{ MSE= \frac1n\sum_{i=1}^n(y_i-\hat y_i)^2 }$
 特点：
 
 > 对大误差惩罚特别严重。
 
-因此：
-
-$\boxed{\text{对异常值比较敏感}}$
+因此： $\boxed{\text{对异常值比较敏感}}$
 ---
 
-#### 2. RMSE
-
-$\boxed{RMSE=\sqrt{MSE}}$
+#### 2. RMSE $\boxed{RMSE=\sqrt{MSE}}$
 最大的好处：
 
 > **单位和原始预测目标相同。**
 
-比如预测房价单位是：
-
-$万元$
-那么 RMSE 也是：
-
-$万元$
+比如预测房价单位是： $\fbox{万元}$
+那么 RMSE 也是： $\fbox{万元}$
 因此比 MSE 更直观。
 
 ---
 
-#### 3. MAE
-
-$\boxed{ MAE= \frac1n\sum|y_i-\hat y_i| }$
+#### 3. MAE $\boxed{ MAE= \frac1n\sum|y_i-\hat y_i| }$
 也就是平均绝对误差。
 
-和 MSE 相比：
-
-$\boxed{\text{MAE 对异常值更加鲁棒}}$
-因为误差：
-
-$100$
-在 MAE 中还是：
-
-$100$
-但在 MSE 中变成：
-
-$100^2=10000$
+和 MSE 相比： $\boxed{\text{MAE 对异常值更加鲁棒}}$
+因为误差： $\fbox{100}$
+在 MAE 中还是： $\fbox{100}$
+但在 MSE 中变成： $\fbox{100^2=10000}$
 ---
 
 ### 十六、MSE vs MAE 高频对比
 
-你可以这样记：
-
-$\boxed{\text{MSE：更加惩罚大误差，但更容易受异常值影响}}$ $\boxed{\text{MAE：对异常值更加鲁棒}}$
-而：
-
-$\boxed{\text{RMSE：和 MSE 本质接近，但单位更直观}}$
+你可以这样记： $\boxed{\text{MSE：更加惩罚大误差，但更容易受异常值影响}}$ $\boxed{\text{MAE：对异常值更加鲁棒}}$
+而： $\boxed{\text{RMSE：和 MSE 本质接近，但单位更直观}}$
 ---
 
 ### 十七、把这一章真正串起来
 
-现在你脑子里最好形成这张图：
-
-$\boxed{\text{分类模型}}$
+现在你脑子里最好形成这张图： $\boxed{\text{分类模型}}$
 ↓
 
-先看：
-
-$\boxed{\text{Confusion Matrix}}$
+先看： $\boxed{\text{Confusion Matrix}}$
 ↓
 
-得到：
-
-$Accuracy$ $Precision=\frac{TP}{TP+FP}$ $Recall=\frac{TP}{TP+FN}$
+得到： $\fbox{Accuracy}$ $\fbox{Precision=\frac{TP}{TP+FP}}$ $\fbox{Recall=\frac{TP}{TP+FN}}$
 ↓
 
-如果想综合 Precision 和 Recall：
-
-$\boxed{F1}$
+如果想综合 Precision 和 Recall： $\boxed{F1}$
 ↓
 
-如果想考察**不同分类阈值下**的整体区分能力：
-
-$\boxed{ROC+AUC}$
-而如果：
-
-$\boxed{\text{类别严重不平衡}}$
-就千万不能只说：
-
-$Accuracy$
+如果想考察**不同分类阈值下**的整体区分能力： $\boxed{ROC+AUC}$
+而如果： $\boxed{\text{类别严重不平衡}}$
+就千万不能只说： $\fbox{Accuracy}$
 ---
 
 ### 十八、保研面试最值得背的一组回答
@@ -12438,9 +9595,7 @@ $Accuracy$
 14. AUC=0.5 大概意味着什么？
 15. MSE、RMSE、MAE 有什么区别？
 
-其中最应该做到**脱口而出**的是：
-
-$\boxed{\text{Precision vs Recall}}$ $\boxed{\text{为什么不平衡数据不能只看 Accuracy}}$ $\boxed{\text{ROC / AUC 是什么}}$ $\boxed{\text{MSE vs MAE}}$
+其中最应该做到**脱口而出**的是： $\boxed{\text{Precision vs Recall}}$ $\boxed{\text{为什么不平衡数据不能只看 Accuracy}}$ $\boxed{\text{ROC / AUC 是什么}}$ $\boxed{\text{MSE vs MAE}}$
 下一部分就是 **第十一部分：模型选择**，我们会把 **Hold-out、K 折交叉验证、超参数、Grid Search、数据泄露、Early Stopping、正则化** 串起来。那一章最容易被问的核心题之一就是：
 
 > **“既然已经有训练集和测试集了，为什么还需要验证集和交叉验证？”**
@@ -12467,24 +9622,16 @@ $\boxed{\text{Precision vs Recall}}$ $\boxed{\text{为什么不平衡数据不�
 6. 什么是数据泄露？
 7. Early Stopping 为什么能缓解过拟合？
 
-其中最重要的是：
-
-$\boxed{\text{交叉验证}}$
-和
-
-$\boxed{\text{数据泄露}}$
+其中最重要的是： $\boxed{\text{交叉验证}}$
+和 $\boxed{\text{数据泄露}}$
 ---
 
 ### 一、先回答最核心的问题：为什么不能只要训练集和测试集？
 
 假设我们现在训练一个决策树。
 
-有一个超参数：
-
-$max\_depth$
-我们不知道应该取：
-
-$3,\ 5,\ 10,\ 20$
+有一个超参数： $\fbox{max\_depth}$
+我们不知道应该取： $\fbox{3,\ 5,\ 10,\ 20}$
 怎么办？
 
 你可能会想：
@@ -12500,16 +9647,12 @@ $3,\ 5,\ 10,\ 20$
 | 10 | 91% |
 | 20 | 89% |
 
-于是选：
-
-$max\_depth=10$
+于是选： $\fbox{max\_depth=10}$
 看起来很合理。
 
 但这里有一个问题：
 
-你实际上已经利用了：
-
-$\boxed{\text{测试集}}$
+你实际上已经利用了： $\boxed{\text{测试集}}$
 来选择模型。
 
 也就是说：
@@ -12520,33 +9663,23 @@ $\boxed{\text{测试集}}$
 
 > 改模型 → 看测试结果 → 再改模型 → 再看测试结果
 
-最后得到的模型可能也逐渐：
-
-$\boxed{\text{对测试集过拟合}}$
+最后得到的模型可能也逐渐： $\boxed{\text{对测试集过拟合}}$
 这样最终的 Test Accuracy 就不再是一个完全客观的泛化能力估计。
 
 ---
 
-所以我们需要三个角色：
-
-$\boxed{\text{Train}}$
+所以我们需要三个角色： $\boxed{\text{Train}}$
 负责：
 
-> 学参数。
-
-$\boxed{\text{Validation}}$
+> 学参数。 $\boxed{\text{Validation}}$
 负责：
 
-> 选模型、调超参数。
-
-$\boxed{\text{Test}}$
+> 选模型、调超参数。 $\boxed{\text{Test}}$
 负责：
 
 > 最后一次评价泛化性能。
 
-一句话：
-
-$\boxed{ 训练集负责“学”， 验证集负责“选”， 测试集负责“考” }$
+一句话： $\boxed{ 训练集负责“学”， 验证集负责“选”， 测试集负责“考” }$
 这个特别值得记。
 
 ---
@@ -12555,17 +9688,11 @@ $\boxed{ 训练集负责“学”， 验证集负责“选”， 测试集负责
 
 前面我们讲过，但这一章一定要重新建立联系。
 
-比如逻辑回归：
-
-$P(y=1|x)=\sigma(w^Tx+b)$
-其中：
-
-$w,b$
+比如逻辑回归： $\fbox{P(y=1|x)=\sigma(w^Tx+b)}$
+其中： $\fbox{w,b}$
 是通过训练数据学出来的。
 
-所以是：
-
-$\boxed{\text{参数 Parameter}}$
+所以是： $\boxed{\text{参数 Parameter}}$
 ---
 
 但是：
@@ -12580,9 +9707,7 @@ $\boxed{\text{参数 Parameter}}$
 
 这些通常需要我们提前设置。
 
-叫：
-
-$\boxed{\text{超参数 Hyperparameter}}$
+叫： $\boxed{\text{超参数 Hyperparameter}}$
 最简单记忆：
 
 > **参数由模型训练出来，超参数决定“模型怎么训练、模型长什么样”。**
@@ -12591,23 +9716,17 @@ $\boxed{\text{超参数 Hyperparameter}}$
 
 ### 三、Hold-out 留出法
 
-最简单的模型选择方式就是：
-
-$\boxed{\text{Hold-out}}$
+最简单的模型选择方式就是： $\boxed{\text{Hold-out}}$
 也就是把数据直接划分。
 
-例如：
-
-$70\% \quad Train$ $15\% \quad Validation$ $15\% \quad Test$
+例如： $\fbox{70\% \quad Train}$ $\fbox{15\% \quad Validation}$ $\fbox{15\% \quad Test}$
 训练集训练模型。
 
 验证集选超参数。
 
 测试集最后评价。
 
-这个方法优点很明显：
-
-$\boxed{\text{简单、速度快}}$
+这个方法优点很明显： $\boxed{\text{简单、速度快}}$
 但它有一个问题。
 
 ---
@@ -12626,9 +9745,7 @@ $\boxed{\text{简单、速度快}}$
 
 结果又可能低很多。
 
-也就是说：
-
-$\boxed{\text{一次划分具有偶然性}}$
+也就是说： $\boxed{\text{一次划分具有偶然性}}$
 样本越少，这个问题通常越明显。
 
 于是我们自然想到：
@@ -12643,54 +9760,34 @@ $\boxed{\text{一次划分具有偶然性}}$
 
 ### 四、K 折交叉验证 K-fold Cross Validation
 
-假设我们有：
-
-$1000$
+假设我们有： $\fbox{1000}$
 个训练样本。
 
-设置：
-
-$K=5$
-把数据平均分成：
-
-$5$
-份：
-
-$D_1,D_2,D_3,D_4,D_5$
+设置： $\fbox{K=5}$
+把数据平均分成： $\fbox{5}$
+份： $\fbox{D_1,D_2,D_3,D_4,D_5}$
 ---
 
-第一次：
-
-$D_1$
+第一次： $\fbox{D_1}$
 做验证集，
 
-剩下：
-
-$D_2,D_3,D_4,D_5$
+剩下： $\fbox{D_2,D_3,D_4,D_5}$
 用于训练。
 
-得到一个验证分数：
-
-$Score_1$
+得到一个验证分数： $\fbox{Score_1}$
 ---
 
-第二次：
-
-$D_2$
+第二次： $\fbox{D_2}$
 做验证集，
 
 其他四份训练。
 
-得到：
-
-$Score_2$
+得到： $\fbox{Score_2}$
 ……
 
 一直做到第 5 次。
 
-最后：
-
-$\boxed{ CV\ Score= \frac{Score_1+\cdots+Score_5}{5} }$
+最后： $\boxed{ CV\ Score= \frac{Score_1+\cdots+Score_5}{5} }$
 也就是：
 
 > **每一份数据都轮流当一次验证集，然后把 K 次结果平均。**
@@ -12701,26 +9798,18 @@ $\boxed{ CV\ Score= \frac{Score_1+\cdots+Score_5}{5} }$
 
 ### 五、为什么 K 折交叉验证更可靠？
 
-因为 Hold-out：
-
-$\boxed{\text{只划分一次}}$
+因为 Hold-out： $\boxed{\text{只划分一次}}$
 结果可能很依赖：
 
 > “你碰巧怎么分数据。”
 
-而 K-fold：
-
-$\boxed{\text{进行多次训练和验证}}$
+而 K-fold： $\boxed{\text{进行多次训练和验证}}$
 每一个样本：
 
 > 有机会作为训练数据，也有机会作为验证数据。
 
-因此最终结果通常：
-
-$\boxed{\text{更稳定}}$
-尤其是在：
-
-$\boxed{\text{数据量不是特别大的时候}}$
+因此最终结果通常： $\boxed{\text{更稳定}}$
+尤其是在： $\boxed{\text{数据量不是特别大的时候}}$
 很有价值。
 
 ---
@@ -12741,21 +9830,15 @@ $\boxed{\text{数据量不是特别大的时候}}$
 
 ### 六、K 一般取多少？
 
-常见：
-
-$\boxed{K=5}$
-或者：
-
-$\boxed{K=10}$
+常见： $\boxed{K=5}$
+或者： $\boxed{K=10}$
 面试不需要纠结某个数字。
 
 你需要理解：
 
 ##### K 太小
 
-例如：
-
-$K=2$
+例如： $\fbox{K=2}$
 每次训练只使用一部分数据。
 
 对模型性能的估计可能不够充分。
@@ -12766,48 +9849,32 @@ $K=2$
 
 每次训练用的数据越多。
 
-但是：
-
-$\boxed{\text{计算成本也越高}}$
+但是： $\boxed{\text{计算成本也越高}}$
 因为模型需要训练 K 次。
 
-所以：
-
-$5-fold$
-和：
-
-$10-fold$
+所以： $\fbox{5-fold}$
+和： $\fbox{10-fold}$
 是实践中很常见的折中。
 
 ---
 
 ### 七、一个特殊情况：Leave-One-Out
 
-如果：
-
-$K=n$
+如果： $\fbox{K=n}$
 其中 $n$ 是样本数量。
 
 也就是说：
 
 > 每次只留下一个样本做验证，其余 $n-1$ 个训练。
 
-这种方法叫：
-
-$\boxed{\text{Leave-One-Out Cross Validation}}$
-简称：
-
-$\boxed{LOOCV}$
+这种方法叫： $\boxed{\text{Leave-One-Out Cross Validation}}$
+简称： $\boxed{LOOCV}$
 例如有 100 个数据：
 
-需要训练：
-
-$100$
+需要训练： $\fbox{100}$
 次模型。
 
-它可以充分使用数据，但是：
-
-$\boxed{\text{计算代价很高}}$
+它可以充分使用数据，但是： $\boxed{\text{计算代价很高}}$
 所以面试知道概念即可。
 
 ---
@@ -12822,22 +9889,14 @@ $\boxed{\text{计算代价很高}}$
 
 一般不能这么说。
 
-更典型的流程是：
-
-$\boxed{\text{训练数据}}$
-内部做：
-
-$\boxed{\text{Cross Validation}}$
+更典型的流程是： $\boxed{\text{训练数据}}$
+内部做： $\boxed{\text{Cross Validation}}$
 ↓
 
-选择：
-
-$\boxed{\text{最佳模型 / 超参数}}$
+选择： $\boxed{\text{最佳模型 / 超参数}}$
 ↓
 
-最后用从未参与模型选择的：
-
-$\boxed{\text{Test Set}}$
+最后用从未参与模型选择的： $\boxed{\text{Test Set}}$
 进行一次最终评估。
 
 因此你可以理解：
@@ -12850,38 +9909,22 @@ $\boxed{\text{Test Set}}$
 
 现在假设我们训练 SVM。
 
-有两个超参数：
-
-$C$
-和：
-
-$\gamma$
-我们想尝试：
-
-$C\in\{0.1,1,10\}$
-以及：
-
-$\gamma\in\{0.01,0.1,1\}$
-那我们可以把所有组合都试一遍：
-
-$(C,\gamma)$
-比如：
-
-$(0.1,0.01)$ $(0.1,0.1)$ $(0.1,1)$
+有两个超参数： $\fbox{C}$
+和： $\fbox{\gamma}$
+我们想尝试： $\fbox{C\in\{0.1,1,10\}}$
+以及： $\fbox{\gamma\in\{0.01,0.1,1\}}$
+那我们可以把所有组合都试一遍： $\fbox{(C,\gamma)}$
+比如： $\fbox{(0.1,0.01)}$ $\fbox{(0.1,0.1)}$ $\fbox{(0.1,1)}$
 ……
 
-总共：
-
-$3\times3=9$
+总共： $\fbox{3\times3=9}$
 种组合。
 
 每一种组合通过交叉验证得到性能。
 
 最后选择最好的。
 
-这就是：
-
-$\boxed{\text{Grid Search 网格搜索}}$
+这就是： $\boxed{\text{Grid Search 网格搜索}}$
 一句话：
 
 > **Grid Search 就是在事先规定的超参数组合中进行穷举搜索，并通过验证集或交叉验证选择表现最好的组合。**
@@ -12890,94 +9933,58 @@ $\boxed{\text{Grid Search 网格搜索}}$
 
 ### 十、Grid Search 有什么缺点？
 
-很明显：
-
-$\boxed{\text{计算量可能非常大}}$
-假设有 5 个超参数，每个尝试 10 个值：
-
-$10^5=100000$
+很明显： $\boxed{\text{计算量可能非常大}}$
+假设有 5 个超参数，每个尝试 10 个值： $\fbox{10^5=100000}$
 种组合。
 
-再做：
-
-$5-fold$
+再做： $\fbox{5-fold}$
 那可能就需要训练大量模型。
 
-因此还有：
-
-$\boxed{\text{Random Search}}$
+因此还有： $\boxed{\text{Random Search}}$
 随机搜索。
 
 它不会穷举全部组合，而是在参数空间中：
 
 > 随机选一些组合进行测试。
 
-面试里知道：
-
-$\boxed{ Grid\ Search：穷举 }$ $\boxed{ Random\ Search：随机采样 }$
+面试里知道： $\boxed{ Grid\ Search：穷举 }$ $\boxed{ Random\ Search：随机采样 }$
 就够了。
 
 ---
 
 ### 十一、这一章超级重要：什么是数据泄露？
 
-英文：
-
-$\boxed{\text{Data Leakage}}$
+英文： $\boxed{\text{Data Leakage}}$
 简单说：
 
 > **模型训练过程中使用了本来不应该知道的信息。**
 
-结果就会导致：
-
-$\boxed{\text{模型评价过于乐观}}$
+结果就会导致： $\boxed{\text{模型评价过于乐观}}$
 但真正部署之后性能突然下降。
 
 ---
 
 #### 一个最经典的例子
 
-假设我们有：
-
-$Train$
-和：
-
-$Test$
-需要做数据标准化：
-
-$x'=\frac{x-\mu}{\sigma}$
+假设我们有： $\fbox{Train}$
+和： $\fbox{Test}$
+需要做数据标准化： $\fbox{x'=\frac{x-\mu}{\sigma}}$
 正确的做法应该是：
 
-只根据：
-
-$\boxed{\text{训练集}}$
-计算：
-
-$\mu_{train},\sigma_{train}$
-然后训练集：
-
-$x'_{train} = \frac{x_{train}-\mu_{train}} {\sigma_{train}}$
-测试集同样使用：
-
-$\mu_{train},\sigma_{train}$
+只根据： $\boxed{\text{训练集}}$
+计算： $\fbox{\mu_{train},\sigma_{train}}$
+然后训练集： $\fbox{x'_{train} = \frac{x_{train}-\mu_{train}} {\sigma_{train}}}$
+测试集同样使用： $\fbox{\mu_{train},\sigma_{train}}$
 进行变换。
 
 ---
 
-但是如果你先把：
-
-$Train+Test$
-全部放在一起算：
-
-$\mu,\sigma$
+但是如果你先把： $\fbox{Train+Test}$
+全部放在一起算： $\fbox{\mu,\sigma}$
 然后再划分数据，
 
-那么：
-
-$\boxed{\text{测试集的信息已经进入了数据预处理}}$
-这就是一种：
-
-$\boxed{\text{Data Leakage}}$
+那么： $\boxed{\text{测试集的信息已经进入了数据预处理}}$
+这就是一种： $\boxed{\text{Data Leakage}}$
 虽然你没有直接拿测试标签训练模型，
 
 但模型已经：
@@ -12990,49 +9997,31 @@ $\boxed{\text{Data Leakage}}$
 
 这个问题很适合面试追问。
 
-假设你要做：
-
-$PCA$
-错误做法：
-
-$\boxed{全部数据先 PCA}$
-然后：
-
-$Train/Test\ Split$
+假设你要做： $\fbox{PCA}$
+错误做法： $\boxed{全部数据先 PCA}$
+然后： $\fbox{Train/Test\ Split}$
 为什么错？
 
-因为 PCA 的主成分方向是利用：
-
-$\boxed{\text{数据整体分布}}$
+因为 PCA 的主成分方向是利用： $\boxed{\text{数据整体分布}}$
 计算出来的。
 
 如果测试数据也参与 PCA：
 
 那么测试集信息就提前进入了模型流程。
 
-正确顺序应该是：
-
-$Train/Test\ Split$
+正确顺序应该是： $\fbox{Train/Test\ Split}$
 ↓
 
-只在：
-
-$Train$
+只在： $\fbox{Train}$
 上拟合 PCA
 
 ↓
 
-用同一个 PCA 变换：
-
-$Train$
-和：
-
-$Test$
+用同一个 PCA 变换： $\fbox{Train}$
+和： $\fbox{Test}$
 ---
 
-所以你以后记住一句非常重要的话：
-
-$\boxed{ 任何需要“从数据中学习”的预处理， 都应该只在训练数据上拟合 }$
+所以你以后记住一句非常重要的话： $\boxed{ 任何需要“从数据中学习”的预处理， 都应该只在训练数据上拟合 }$
 例如：
 
 - 标准化的均值和标准差
@@ -13048,46 +10037,30 @@ $\boxed{ 任何需要“从数据中学习”的预处理， 都应该只在训�
 
 这里还可以进一步追问：
 
-假设做：
-
-$5-fold$
+假设做： $\fbox{5-fold}$
 是不是可以先在全部训练数据上标准化，再进行 5 折？
 
-严格来说：
-
-$\boxed{\text{也不应该}}$
+严格来说： $\boxed{\text{也不应该}}$
 因为在某一次 fold 中：
 
-某一部分本来是：
-
-$Validation$
+某一部分本来是： $\fbox{Validation}$
 但如果你提前用整个数据计算了均值和标准差，
 
-那么：
-
-$Validation$
+那么： $\fbox{Validation}$
 的信息也进入了预处理。
 
-正确做法是每一折：
-
-$Train_{fold}$
+正确做法是每一折： $\fbox{Train_{fold}}$
 ↓
 
 拟合 StandardScaler
 
 ↓
 
-对：
-
-$Train_{fold}$
-和：
-
-$Validation_{fold}$
+对： $\fbox{Train_{fold}}$
+和： $\fbox{Validation_{fold}}$
 分别 transform。
 
-这也是为什么实际代码中经常使用：
-
-$\boxed{\text{Pipeline}}$
+这也是为什么实际代码中经常使用： $\boxed{\text{Pipeline}}$
 把：
 
 > 标准化 → 模型
@@ -13108,41 +10081,27 @@ $\boxed{\text{Pipeline}}$
 
 ##### 一开始
 
-训练 Loss：
-
-$\downarrow$
-验证 Loss：
-
-$\downarrow$
+训练 Loss： $\fbox{\downarrow}$
+验证 Loss： $\fbox{\downarrow}$
 很好。
 
 ---
 
 但是训练到后面：
 
-训练 Loss：
-
-$\downarrow\downarrow$
+训练 Loss： $\fbox{\downarrow\downarrow}$
 继续下降。
 
-验证 Loss 却开始：
-
-$\uparrow$
+验证 Loss 却开始： $\fbox{\uparrow}$
 这意味着：
 
 > 模型越来越会拟合训练集，但在没见过的数据上反而变差。
 
-也就是开始：
-
-$\boxed{\text{过拟合}}$
-那我们可以在：
-
-$\boxed{\text{Validation Loss 最低}}$
+也就是开始： $\boxed{\text{过拟合}}$
+那我们可以在： $\boxed{\text{Validation Loss 最低}}$
 附近停止训练。
 
-这就是：
-
-$\boxed{\text{Early Stopping}}$
+这就是： $\boxed{\text{Early Stopping}}$
 ---
 
 ##### 一句话解释
@@ -13157,56 +10116,36 @@ $\boxed{\text{Early Stopping}}$
 
 这是一个不错的追问。
 
-如果一直训练：
-
-$10000\ Epochs$
+如果一直训练： $\fbox{10000\ Epochs}$
 模型可能越来越复杂地适应训练样本。
 
 Early Stopping：
 
 > 在模型还没有对训练集拟合得“过头”的时候停止。
 
-所以它实际上：
-
-$\boxed{\text{限制了模型有效复杂度}}$
-因此也可以看作一种：
-
-$\boxed{\text{正则化手段}}$
+所以它实际上： $\boxed{\text{限制了模型有效复杂度}}$
+因此也可以看作一种： $\boxed{\text{正则化手段}}$
 ---
 
 ### 十六、正则化在模型选择里面是什么位置？
 
-前面学过：
-
-$Loss = Loss_{data} + \lambda R(w)$
-这里：
-
-$\lambda$
-就是一个：
-
-$\boxed{\text{超参数}}$
+前面学过： $\fbox{Loss = Loss_{data} + \lambda R(w)}$
+这里： $\fbox{\lambda}$
+就是一个： $\boxed{\text{超参数}}$
 那它应该怎么确定？
 
 不能：
 
 > 看测试集哪个 $\lambda$ 最好。
 
-而应该通过：
-
-$\boxed{\text{验证集}}$
-或者：
-
-$\boxed{\text{Cross Validation}}$
+而应该通过： $\boxed{\text{验证集}}$
+或者： $\boxed{\text{Cross Validation}}$
 选择。
 
-比如：
-
-$\lambda\in \{0.001,0.01,0.1,1,10\}$
+比如： $\fbox{\lambda\in \{0.001,0.01,0.1,1,10\}}$
 做交叉验证。
 
-最后选择 CV 分数最好的：
-
-$\lambda$
+最后选择 CV 分数最好的： $\fbox{\lambda}$
 所以你现在会发现：
 
 > **正则化和模型选择其实是连在一起的。**
@@ -13219,27 +10158,17 @@ $\lambda$
 
 假设现在给你一个数据集。
 
-你可以按照：
-
-$\boxed{\text{原始数据}}$
+你可以按照： $\boxed{\text{原始数据}}$
 ↓
 
-划分：
-
-$\boxed{Train + Test}$
+划分： $\boxed{Train + Test}$
 ↓
 
-在 Train 内：
-
-$\boxed{K\text{-fold Cross Validation}}$
+在 Train 内： $\boxed{K\text{-fold Cross Validation}}$
 ↓
 
-尝试不同：
-
-$\boxed{\text{模型 + 超参数}}$
-比如使用：
-
-$Grid\ Search$
+尝试不同： $\boxed{\text{模型 + 超参数}}$
+比如使用： $\fbox{Grid\ Search}$
 ↓
 
 选出最佳配置
@@ -13250,9 +10179,7 @@ $Grid\ Search$
 
 ↓
 
-最后：
-
-$\boxed{\text{只在 Test Set 上评估}}$
+最后： $\boxed{\text{只在 Test Set 上评估}}$
 得到最终性能。
 
 这就是非常标准的一套逻辑。
@@ -13271,9 +10198,7 @@ $\boxed{\text{只在 Test Set 上评估}}$
 
 这个答案质量已经很高了。
 
-尤其是如果你主动说出：
-
-$\boxed{\text{避免数据泄露}}$
+尤其是如果你主动说出： $\boxed{\text{避免数据泄露}}$
 老师一般会知道你不是只背了几个算法名。
 
 ---
@@ -13330,9 +10255,7 @@ $\boxed{\text{避免数据泄露}}$
 17. 正则化系数 $\lambda$ 应该怎么选？
 18. 为什么不能一直根据测试集结果调模型？
 
-其中最应该做到脱口而出的是：
-
-$\boxed{\text{为什么需要验证集}}$ $\boxed{\text{K-fold 是什么}}$ $\boxed{\text{什么是 Data Leakage}}$ $\boxed{\text{Early Stopping 为什么防过拟合}}$
+其中最应该做到脱口而出的是： $\boxed{\text{为什么需要验证集}}$ $\boxed{\text{K-fold 是什么}}$ $\boxed{\text{什么是 Data Leakage}}$ $\boxed{\text{Early Stopping 为什么防过拟合}}$
 下一部分就到了前面大纲里的 **第十二部分：高频综合问题**。这一章特别适合保研面试冲刺，因为我们不再单独讲某个算法，而是直接练老师最爱出的情景题，比如：**“模型过拟合怎么办？”“特征特别多怎么办？”“样本特别少怎么办？”“哪些算法需要标准化？”“面对一个新任务你怎么选择模型？”**
 
 ---
@@ -13372,9 +10295,7 @@ $\boxed{\text{为什么需要验证集}}$ $\boxed{\text{K-fold 是什么}}$ $\bo
 
 ### 一、模型过拟合怎么办？
 
-先回忆过拟合：
-
-$Train\ Error \ll Validation/Test\ Error$
+先回忆过拟合： $\fbox{Train\ Error \ll Validation/Test\ Error}$
 也就是：
 
 > 模型在训练集上学得很好，但是对没见过的数据表现明显变差。
@@ -13392,9 +10313,7 @@ $Train\ Error \ll Validation/Test\ Error$
 - 超参数选择不合适；
 - 训练过程中反复“偷看”验证集或测试集。
 
-所以过拟合的本质依然可以回到：
-
-$\boxed{High\ Variance}$
+所以过拟合的本质依然可以回到： $\boxed{High\ Variance}$
 模型对训练数据过于敏感。
 
 ---
@@ -13420,22 +10339,14 @@ $\boxed{High\ Variance}$
 - 减少多项式阶数；
 - 神经网络减少参数规模。
 
-核心思想：
-
-$\boxed{模型不要复杂到把噪声也学进去}$
+核心思想： $\boxed{模型不要复杂到把噪声也学进去}$
 ---
 
 ##### 方法 3：加入正则化
 
-例如：
-
-$L_1,\ L_2$
-把训练目标从：
-
-$Loss_{data}$
-改成：
-
-$Loss_{data}+\lambda R(w)$
+例如： $\fbox{L_1,\ L_2}$
+把训练目标从： $\fbox{Loss_{data}}$
+改成： $\fbox{Loss_{data}+\lambda R(w)}$
 于是模型不再只追求“训练集拟合得多好”，还要考虑“模型是不是太复杂”。
 
 ---
@@ -13468,12 +10379,8 @@ $Loss_{data}+\lambda R(w)$
 
 ##### 方法 6：Early Stopping
 
-如果模型随着训练轮数增加出现：
-
-$Train\ Loss\downarrow$
-但：
-
-$Validation\ Loss$
+如果模型随着训练轮数增加出现： $\fbox{Train\ Loss\downarrow}$
+但： $\fbox{Validation\ Loss}$
 先下降、后上升，
 
 那么后面已经开始过拟合。
@@ -13496,18 +10403,14 @@ $Validation\ Loss$
 
 ## 二、模型欠拟合怎么办？
 
-欠拟合一般表现为：
-
-$Train\ Error\text{ 本身就很高}$
+欠拟合一般表现为： $\fbox{Train\ Error\text{ 本身就很高}}$
 而且测试集通常也不好。
 
 这意味着：
 
 > 模型连训练数据中的主要规律都没有学到。
 
-对应：
-
-$\boxed{High\ Bias}$
+对应： $\boxed{High\ Bias}$
 ---
 
 ### 1. 为什么会欠拟合？
@@ -13538,18 +10441,10 @@ $\boxed{High\ Bias}$
 
 ### 3. 高频对比
 
-#### 过拟合
-
-$Train\ 好,\ Test\ 差$
-通常：
-
-$High\ Variance$
-#### 欠拟合
-
-$Train\ 差,\ Test\ 也差$
-通常：
-
-$High\ Bias$
+#### 过拟合 $\fbox{Train\ 好,\ Test\ 差}$
+通常： $\fbox{High\ Variance}$
+#### 欠拟合 $\fbox{Train\ 差,\ Test\ 也差}$
+通常： $\fbox{High\ Bias}$
 这个判断逻辑一定要形成条件反射。
 
 ---
@@ -13561,16 +10456,12 @@ $High\ Bias$
 - 9900 个正常样本；
 - 100 个患病样本。
 
-如果模型永远预测“正常”，准确率：
-
-$Accuracy=99\%$
+如果模型永远预测“正常”，准确率： $\fbox{Accuracy=99\%}$
 看起来非常高。
 
 但是这个模型显然没有实际价值。
 
-所以类别不平衡时：
-
-$\boxed{不能只看 Accuracy}$
+所以类别不平衡时： $\boxed{不能只看 Accuracy}$
 ---
 
 ### 1. 先换评价指标
@@ -13622,19 +10513,13 @@ $\boxed{不能只看 Accuracy}$
 
 ### 4. 调整分类阈值
 
-逻辑回归默认经常使用：
-
-$0.5$
+逻辑回归默认经常使用： $\fbox{0.5}$
 作为阈值。
 
 但如果我们希望提高 Recall，可以适当降低阈值。
 
-这会导致：
-
-$Recall\uparrow$
-但通常：
-
-$Precision\downarrow$
+这会导致： $\fbox{Recall\uparrow}$
+但通常： $\fbox{Precision\downarrow}$
 所以这又是一个权衡问题。
 
 ---
@@ -13647,14 +10532,10 @@ $Precision\downarrow$
 
 ## 四、特征特别多怎么办？
 
-假设：
-
-$n=1000$
+假设： $\fbox{n=1000}$
 个样本，
 
-但特征有：
-
-$d=10000$
+但特征有： $\fbox{d=10000}$
 这时候容易出现：
 
 - 计算量大；
@@ -13674,12 +10555,8 @@ $d=10000$
 
 > 保留下来的仍然是原来的特征。
 
-例如原来：
-
-$x_1,x_2,\ldots,x_{1000}$
-最终留下：
-
-$x_1,x_7,x_{20},\ldots$
+例如原来： $\fbox{x_1,x_2,\ldots,x_{1000}}$
+最终留下： $\fbox{x_1,x_7,x_{20},\ldots}$
 ---
 
 ### 2. PCA 降维
@@ -13688,26 +10565,18 @@ PCA 不是简单删掉原特征，而是：
 
 > 把原来的特征线性组合成新的主成分。
 
-所以：
-
-$\boxed{特征选择：选原特征}$
-而：
-
-$\boxed{PCA：构造新特征}$
+所以： $\boxed{特征选择：选原特征}$
+而： $\boxed{PCA：构造新特征}$
 这是一个高频对比题。
 
 ---
 
 ### 3. 使用正则化
 
-特别是：
-
-$L_1$
+特别是： $\fbox{L_1}$
 容易让部分参数变成 0，
 
-从而产生：
-
-$\boxed{稀疏解}$
+从而产生： $\boxed{稀疏解}$
 因此具有一定的特征选择效果。
 
 ---
@@ -13730,9 +10599,7 @@ $\boxed{稀疏解}$
 
 这是保研面试很喜欢问的情景题。
 
-样本少最主要的风险是：
-
-$\boxed{容易过拟合}$
+样本少最主要的风险是： $\boxed{容易过拟合}$
 因为模型看到的数据不足以代表真实分布。
 
 ---
@@ -13784,9 +10651,7 @@ $\boxed{容易过拟合}$
 
 ## 六、缺失值怎么办？
 
-现实数据经常出现：
-
-$x_{ij}=\text{missing}$
+现实数据经常出现： $\fbox{x_{ij}=\text{missing}}$
 不要一看到缺失值就简单地说：
 
 > “全部删掉。”
@@ -13823,14 +10688,10 @@ $x_{ij}=\text{missing}$
 
 因为均值对异常值更敏感。
 
-如果数据中有极端值：
-
-$Mean$
+如果数据中有极端值： $\fbox{Mean}$
 可能被明显拉动。
 
-而：
-
-$Median$
+而： $\fbox{Median}$
 通常更稳健。
 
 ---
@@ -13851,18 +10712,14 @@ $Median$
 
 标准化、PCA 等预处理同样如此。
 
-这就是：
-
-$\boxed{Data\ Leakage}$
+这就是： $\boxed{Data\ Leakage}$
 在预处理环节中的典型形式。
 
 ---
 
 ## 七、为什么要标准化？
 
-假设两个特征：
-
-$x_1=\text{年龄}\approx 20$ $x_2=\text{年收入}\approx 200000$
+假设两个特征： $\fbox{x_1=\text{年龄}\approx 20}$ $\fbox{x_2=\text{年收入}\approx 200000}$
 两个特征量纲差别巨大。
 
 这会对很多算法造成影响。
@@ -13873,16 +10730,12 @@ $x_1=\text{年龄}\approx 20$ $x_2=\text{年收入}\approx 200000$
 
 KNN、K-Means 都依赖距离。
 
-例如欧氏距离：
-
-$d(x,z)=\sqrt{\sum_j(x_j-z_j)^2}$
+例如欧氏距离： $\fbox{d(x,z)=\sqrt{\sum_j(x_j-z_j)^2}}$
 如果某个特征的数值范围特别大，
 
 那么距离几乎会被这个特征主导。
 
-所以：
-
-$\boxed{KNN,\ KMeans\ 通常需要重视标准化}$
+所以： $\boxed{KNN,\ KMeans\ 通常需要重视标准化}$
 ---
 
 ### 2. 对梯度下降
@@ -13911,9 +10764,7 @@ L1/L2 都直接惩罚参数大小。
 
 SVM 依赖几何距离、间隔和核函数。
 
-特别是 RBF 核：
-
-$K(x,z)=\exp(-\gamma\|x-z\|^2)$
+特别是 RBF 核： $\fbox{K(x,z)=\exp(-\gamma\|x-z\|^2)}$
 特征尺度会直接影响距离。
 
 所以 SVM 通常需要标准化。
@@ -13946,12 +10797,8 @@ PCA 寻找的是方差最大的方向。
 | 随机森林 | 通常不需要 | 基学习器是树 |
 | GBDT/XGBoost 的树模型 | 通常不需要 | 基于树的切分 |
 
-一句话记忆：
-
-$\boxed{距离、梯度、正则化、方差敏感的算法，更需要标准化}$
-而：
-
-$\boxed{树模型通常不依赖特征绝对尺度}$
+一句话记忆： $\boxed{距离、梯度、正则化、方差敏感的算法，更需要标准化}$
+而： $\boxed{树模型通常不依赖特征绝对尺度}$
 ---
 
 ## 九、面对一个新任务，怎么选择模型？
@@ -14025,9 +10872,7 @@ $\boxed{树模型通常不依赖特征绝对尺度}$
 
 > “我感觉这个算法应该最好。”
 
-而是：
-
-$\boxed{用可靠的验证方式比较}$
+而是： $\boxed{用可靠的验证方式比较}$
 同时注意评价指标必须和任务目标一致。
 
 ---
@@ -14040,9 +10885,7 @@ $\boxed{用可靠的验证方式比较}$
 
 ## 十、Bias-Variance Tradeoff 怎么真正用于分析问题？
 
-前面我们已经学过：
-
-$\boxed{欠拟合\rightarrow High\ Bias}$ $\boxed{过拟合\rightarrow High\ Variance}$
+前面我们已经学过： $\boxed{欠拟合\rightarrow High\ Bias}$ $\boxed{过拟合\rightarrow High\ Variance}$
 但面试更重要的是：
 
 > 给你现象，你能不能判断应该往哪个方向改。
@@ -14051,12 +10894,8 @@ $\boxed{欠拟合\rightarrow High\ Bias}$ $\boxed{过拟合\rightarrow High\ Var
 
 ### 情况 A
 
-训练误差高，验证误差也高：
-
-$Train=20\%,\quad Val=22\%$
-优先怀疑：
-
-$High\ Bias$
+训练误差高，验证误差也高： $\fbox{Train=20\%,\quad Val=22\%}$
+优先怀疑： $\fbox{High\ Bias}$
 可以尝试：
 
 - 更复杂模型；
@@ -14068,12 +10907,8 @@ $High\ Bias$
 
 ### 情况 B
 
-训练误差很低，但验证误差明显高：
-
-$Train=1\%,\quad Val=18\%$
-优先怀疑：
-
-$High\ Variance$
+训练误差很低，但验证误差明显高： $\fbox{Train=1\%,\quad Val=18\%}$
+优先怀疑： $\fbox{High\ Variance}$
 可以尝试：
 
 - 更多数据；
@@ -14120,20 +10955,12 @@ $High\ Variance$
 
 这是非常容易被忽略的追问。
 
-假设你做标准化：
-
-$z=\frac{x-\mu}{\sigma}$
-其中：
-
-$\mu,\sigma$
+假设你做标准化： $\fbox{z=\frac{x-\mu}{\sigma}}$
+其中： $\fbox{\mu,\sigma}$
 应该从哪里计算？
 
-答案：
-
-$\boxed{只能从训练数据计算}$
-然后把训练集得到的：
-
-$\mu_{train},\sigma_{train}$
+答案： $\boxed{只能从训练数据计算}$
+然后把训练集得到的： $\fbox{\mu_{train},\sigma_{train}}$
 应用到验证集和测试集。
 
 不能先用所有数据计算均值和方差。
@@ -14146,9 +10973,7 @@ PCA 也是一样：
 
 > 填补统计量应该在训练数据上得到。
 
-一句话：
-
-$\boxed{任何需要“从数据中学到参数”的预处理，都应该只在训练数据上拟合}$
+一句话： $\boxed{任何需要“从数据中学到参数”的预处理，都应该只在训练数据上拟合}$
 ---
 
 ## 十三、第十二部分超级自测
@@ -14194,12 +11019,8 @@ $\boxed{任何需要“从数据中学到参数”的预处理，都应该只在
 
 ## 附录 A：整门课超级知识地图
 
-把整门传统机器学习课程压成一条线：
-
-$\boxed{数据} \rightarrow \boxed{任务定义} \rightarrow \boxed{模型} \rightarrow \boxed{损失函数} \rightarrow \boxed{优化} \rightarrow \boxed{验证与调参} \rightarrow \boxed{测试} \rightarrow \boxed{泛化}$
-其中贯穿始终的问题是：
-
-$\boxed{模型能不能对没见过的数据也有效？}$
+把整门传统机器学习课程压成一条线： $\boxed{数据} \rightarrow \boxed{任务定义} \rightarrow \boxed{模型} \rightarrow \boxed{损失函数} \rightarrow \boxed{优化} \rightarrow \boxed{验证与调参} \rightarrow \boxed{测试} \rightarrow \boxed{泛化}$
+其中贯穿始终的问题是： $\boxed{模型能不能对没见过的数据也有效？}$
 所以：
 
 - 过拟合、欠拟合；
@@ -14212,9 +11033,7 @@ $\boxed{模型能不能对没见过的数据也有效？}$
 - 特征选择；
 - PCA；
 
-从不同角度看，本质上都和：
-
-$\boxed{泛化能力}$
+从不同角度看，本质上都和： $\boxed{泛化能力}$
 有关。
 
 ---
@@ -14249,9 +11068,7 @@ $\boxed{泛化能力}$
 | 从训练数据中学出 | 训练前或模型选择阶段设定 |
 | 如 $w,b$ | 如 K、max_depth、C、$\lambda$、学习率 |
 
-口诀：
-
-$\boxed{参数学出来，超参数选出来}$
+口诀： $\boxed{参数学出来，超参数选出来}$
 ---
 
 ### 4. 生成模型 vs 判别模型
@@ -14262,9 +11079,7 @@ $\boxed{参数学出来，超参数选出来}$
 | 更强调“数据怎么产生” | 更强调“类别怎么区分” |
 | 朴素贝叶斯 | 逻辑回归、SVM |
 
-口诀：
-
-$\boxed{生成学分布，判别学边界}$
+口诀： $\boxed{生成学分布，判别学边界}$
 ---
 
 ### 5. 过拟合 vs 欠拟合
@@ -14312,9 +11127,7 @@ $\boxed{生成学分布，判别学边界}$
 | 特征选择 | 可以 | 通常不直接 |
 | 线性回归名称 | Lasso | Ridge |
 
-口诀：
-
-$\boxed{L1 让参数变少，L2 让参数变小}$
+口诀： $\boxed{L1 让参数变少，L2 让参数变小}$
 ---
 
 ### 9. Batch GD vs SGD vs Mini-batch GD
@@ -14459,9 +11272,7 @@ AUC：
 
 ### 情景 1：训练准确率 99%，测试准确率 70%
 
-优先判断：
-
-$\boxed{过拟合}$
+优先判断： $\boxed{过拟合}$
 然后回答：
 
 - 看数据划分；
@@ -14475,9 +11286,7 @@ $\boxed{过拟合}$
 
 ### 情景 2：训练准确率只有 65%，测试 63%
 
-优先：
-
-$\boxed{欠拟合}$
+优先： $\boxed{欠拟合}$
 可以：
 
 - 增强模型；
@@ -14489,12 +11298,8 @@ $\boxed{欠拟合}$
 
 ### 情景 3：疾病筛查 99% Accuracy，但几乎找不到病人
 
-问题：
-
-$\boxed{类别不平衡 + 指标选错}$
-应重点看：
-
-$Recall$
+问题： $\boxed{类别不平衡 + 指标选错}$
+应重点看： $\fbox{Recall}$
 以及 F1、AUC 等。
 
 ---
@@ -14509,9 +11314,7 @@ $Recall$
 
 > 距离被特征尺度影响。
 
-解决：
-
-$\boxed{标准化}$
+解决： $\boxed{标准化}$
 ---
 
 ### 情景 5：决策树换单位，结果通常基本不变
@@ -14532,9 +11335,7 @@ $\boxed{标准化}$
 
 > 信息增益容易偏好多取值特征。
 
-C4.5 使用：
-
-$\boxed{信息增益率}$
+C4.5 使用： $\boxed{信息增益率}$
 进行修正。
 
 ---
@@ -14568,21 +11369,15 @@ $\boxed{信息增益率}$
 
 模型非常局部，
 
-容易受噪声影响：
-
-$Variance\uparrow$
-K 太大则会过度平滑：
-
-$Bias\uparrow$
+容易受噪声影响： $\fbox{Variance\uparrow}$
+K 太大则会过度平滑： $\fbox{Bias\uparrow}$
 ---
 
 ### 情景 10：决策树非常深
 
 训练误差可能很低，
 
-但：
-
-$Variance\uparrow$
+但： $\fbox{Variance\uparrow}$
 容易过拟合。
 
 所以需要剪枝或限制深度。
@@ -14599,9 +11394,7 @@ $Variance\uparrow$
 
 > 对很多低相关树的预测做聚合。
 
-因此：
-
-$\boxed{降低方差}$
+因此： $\boxed{降低方差}$
 ---
 
 ### 情景 12：AdaBoost 后面的弱分类器在做什么？
@@ -14610,9 +11403,7 @@ $\boxed{降低方差}$
 
 > 前面分错的样本。
 
-即：
-
-$\boxed{逐轮提高困难样本的影响}$
+即： $\boxed{逐轮提高困难样本的影响}$
 ---
 
 ### 情景 13：GBDT 后面的树在学什么？
@@ -14621,9 +11412,7 @@ $\boxed{逐轮提高困难样本的影响}$
 
 > 学前面模型还没解释好的部分。
 
-平方误差下可以理解为：
-
-$\boxed{拟合残差}$
+平方误差下可以理解为： $\boxed{拟合残差}$
 更一般地：
 
 > 拟合损失函数的负梯度方向。
@@ -14636,9 +11425,7 @@ $\boxed{拟合残差}$
 
 > 数据的变化和区分信息。
 
-所以选择：
-
-$\boxed{投影方差最大的方向}$
+所以选择： $\boxed{投影方差最大的方向}$
 ---
 
 ### 情景 15：标准化应该在切分数据前还是后？
@@ -14647,9 +11434,7 @@ $\boxed{投影方差最大的方向}$
 
 > 先切分，再只用训练集拟合标准化参数。
 
-否则：
-
-$\boxed{Data\ Leakage}$
+否则： $\boxed{Data\ Leakage}$
 ---
 
 ## 附录 D：保研面试“追问链”大全
@@ -15065,9 +11850,7 @@ $\boxed{Data\ Leakage}$
 
 ## 附录 F：面试回答万能结构
 
-当老师问一个算法时，你尽量按这个顺序回答：
-
-$\boxed{是什么} \rightarrow \boxed{核心思想} \rightarrow \boxed{怎么做} \rightarrow \boxed{为什么有效} \rightarrow \boxed{优缺点} \rightarrow \boxed{和谁对比}$
+当老师问一个算法时，你尽量按这个顺序回答： $\boxed{是什么} \rightarrow \boxed{核心思想} \rightarrow \boxed{怎么做} \rightarrow \boxed{为什么有效} \rightarrow \boxed{优缺点} \rightarrow \boxed{和谁对比}$
 例如老师问：
 
 > “什么是随机森林？”
@@ -15087,9 +11870,7 @@ $\boxed{是什么} \rightarrow \boxed{核心思想} \rightarrow \boxed{怎么做
 
 ---
 
-当老师问一个“为什么”问题时，按：
-
-$\boxed{现象} \rightarrow \boxed{根本原因} \rightarrow \boxed{数学/直觉解释} \rightarrow \boxed{影响}$
+当老师问一个“为什么”问题时，按： $\boxed{现象} \rightarrow \boxed{根本原因} \rightarrow \boxed{数学/直觉解释} \rightarrow \boxed{影响}$
 例如：
 
 > “为什么 ID3 偏好多取值特征？”
@@ -15105,9 +11886,7 @@ $\boxed{现象} \rightarrow \boxed{根本原因} \rightarrow \boxed{数学/直�
 
 ---
 
-当老师给情景题时，按：
-
-$\boxed{先判断问题} \rightarrow \boxed{再找证据} \rightarrow \boxed{再给方案} \rightarrow \boxed{说明权衡}$
+当老师给情景题时，按： $\boxed{先判断问题} \rightarrow \boxed{再找证据} \rightarrow \boxed{再给方案} \rightarrow \boxed{说明权衡}$
 例如：
 
 > “训练准确率 99%，验证准确率 70%，怎么办？”
