@@ -3,11 +3,11 @@ secondary_name: "(Chris Zhu / 朱子琛)"
 navbar_name: "Zichen Zhu"
 
 positions:
-- name: Undergraduate Student
-- name: School of Computer Science and Engineering
-- name: Northeastern University, China
+- name: Ph.D. Student (Direct Admission)
+- name: School of Artificial Intelligence
+- name: Zhejiang University, China
 
-email: "zhuzichen_neu@163.com"
+email: "shenlo2005@gmail.com"
 phone: "+86 13333797128"
 cv_link: /file/CV_CN.pdf
 cv_label: "Curriculum Vitae"
@@ -24,20 +24,17 @@ bilibili: 440972934
 short_bio_text_justify: true
 short_bio: >-
   <p>
-    I am <strong>Zichen Zhu (朱子琛)</strong>, an undergraduate student majoring in <strong>Communication Engineering</strong> at the
+    I am <strong>Zichen Zhu (朱子琛)</strong>, a Ph.D. student (direct admission) at the
+    School of <a href="https://www.zju.edu.cn/english/" target="_blank">Artificial Intelligence</a>,
+    <a href="https://www.zju.edu.cn/english/" target="_blank">Zhejiang University, China</a>,
+    expected to start in <strong>September 2027</strong>.
+  </p>
+  <p>
+    I received my B.E. degree in <strong>Communication Engineering</strong> from the
     School of <a href="http://www.cse.neu.edu.cn/" target="_blank">Computer Science and Engineering</a>,
     <a href="https://www.neu.edu.cn/" target="_blank">Northeastern University, China</a>.
-  </p>
-  <p>
-    My academic journey is driven by a strong interest in bridging theoretical knowledge with practical
-    innovation in modern communication technologies, as well as a profound curiosity for developing,
-    applying, and integrating modern artificial intelligence (AI)-related technologies with my academic discipline.
-    During my undergraduate studies, I have focused my research on <strong>robotics algorithm development and
+    My research focuses on <strong>robotics algorithm development and
     software-hardware deployment (embodied intelligence)</strong>, <strong>large language models</strong>, and <strong>lightweight algorithm deployment</strong>.
-  </p>
-  <p>
-    I am expected to complete my undergraduate studies by <strong>June 2027</strong> and am actively seeking
-    opportunities for master's or Ph.D. programs.
   </p>
 
   <h6 class="mt-4">🌱 Research Interests</h6>
@@ -59,13 +56,23 @@ portrait_url: /images/zzc.jpg
 portrait_caption: Zichen Zhu
 
 education:
+- name: Zhejiang University, China
+  logo: /assets/images/badges/ZJU_logo.png
+  dept: School of Artificial Intelligence
+  position: Ph.D. in Artificial Intelligence (Direct Admission)
+  date: Sep. 2027 - Expected
 - name: Northeastern University, China
   logo: /assets/images/badges/NEU_logo.png
   dept: School of Computer Science and Engineering
   position: B.E. in Communication Engineering
-  date: Sep. 2023 - Jun. 2027 (Expected)
+  date: Sep. 2023 - Jun. 2027
 
 experience:
+- name: Zhejiang University
+  logo: /assets/images/badges/ZJU_logo.png
+  positions:
+  - position: Ph.D. Student (Direct Admission), School of Artificial Intelligence
+    date: Sep. 2027 - Expected
 - name: Northeastern University
   logo: /assets/images/badges/NEU_logo.png
   positions:
