@@ -3,7 +3,7 @@ secondary_name: "(Chris Zhu / 朱子琛)"
 navbar_name: "Zichen Zhu"
 
 positions:
-- name: Ph.D. Student (Direct Admission)
+- name: Ph.D. Student
 - name: School of Artificial Intelligence
 - name: Zhejiang University, China
 
@@ -59,8 +59,8 @@ education:
 - name: Zhejiang University, China
   logo: /assets/images/badges/ZJU_logo.png
   dept: School of Artificial Intelligence
-  position: Ph.D. in Artificial Intelligence (Direct Admission)
-  date: Sep. 2027 - Expected
+  position: Ph.D. in Artificial Intelligence
+  date: Sep. 2027 - Jun. 2032 (Expected)
 - name: Northeastern University, China
   logo: /assets/images/badges/NEU_logo.png
   dept: School of Computer Science and Engineering
@@ -68,11 +68,6 @@ education:
   date: Sep. 2023 - Jun. 2027
 
 experience:
-- name: Zhejiang University
-  logo: /assets/images/badges/ZJU_logo.png
-  positions:
-  - position: Ph.D. Student (Direct Admission), School of Artificial Intelligence
-    date: Sep. 2027 - Expected
 - name: Northeastern University
   logo: /assets/images/badges/NEU_logo.png
   positions:
