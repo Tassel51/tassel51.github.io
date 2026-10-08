@@ -96,10 +96,10 @@
             <div class="px-3 py-2 small" style="max-height: 180px; overflow-y: auto;">
                 <ul class="mb-0 pl-3">
                     {% for item in p.honors %}
-                    <li class="mb-2" style="padding-left: 1em;">
+                    <li class="mb-2" style="padding-left: 1em; {% if item.highlight %}background: linear-gradient(90deg, rgba(255,215,0,0.08) 0%, rgba(255,215,0,0.02) 100%); border-radius: 6px; padding: 4px 8px 4px 1em;{% endif %}">
                         <div class="d-flex">
                             <div class="flex-grow-1">
-                                {% if item.prefix %}{{ item.prefix }} <strong>{{ item.name }}</strong>{% else %}<strong>{{ item.name }}</strong>{% endif %}{% if item.period %}&nbsp;<em>({{ item.period }})</em>{% endif %}
+                                {% if item.highlight %}🏅 {% endif %}{% if item.prefix %}{{ item.prefix }} <strong>{{ item.name }}</strong>{% else %}<strong>{{ item.name }}</strong>{% endif %}{% if item.period %}&nbsp;<em>({{ item.period }})</em>{% endif %}
                                 {% if item.amount %}&nbsp;with <strong>{{ item.amount }}</strong>{% endif %}
                                 {% if item.institution %}, {{ item.institution }}{% endif %}
                                 {% if item.link %}<a href="{{ item.link }}" target="_blank"><i class="fas fa-award text-warning ml-1" title="Certificate"></i></a>{% endif %}

@@ -107,6 +107,7 @@ competitions:
 
 honors:
 - name: National Scholarship
+  highlight: true
   period: 2024-2025
   date: Oct 2026
   amount: 10000¥
@@ -131,6 +132,7 @@ honors:
   date: Sep 2025
   institution: Northeastern University
 - name: National Scholarship
+  highlight: true
   period: 2023-2024
   date: Sep 2024
   amount: 10000¥
