@@ -8,7 +8,7 @@
 
 <div class="my-3 bg-white shadow-sm rounded-xl" id="news">
     <h5 class="p-3 mb-0 border-bottom border-gray">🔥 News</h5>
-    <div class="px-3 py-1 small" style="max-height: 220px; overflow-y: auto;">
+    <div class="px-3 py-1 small" style="max-height: 240px; overflow-y: auto;">
         {% for item in news_items %}
         <div class="d-flex py-1 ">
             <span class="text-muted mr-2 no-break" style="min-width: 100px;">{{ item.date | date: "%b %d, %Y" }}</span>
