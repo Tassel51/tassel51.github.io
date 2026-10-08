@@ -96,7 +96,7 @@
             <div class="px-3 py-2 small" style="max-height: 180px; overflow-y: auto;">
                 <ul class="mb-0 pl-3">
                     {% for item in p.honors %}
-                    <li class="mb-2" style="padding-left: 1em; {% if item.highlight %}background: linear-gradient(90deg, rgba(255,215,0,0.08) 0%, rgba(255,215,0,0.02) 100%); border-radius: 6px; padding: 4px 8px 4px 1em;{% endif %}">
+                    <li class="mb-2" style="padding-left: 1em; {% if item.highlight %}background: linear-gradient(90deg, rgba(255,215,0,0.18) 0%, rgba(255,215,0,0.03) 100%); border-radius: 6px; padding: 4px 8px 4px 1em;{% endif %}">
                         <div class="d-flex">
                             <div class="flex-grow-1">
                                 {% if item.highlight %}🏅 {% endif %}{% if item.prefix %}{{ item.prefix }} <strong>{{ item.name }}</strong>{% else %}<strong>{{ item.name }}</strong>{% endif %}{% if item.period %}&nbsp;<em>({{ item.period }})</em>{% endif %}
