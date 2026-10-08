@@ -103,6 +103,16 @@ competitions:
   date: 2025年9月
 
 honors:
+- name: 国家奖学金
+  period: 2024-2025
+  date: Oct 2026
+  amount: ¥10,000
+  institution: 东北大学
+- name: 校一等奖学金
+  prefix: 东北大学
+  date: Oct 2026
+  amount: ¥2,000
+  institution: 东北大学
 - name: 华为奖学金
   date: Sep 2025
   amount: ¥8,000

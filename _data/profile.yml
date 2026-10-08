@@ -105,6 +105,16 @@ competitions:
   date: Sep 2025
 
 honors:
+- name: National Scholarship
+  period: 2024-2025
+  date: Oct 2026
+  amount: 10000¥
+  institution: Northeastern University
+- name: First-Class Scholarship
+  prefix: Northeastern University
+  date: Oct 2026
+  amount: 2000¥
+  institution: Northeastern University
 - name: Huawei Scholarship
   date: Sep 2025
   amount: 8000¥
