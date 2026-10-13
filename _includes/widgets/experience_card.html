@@ -93,7 +93,7 @@
     <div class="col">
         <div class="card border-0 shadow-sm bg-white" id="honors">
             <h5 class="p-3 mb-0 border-bottom border-gray">🌟 {{ p.honors_label }}</h5>
-            <div class="px-3 py-2 small" style="max-height: 180px; overflow-y: auto;">
+            <div class="px-3 py-2 small">
                 <ul class="mb-0 pl-3">
                     {% for item in p.honors %}
                     <li class="mb-2" style="padding-left: 1em; {% if item.highlight %}background: linear-gradient(90deg, rgba(255,215,0,0.18) 0%, rgba(255,215,0,0.03) 100%); border-radius: 6px; padding: 4px 8px 4px 1em;{% endif %}">
