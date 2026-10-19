@@ -16,11 +16,11 @@ home_sections:
   anchor: about
 - name: Educations
   anchor: experience
+- name: News
+  anchor: news
 - name: Competitions
   anchor: competitions
 - name: Awards
   anchor: honors
-- name: News
-  anchor: news
 - name: Papers
   anchor: publications

@@ -23,6 +23,10 @@ navbar_title: Home
         {% endif %}
         {% endif %}
 
+        {% include widgets/competitions_card.html %}
+
+        {% include widgets/honors_card.html %}
+
         {% if site.data.display.homepage.show_selected_publications %}
         {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
         {%
