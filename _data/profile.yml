@@ -34,16 +34,16 @@ short_bio: >-
     I received my B.E. degree in <strong>Communication Engineering</strong> from the
     School of <a href="http://www.cse.neu.edu.cn/" target="_blank">Computer Science and Engineering</a>,
     <a href="https://www.neu.edu.cn/" target="_blank">Northeastern University, China</a>.
-    My research focuses on <strong>robotics algorithm development and
-    software-hardware deployment (embodied intelligence)</strong>, <strong>large language models</strong>, and <strong>lightweight algorithm deployment</strong>.
+    My research focuses on <strong class="kw">robotics algorithm development and
+    software-hardware deployment (embodied intelligence)</strong>, <strong class="kw-blue">large language models</strong>, and <strong class="kw-teal">lightweight algorithm deployment</strong>.
   </p>
 
   <h6 class="mt-4">🌱 Research Interests</h6>
   <p>
-    <a href="https://en.wikipedia.org/wiki/Internet_of_things" target="_blank"><span class="badge badge-light mr-1 mb-1">Internet of Everything</span></a>
-    <a href="https://en.wikipedia.org/wiki/Embodied_cognition" target="_blank"><span class="badge badge-light mr-1 mb-1">Embodied Intelligence</span></a>
-    <a href="https://en.wikipedia.org/wiki/Multimodal_learning" target="_blank"><span class="badge badge-light mr-1 mb-1">Multimodal Large Language Models</span></a>
-    <a href="https://en.wikipedia.org/wiki/Model_compression" target="_blank"><span class="badge badge-light mr-1 mb-1">Model Compression & Quantization</span></a>
+    <a href="https://en.wikipedia.org/wiki/Internet_of_things" target="_blank"><span class="badge badge-light mr-1 mb-1 kw-orange">Internet of Everything</span></a>
+    <a href="https://en.wikipedia.org/wiki/Embodied_cognition" target="_blank"><span class="badge badge-light mr-1 mb-1 kw">Embodied Intelligence</span></a>
+    <a href="https://en.wikipedia.org/wiki/Multimodal_learning" target="_blank"><span class="badge badge-light mr-1 mb-1 kw-blue">Multimodal Large Language Models</span></a>
+    <a href="https://en.wikipedia.org/wiki/Model_compression" target="_blank"><span class="badge badge-light mr-1 mb-1 kw-teal">Model Compression & Quantization</span></a>
   </p>
 
   <h6 class="mt-3">🛠️ Projects</h6>

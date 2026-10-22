@@ -110,3 +110,24 @@ div.lazy {
     box-shadow: 0 8px 17px rgba(0,0,0,0.4), 0 6px 20px rgba(0,0,0,0.35) !important;
     border-radius: 6px !important;
 }
+
+/* ===== 渐变彩色关键词 ===== */
+.kw {
+    font-weight: 600;
+    color: #c2255c; /* 回退色：不支持 background-clip:text 时仍可读 */
+}
+.kw-blue { color: #1971c2; }
+.kw-teal { color: #0ca678; }
+.kw-orange { color: #e8590c; }
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+    .kw, .kw-blue, .kw-teal, .kw-orange {
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+    }
+    .kw { background-image: linear-gradient(90deg, #d6336c 0%, #7048e8 100%); }
+    .kw-blue { background-image: linear-gradient(90deg, #1c7ed6 0%, #15aabf 100%); }
+    .kw-teal { background-image: linear-gradient(90deg, #0ca678 0%, #40c057 100%); }
+    .kw-orange { background-image: linear-gradient(90deg, #e8590c 0%, #f08c00 100%); }
+}
