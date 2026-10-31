@@ -2,6 +2,11 @@
 {% assign hide_bottom_border = include.hide_bottom_border %}
 {% assign first = include.first %}
 {% assign last = include.last %}
+{% if item.external_url %}
+    {% assign item_link = item.external_url %}
+{% else %}
+    {% assign item_link = item.url | relative_url %}
+{% endif %}
 
 <div class="border-bottom border-gray p-3 {% if hide_bottom_border %}border-0{% endif %}">
     <div class="row">
@@ -12,7 +17,7 @@
         {% endif %}
         <div class="{% if item.cover %}col-md-9 col-xl-10{% else %}col-12{% endif %}">
             <h5 class="mb-2">
-                <a href="{{ item.url | relative_url }}" class="text-dark text-decoration-none">
+                <a href="{{ item_link }}" class="text-dark text-decoration-none">
                     {{ item.title }}
                 </a>
             </h5>
@@ -35,7 +40,7 @@
                 {% endif %}
             </div>
             <div class="mt-2">
-                <a href="{{ item.url | relative_url }}">
+                <a href="{{ item_link }}" {% if item.external_url %}target="_blank"{% endif %}>
                     Read more <i class="fas fa-angle-double-right"></i>
                 </a>
             </div>

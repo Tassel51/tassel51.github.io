@@ -3,6 +3,7 @@ layout: blog_post
 title: "🎓 保研经验分享 —— 写在推免之后"
 date: 2026-10-31 11:44:00 +0800
 tags: [推免, 经验分享, 本科回顾]
+external_url: https://mp.weixin.qq.com/s/QKuOr5goGF3a6fvqC0uatQ
 ---
 
 > 本文原载于计算机学院学生党总支公众号「党计微语」的【薪火相传之推免篇】栏目，由学院约稿撰写，2026 年 10 月 31 日发布。
