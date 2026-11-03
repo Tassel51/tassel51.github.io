@@ -49,18 +49,11 @@ short_bio: >-
   <div class="research-chips">
     <span class="chip chip-pink">世界模型</span>
     <span class="chip chip-purple">具身智能</span>
-    <span class="chip chip-blue">动作条件视频生成</span>
+    <span class="chip chip-blue">AI 智能体</span>
     <span class="chip chip-teal">空间智能</span>
     <span class="chip chip-orange">视觉–语言–动作（VLA）模型</span>
     <span class="chip chip-indigo">基于模型的规划与学习</span>
   </div>
-
-  <h6 class="mt-3">🛠️ 项目</h6>
-  <ul class="small text-muted pl-3 mb-0">
-    <li class="mb-1"><a href="https://github.com/Tassel51/Smart-Campus-Life-Assistant.git" target="_blank"><strong>Smart Campus Life Assistant</strong></a> — 基于数据结构理论的东北大学校园服务可视化系统</li>
-    <li class="mb-1"><a href="https://github.com/Tassel51/LingXi-MultiModal_DualArm_MobileBot" target="_blank"><strong>"灵犀" — 多模态双臂移动机器人</strong></a> — 融合视觉、语言与操作能力的具身智能平台（国家级大学生创新创业训练计划，国家级良好）</li>
-    <li class="mb-1"><a href="https://github.com/Tassel51/Language-Modeling-from-Scratch-by-Tassel51" target="_blank"><strong>Language Modeling from Scratch</strong></a> — 从零构建Transformer架构语言模型，参考<a href="https://web.stanford.edu/class/cs336/" target="_blank">斯坦福大学的CS336课程</a></li>
-  </ul>
 
 portrait_url: /images/zzc.jpg
 portrait_caption: 朱子琛
