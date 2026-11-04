@@ -125,6 +125,11 @@ honors:
   date: Oct 2026
   amount: ¥2,000
   institution: 东北大学
+- name: 优秀学生标兵
+  prefix: 东北大学
+  period: 2025-2026
+  date: Oct 2026
+  institution: 东北大学
 - name: 华为奖学金
   period: 2024-2025
   date: Sep 2025
