@@ -117,7 +117,7 @@
                     </div>
                 </div>
 
-                {% if p.cv_link %}
+                {% if p.cv_link and p.show_cv %}
                 <div class="row pt-2 small">
                     <div class="col text-center">
                         <a target="_blank" href="{{ p.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> {{ p.cv_label }}</a>
