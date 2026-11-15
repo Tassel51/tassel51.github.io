@@ -1,24 +1,34 @@
 pages:
 - name: Home
+  name_zh: 首页
   url: /
 - name: Research
+  name_zh: 研究成果
   url: /publications
 - name: Blog
+  name_zh: 博客
   url: /blog
 - name: Gallery
+  name_zh: 相册
   url: /showcase
 
 # Homepage-only scroll anchors (rendered above `pages` on the homepage)
 home_sections:
 - name: About
+  name_zh: 个人介绍
   anchor: about
 - name: Educations
+  name_zh: 教育经历
   anchor: experience
 - name: News
+  name_zh: 最新动态
   anchor: news
 - name: Competitions
+  name_zh: 竞赛获奖
   anchor: competitions
 - name: Awards
+  name_zh: 个人荣誉
   anchor: honors
 - name: Papers
+  name_zh: 论文
   anchor: publications

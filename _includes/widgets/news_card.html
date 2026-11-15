@@ -1,14 +1,17 @@
 {% assign lang = include.lang | default: "en" %}
 {% assign all_news = site.news | sort: "date" | reverse %}
 {% assign news_items = "" | split: "" %}
+{% assign zh_news_items = "" | split: "" %}
 {% for item in all_news %}
   {% assign item_lang = item.lang | default: "en" %}
   {% if item_lang == lang %}{% assign news_items = news_items | push: item %}{% endif %}
+  {% if item_lang == "zh" %}{% assign zh_news_items = zh_news_items | push: item %}{% endif %}
 {% endfor %}
+{% capture zh_news_html %}{% for item in zh_news_items %}<div class="d-flex py-1 "><span class="text-muted mr-2 no-break" style="min-width: 100px;">{{ item.date | date: "%Y" }}年{{ item.date | date: "%m" | plus: 0 }}月{{ item.date | date: "%d" | plus: 0 }}日</span><span>{{ item.title }}</span></div>{% endfor %}{% endcapture %}
 
 <div class="my-3 bg-white shadow-sm rounded-xl" id="news">
-    <h5 class="p-3 mb-0 border-bottom border-gray">🔥🔥🔥 News</h5>
-    <div class="px-3 py-1 small" style="max-height: 180px; overflow-y: auto;">
+    <h5 class="p-3 mb-0 border-bottom border-gray" data-zh="🔥🔥🔥 最新动态">🔥🔥🔥 News</h5>
+    <div class="px-3 py-1 small" style="max-height: 180px; overflow-y: auto;" data-zh="{{ zh_news_html | escape }}">
         {% for item in news_items %}
         <div class="d-flex py-1 ">
             <span class="text-muted mr-2 no-break" style="min-width: 100px;">{{ item.date | date: "%b %d, %Y" }}</span>

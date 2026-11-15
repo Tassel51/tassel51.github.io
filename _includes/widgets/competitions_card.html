@@ -1,18 +1,21 @@
 {% unless p %}{% assign p = site.data.profile %}{% endunless %}
+{% assign zhp = site.data.profile_zh %}
 
 <!-- Competitions -->
 {% if p.competitions %}
 <div class="row mt-3">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white" id="competitions">
-            <h5 class="p-3 mb-0 border-bottom border-gray">🏆 {{ p.competitions_label }}</h5>
+            <h5 class="p-3 mb-0 border-bottom border-gray" data-zh="🏆 {{ zhp.competitions_label }}">🏆 {{ p.competitions_label }}</h5>
             <div class="px-3 py-2 small">
                 <ul class="mb-0 pl-3">
                     {% for item in p.competitions %}
+                    {% assign idx = forloop.index0 %}
+                    {% assign z = zhp.competitions[idx] %}
                     <li class="mb-2" style="padding-left: 1em;">
                         <div class="d-flex">
-                            <div class="flex-grow-1">{{ item.name }}</div>
-                            <div class="no-break text-muted pl-2"><em>{{ item.date }}</em></div>
+                            <div class="flex-grow-1" data-zh="{{ z.name | escape }}">{{ item.name }}</div>
+                            <div class="no-break text-muted pl-2" data-zh="<em>{{ z.date }}</em>"><em>{{ item.date }}</em></div>
                         </div>
                     </li>
                     {% endfor %}

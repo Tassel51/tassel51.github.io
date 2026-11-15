@@ -21,14 +21,16 @@
                         {% endif %}
                     </div>
                 </div>
+                {% assign zhp = site.data.profile_zh %}
+                {% capture zh_positions %}{% for position in zhp.positions %}{{ position.name }}<br/>{% endfor %}{% endcapture %}
                 <div class="row">
-                    <div class="col text-center h4">
+                    <div class="col text-center h4" data-zh="{{ zhp.primary_name }}">
                         {{ p.primary_name }}
                     </div>
                 </div>
 
                 <div class="row small">
-                    <div class="col text-center">
+                    <div class="col text-center" data-zh="{{ zh_positions | escape }}">
                         {% for position in p.positions %}
                         {{ position.name }}<br/>
                         {% endfor %}

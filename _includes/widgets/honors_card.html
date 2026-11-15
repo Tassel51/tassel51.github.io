@@ -1,17 +1,21 @@
 {% unless p %}{% assign p = site.data.profile %}{% endunless %}
+{% assign zhp = site.data.profile_zh %}
 
 <!-- Honors -->
 {% if p.honors %}
 <div class="row mt-3">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white" id="honors">
-            <h5 class="p-3 mb-0 border-bottom border-gray">🌟 {{ p.honors_label }}</h5>
+            <h5 class="p-3 mb-0 border-bottom border-gray" data-zh="🌟 {{ zhp.honors_label }}">🌟 {{ p.honors_label }}</h5>
             <div class="px-3 py-2 small">
                 <ul class="mb-0 pl-3">
                     {% for item in p.honors %}
+                    {% assign idx = forloop.index0 %}
+                    {% assign z = zhp.honors[idx] %}
+                    {% capture zh_honor %}{% if z.highlight %}🏅 {% endif %}{% if z.prefix %}{{ z.prefix }} <strong>{{ z.name }}</strong>{% else %}<strong>{{ z.name }}</strong>{% endif %}{% if z.period %}&nbsp;<em>({{ z.period }})</em>{% endif %}{% if z.amount %}&nbsp;奖金 <strong>{{ z.amount }}</strong>{% endif %}{% if z.institution and z.prefix == nil %}，{{ z.institution }}{% endif %}{% if z.link %}<a href="{{ z.link }}" target="_blank"><i class="fas fa-award text-warning ml-1" title="证书"></i></a>{% endif %}{% endcapture %}
                     <li class="mb-2" style="padding-left: 1em; {% if item.highlight %}background: linear-gradient(90deg, rgba(255,215,0,0.18) 0%, rgba(255,215,0,0.03) 100%); border-radius: 6px; padding: 4px 8px 4px 1em;{% endif %}">
                         <div class="d-flex">
-                            <div class="flex-grow-1">
+                            <div class="flex-grow-1" data-zh="{{ zh_honor | escape }}">
                                 {% if item.highlight %}🏅 {% endif %}{% if item.prefix %}{{ item.prefix }} <strong>{{ item.name }}</strong>{% else %}<strong>{{ item.name }}</strong>{% endif %}{% if item.period %}&nbsp;<em>({{ item.period }})</em>{% endif %}
                                 {% if item.amount %}&nbsp;with <strong>{{ item.amount }}</strong>{% endif %}
                                 {% if item.institution %}, {{ item.institution }}{% endif %}
