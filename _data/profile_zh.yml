@@ -112,27 +112,32 @@ honors:
   highlight: true
   period: 2025-2026
   date: Oct 2026
+  date_zh: 2026年10月
   amount: ¥10,000
   institution: 东北大学
 - name: 燕宝奖学金
   period: 2025-2026
   date: Oct 2026
+  date_zh: 2026年10月
   amount: ¥10,000
   institution: 东北大学
 - name: 校一等奖学金
   prefix: 东北大学
   period: 2025-2026
   date: Oct 2026
+  date_zh: 2026年10月
   amount: ¥2,000
   institution: 东北大学
 - name: 优秀学生标兵
   prefix: 东北大学
   period: 2025-2026
   date: Nov 2026
+  date_zh: 2026年11月
   institution: 东北大学
 - name: 华为奖学金
   period: 2024-2025
   date: Sep 2025
+  date_zh: 2025年9月
   amount: ¥8,000
   institution: 东北大学
   link: https://tassel51.github.io/honors/college/huaweijiangxuejin.jpg
@@ -140,17 +145,20 @@ honors:
   prefix: 东北大学
   period: 2024-2025
   date: Sep 2025
+  date_zh: 2025年9月
   amount: ¥1,000
   institution: 东北大学
 - name: 优秀学生
   prefix: 东北大学
   period: 2024-2025
   date: Sep 2025
+  date_zh: 2025年9月
   institution: 东北大学
 - name: 国家奖学金
   highlight: true
   period: 2023-2024
   date: Sep 2024
+  date_zh: 2024年9月
   amount: ¥10,000
   institution: 东北大学
   link: https://tassel51.github.io/honors/college/guojiang1.jpg
@@ -158,10 +166,12 @@ honors:
   prefix: 东北大学
   period: 2023-2024
   date: Sep 2024
+  date_zh: 2024年9月
   amount: ¥2,000
   institution: 东北大学
 - name: 优秀学生标兵
   prefix: 东北大学
   period: 2023-2024
   date: Sep 2024
+  date_zh: 2024年9月
   institution: 东北大学
